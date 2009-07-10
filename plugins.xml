@@ -1,0 +1,755 @@
+<plugins>
+<!--
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  -->
+  <plugin name="AutoSave">
+	<ansiVersion>1.1.2.0</ansiVersion>
+	<unicodeVersion>1.1.2.0</unicodeVersion>
+	<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
+	<author>Franco Stellari</author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<download>http://fstellari.googlepages.com/AutoSave_dll_1v11.zip</download>		
+		<ansi>
+			<copy from="AutoSaveA.dll" to="$PLUGINDIR$" validate="true" />
+		</ansi>
+		<unicode>
+			<copy from="AutoSaveU.dll" to="$PLUGINDIR$" validate="true" />
+		</unicode>
+	</install>
+
+  </plugin>
+  
+  <plugin name="Switcher">
+	<install>
+		<download>http://www.donationcoder.com/Forums/bb/index.php?topic=16339.0</download>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  
+  
+  
+  
+  
+  
+  <plugin name="CCompletion">
+	
+	<unicodeVersion>1.11.0.0</unicodeVersion>
+	<description>It's an autocompletion plugin, that also features two other similar functionalities: 
+* find identifier and display it in secondary view 
+* go to identitifer 
+For more information on usage, see the plugin help. 
+ 
+The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
+	<author>Bostjan Mihori&#267;</author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<download>http://freeweb.siol.net/rmihor/NppCCompletionPlugin.zip</download>
+		<copy from="*.dll" to="$PLUGINDIR$" />
+		<download>http://prdownloads.sourceforge.net/ctags/ec57w32.zip</download>
+		<copy from="ctags.exe" to="$PLUGINDIR$" />
+	</install>
+	<versions>
+		<version number="1.10.0.0" md5="ec262eb016aafc02afc59e8dd3b94e4f" />
+	</versions>
+	<issues />
+  </plugin>
+
+  <plugin name="Change Markersx">
+    
+	<ansiVersion>1.0.0.0</ansiVersion>
+	<unicodeVersion>1.0.0.0</unicodeVersion>
+
+	<description>This plugin tracks changes made to documents, and enables navigation between changes, with a distinction being mafe between saved and unsaved changes. The change indicator is either a bar in the left margin or a specific highlighting. Or none.</description>
+	<author>Thell Fowler</author>
+	<sourceUrl></sourceUrl>
+	<dependencies>
+		<plugin name="SciMarkerSymbol" />
+		<plugin name="Plugin Marker Margin" />
+	</dependencies>
+	<versions>
+		<version number="1.0.0.0" md5="dbaf98043525edd40b1d96d1d78dba9f" comment="Notepad++ bundled version (UNICODE)" />
+		<version number="1.0.0.0" md5="1042461a139a5a6f1a40faaec89b18b8" comment="Downloaded 1.0" />
+		
+	</versions>
+	
+	<install>
+		<unicode>
+			<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Unicode_bin.zip</download>
+		</unicode>
+		<ansi>
+			<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Ansi_bin.zip</download>
+		</ansi>
+		<unicode>
+			<copy from="NppPlugin_ChangeMarker.dll" to="$PLUGINDIR$" />
+			<copy from="config\NppPlugin_ChangeMarker.xml" to="$CONFIGDIR$" />
+		</unicode>
+		<ansi>
+			<copy from="MyNppPluginsAnsi\NppPlugin_ChangeMarker.dll" to="$PLUGINDIR$" />
+			<copy from="MyNppPluginsAnsi\config\NppPlugin_ChangeMarker.xml" to="$CONFIGDIR$" />
+		</ansi>
+	</install>
+  </plugin>
+
+  
+  
+  <plugin name="CharM">
+	<ansiVersion>0.9.0.0</ansiVersion>
+	<description>CharM (CHARacter Map) plugin for Notepad++. Highlight a character, select Plugins->CharM->Character Map, and it will give you variations of that character. Version 0.9 is functional, although it could use some work on the interface.</description>
+	<author>fidvo</author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+				<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=CharM_0_9_dll.zip&amp;a=29450322</download>
+				<copy from="CharM.dll" to="$PLUGINDIR$" />
+				<copy from="Config\*.ini" to="$CONFIGDIR$" />
+				<copy from="Readme*.txt" to="$DOCDIR$" />
+		</ansi>
+	</install>
+  </plugin>
+  
+  
+  
+  <plugin name="Compare Plugin">
+	<ansiVersion>1.5.1.0</ansiVersion>
+	<unicodeVersion>1.5.3.1</unicodeVersion>
+	<description>A very useful diff plugin to show the difference between 2 files (side by side).</description>
+	<author>Ty Landercasper</author>
+	<sourceUrl></sourceUrl>
+	<versions>
+		<version number="1.5.1.0" md5="a27b6b6010731f3fe6423b1a5b84e2a6" comment="ANSI build" />
+	</versions>
+	<install>
+		<ansi>
+			<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=ComparePlugin_1.5.1.zip&amp;a=2648461</download>
+		</ansi>
+		<unicode>
+			<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=Compare_1_5_3_UNI_dll.zip&amp;a=71545989</download>
+		</unicode>
+		<copy from="*.dll" to="$PLUGINDIR$" />
+	</install>
+	<notes>Need to get hashes of previous versions</notes>
+  </plugin>
+  
+  <plugin name="ConvertExt">
+	<ansiVersion>1.1.0.0</ansiVersion>
+	<description>ConvertExt is a plugin for Notepad++ 3.5 and above. This plugin allows Notepad++ to:
+- view a text file in different encodings (codepages);
+- convert a text file from one encoding to another;
+- add and work with your own [external] encoding tables;
+- replace a typed character by another user-defined character;
+- autocomplete a left bracket with a corresponding right bracket</description>
+	<author>Dovgan Vitaliy</author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+			<download>http://notepad-plus.sourceforge.net/commun/pluginsBin/ConvertExt_v11RC1.zip</download>
+			<copy from="*.dll" to="$PLUGINDIR$" />
+			<copy from="ConvertExt.ini" to="$CONFIGDIR$" />
+			<copy from="ConvertExt.enc" to="$NPPDIR$" />
+			<copy from="ConvertExt.lng" to="$NPPDIR$" />
+		</ansi>
+		
+	</install>
+  </plugin>
+  
+  <plugin name="File Switcher">
+	<ansiVersion>1.0.3.0</ansiVersion>
+	<unicodeVersion>1.0.3.0</unicodeVersion>
+	
+	<description>This plugin allows you to switch the active buffer using just the keyboard.  You can type any 
+	part of the filename, path or tab index.  You can also use it as a replacement for the Ctrl-Tab functionality built into Notepad++.</description>
+	
+	<author>Dave Brotherstone</author>
+	<sourceUrl>http://www.brotherstone.co.uk/npp/FileSwithcer_src.zip</sourceUrl>
+	<install>
+		<unicode>
+			<download>http://localhost:100/test.zip</download>
+			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FileSwitcher1030_UNI.zip</download>
+		</unicode>
+		<ansi>
+			<download>http://www.brotherstone.co.uk/npp/FileSwitcher_ANSI.zip</download>
+		</ansi>
+		<copy from="FileSwitcher.dll" to="$PLUGINDIR$" validate="true"/>
+	</install>
+  </plugin>
+  
+  <plugin name="Gtag Search">
+	<unicodeVersion>2.0.0.0</unicodeVersion>
+	<description>I have started development of a plugin for gtags and ctags based search for notepad++</description>
+	<author>Mohan Kumar S</author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<unicode>
+			<download>https://sourceforge.net/project/downloading.php?group_id=260358&amp;=gtagfornplus_unicode_release.zip&amp;a=43998301</download>
+			<copy from="*.dll" to="$PLUGINDIR$" />
+		</unicode>
+	</install>
+  </plugin>
+
+  <plugin name="DBGp">
+	<unicodeVersion>0.0.11.20</unicodeVersion>
+	<description>This is a php debugger (XDebug) which talks DBGP protocol. Use this plugin to transform your Notepad++ to a php IDE.</description>
+	<author>Damjan Zobo Cvetko</author>
+	<sourceUrl>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DBGpPlugin_0_11b_src.zip&amp;a=17984321</sourceUrl>
+	<install>
+		<unicode>
+			<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DBGpPlugin_0_11b_dll.zip&amp;a=29716592</download>
+			<copy from="*.dll" to="$PLUGINDIR$" />
+		</unicode>
+	</install>
+  </plugin>
+
+  <plugin name="DocMonitor">
+	<ansiVersion>2.2.0.0</ansiVersion>
+	<unicodeVersion>2.2.0.0</unicodeVersion>
+	<description>Document updater updates your opened documents in Notepad++ every 3 seconds</description>
+	<author>Don Ho</author>
+	<sourceUrl>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DocMonitor.v2.2.src.zip&amp;a=71428104</sourceUrl>
+	<install>
+		<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DocMonitor.v2.2.dll.zip&amp;a=85765807</download>	
+		<ansi>
+			<copy from="docMonitor.ansi.dll" to="$PLUGINDIR$" />
+		</ansi>
+		<unicode>
+			<copy from="docMonitor.unicode.dll" to="$PLUGINDIR$" />
+		</unicode>
+	</install>
+  </plugin>
+  
+  
+	<plugin name="XML Tools">
+		<unicodeVersion>2.3.1.0</unicodeVersion>
+		<sourceURL/>
+		<install>
+			<unicode>
+				<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=xmltools_2.3.1_r697_unicode_alpha4.zip&amp;a=70875035</download>
+				<copy from="XMLTools.dll" to="$PLUGINDIR$" />
+				<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=ext_libs.zip&amp;=69449239</download>
+				<copy from="iconv.dll" to="$NPPDIR$" />
+				<copy from="libxml2.dll" to="$NPPDIR$" />
+				<copy from="libxslt.dll" to="$NPPDIR$" />
+				<copy from="zlib.dll" to="$NPPDIR$" />
+			</unicode>
+		</install>
+		<versions>
+			<version md5="378ac66c15df48ba3b5dad5585e743be" number="2.3.1.0" />
+		</versions>
+	</plugin>
+	<plugin name="Window Manager">
+		<unicodeVersion>1.2.2.0</unicodeVersion>
+		<ansiVersion>1.2.2.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Spell-Checker">
+		<unicodeVersion>1.3.3.0</unicodeVersion>
+		<ansiVersion>1.3.3.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Speech">
+		<unicodeVersion>0.2.1.0</unicodeVersion>
+		<ansiVersion>0.2.1.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="RunMe">
+		<unicodeVersion>1.2.0.0</unicodeVersion>
+		<ansiVersion>1.2.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="QuickText">
+		<unicodeVersion>0.0.2.0</unicodeVersion>
+		<ansiVersion>0.0.2.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Plugin update">
+		<unicodeVersion>0.3.0.0</unicodeVersion>
+		<ansiVersion>0.3.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Plugin Manager">
+		<unicodeVersion>0.0.0.0</unicodeVersion>
+		<ansiVersion>0.0.0.0</ansiVersion>
+		<versions>
+			<version number="1.0.0.0" md5="bb21cf2f14f9c4f1d00253a291159434"/>
+		</versions>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Subversion">
+		<unicodeVersion>0.0.0.0</unicodeVersion>
+		<ansiVersion>0.0.0.0</ansiVersion>
+		<versions>
+			<version number="1.0.0.0" md5="0b84262c0151ee3ba1e40a2e13951882"/>
+		</versions>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="SciMarkerSymbol">
+		<unicodeVersion>0.0.0.0</unicodeVersion>
+		<ansiVersion>0.0.0.0</ansiVersion>
+		<versions>
+			<version number="1.0.0.0" md5="f4691efbfcffe43a0b22b49edfc167a1"/>
+		</versions>
+		<sourceURL/>
+	<install>
+		<unicode>
+			<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Unicode_bin.zip</download>
+		</unicode>
+		<ansi>
+			<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Ansi_bin.zip</download>
+		</ansi>
+		<unicode>
+			<copy from="NppPlugin_SciMarkerSymbol.dll" to="$PLUGINDIR$" />
+			<copy from="config\NppPlugin_SciMarkerSymbol.xml" to="$CONFIGDIR$" />
+		</unicode>
+		<ansi>
+			<copy from="MyNppPluginsAnsi\NppPlugin_SciMarkerSymbol.dll" to="$PLUGINDIR$" />
+			<copy from="MyNppPluginsAnsi\config\NppPlugin_SciMarkerSymbol" to="$CONFIGDIR$" />
+		</ansi>
+	</install>
+	</plugin>
+	
+	
+	
+	<plugin name="Plugin Marker Margin">
+		<unicodeVersion>0.0.0.0</unicodeVersion>
+		<ansiVersion>0.0.0.0</ansiVersion>
+		<versions>
+			<version number="1.0.0.0" md5="052df905a3a4eb3af28e6e66a8be452b"/>
+		</versions>
+		<sourceURL/>
+	<install>
+		<unicode>
+			<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Unicode_bin.zip</download>
+		</unicode>
+		<ansi>
+			<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Ansi_bin.zip</download>
+		</ansi>
+		<unicode>
+			<copy from="NppPlugin_PluginMargin.dll" to="$PLUGINDIR$" />
+			<copy from="config\NppPlugin_PluginMargin.xml" to="$CONFIGDIR$" />
+		</unicode>
+		<ansi>
+			<copy from="MyNppPluginsAnsi\NppPlugin_PluginMargin.dll" to="$PLUGINDIR$" />
+			<copy from="MyNppPluginsAnsi\config\NppPlugin_PluginMargin.xml" to="$CONFIGDIR$" />
+		</ansi>
+	</install>
+	</plugin>
+	<plugin name="NppExport">
+		<unicodeVersion>0.2.8.0</unicodeVersion>
+		<ansiVersion>0.2.8.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="NppExec">
+		<unicodeVersion>0.3.0.1</unicodeVersion>
+		<ansiVersion>0.3.0.1</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="NppDocShare">
+		<unicodeVersion>0.1.0.0</unicodeVersion>
+		<ansiVersion>0.1.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="NppAutoIndent">
+		<unicodeVersion>1.2.0.0</unicodeVersion>
+		<ansiVersion>1.2.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="NativeLang">
+		<unicodeVersion>1.1.0.0</unicodeVersion>
+		<ansiVersion>1.1.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="MultiClipboard">
+		<unicodeVersion>2.0.0.0</unicodeVersion>
+		<ansiVersion>2.0.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Light Explorer">
+		<unicodeVersion>2.0.0.0</unicodeVersion>
+		<ansiVersion>2.0.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="LanguageHelp">
+		<unicodeVersion>1.2.0.0</unicodeVersion>
+		<ansiVersion>1.2.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="HTML Tag">
+		<unicodeVersion>0.2.2.437</unicodeVersion>
+		<ansiVersion>0.2.2.437</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="HEX-Editor">
+		<unicodeVersion>0.9.4.0</unicodeVersion>
+		<ansiVersion>0.9.4.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Function List">
+		<unicodeVersion>2.0.0.0</unicodeVersion>
+		<ansiVersion>2.0.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Falling Bricks">
+		<unicodeVersion>1.1.0.0</unicodeVersion>
+		<ansiVersion>1.1.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Explorer">
+		<unicodeVersion>1.8.2.0</unicodeVersion>
+		<ansiVersion>1.8.2.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Document Monitor">
+		<unicodeVersion>2.2.0.0</unicodeVersion>
+		<ansiVersion>2.2.0.0</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+	<plugin name="Math Evaluator">
+		<unicodeVersion>0.0.4.3</unicodeVersion>
+		<ansiVersion>0.0.4.3</ansiVersion>
+		<sourceURL/>
+		<install>
+			<download/>
+			<ansi/>
+			<unicode/>
+		</install>
+	</plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  <plugin name="">
+	<ansiVersion></ansiVersion>
+	<unicodeVersion></unicodeVersion>
+	<description></description>
+	<author></author>
+	<sourceUrl></sourceUrl>
+	<install>
+		<ansi>
+		</ansi>
+		<unicode>
+		</unicode>
+	</install>
+  </plugin>
+  
+  
+</plugins>
