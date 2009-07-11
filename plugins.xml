@@ -14,11 +14,14 @@
 	</install>
   </plugin>
   -->
+  
+  
   <plugin name="AutoSave">
-	<ansiVersion>1.1.2.0</ansiVersion>
-	<unicodeVersion>1.1.2.0</unicodeVersion>
+	<ansiVersion>1.1.1.0</ansiVersion>
+	<unicodeVersion>1.1.1.0</unicodeVersion>
 	<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
 	<author>Franco Stellari</author>
+	<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
 	<sourceUrl></sourceUrl>
 	<install>
 		<download>http://fstellari.googlepages.com/AutoSave_dll_1v11.zip</download>		
@@ -32,16 +35,7 @@
 
   </plugin>
   
-  <plugin name="Switcher">
-	<install>
-		<download>http://www.donationcoder.com/Forums/bb/index.php?topic=16339.0</download>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
+
   
   
   
@@ -50,20 +44,20 @@
   
   <plugin name="CCompletion">
 	
-	<unicodeVersion>1.11.0.0</unicodeVersion>
+	<unicodeVersion>1.10.0.0</unicodeVersion>
 	<description>It's an autocompletion plugin, that also features two other similar functionalities: 
 * find identifier and display it in secondary view 
 * go to identitifer 
 For more information on usage, see the plugin help. 
  
 The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
-	<author>Bostjan Mihori&#267;</author>
+	<author>Bostjan Mihori</author>
 	<sourceUrl></sourceUrl>
 	<install>
 		<download>http://freeweb.siol.net/rmihor/NppCCompletionPlugin.zip</download>
-		<copy from="*.dll" to="$PLUGINDIR$" />
-		<download>http://prdownloads.sourceforge.net/ctags/ec57w32.zip</download>
-		<copy from="ctags.exe" to="$PLUGINDIR$" />
+		<copy from="NppCCompletionPlugin.dll" to="$PLUGINDIR$" validate="true" />
+		<download>http://downloads.sourceforge.net/sourceforge/ctags/ctags58.zip</download>
+		<copy from="ctags58\ctags.exe" to="$PLUGINDIR$" validate="true"/>
 	</install>
 	<versions>
 		<version number="1.10.0.0" md5="ec262eb016aafc02afc59e8dd3b94e4f" />
@@ -71,10 +65,12 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
 	<issues />
   </plugin>
 
-  <plugin name="Change Markersx">
+  
+  
+  <plugin name="Change Markers">
     
-	<ansiVersion>1.0.0.0</ansiVersion>
-	<unicodeVersion>1.0.0.0</unicodeVersion>
+	<ansiVersion>1.0</ansiVersion>
+	<unicodeVersion>1.0</unicodeVersion>
 
 	<description>This plugin tracks changes made to documents, and enables navigation between changes, with a distinction being mafe between saved and unsaved changes. The change indicator is either a bar in the left margin or a specific highlighting. Or none.</description>
 	<author>Thell Fowler</author>
@@ -84,9 +80,12 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
 		<plugin name="Plugin Marker Margin" />
 	</dependencies>
 	<versions>
-		<version number="1.0.0.0" md5="dbaf98043525edd40b1d96d1d78dba9f" comment="Notepad++ bundled version (UNICODE)" />
-		<version number="1.0.0.0" md5="1042461a139a5a6f1a40faaec89b18b8" comment="Downloaded 1.0" />
-		
+	    <version number="1.0" md5="1042461a139a5a6f1a40faaec89b18b8" comment="Downloaded unicode" />
+        <version number="1.0" md5="4faa8d7972d92720b57a1c56585671ef" comment="Downloaded ansi" />
+		<version number="1.2" md5="dbaf98043525edd40b1d96d1d78dba9f" comment="5.4.2 bundled unicode" />
+		<version number="1.2" md5="7545adf2419068d1484341d24902b879" comment="5.4.2 bundled ansi" />
+		<version number="1.2.1" md5="dde7b566d1c25b6c64feee694a6640eb" comment="5.4.3 bundled unicode" />
+		<version number="1.2.1" md5="073a196e5b708b11a78cb888243c3480" comment="5.4.3 bundled ansi" />
 	</versions>
 	
 	<install>
@@ -97,12 +96,17 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
 			<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Ansi_bin.zip</download>
 		</ansi>
 		<unicode>
-			<copy from="NppPlugin_ChangeMarker.dll" to="$PLUGINDIR$" />
-			<copy from="config\NppPlugin_ChangeMarker.xml" to="$CONFIGDIR$" />
+			<copy from="NppPlugin_ChangeMarker.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="config\NppPlugin_ChangeMarker.xml" to="$CONFIGDIR$" backup="true" />
+			<copy from="icons\cm_notsaved.xpm" to="$PLUGINDIR$\icons" />
+			<copy from="icons\cm_saved.xpm" to="$PLUGINDIR$\icons" />
 		</unicode>
 		<ansi>
-			<copy from="MyNppPluginsAnsi\NppPlugin_ChangeMarker.dll" to="$PLUGINDIR$" />
-			<copy from="MyNppPluginsAnsi\config\NppPlugin_ChangeMarker.xml" to="$CONFIGDIR$" />
+			<copy from="MyNppPluginsAnsi\NppPlugin_ChangeMarker.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="MyNppPluginsAnsi\config\NppPlugin_ChangeMarker.xml" to="$CONFIGDIR$" backup="true" />
+			<copy from="MyNppPluginsAnsi\icons\cm_notsaved.xpm" to="$PLUGINDIR$\icons" />
+			<copy from="MyNppPluginsAnsi\icons\cm_saved.xpm" to="$PLUGINDIR$\icons" />
+			
 		</ansi>
 	</install>
   </plugin>
@@ -112,42 +116,54 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
   <plugin name="CharM">
 	<ansiVersion>0.9.0.0</ansiVersion>
 	<description>CharM (CHARacter Map) plugin for Notepad++. Highlight a character, select Plugins->CharM->Character Map, and it will give you variations of that character. Version 0.9 is functional, although it could use some work on the interface.</description>
-	<author>fidvo</author>
-	<sourceUrl></sourceUrl>
+	<author>Todd Hadley (Fidvo)</author>
+	<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/CharM/CharM_0_9_src.zip/download</sourceUrl>
 	<install>
 		<ansi>
-				<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=CharM_0_9_dll.zip&amp;a=29450322</download>
-				<copy from="CharM.dll" to="$PLUGINDIR$" />
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/CharM_0_9_dll.zip</download>
+				<copy from="CharM.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="Config\*.ini" to="$CONFIGDIR$" />
-				<copy from="Readme*.txt" to="$DOCDIR$" />
+				<copy from="*.txt" to="$PLUGINDIR$\doc\CharM" />
 		</ansi>
 	</install>
   </plugin>
   
   
   
-  <plugin name="Compare Plugin">
-	<ansiVersion>1.5.1.0</ansiVersion>
-	<unicodeVersion>1.5.3.1</unicodeVersion>
+  <plugin name="Compare">
+	<ansiVersion>1.5.4</ansiVersion>
+	<unicodeVersion>1.5.4</unicodeVersion>
 	<description>A very useful diff plugin to show the difference between 2 files (side by side).</description>
-	<author>Ty Landercasper</author>
-	<sourceUrl></sourceUrl>
+	<author>Ty Landercasper, now maintained and updated by Jean-Sebastian</author>
+	<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/ComparePlugin/Compare_1_5_4_src.zip/download</sourceUrl>
 	<versions>
-		<version number="1.5.1.0" md5="a27b6b6010731f3fe6423b1a5b84e2a6" comment="ANSI build" />
+		<version number="1.5.4" md5="a0f3ccc98279a19e2cdee382dc4b029a" comment="ansi" />
+		<version number="1.5.4" md5="3d4d770bcbeec0e3c2738d6b8ed54442" comment="unicode" />
+		<version number="1.5.3" md5="f01273415154928cc66a361d0b5c5186" comment="unicode" />
+		<version number="1.5.2" md5="f4515301fff4bc16ff3b16bffdf2ec18" comment="unicode" />
+		<version number="1.5.1" md5="3dddfb3aabfe40ec0ecce6f7cb35291b" comment="unicode" />
+		<version number="1.5.1" md5="a27b6b6010731f3fe6423b1a5b84e2a6" comment="ansi" />
+		<version number="1.5" md5="581494fd5a3f4e30a2e1c3ccd08b3e51" comment="ansi" />
+		<version number="1.4" md5="60b4c61ffab4fff7de77102d1a6d0df1" comment="ansi" />
+		<version number="1.3" md5="c5f26ee9381ecc30fb8607e4c9d48bae" comment="ansi" />
+		<version number="1.2.1" md5="fa897d8bb420ae82e0b274c120683e28" comment="ansi" />
+		<version number="1.2" md5="7f1c9b664cf667285d3b1106f1563fd7" comment="ansi" />
+		<version number="1.1" md5="7f27bc83d17ca673b64b25c597489fd8" comment="ansi" />
+		<version number="1.0" md5="a6194f93000521821bec806a7acf9d9a" comment="ansi" />
 	</versions>
+	<category>Common</category>
 	<install>
 		<ansi>
-			<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=ComparePlugin_1.5.1.zip&amp;a=2648461</download>
+			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/Compare_1_5_4_ANSI_dll.zip</download>
 		</ansi>
 		<unicode>
-			<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=Compare_1_5_3_UNI_dll.zip&amp;a=71545989</download>
+			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/Compare_1_5_4_UNI_dll.zip</download>
 		</unicode>
-		<copy from="*.dll" to="$PLUGINDIR$" />
+		<copy from="ComparePlugin.dll" to="$PLUGINDIR$" validate="true"/>
 	</install>
-	<notes>Need to get hashes of previous versions</notes>
   </plugin>
   
-  <plugin name="ConvertExt">
+  <plugin name="ConvertExt...">
 	<ansiVersion>1.1.0.0</ansiVersion>
 	<description>ConvertExt is a plugin for Notepad++ 3.5 and above. This plugin allows Notepad++ to:
 - view a text file in different encodings (codepages);
@@ -156,14 +172,14 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
 - replace a typed character by another user-defined character;
 - autocomplete a left bracket with a corresponding right bracket</description>
 	<author>Dovgan Vitaliy</author>
-	<sourceUrl></sourceUrl>
 	<install>
 		<ansi>
 			<download>http://notepad-plus.sourceforge.net/commun/pluginsBin/ConvertExt_v11RC1.zip</download>
-			<copy from="*.dll" to="$PLUGINDIR$" />
+			<copy from="ConvertExt.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="ConvertExt.ini" to="$CONFIGDIR$" />
 			<copy from="ConvertExt.enc" to="$NPPDIR$" />
 			<copy from="ConvertExt.lng" to="$NPPDIR$" />
+			<copy from="Documentation\*.txt" to="$PLUGINDIR$\doc\ConvertExt" />
 		</ansi>
 		
 	</install>
@@ -180,31 +196,52 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
 	<sourceUrl>http://www.brotherstone.co.uk/npp/FileSwithcer_src.zip</sourceUrl>
 	<install>
 		<unicode>
-			<download>http://localhost:100/test.zip</download>
 			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FileSwitcher1030_UNI.zip</download>
 		</unicode>
 		<ansi>
-			<download>http://www.brotherstone.co.uk/npp/FileSwitcher_ANSI.zip</download>
+			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FileSwitcher1030_ANSI.zip</download>
 		</ansi>
 		<copy from="FileSwitcher.dll" to="$PLUGINDIR$" validate="true"/>
 	</install>
   </plugin>
   
+  
   <plugin name="Gtag Search">
-	<unicodeVersion>2.0.0.0</unicodeVersion>
-	<description>I have started development of a plugin for gtags and ctags based search for notepad++</description>
+	<unicodeVersion>0.2</unicodeVersion>
+	<description>Early release of a plugin for a gtags and ctags based search for Notepad++.  You need to run "ctags -r" and "gtags" from your code root.</description>
 	<author>Mohan Kumar S</author>
-	<sourceUrl></sourceUrl>
+	<sourceUrl>http://downloads.sourceforge.net/sourceforge/gtagfornplus/gtagfornplus.zip</sourceUrl>
+	<homepage>http://gtagfornplus.sourceforge.net/</homepage>
+	<versions>
+		<version number="0.2" md5="e95183c9355cc801356a9c7942e44e5b" comment="2 alpha unicode" />
+	</versions>
+	
 	<install>
 		<unicode>
-			<download>https://sourceforge.net/project/downloading.php?group_id=260358&amp;=gtagfornplus_unicode_release.zip&amp;a=43998301</download>
-			<copy from="*.dll" to="$PLUGINDIR$" />
+			<download>http://downloads.sourceforge.net/sourceforge/gtagfornplus/gtagfornplus_unicode_release.zip</download>
+			<copy from="gtagfornplus.dll" to="$PLUGINDIR$\gtagfornplus" validate="true"/>
+			
+			<!-- Global has been temporarily re-hosted, as the link has become dead. 
+			     Need to change this link as soon as GNU host it again
+			 -->
+			<download>http://www.brotherstone.co.uk/npp/global/glo574wb.zip</download>
+			<copy from="bin\global.exe" to="$PLUGINDIR\gtagfornplus" validate="true" />
+			<copy from="bin\gozilla.exe" to="$PLUGINDIR\gtagfornplus" validate="true" />
+			<copy from="bin\gtags-cscope.exe" to="$PLUGINDIR\gtagfornplus" validate="true" />
+			<copy from="bin\gtags-parser.exe" to="$PLUGINDIR\gtagfornplus" validate="true" />
+			<copy from="bin\gtags.exe" to="$PLUGINDIR\gtagfornplus" validate="true" />
+			<copy from="bin\htags.exe" to="$PLUGINDIR\gtagfornplus" validate="true" />
+			<download>http://downloads.sourceforge.net/sourceforge/ctags/ctags58.zip</download>
+			<copy from="ctags58\ctags.exe" to="$PLUGINDIR$" validate="true"/>
 		</unicode>
 	</install>
   </plugin>
 
   <plugin name="DBGp">
-	<unicodeVersion>0.0.11.20</unicodeVersion>
+	<!-- 
+	Removed, until we can get it to launch without crashing
+	<unicodeVersion>0.0.11.20</unicodeVersion> 
+	-->
 	<description>This is a php debugger (XDebug) which talks DBGP protocol. Use this plugin to transform your Notepad++ to a php IDE.</description>
 	<author>Damjan Zobo Cvetko</author>
 	<sourceUrl>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DBGpPlugin_0_11b_src.zip&amp;a=17984321</sourceUrl>
@@ -216,131 +253,209 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
 	</install>
   </plugin>
 
-  <plugin name="DocMonitor">
+  <plugin name="Document Monitor">
 	<ansiVersion>2.2.0.0</ansiVersion>
 	<unicodeVersion>2.2.0.0</unicodeVersion>
 	<description>Document updater updates your opened documents in Notepad++ every 3 seconds</description>
 	<author>Don Ho</author>
-	<sourceUrl>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DocMonitor.v2.2.src.zip&amp;a=71428104</sourceUrl>
+	<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/DocMonitor/DocMonitor.v2.2.src.zip</sourceUrl>
 	<install>
-		<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DocMonitor.v2.2.dll.zip&amp;a=85765807</download>	
+		<download>http://sourceforge.net/projects/npp-plugins/files/DocMonitor/DocMonitor.v2.2.dll.zip</download>	
 		<ansi>
-			<copy from="docMonitor.ansi.dll" to="$PLUGINDIR$" />
+			<copy from="docMonitor.ansi.dll" to="$PLUGINDIR$" validate="true"/>
 		</ansi>
 		<unicode>
-			<copy from="docMonitor.unicode.dll" to="$PLUGINDIR$" />
+			<copy from="docMonitor.unicode.dll" to="$PLUGINDIR$" validate="true"/>
 		</unicode>
 	</install>
   </plugin>
   
   
 	<plugin name="XML Tools">
-		<unicodeVersion>2.3.1.0</unicodeVersion>
-		<sourceURL/>
+		<unicodeVersion>2.3.1.697</unicodeVersion>
+		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/XML%20Tools/xmltools_2.3.1_r639_source.zip/download</sourceUrl>
+		<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based.
+The plugin features are:
+- XML syntax Check
+- XML Schema (XSD) + DTD Validation
+- XML tag autoclose
+- Pretty print
+- Linarize XML
+- Current XML Path
+- Conversion XML &lt;-&gt; Text
+- Comment / Uncomment
+- XPath expression evaluation
+        </description>
+		<author>Nicolas Crittin</author>
 		<install>
 			<unicode>
-				<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=xmltools_2.3.1_r697_unicode_alpha4.zip&amp;a=70875035</download>
-				<copy from="XMLTools.dll" to="$PLUGINDIR$" />
-				<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=ext_libs.zip&amp;=69449239</download>
-				<copy from="iconv.dll" to="$NPPDIR$" />
-				<copy from="libxml2.dll" to="$NPPDIR$" />
-				<copy from="libxslt.dll" to="$NPPDIR$" />
-				<copy from="zlib.dll" to="$NPPDIR$" />
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/xmltools_2.3.1_r697_unicode_alpha4.zip</download>
+				<copy from="XMLTools.dll" to="$PLUGINDIR$" validate="true" />
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/ext_libs.zip</download>
+				<copy from="iconv.dll" to="$NPPDIR$" validate="true" />
+				<copy from="libxml2.dll" to="$NPPDIR$" validate="true" />
+				<copy from="libxslt.dll" to="$NPPDIR$" validate="true" />
+				<copy from="zlib1.dll" to="$NPPDIR$" validate="true" />
 			</unicode>
 		</install>
 		<versions>
-			<version md5="378ac66c15df48ba3b5dad5585e743be" number="2.3.1.0" />
+			<version number="2.0.0.513" md5="9225365583eb42e94680fefe38e37798" comment="" />
+			<version number="2.1.0" md5="1d16dcd481915ba3d29b8f8c9890661c" comment="" />
+			<version number="2.1.1.548" md5="75b40f4f8aa66c5b98bc31b1e4f628fb" comment="" />
+			<version number="2.2.0.560" md5="9887e4d5fa5c8b5259bd6d29dc8c617d" comment="" />
+			<version number="2.3.0.583" md5="23bbc67ce5a98f19f0906b25bdc7f094" comment="" />
+			<version number="2.3.1.639" md5="49d24000cf6a265439545cf68a71291c" comment="" />
+			<version number="2.3.1.670" md5="662080c9f50ee2da870e6350ae53144f" comment="" />
+			<version number="2.3.1.671" md5="88a5063bb0c864f1cb196ab141ea0c6d" comment="" />
+			<version number="2.3.1.685" md5="fa999eb776a218d68b2c5705a9f7c10d" comment="" />
+			<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" comment="" />
 		</versions>
 	</plugin>
+	
 	<plugin name="Window Manager">
 		<unicodeVersion>1.2.2.0</unicodeVersion>
-		<ansiVersion>1.2.2.0</ansiVersion>
-		<sourceURL/>
+		<ansiVersion>1.1.2.0</ansiVersion>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/WindowManager/WindowManager_1_2_2_src.zip/download</sourceUrl>
+		<author>Jens Lorenz</author>
+		<description>Window Manager gives a short overview of your open documents in Notepad++.
+This overview is dockable and gives you the same capability as the tabs have.
+Left click on a list item selects the document.
+Right click opens the tab context menu from Notepad++.
+When documents are opened in main and second view (by duplicate or move), two lists are shown in dialog window.
+	    </description>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_2_2_UNI_dll.zip</download>
+				<copy from="WindowManager.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_1_2_dll.zip</download>
+				<copy from="WindowManager.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
 		</install>
 	</plugin>
+	
+	
 	<plugin name="Spell-Checker">
 		<unicodeVersion>1.3.3.0</unicodeVersion>
-		<ansiVersion>1.3.3.0</ansiVersion>
-		<sourceURL/>
+		<ansiVersion>1.3.1.0</ansiVersion>
+		<description>Spellchecker can correct your typos in your language. 
+		Before using it, you will need to install GNU Aspell and a dictionary for your language(s) in the Aspell directory. Aspell and dictionaries are available from http://aspell.net/win32.</description>
+		<sourceUrl></sourceUrl>
+		<author>Jens Lorenz</author>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpellChecker_1_3_3_UNI_dll.zip</download>
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpellChecker_1_3_1_dll.zip</download>
+			</ansi>
+			<copy from="SpellChecker.dll" to="$PLUGINDIR$" validate="true" />
 		</install>
 	</plugin>
+	
 	<plugin name="Speech">
 		<unicodeVersion>0.2.1.0</unicodeVersion>
-		<ansiVersion>0.2.1.0</ansiVersion>
-		<sourceURL/>
+		<ansiVersion>0.2.0.1</ansiVersion>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/SpeechPlugin/SpeechPlugin_0_2_1_src.zip/download</sourceUrl>
+		<author>Jim Xochellis</author>
+		<description>No kidding, Notepad++ speakes now.
+With SpeechPlugin, you can make Notepad++ dictate your text or source code. Of course, speakers are necessary.
+        </description>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpeechPlugin_0_2_1_dll.zip</download>
+				<copy from="SpeechPlugin_0_2_1_dll\SpeechPlugin.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpeechPlugin_0_2_dll.zip</download>
+				<copy from="SpeechPlugin_0_2_dll\SpeechPlugin.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
 		</install>
 	</plugin>
+	
+	
 	<plugin name="RunMe">
 		<unicodeVersion>1.2.0.0</unicodeVersion>
 		<ansiVersion>1.2.0.0</ansiVersion>
-		<sourceURL/>
+		<author>Franco Stellari</author>
+		<description>RunMe allows to execute the currently open file, based on its shell association.</description>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<download>http://fstellari.googlepages.com/RunMe_dll_1v20.zip</download>
+			<ansi>
+				<copy from="RunMeA.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+			<unicode>
+				<copy from="RunMeU.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<copy from="license.txt" to="$PLUGINDIR$\doc\RunMe" />
 		</install>
 	</plugin>
+	
 	<plugin name="QuickText">
 		<unicodeVersion>0.0.2.0</unicodeVersion>
 		<ansiVersion>0.0.2.0</ansiVersion>
-		<sourceURL/>
-		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
-		</install>
+		<author>Alph</author>
+		<description>A fantastic generic snippet manager, which supports all the languages supported by Notepad++.  This plugin cannot be installed automatically, as the binaries are distributed in RAR format.  If this changes, this plugin will be able to be installed.  You can install it manually, by visiting the SourceForge page http://sourceforge.net/projects/quicktext/</description>
+		<sourceUrl/>
 	</plugin>
 	<plugin name="Plugin update">
 		<unicodeVersion>0.3.0.0</unicodeVersion>
-		<ansiVersion>0.3.0.0</ansiVersion>
-		<sourceURL/>
+		<description>Allows plugins to maintain their own automatic updates.  A plugin must implement the information in its INI file, and provide a download URL.</description>
+		<author>Franco Stellari</author>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://fstellari.googlepages.com/PluginUpdate_dll_0v30.zip</download>
+				<copy from="PluginUpdateU.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
 		</install>
 	</plugin>
+	
+	
 	<plugin name="Plugin Manager">
-		<unicodeVersion>0.0.0.0</unicodeVersion>
-		<ansiVersion>0.0.0.0</ansiVersion>
-		<versions>
-			<version number="1.0.0.0" md5="bb21cf2f14f9c4f1d00253a291159434"/>
-		</versions>
-		<sourceURL/>
+		<unicodeVersion>0.9</unicodeVersion>
+		<ansiVersion>0.9</ansiVersion>
+		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
+		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  
+		It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 
+		files into the correct places.
+		</description>
+		
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9_UNI.zip</download>
+			</unicode>
+			<ansi>
+				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9_UNI.zip</download>
+			</ansi>
+			
+			<copy from="PluginManager.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" />
 		</install>
 	</plugin>
+	
 	<plugin name="Subversion">
-		<unicodeVersion>0.0.0.0</unicodeVersion>
-		<ansiVersion>0.0.0.0</ansiVersion>
+		<unicodeVersion>1.0</unicodeVersion>
 		<versions>
-			<version number="1.0.0.0" md5="0b84262c0151ee3ba1e40a2e13951882"/>
+			<version number="1.0" md5="0b84262c0151ee3ba1e40a2e13951882" comment="unicode" />
 		</versions>
-		<sourceURL/>
+		<author>Brandon Cannaday</author>
+		<description>In this version, the basic update/commit commands are implemented. 
+		Depending on whether or not anyone else finds this plugin useful, or if I find extra time, I might slowly expand the features.
+		NOTE: You need to have TortoiseSVN installed for this plugin to function.  Available from http://tortoisesvn.tigris.org/
+		</description>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://www.switchonthecode.com/sites/default/files/319/source/NPPSvn_v1.0.zip</download>
+				<copy from="NPPSvn.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
 		</install>
 	</plugin>
+	
+	
 	<plugin name="SciMarkerSymbol">
-		<unicodeVersion>0.0.0.0</unicodeVersion>
-		<ansiVersion>0.0.0.0</ansiVersion>
+		<unicodeVersion>1.0.0.0</unicodeVersion>
+		<ansiVersion>1.0.0.0</ansiVersion>
 		<versions>
 			<version number="1.0.0.0" md5="f4691efbfcffe43a0b22b49edfc167a1"/>
 		</versions>
@@ -366,59 +481,89 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
 	
 	
 	<plugin name="Plugin Marker Margin">
-		<unicodeVersion>0.0.0.0</unicodeVersion>
-		<ansiVersion>0.0.0.0</ansiVersion>
+		<unicodeVersion>1.0.0.0</unicodeVersion>
+		<ansiVersion>1.0.0.0</ansiVersion>
 		<versions>
 			<version number="1.0.0.0" md5="052df905a3a4eb3af28e6e66a8be452b"/>
 		</versions>
 		<sourceURL/>
-	<install>
-		<unicode>
-			<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Unicode_bin.zip</download>
-		</unicode>
-		<ansi>
-			<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Ansi_bin.zip</download>
-		</ansi>
-		<unicode>
-			<copy from="NppPlugin_PluginMargin.dll" to="$PLUGINDIR$" />
-			<copy from="config\NppPlugin_PluginMargin.xml" to="$CONFIGDIR$" />
-		</unicode>
-		<ansi>
-			<copy from="MyNppPluginsAnsi\NppPlugin_PluginMargin.dll" to="$PLUGINDIR$" />
-			<copy from="MyNppPluginsAnsi\config\NppPlugin_PluginMargin.xml" to="$CONFIGDIR$" />
-		</ansi>
-	</install>
+		<install>
+			<unicode>
+				<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Unicode_bin.zip</download>
+			</unicode>
+			<ansi>
+				<download>http://www.brotherstone.co.uk/npp/changemarker/NppPlugin_ChangeMarker_Ansi_bin.zip</download>
+			</ansi>
+			<unicode>
+				<copy from="NppPlugin_PluginMargin.dll" to="$PLUGINDIR$" />
+				<copy from="config\NppPlugin_PluginMargin.xml" to="$CONFIGDIR$" />
+			</unicode>
+			<ansi>
+				<copy from="MyNppPluginsAnsi\NppPlugin_PluginMargin.dll" to="$PLUGINDIR$" />
+				<copy from="MyNppPluginsAnsi\config\NppPlugin_PluginMargin.xml" to="$CONFIGDIR$" />
+			</ansi>
+		</install>
 	</plugin>
+	
+	
 	<plugin name="NppExport">
 		<unicodeVersion>0.2.8.0</unicodeVersion>
 		<ansiVersion>0.2.8.0</ansiVersion>
-		<sourceURL/>
+		<sourceUrl/>
+		<description>
+		NppExport is a true WYSIWYG exporter.
+It allows you not only to save your source code as a html/rtf file, but also to copy your source code in the clipboard in RTF/HTML format, so you can paste it into your word processor (MS Word, Abiword, openoffice.org Writer) to get the same visual effect.
+</description>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppExport_0_2_8_dll.zip</download>
+			
+			<unicode>
+				<copy from="NppExport.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<copy from="NppExportA.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
 		</install>
 	</plugin>
+	
+	
 	<plugin name="NppExec">
 		<unicodeVersion>0.3.0.1</unicodeVersion>
 		<ansiVersion>0.3.0.1</ansiVersion>
-		<sourceURL/>
+		<sourceUrl/>
+		<author>Dovgan Vitaliy</author>
+		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppExec_031_dll_Unicode.zip</download>
+			</unicode>
+			
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppExec_031_dll_ANSI.zip</download>
+			</ansi>
+			<copy from="NppExec.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec" />
 		</install>
 	</plugin>
+	
+	
 	<plugin name="NppDocShare">
 		<unicodeVersion>0.1.0.0</unicodeVersion>
 		<ansiVersion>0.1.0.0</ansiVersion>
-		<sourceURL/>
+		<sourceUrl>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_src.zip</sourceUrl>
+		<description>Allows the same document to be edited in real time on two different computers.  Only needs a network connection between the two.</description>
+		<author>Harrybharry</author>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_dll.zip</download>
+			<unicode>
+				<copy from="NppDocShare.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<copy from="NppDocShareA.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
 		</install>
 	</plugin>
+	
 	<plugin name="NppAutoIndent">
 		<unicodeVersion>1.2.0.0</unicodeVersion>
 		<ansiVersion>1.2.0.0</ansiVersion>
@@ -519,16 +664,8 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
 			<unicode/>
 		</install>
 	</plugin>
-	<plugin name="Document Monitor">
-		<unicodeVersion>2.2.0.0</unicodeVersion>
-		<ansiVersion>2.2.0.0</ansiVersion>
-		<sourceURL/>
-		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
-		</install>
-	</plugin>
+
+	
 	<plugin name="Math Evaluator">
 		<unicodeVersion>0.0.4.3</unicodeVersion>
 		<ansiVersion>0.0.4.3</ansiVersion>
@@ -539,42 +676,11 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
 			<unicode/>
 		</install>
 	</plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
+	
+	
+	  <plugin name="Switcher">
 	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
+		<download>http://www.donationcoder.com/Forums/bb/index.php?topic=16339.0</download>
 		<ansi>
 		</ansi>
 		<unicode>
@@ -583,167 +689,9 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
   </plugin>
   
   
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
+  	  <plugin name="RegRexPlace">
 	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
+		<download>http://www.donationcoder.com/Forums/bb/index.php?topic=16339.0</download>
 		<ansi>
 		</ansi>
 		<unicode>
