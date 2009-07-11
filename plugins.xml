@@ -273,7 +273,7 @@ The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags 
   
 	<plugin name="XML Tools">
 		<unicodeVersion>2.3.1.697</unicodeVersion>
-		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/XML%20Tools/xmltools_2.3.1_r639_source.zip/download</sourceUrl>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/XML%20Tools/xmltools_2.3.1_r639_source.zip/download</sourceUrl>
 		<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based.
 The plugin features are:
 - XML syntax Check
@@ -567,63 +567,117 @@ It allows you not only to save your source code as a html/rtf file, but also to 
 	<plugin name="NppAutoIndent">
 		<unicodeVersion>1.2.0.0</unicodeVersion>
 		<ansiVersion>1.2.0.0</ansiVersion>
-		<sourceURL/>
+		<sourceUrl/>
+		<author>Harrybharry</author>
+		<description>NppAutoIndent plugin has 'smart' indentation for C-style languages, such as C/C++, PHP, Java and such.
+There is NO support for HTML/XML and such, maybe later, tag matching is much more difficult to implement.</description>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppAutoIndent_1_2_dll.zip</download>
+			<unicode>
+				<copy from="NppAutoIndent.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<copy from="NppAutoIndentA.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
 		</install>
 	</plugin>
+	
+	
 	<plugin name="NativeLang">
-		<unicodeVersion>1.1.0.0</unicodeVersion>
+		<unicodeVersion>1.2.0.0</unicodeVersion>
 		<ansiVersion>1.1.0.0</ansiVersion>
-		<sourceURL/>
+		<author>Jens Lorenz</author>
+		<description>NativeLang is a helper plugin that allows other plugins to translate their menus and dialogs.</description>
+		<versions>
+			<version number="1.1" md5="6be26262f1d0fa9c9e35287806e3a1b5" comment="ANSI version (dll ver 1.0.1)" />
+		</versions>
+
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NativeLang_1_2_dll.zip</download>
+			</unicode>
+			
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NativeLang_1_1_dll.zip</download>
+			</ansi>
+			<copy from="NativeLang.dll" to="$PLUGINDIR$" validate="true" />
+			
 		</install>
 	</plugin>
+	
+
+	
+
 	<plugin name="MultiClipboard">
 		<unicodeVersion>2.0.0.0</unicodeVersion>
-		<ansiVersion>2.0.0.0</ansiVersion>
-		<sourceURL/>
+		<ansiVersion>1.4.1.0</ansiVersion>
+		<description>MultiClipboard plugin implements multiple (10) text buffers that is filled up via copying and/or cutting of text.
+To paste any text from the buffers, use Ctrl-V or middle mouse click (normal paste):
+to paste the most recently copied/cut text Ctrl-Shift-V or Shift-middle mouse click:
+to pop up a menu with the text buffer entries. Select the desired menu item to paste it
+		</description>
+	    <author>LoonyChewy</author>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/MultiClipboard_2.0.0_unicode_dll.zip</download>
+			    <copy from="MultiClipboard.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="readme.txt" to="$PLUGINDIR$\doc\Multiclipboard" />
+				<copy from="license.txt" to="$PLUGINDIR$\doc\Multiclipboard" />
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/MultiClipboard_1_4_1_dll.zip</download>
+				<copy from="MultiClipboard.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="MultiClipboard_Readme.txt" to="$PLUGINDIR$\doc\Multiclipboard" />
+			</ansi>
 		</install>
 	</plugin>
+
+
 	<plugin name="Light Explorer">
 		<unicodeVersion>2.0.0.0</unicodeVersion>
-		<ansiVersion>2.0.0.0</ansiVersion>
-		<sourceURL/>
+		<ansiVersion>1.6.0.0</ansiVersion>
+		<author>Javier Sanjos&#233;</author>
+		<description>Allows documents to be opened from a dockable file explorer, that is very light weight and fast.</description>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://sourceforge.net/projects/npp-plugins/files/LightExplorer/LightExplorer_2_0_dll.zip</download>
+			</unicode>
+			<ansi>
+				<download>http://sourceforge.net/projects/npp-plugins/files/LightExplorer/LightExplorer_1_6_dll.zip</download>
+			</ansi>
+			<copy from="LightExplorer.dll" to="$PLUGINDIR$" validate="true" />
 		</install>
+		
 	</plugin>
+
 	<plugin name="LanguageHelp">
 		<unicodeVersion>1.2.0.0</unicodeVersion>
 		<ansiVersion>1.2.0.0</ansiVersion>
-		<sourceURL/>
+		
+		<description>LanguageHelp allows to run a language specific help file (CHM, HLP, PDF) and search for the keyword under the cursor. The latest versions allow also to show the help file as menu entries for quick launch.</description>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<download>http://fstellari.googlepages.com/LanguageHelp_dll_1v20.zip</download>
+			
+			<unicode>
+				<copy from="LanguageHelpU.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<copy from="LanguageHelpA.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
 		</install>
 	</plugin>
+
 	<plugin name="HTML Tag">
 		<unicodeVersion>0.2.2.437</unicodeVersion>
 		<ansiVersion>0.2.2.437</ansiVersion>
-		<sourceURL/>
+		<sourceUrl/>
 		<install>
 			<download/>
 			<ansi/>
 			<unicode/>
 		</install>
 	</plugin>
+	
 	<plugin name="HEX-Editor">
 		<unicodeVersion>0.9.4.0</unicodeVersion>
 		<ansiVersion>0.9.4.0</ansiVersion>
