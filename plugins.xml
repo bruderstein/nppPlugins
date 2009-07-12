@@ -413,8 +413,8 @@ With SpeechPlugin, you can make Notepad++ dictate your text or source code. Of c
 	
 	
 	<plugin name="Plugin Manager">
-		<unicodeVersion>0.9</unicodeVersion>
-		<ansiVersion>0.9</ansiVersion>
+		<unicodeVersion>0.8</unicodeVersion>
+		<ansiVersion>0.8</ansiVersion>
 		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
 		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  
 		It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 
@@ -590,6 +590,7 @@ There is NO support for HTML/XML and such, maybe later, tag matching is much mor
 		<description>NativeLang is a helper plugin that allows other plugins to translate their menus and dialogs.</description>
 		<versions>
 			<version number="1.1" md5="6be26262f1d0fa9c9e35287806e3a1b5" comment="ANSI version (dll ver 1.0.1)" />
+			<version number="1.2" md5="7e178b565efa8c2a60def6287c5beb3d" comment="UNICODE version (dll ver 1.1)" />
 		</versions>
 
 		<install>
@@ -667,91 +668,228 @@ to pop up a menu with the text buffer entries. Select the desired menu item to p
 		</install>
 	</plugin>
 
+	
 	<plugin name="HTML Tag">
 		<unicodeVersion>0.2.2.437</unicodeVersion>
 		<ansiVersion>0.2.2.437</ansiVersion>
-		<sourceUrl/>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag_plugin_v0.2.2_src.zip/download</sourceUrl>
+		<author>Martijn Coppoolse</author>
+		<description>This plug-in provides two core functions to Notepad++:
+HTML and XML tag matching, like the built-in brace matching (Ctrl+B / Shift+Ctrl+B)
+HTML entity encoding/decoding (example: &#233; to &amp;#233; and vice versa) </description>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/HTMLTag_plugin_v0.2.2.zip</download>
+			<ansi>
+				<copy from="HTMLTag_ansi.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+			
+			<unicode>
+				<copy from="HTMLTag_unicode.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			
+			<copy from="HTMLTag-entities.ini" to="$CONFIGDIR$" />
+			<copy from="HTMLTag-readme.txt" to="$PLUGINDIR$\doc\HTMLTag" />
 		</install>
 	</plugin>
 	
 	<plugin name="HEX-Editor">
 		<unicodeVersion>0.9.4.0</unicodeVersion>
-		<ansiVersion>0.9.4.0</ansiVersion>
-		<sourceURL/>
+		<ansiVersion>0.9.3.0</ansiVersion>
+		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/HexEditor_0_9_4_UNI_dll.zip</download>
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/HexEditor_0_9_3_dll_ANSI.zip</download>
+			</ansi>
+			<copy from="HexEditor.dll" to="$PLUGINDIR$" validate="true" />
+			
 		</install>
 	</plugin>
 	<plugin name="Function List">
 		<unicodeVersion>2.0.0.0</unicodeVersion>
-		<ansiVersion>2.0.0.0</ansiVersion>
-		<sourceURL/>
+		<ansiVersion>1.2.0.0</ansiVersion>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FunctionList_2_0_UNI_dll.zip</download>
+				<copy from="C++.flb" to="$CONFIGDIR$" />
+				<copy from="FunctionListRules.xml" to="$CONFIGDIR$" />
+			</unicode>
+			
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FunctionList_1_2_dll.zip</download>
+			</ansi>
+			
+			<copy from="FunctionList.dll" to="$PLUGINDIR$" />
+			
 		</install>
 	</plugin>
+	
+	
 	<plugin name="Falling Bricks">
 		<unicodeVersion>1.1.0.0</unicodeVersion>
-		<ansiVersion>1.1.0.0</ansiVersion>
-		<sourceURL/>
+		<description>This plugin for Notepad++ is a simple tetris-like game that you can play from within Notepad++.The rules are exactly the same, so I hope no explanation is needed :-P
+This is the most bare-basic implementation of tetris, so don't expect any fancy 3D graphics or surround sound effects.
+If you close the dialog box of this plugin (maybe your boss just appeared?), the game will auto pause, and you can resume from where you last left it.
+Your high scores are not remembered, So please scribble it into Notepad++ yourself!</description>
+		<author>loonychewy</author>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/fallingbricks_v1.1_unicode_dll.zip</download>
+				<copy from="FallingBricks.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="change.log" to="$PLUGINDIR$\doc\FallingBricks" />
+				<copy from="license.txt" to="$PLUGINDIR$\doc\FallingBricks" />
+				<copy from="readme.txt" to="$PLUGINDIR$\doc\FallingBricks" />
+			</unicode>
 		</install>
 	</plugin>
+	
+	
 	<plugin name="Explorer">
 		<unicodeVersion>1.8.2.0</unicodeVersion>
-		<ansiVersion>1.8.2.0</ansiVersion>
-		<sourceURL/>
+		<ansiVersion>1.7.3.0</ansiVersion>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
+		<description>Explorer plugin is a file browser. You can open whatever you want from it in Notepad++, just double click!</description>
+		<author>Jens Lorenz</author>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://sourceforge.net/projects/npp-plugins/files/Explorer/Explorer_1_8_2_UNI_dll.zip</download>
+			</unicode>
+			
+			<ansi>
+				<download>http://sourceforge.net/projects/npp-plugins/files/Explorer/Explorer_1_7_3_dll.zip</download>
+			</ansi>
+			
+			<copy from="Explorer.dll" to="$PLUGINDIR$" validate="true" />
 		</install>
 	</plugin>
 
 	
 	<plugin name="Math Evaluator">
-		<unicodeVersion>0.0.4.3</unicodeVersion>
-		<ansiVersion>0.0.4.3</ansiVersion>
-		<sourceURL/>
+		<unicodeVersion>0.0.4.6</unicodeVersion>
+		<ansiVersion>0.0.3.0</ansiVersion>
+		<homepage>http://www.semelinanno.com/downloads/anmxnpp/anmXNpp_Page.html</homepage>
+		<description>This plugin allows evaluating mathematical expressions, as well as some simple formal calculus.</description>
+		<author>Somic</author>
 		<install>
-			<download/>
-			<ansi/>
-			<unicode/>
+			<unicode>
+				<download>http://www.semelinanno.com/downloads/anmxnpp/ver0046/anmXNpp_v0046.zip</download>
+				<copy from="anmXNppUC.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<download>http://www.semelinanno.com/downloads/anmxnpp/ver0030/anmXNpp_v0030.zip</download>
+				<copy from="anmXNpp.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+			<copy from="anmXNpp\*.*" to="$PLUGINDIR$\anmXNpp" />
 		</install>
 	</plugin>
 	
 	
-	  <plugin name="Switcher">
-	<install>
-		<download>http://www.donationcoder.com/Forums/bb/index.php?topic=16339.0</download>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
+	<plugin name="Switcher">
+		<unicodeVersion>1.0</unicodeVersion>
+		<ansiVersion>1.0</ansiVersion>
+		<homepage>http://f0dder.dcmembers.com/npp_plugins/</homepage>
+		<description>Switcher: a plugin to switch between 'associated' files. Currently it handles
+switching between asm&lt;&gt;inc, cpp&lt;&gt;h, cc&lt;&gt;h and c&lt;&gt;h. Useful when assigned to a hotkey.</description>
+		<author>f0dder</author>
+		<versions>
+			<version number="1.0" md5="301c72341ba758b3cdfc8a56d576c7f0" comment="ansi" />
+			<version number="1.0" md5="5a19bd60aa18e4454f1c4a6432ae5a72" comment="unicode" />
+		</versions>
+		
+		<install>
+			<download>http://f0dder.dcmembers.com/npp_plugins/npp_plugins.zip</download>
+			<ansi>
+				<copy from="ansi\switcher.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+			<unicode>
+				<copy from="unicode\switcher.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<copy from="readme.txt" to="$PLUGINDIR$\doc\switcher" />
+		</install>
+	</plugin>
   
   
   	  <plugin name="RegRexPlace">
-	<install>
-		<download>http://www.donationcoder.com/Forums/bb/index.php?topic=16339.0</download>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
+		<unicodeVersion>1.0</unicodeVersion>
+		<ansiVersion>1.0</ansiVersion>
+		<homepage>http://f0dder.dcmembers.com/npp_plugins/</homepage>
+		<description>RegRexPlace: a plugin to do "regular regular-expression replaces". Useful when
+you have often-used regex replacements. I personally use this when writing posts on forums, so I can use my own simplified markup and automatically generated BBCode markup from that. A sample .ini file is included.</description>
+		<author>f0dder</author>
+		<versions>
+			<version number="1.0" md5="38b9e64fa4acfe3cc0bac2af26789871" comment="unicode" />
+			<version number="1.0" md5="8d26be3d399ea8d491cc83532205eea3" comment="ansi" />
+		</versions>
+		
+		<install>
+			<download>http://f0dder.dcmembers.com/npp_plugins/npp_plugins.zip</download>
+			<ansi>
+				<copy from="ansi\regrexplace.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+			<unicode>
+				<copy from="unicode\regrexplace.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<copy from="readme.txt" to="$PLUGINDIR$\doc\RegRexPlace" />
+			<copy from="RegRexPlace.ini" to="$CONFIGDIR$" />
+		</install>
+	</plugin>
+	
+  	  <plugin name="GuidGuard">
+		<unicodeVersion>1.0</unicodeVersion>
+		<ansiVersion>1.0</ansiVersion>
+		<homepage>http://f0dder.dcmembers.com/npp_plugins/</homepage>
+		<description>GuidGuard: a plugin that generates C++ style header include guards, using GUIDs
+for the guard identifier - this ensures you won't have identifier clashes even in larger projects, which traditional filename-based guards theoretically risk.</description>
+		<author>f0dder</author>
+		<versions>
+			<version number="1.0" md5="a6f5e88745f4c376e18133352542cd8b" comment="ansi" />
+			<version number="1.0" md5="43d223b7fb94b5b664da762a2339a1fe" comment="unicode" />
+		</versions>
+		
+		<install>
+			<download>http://f0dder.dcmembers.com/npp_plugins/npp_plugins.zip</download>
+			<ansi>
+				<copy from="ansi\guidguard.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+			<unicode>
+				<copy from="unicode\guidguard.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<copy from="readme.txt" to="$PLUGINDIR$\doc\Guidguard" />
+
+		</install>
+	</plugin>
+  
+  
+  
+  <plugin name="Universal Indenter">
+  <!--  Removed until it installs cleanly
+		<unicodeVersion>1.0</unicodeVersion>
+		<ansiVersion>1.0</ansiVersion>
+		!-->
+		<homepage>http://sourceforge.net/projects/universalindent/</homepage>
+		<description>A cross platform GUI for several code formatter, beautifier and indenter like AStyle, GNU Indent, GreatCode, HTML Tidy, Uncrustify and many more. Main feature is a live preview to directly see how the selected formatting option affects the source code. Several languages supported, among which far eastern ones, and a translation tool is also available at the project's files page.
+		PLEASE NOTE: For the moment, you will need to rename the file UniversalIndentGUI_NPP.dll_ansi or UniversalIndentGUI_NPP.dll_unicode to remove the _ansi or _unicode from the file in the plugins directory after installation.  This will be fixed in a later version of the Plugin Manager.</description>
+		<author>thomas_-_s</author>
+		
+		<install>
+			<download>http://sourceforge.net/projects/universalindent/files/universalindent/UniversalIndentGUI_1.0.2_NotepadPPplugin.zip</download>
+			<ansi>
+				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_ansi" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+			<unicode>
+				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_unicode" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<copy from="QtCore4.dll" to="$NPPDIR$" validate="true"/>
+			<copy from="QtGui4.dll" to="$NPPDIR$" validate="true"/>
+			<copy from="QtScript4.dll" to="$NPPDIR$" validate="true"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\config\*.*" to="$CONFIGDIR$" />
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.*" to="$PLUGINDIR$\uigui\indenters" />
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.*" to="$PLUGINDIR$\uigui\indenters" />
+			
+		</install>
   </plugin>
-  
-  
 </plugins>
+
