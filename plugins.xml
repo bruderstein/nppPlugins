@@ -1,20 +1,8 @@
 <plugins>
-<!--
-  <plugin name="">
-	<ansiVersion></ansiVersion>
-	<unicodeVersion></unicodeVersion>
-	<description></description>
-	<author></author>
-	<sourceUrl></sourceUrl>
-	<install>
-		<ansi>
-		</ansi>
-		<unicode>
-		</unicode>
-	</install>
-  </plugin>
-  -->
-  
+  <pluginNames>
+		<pluginName md5="ad32f0f59e70823de864387f65debcea" name="NppExport" comment="unicode 0.2.8"/>
+		<pluginName md5="48ae59abb0224ecc252d35e953ce0496" name="NppExport" comment="ansi 0.2.8"/>
+   </pluginNames>
   
   <plugin name="AutoSave">
 	<ansiVersion>1.1.1.0</ansiVersion>
@@ -413,8 +401,8 @@ With SpeechPlugin, you can make Notepad++ dictate your text or source code. Of c
 	
 	
 	<plugin name="Plugin Manager">
-		<unicodeVersion>0.8</unicodeVersion>
-		<ansiVersion>0.8</ansiVersion>
+		<unicodeVersion>0.9</unicodeVersion>
+		<ansiVersion>0.9</ansiVersion>
 		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
 		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  
 		It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 
@@ -426,10 +414,10 @@ With SpeechPlugin, you can make Notepad++ dictate your text or source code. Of c
 				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9_UNI.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9_UNI.zip</download>
+				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9_ANSI.zip</download>
 			</ansi>
 			
-			<copy from="PluginManager.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" />
 		</install>
 	</plugin>
@@ -514,14 +502,18 @@ With SpeechPlugin, you can make Notepad++ dictate your text or source code. Of c
 		NppExport is a true WYSIWYG exporter.
 It allows you not only to save your source code as a html/rtf file, but also to copy your source code in the clipboard in RTF/HTML format, so you can paste it into your word processor (MS Word, Abiword, openoffice.org Writer) to get the same visual effect.
 </description>
+        <versions>
+			<version number="0.2.8" md5="ad32f0f59e70823de864387f65debcea" comment="unicode bundled 5.1-5.4.5+" />
+			<version number="0.2.8" md5="48ae59abb0224ecc252d35e953ce0496" comment="ansi bundled 5.1-5.4.5+" />
+		</versions>
 		<install>
 			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppExport_0_2_8_dll.zip</download>
 			
 			<unicode>
-				<copy from="NppExport.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="NppExport.dll" toFile="$PLUGINDIR$\$PLUGINFILENAME$" validate="true" />
 			</unicode>
 			<ansi>
-				<copy from="NppExportA.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="NppExportA.dll" toFile="$PLUGINDIR$\$PLUGINFILENAME$" validate="true" />
 			</ansi>
 		</install>
 	</plugin>
@@ -548,6 +540,22 @@ It allows you not only to save your source code as a html/rtf file, but also to 
 	
 	
 	<plugin name="NppDocShare">
+	    <!-- Same as NppNetNote, just the old name -->
+		<sourceUrl>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_src.zip</sourceUrl>
+		<description>Allows the same document to be edited in real time on two different computers.  Only needs a network connection between the two.  Now known as NppNetNote.</description>
+		<author>Harrybharry</author>
+		<install>
+			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_dll.zip</download>
+			<unicode>
+				<copy from="NppDocShare.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<copy from="NppDocShareA.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+		</install>
+	</plugin>
+	
+	<plugin name="NppNetNote">
 		<unicodeVersion>0.1.0.0</unicodeVersion>
 		<ansiVersion>0.1.0.0</ansiVersion>
 		<sourceUrl>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_src.zip</sourceUrl>
@@ -865,29 +873,29 @@ for the guard identifier - this ensures you won't have identifier clashes even i
   
   
   <plugin name="Universal Indenter">
-  <!--  Removed until it installs cleanly
-		<unicodeVersion>1.0</unicodeVersion>
-		<ansiVersion>1.0</ansiVersion>
-		!-->
+  <!--  Still won't run - LoadLibrary failed
+		<unicodeVersion>1.0.2</unicodeVersion>
+		<ansiVersion>1.0.2</ansiVersion>
+-->
 		<homepage>http://sourceforge.net/projects/universalindent/</homepage>
-		<description>A cross platform GUI for several code formatter, beautifier and indenter like AStyle, GNU Indent, GreatCode, HTML Tidy, Uncrustify and many more. Main feature is a live preview to directly see how the selected formatting option affects the source code. Several languages supported, among which far eastern ones, and a translation tool is also available at the project's files page.
-		PLEASE NOTE: For the moment, you will need to rename the file UniversalIndentGUI_NPP.dll_ansi or UniversalIndentGUI_NPP.dll_unicode to remove the _ansi or _unicode from the file in the plugins directory after installation.  This will be fixed in a later version of the Plugin Manager.</description>
+		<description>A cross platform GUI for several code formatters, beautifier and indenter like AStyle, GNU Indent, GreatCode, HTML Tidy, Uncrustify and many more. Main feature is a live preview to directly see how the selected formatting option affects the source code. Several languages supported, among which far eastern ones, and a translation tool is also available at the project's files page.
+		</description>
 		<author>thomas_-_s</author>
 		
 		<install>
 			<download>http://sourceforge.net/projects/universalindent/files/universalindent/UniversalIndentGUI_1.0.2_NotepadPPplugin.zip</download>
 			<ansi>
-				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_ansi" to="$PLUGINDIR$" validate="true" />
+				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_ansi" toFile="$PLUGINDIR$\UniversalIndentGUI_NPP_A.dll" validate="true" />
 			</ansi>
 			<unicode>
-				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_unicode" to="$PLUGINDIR$" validate="true" />
+				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_unicode" toFile="$PLUGINDIR$\UniversalIndentGUI_NPP_U.dll" validate="true" />
 			</unicode>
 			<copy from="QtCore4.dll" to="$NPPDIR$" validate="true"/>
 			<copy from="QtGui4.dll" to="$NPPDIR$" validate="true"/>
 			<copy from="QtScript4.dll" to="$NPPDIR$" validate="true"/>
-			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\config\*.*" to="$CONFIGDIR$" />
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\config\*.*" to="$PLUGINDIR$\uigui\config" />
 			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.*" to="$PLUGINDIR$\uigui\indenters" />
-			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.*" to="$PLUGINDIR$\uigui\indenters" />
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\translations\*.*" to="$PLUGINDIR$\uigui\translations" />
 			
 		</install>
   </plugin>
