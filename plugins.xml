@@ -743,40 +743,6 @@ It allows you not only to save your source code as a html/rtf file, but also to 
 			<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" comment=""/>
 		</versions>
 	</plugin>
-	<!--
-	<plugin name="SearchInFiles">
-		
-	</plugin>
-	<plugin name="FTP_synchronize">
-	</plugin>
-	<plugin name="SecurePad">
-	</plugin>
-	<plugin name="SimpleScript">
-	</plugin>
-	<plugin name="ColorPicker">
-	</plugin>
-	<plugin name="Log Plugin">
-	</plugin>
-	<plugin name="WebEdit">
-	</plugin>
-	<plugin name="MIME Tools">
-	</plugin>
-	<plugin name="TextFX">
-	</plugin>
-	<plugin name="XBrackets Lite">
-	</plugin>
-	<plugin name="Encodings">
-	</plugin>
-	<plugin name="ScrollPastEOF">
-	</plugin>
-	<plugin name="AwkPlugin">
-	</plugin>
-	<plugin name="Gmod LUA Syntax Highlighter">
-	</plugin>
-	<plugin name="KVS Language">
-	</plugin>
-	<plugin name="Sort Plugin">
-	</plugin>
-	-->
+	
 	
 </plugins>
