@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <plugins>
-  <pluginNames>
+	<pluginNames>
 		<pluginName md5="ad32f0f59e70823de864387f65debcea" name="NppExport" comment="unicode 0.2.8"/>
 		<pluginName md5="48ae59abb0224ecc252d35e953ce0496" name="NppExport" comment="ansi 0.2.8"/>
-   </pluginNames>
+	</pluginNames>
 	<plugin name="AutoSave">
 		<ansiVersion>1.1.1.0</ansiVersion>
 		<unicodeVersion>1.1.1.0</unicodeVersion>
@@ -22,9 +22,9 @@
 		</install>
 	</plugin>
 	<plugin name="CCompletion">
-		<unicodeVersion>1.10.0.0</unicodeVersion>
+		<unicodeVersion>1.11.0.0</unicodeVersion>
 		<description>It's an autocompletion plugin, that also features two other similar functionalities:  * find identifier and display it in secondary view  * go to identitifer  For more information on usage, see the plugin help.    The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
-		<author>Bostjan Mihori</author>
+		<author>Bostjan Mihoric</author>
 		<sourceUrl/>
 		<install>
 			<download>http://freeweb.siol.net/rmihor/NppCCompletionPlugin.zip</download>
@@ -33,7 +33,7 @@
 			<copy from="ctags58\ctags.exe" to="$PLUGINDIR$" validate="true"/>
 		</install>
 		<versions>
-			<version number="1.10.0.0" md5="ec262eb016aafc02afc59e8dd3b94e4f"/>
+			<version number="1.11.0.0" md5="ec262eb016aafc02afc59e8dd3b94e4f"/>
 		</versions>
 		<issues/>
 	</plugin>
@@ -292,7 +292,7 @@
 		<ansiVersion>0.2.2.437</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag_plugin_v0.2.2_src.zip/download</sourceUrl>
 		<author>Martijn Coppoolse</author>
-		<description>This plug-in provides two core functions to Notepad++: HTML and XML tag matching, like the built-in brace matching (Ctrl+B / Shift+Ctrl+B) HTML entity encoding/decoding (example: é to &amp;#233; and vice versa) </description>
+		<description>This plug-in provides two core functions to Notepad++: HTML and XML tag matching, like the built-in brace matching (Ctrl+B / Shift+Ctrl+B) HTML entity encoding/decoding (example: e to &amp;#233; and vice versa) </description>
 		<versions>
 			<version number="0.2.2.437" md5="6e5ccc3b4d71eae15eaa5bb27a791a8d" comment="ANSI (file says 0.2.2.423)" />
 		</versions>
@@ -325,7 +325,7 @@
 	<plugin name="Light Explorer">
 		<unicodeVersion>2.0.0.0</unicodeVersion>
 		<ansiVersion>1.6.0.0</ansiVersion>
-		<author>Javier Sanjosé</author>
+		<author>Javier Sanjose</author>
 		<description>Allows documents to be opened from a dockable file explorer, that is very light weight and fast.</description>
 		<install>
 			<unicode>
@@ -410,7 +410,7 @@
 		</install>
 	</plugin>
 	<plugin name="NppDocShare">
-	    <!-- Same as NppNetNote, just the old name -->
+		<!-- Same as NppNetNote, just the old name -->
 		<sourceUrl>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_src.zip</sourceUrl>
 		<description>Allows the same document to be edited in real time on two different computers.  Only needs a network connection between the two.  Now known as NppNetNote.</description>
 		<author>Harrybharry</author>
@@ -424,7 +424,6 @@
 			</ansi>
 		</install>
 	</plugin>
-	
 	<plugin name="NppNetNote">
 		<unicodeVersion>0.1.0.0</unicodeVersion>
 		<ansiVersion>0.1.0.0</ansiVersion>
@@ -458,21 +457,17 @@
 			<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
 		</install>
 	</plugin>
-<plugin name="NppExport">
+	<plugin name="NppExport">
 		<unicodeVersion>0.2.8.0</unicodeVersion>
 		<ansiVersion>0.2.8.0</ansiVersion>
 		<sourceUrl/>
-		<description>
-		NppExport is a true WYSIWYG exporter.
-It allows you not only to save your source code as a html/rtf file, but also to copy your source code in the clipboard in RTF/HTML format, so you can paste it into your word processor (MS Word, Abiword, openoffice.org Writer) to get the same visual effect.
-</description>
-        <versions>
+		<description>NppExport is a true WYSIWYG exporter. It allows you not only to save your source code as a html/rtf file, but also to copy your source code in the clipboard in RTF/HTML format, so you can paste it into your word processor (MS Word, Abiword, openoffice.org Writer) to get the same visual effect.</description>
+		<versions>
 			<version number="0.2.8" md5="ad32f0f59e70823de864387f65debcea" comment="unicode bundled 5.1-5.4.5+" />
 			<version number="0.2.8" md5="48ae59abb0224ecc252d35e953ce0496" comment="ansi bundled 5.1-5.4.5+" />
 		</versions>
 		<install>
 			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppExport_0_2_8_dll.zip</download>
-			
 			<unicode>
 				<copy from="NppExport.dll" toFile="$PLUGINDIR$\$PLUGINFILENAME$" validate="true" />
 			</unicode>
@@ -485,11 +480,7 @@ It allows you not only to save your source code as a html/rtf file, but also to 
 		<unicodeVersion>0.9</unicodeVersion>
 		<ansiVersion>0.9</ansiVersion>
 		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
-		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  
-		It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 
-		files into the correct places.
-		</description>
-		
+		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
 		<install>
 			<unicode>
 				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9_UNI.zip</download>
@@ -497,7 +488,6 @@ It allows you not only to save your source code as a html/rtf file, but also to 
 			<ansi>
 				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9_ANSI.zip</download>
 			</ansi>
-			
 			<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true"/>
 		</install>
@@ -743,6 +733,4 @@ It allows you not only to save your source code as a html/rtf file, but also to 
 			<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" comment=""/>
 		</versions>
 	</plugin>
-	
-	
 </plugins>
