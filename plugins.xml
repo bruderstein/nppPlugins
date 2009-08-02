@@ -734,4 +734,240 @@
 			<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" comment=""/>
 		</versions>
 	</plugin>
+	
+	<plugin name="SearchInFiles">
+		<ansiVersion>1.12</ansiVersion>
+		<description>A nice done Find in files plugin with which you have a lot of extra informations.</description>
+		<author>Jose Javier Sanjosé</author>
+		<install>
+			<ansi>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/SearchInFiles/SearchInFiles%201.12/SearchInFiles_1_12_dll.zip</download>
+				<copy from="SearchInFiles.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+		</install>
+	</plugin>
+	<plugin name="FTP_synchronize">
+		<unicodeVersion>0.9.6.1</unicodeVersion>
+		<ansiVersion>0.9.6.1</ansiVersion>
+		<description>A FTP client which is integrated in Notepad++ seamlessly.  Open a php file from a server of distance, modify it, save it and try it on your browser directly just like you work locally. </description>
+		<author>Harry B</author>
+		<install>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/FTP_synchronize/FTP_synchronize%20Plugin%20v0.9.6.1/FTP_synchronize_0_9_6_1_dll.zip</download>
+			<unicode>
+					<copy from="FTP_synchronize.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<copy from="FTP_synchronizeA.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+		</install>
+	</plugin>
+	<plugin name="SecurePad">
+		<ansiVersion>1.0</ansiVersion>
+		<description>With this you can encrypt/decrypt whole documents or selected text with your own key.  It is useful for storing sensitive information like logins and you don't want them lying around in a plaintext file. </description>
+		<author>Dominic Tobias</author>
+		<install>
+			<ansi>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/SecurePad/SecurePad%201.0/SecurePad.v1.0.bin.zip</download>
+				<copy from="SecurePad.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+		</install>
+	</plugin>
+	<plugin name="SimpleScript">
+		<ansiVersion>1.13</ansiVersion>
+		<description>Simple script plug-in allows you to make up your script from buid-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes. </description>
+		<author>Todd Hadley (Fidvo)</author>
+		<install>
+			<ansi>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/SimpleScript/SimpleScript%20Plugin%20v1.13/SimpleScript_1_13_dll.zip</download>
+				<copy from="Config\SimpleScript.ini" to="$CONFIGDIR$" backup="true" />
+				<copy from="SimpleScript.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="*.txt" to="$PLUGINDIR$\doc\SimpleScript" />
+				<copy from="Samples\*.txt" to="$PLUGINDIR$\doc\SimpleScript\Samples" />
+			</ansi>
+		</install>
+	</plugin>
+	<plugin name="ColorPicker">
+		<unicodeVersion>1.3</unicodeVersion>
+		<description>A colour picker which translates your selected colour in hexadecimal.</description>
+		<author>Matthew Edwards</author>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/ColorPicker/Color%20Picker%20v.1.3/ColorPicker_130_dll.zip</download>
+				<copy from="ColorPicker.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+		</install>
+	</plugin>
+	<plugin name="Log Plugin">
+		<unicodeVersion>1.0</unicodeVersion>
+		<description>Log plugin allows Notepad++ has one of MS Notepad basic features : Append the date/time at the end of file after a file is opened in Notepad++, if file begins with ".LOG".</description>
+		<author>Nicholas Heckman</author>
+		<versions>
+			<version number="1.0" md5="251302df44178f25e0844efe4f8ea3f0" />
+		</versions>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/Log%20Plugin/Log%20Plugin%20v1.0/NppLogPlugin.v1.0.dll.zip</download>
+				<copy from="NppLogPlugin.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+		</include>		
+	</plugin>
+	<plugin name="WebEdit">
+		<unicodeVersion>1.3.3</unicodeVersion>
+		<ansiVersion>1.3.3</ansiVersion>
+		<description>This plugin allows you to define up to 30 commands. Each command will surround
+
+the currently selected text with the Left and Right text defined for the command. If there is no selection, the Left text is inserted to the left of current caret position, and the Right text is inserted to the right. In any case the selection and relative cursor position are preserved. Clipboard is not used. Both text insertions can be undone/redone as a single action.
+
+The commands are to be defined in WebEdit.ini file, in the "[Commands]" section. At most 30 commands may be defined in the "[Commands]" section, all excess commands are ignored. </description>
+		<author>Alexander Iljin</author>
+		<install>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%201.3.3/WebEdit.1.3.3.zip</download>
+			<unicode>
+				<copy from="WebEdit\WebEditU.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<copy from="WebEdit\WebEdit.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+			<copy from="WebEdit\Config\WebEdit.ini" to="$CONFIGDIR$" />
+			<copy from="WebEdit\Config\*.bmp" to="$CONFIGDIR$" />
+			<copy from="WebEdit\*.txt" to="$PLUGINDIR$\doc\WebEdit" />
+		</install>
+	</plugin>
+	<plugin name="MIME Tools">
+		<unicodeVersion>1.5</unicodeVersion>
+		<ansiVersion>1.5</ansiVersion>
+		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed. </description>
+		<author>Don HO</author>
+		<install>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/MIME%20Tools/MIME%20Tools%20v1.5/mimeTools.v1.5.dll.zip</download>
+			<unicode>
+				<copy from="mimeTools.unicode.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<copy from="mimeTools.ansi.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+		</install>
+	</plugin>
+	<plugin name="TextFX">
+		<ansiVersion>0.25</ansiVersion>
+		<unicodeVersion>0.26</unicodeVersion>
+		<homepage>http://textfx.no-ip.com/textfx/</homepage>
+		<description>TextFX includes numerous features to transform selected text.  
+		Featuring:
+&#13;&#10;* Interactive Brace Matching
+&#13;&#10;* Quote handling
+&#13;&#10;* Character case alternation
+&#13;&#10;* Text rewrap
+&#13;&#10;* Column Lineup
+&#13;&#10;* Fill Text Down
+&#13;&#10;* Insert counter text down
+&#13;&#10;* Text to code conversion
+&#13;&#10;* Numeric Conversion
+&#13;&#10;* URI &amp; HTML encoding
+&#13;&#10;* HTML to text conversion
+&#13;&#10;* Submit text to W3C
+&#13;&#10;* Text sorting
+&#13;&#10;* Ascii Chart
+&#13;&#10;* Leading whitespace repair
+&#13;&#10;* Autoclose HTML &amp; braces</description>
+
+		<versions>
+			<version number="0.25" md5="c2113cbe87c5d370a72ccb759ce8403c" comment="Ansi 0.25"</version>
+			<version number="0.25" md5="e3447cd9a578d4cbc93a59df68c8095c" comment="Unicode 0.25"</version>
+		</versions>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/TextFX/TextFX%20v0.26/NPPTextFX.v0.26.unicode.bin.zip</download>
+				<copy from="NppTextFX.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/TextFX/TextFX%20v0.25/NPPTextFX.v0.25.bin.zip</download>
+				<copy from="NppTextFXA.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+		</install>
+	</plugin>
+	<plugin name="XBrackets Lite">
+		<unicodeVersion>1.1</unicodeVersion>
+		<ansiVersoin>1.1</ansiVersion>
+		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion:
+&#13;&#10;    * next character is analysed for ([{ brackets;
+&#13;&#10;    * next &amp; previous characters are analysed for " quote. 
+        </description>
+		<author>Dovgan Vitaliy</author>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/XBrackets%20Lite/XBrackets%20Plugin%20v1.1/XBrackets_v11_dll_Unicode.zip</download>
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/XBrackets%20Lite/XBrackets%20Plugin%20v1.1/XBrackets_v11_dll_ANSI.zip</download>
+			</ansi>
+			<copy from="XBrackets.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="XBrackets.txt" to="$PLUGINDIR$\doc\XBrackets" />
+		</install>
+	</plugin>
+	
+	<plugin name="ScrollPastEOF">
+		<unicodeVersion>1.0</unicodeVersion>
+		<ansiVersion>1.0</ansiVersion>
+		<description>This plugin simply configures the Scintilla components on
+
+startup to allow scrolling up to one page down past the end of file. Currently (as of Notepad++ 5.0 BETA) there is no GUI setting to enable this feature. It may be added at a later time, but if you are using an older version, you may still want to use this plugin. 
+        </description>
+		<author>Alexander Iljin</author>
+		<install>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/ScrollPastEOF/ScrollPastEOF%201.0/ScrollPastEOF.1.0.zip</download>
+			<copy from="ScrollPastEOF.dll" to="$PLUGINDIR$" validate="true" />
+		</install>
+	</plugin>
+	
+	<!-- Need .NET registration functionality in PM for this to work <plugin name="AwkPlugin"></plugin> -->
+	
+	<plugin name="Gmod LUA Syntax Highlighter">
+		<unicodeVersion>1.2</unicodeVersion>
+		<homepage>http://code.google.com/p/npp-gmod-lua/</homepage>
+		<description>A Garry's Mod 10 lua syntax highlighter plugin. It's also a good demonstration of syntax highlighter plugins for Notepad++.</description>
+		<author>Kyle Fleming</author>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/Gmod%20Lua%20Highlighter/Gmod%20Lua%201.2/GmodLuaPlugin-1.2.bin.zip</download>
+				<copy from="GmodLua.dll" to="$PLUGINDIR$" validate="true"/>
+				<copy from="doc\*.txt" to="$PLUGINDIR$\doc\GmodLua" />
+				<copy from="Config\GmodLua.xml" to="$CONFIGDIR$" />
+			</unicode>
+		</install>
+	</plugin>
+	<plugin name="KVS Language">
+		<unicodeVersion>1.0</unicodeVersion>
+		<ansiVersion>1.0</ansiVersion>
+		<description>Syntax highlighting for the KVS language (KVIrc Scripting language).
+				  An example of an external lexer</description>
+		<author>Thell Fowler</author>
+		<sourceUrl>http://www.brotherstone.co.uk/npp/kvs/KVS_src.zip</sourceUrl>
+		<install>
+			<unicode>
+				<download>http://www.brotherstone.co.uk/npp/kvs/KVS_Unicode.zip</download>
+			</unicode>
+			<ansi>
+				<download>http://www.brotherstone.co.uk/npp/kvs/KVS_Ansi.zip</download>
+			<ansi>
+			<copy from="ExternalLexerKVS.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="Config\ExternalLexerKVS.xml" to="$CONFIGDIR$" />
+		</install>
+	</plugin>
+	
+	<plugin name="Sort Plugin">
+		<ansiVersion>1.0</ansiVersion>
+		<description>Awaiting description</description>
+		<author>Greg Bullock</author>
+		<versions>
+			<version number="1.0" md5="b6214a8a98b5230e10275a40606b53cb" />
+		</versions>
+		<install>
+			<ansi>
+				<download>http://tsppd.com/SortPluginForNotePad++/Sort%20Plugin%20for%20NotePad++.zip</download>
+				<copy from="bin\SortPlugin.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+		</install>
+	</plugin>
+	
 </plugins>
