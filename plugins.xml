@@ -668,7 +668,8 @@
 		</install>
 	</plugin>
 	<plugin name="Universal Indenter">
-		<!--  Removed until it installs cleanly<unicodeVersion>1.0</unicodeVersion><ansiVersion>1.0</ansiVersion>!--><homepage>http://sourceforge.net/projects/universalindent/</homepage>
+		<!--  Removed until it installs cleanly<unicodeVersion>1.0</unicodeVersion><ansiVersion>1.0</ansiVersion>!-->
+        <homepage>http://sourceforge.net/projects/universalindent/</homepage>
 		<description>A cross platform GUI for several code formatter, beautifier and indenter like AStyle, GNU Indent, GreatCode, HTML Tidy, Uncrustify and many more. Main feature is a live preview to directly see how the selected formatting option affects the source code. Several languages supported, among which far eastern ones, and a translation tool is also available at the project's files page.	PLEASE NOTE: For the moment, you will need to rename the file UniversalIndentGUI_NPP.dll_ansi or UniversalIndentGUI_NPP.dll_unicode to remove the _ansi or _unicode from the file in the plugins directory after installation.  This will be fixed in a later version of the Plugin Manager.</description>
 		<author>thomas_-_s</author>
 		<install>
