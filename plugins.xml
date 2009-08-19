@@ -91,11 +91,11 @@
 		</install>
 	</plugin>
 	<plugin name="Compare">
-		<ansiVersion>1.5.4</ansiVersion>
-		<unicodeVersion>1.5.4</unicodeVersion>
+		<ansiVersion>1.5.5</ansiVersion>
+		<unicodeVersion>1.5.5</unicodeVersion>
 		<description>A very useful diff plugin to show the difference between 2 files (side by side).</description>
 		<author>Ty Landercasper, now maintained and updated by Jean-Sebastien Leroy</author>
-		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/ComparePlugin/Compare_1_5_4_src.zip/download</sourceUrl>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/ComparePlugin/Compare_1_5_5_src.zip/download</sourceUrl>
 		<versions>
 			<version number="1.5.4" md5="a0f3ccc98279a19e2cdee382dc4b029a" comment="ansi"/>
 			<version number="1.5.4" md5="3d4d770bcbeec0e3c2738d6b8ed54442" comment="unicode"/>
@@ -114,10 +114,10 @@
 		<category>Common</category>
 		<install>
 			<ansi>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/Compare_1_5_4_ANSI_dll.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/ComparePlugin/Compare%201.5.5/Compare_1_5_5_ANSI_dll.zip</download>
 			</ansi>
 			<unicode>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/Compare_1_5_4_UNI_dll.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/ComparePlugin/Compare%201.5.5/Compare_1_5_5_UNI_dll.zip</download>
 			</unicode>
 			<copy from="ComparePlugin.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
