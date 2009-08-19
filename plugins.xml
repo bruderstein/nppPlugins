@@ -4,7 +4,7 @@
 		<pluginName md5="ad32f0f59e70823de864387f65debcea" name="NppExport" comment="unicode 0.2.8"/>
 		<pluginName md5="48ae59abb0224ecc252d35e953ce0496" name="NppExport" comment="ansi 0.2.8"/>
 	</pluginNames>
-	<plugin name="AutoSave">
+	<plugin name="AutoSaveXXXX">
 		<ansiVersion>1.1.1.0</ansiVersion>
 		<unicodeVersion>1.1.1.0</unicodeVersion>
 		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
@@ -809,7 +809,7 @@
 				<download>http://downloads.sourceforge.net/project/npp-plugins/Log%20Plugin/Log%20Plugin%20v1.0/NppLogPlugin.v1.0.dll.zip</download>
 				<copy from="NppLogPlugin.dll" to="$PLUGINDIR$" validate="true" />
 			</unicode>
-		</include>		
+		</install>		
 	</plugin>
 	<plugin name="WebEdit">
 		<unicodeVersion>1.3.3</unicodeVersion>
@@ -872,12 +872,12 @@ The commands are to be defined in WebEdit.ini file, in the "[Commands]" section.
 &#13;&#10;* Autoclose HTML &amp; braces</description>
 
 		<versions>
-			<version number="0.25" md5="c2113cbe87c5d370a72ccb759ce8403c" comment="Ansi 0.25"</version>
-			<version number="0.25" md5="e3447cd9a578d4cbc93a59df68c8095c" comment="Unicode 0.25"</version>
+			<version number="0.25" md5="c2113cbe87c5d370a72ccb759ce8403c" comment="Ansi 0.25"/>
+			<version number="0.25" md5="e3447cd9a578d4cbc93a59df68c8095c" comment="Unicode 0.25"/>
 		</versions>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npp-plugins/TextFX/TextFX%20v0.26/NPPTextFX.v0.26.unicode.bin.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/TextFX/TextFX%20v0.26/TextFX.v0.26.unicode.bin.zip</download>
 				<copy from="NppTextFX.dll" to="$PLUGINDIR$" validate="true" />
 			</unicode>
 			<ansi>
@@ -888,7 +888,7 @@ The commands are to be defined in WebEdit.ini file, in the "[Commands]" section.
 	</plugin>
 	<plugin name="XBrackets Lite">
 		<unicodeVersion>1.1</unicodeVersion>
-		<ansiVersoin>1.1</ansiVersion>
+		<ansiVersion>1.1</ansiVersion>
 		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion:
 &#13;&#10;    * next character is analysed for ([{ brackets;
 &#13;&#10;    * next &amp; previous characters are analysed for " quote. 
@@ -932,6 +932,7 @@ startup to allow scrolling up to one page down past the end of file. Currently (
 				<download>http://downloads.sourceforge.net/project/npp-plugins/Gmod%20Lua%20Highlighter/Gmod%20Lua%201.2/GmodLuaPlugin-1.2.bin.zip</download>
 				<copy from="GmodLua.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="doc\*.txt" to="$PLUGINDIR$\doc\GmodLua" />
+				<copy from="Npp_Keywords.lua" to="$PLUGINDIR$\doc\GmodLua" />
 				<copy from="Config\GmodLua.xml" to="$CONFIGDIR$" />
 			</unicode>
 		</install>
@@ -949,9 +950,10 @@ startup to allow scrolling up to one page down past the end of file. Currently (
 			</unicode>
 			<ansi>
 				<download>http://www.brotherstone.co.uk/npp/kvs/KVS_Ansi.zip</download>
-			<ansi>
+			</ansi>
 			<copy from="ExternalLexerKVS.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="Config\ExternalLexerKVS.xml" to="$CONFIGDIR$" />
+			
 		</install>
 	</plugin>
 	
