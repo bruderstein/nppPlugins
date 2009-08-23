@@ -3,8 +3,12 @@
 	<pluginNames>
 		<pluginName md5="ad32f0f59e70823de864387f65debcea" name="NppExport" comment="unicode 0.2.8"/>
 		<pluginName md5="48ae59abb0224ecc252d35e953ce0496" name="NppExport" comment="ansi 0.2.8"/>
+		<pluginName md5="30b4065fd4aa37ac62d061db73c00222" name="SecurePad" comment="ansi 1.0, reported name is Crypt"/>
+		<pluginName md5="251302df44178f25e0844efe4f8ea3f0" name="Log Plugin" comment="1.0 ansi, reported name is NppLog"/>
+		<pluginName md5="b663f742a17c455233752c41e127468e" name="Powershell Lexer" comment="1.0 ansi, reported name is NppExternalLexers"/>
+		<pluginName md5="22359d39c6a7aab44fb56891e608b80d" name="Powershell Lexer" comment="1.0 unicode, reported name is NppExternalLexers"/>
 	</pluginNames>
-	<plugin name="AutoSaveXXXX">
+	<plugin name="AutoSave">
 		<ansiVersion>1.1.1.0</ansiVersion>
 		<unicodeVersion>1.1.1.0</unicodeVersion>
 		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
@@ -23,7 +27,10 @@
 	</plugin>
 	<plugin name="CCompletion">
 		<unicodeVersion>1.11.0.0</unicodeVersion>
-		<description>It's an autocompletion plugin, that also features two other similar functionalities:  * find identifier and display it in secondary view  * go to identitifer  For more information on usage, see the plugin help.    The plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
+		<description>It's an autocompletion plugin, that also features two other similar functionalities:  
+        \n* find identifier and display it in secondary view  
+        \n* go to identitifer  For more information on usage, see the plugin help.    
+        \nThe plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
 		<author>Bostjan Mihoric</author>
 		<sourceUrl/>
 		<install>
@@ -737,7 +744,7 @@
 	
 	<plugin name="SearchInFiles">
 		<ansiVersion>1.12</ansiVersion>
-		<description>A nice done Find in files plugin with which you have a lot of extra informations.</description>
+		<description>A nicely done Find in files plugin which shows the information in a neat tree view.</description>
 		<author>Jose Javier Sanjosé</author>
 		<install>
 			<ansi>
@@ -787,28 +794,28 @@
 		</install>
 	</plugin>
 	<plugin name="ColorPicker">
-		<unicodeVersion>1.3</unicodeVersion>
-		<description>A colour picker which translates your selected colour in hexadecimal.</description>
+		<ansiVersion>1.3</ansiVersion>
+		<description>A color picker which translates your selected colour in hexadecimal.</description>
 		<author>Matthew Edwards</author>
 		<install>
-			<unicode>
+			<ansi>
 				<download>http://downloads.sourceforge.net/project/npp-plugins/ColorPicker/Color%20Picker%20v.1.3/ColorPicker_130_dll.zip</download>
 				<copy from="ColorPicker.dll" to="$PLUGINDIR$" validate="true" />
-			</unicode>
+			</ansi>
 		</install>
 	</plugin>
 	<plugin name="Log Plugin">
-		<unicodeVersion>1.0</unicodeVersion>
+		<ansiVersion>1.0</ansiVersion>
 		<description>Log plugin allows Notepad++ has one of MS Notepad basic features : Append the date/time at the end of file after a file is opened in Notepad++, if file begins with ".LOG".</description>
 		<author>Nicholas Heckman</author>
 		<versions>
 			<version number="1.0" md5="251302df44178f25e0844efe4f8ea3f0" />
 		</versions>
 		<install>
-			<unicode>
+			<ansi>
 				<download>http://downloads.sourceforge.net/project/npp-plugins/Log%20Plugin/Log%20Plugin%20v1.0/NppLogPlugin.v1.0.dll.zip</download>
 				<copy from="NppLogPlugin.dll" to="$PLUGINDIR$" validate="true" />
-			</unicode>
+			</ansi>
 		</install>		
 	</plugin>
 	<plugin name="WebEdit">
@@ -820,6 +827,10 @@ the currently selected text with the Left and Right text defined for the command
 
 The commands are to be defined in WebEdit.ini file, in the "[Commands]" section. At most 30 commands may be defined in the "[Commands]" section, all excess commands are ignored. </description>
 		<author>Alexander Iljin</author>
+        <versions>
+            <version number="1.3.3" md5="47a1a0d12d2c866bc594e4f085d70a47" comment="unicode"/>
+			<version number="1.3.3" md5="5dad73b5261ea5cc2a75ad4455caefea" comment="ansi" />
+        </versions>
 		<install>
 			<download>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%201.3.3/WebEdit.1.3.3.zip</download>
 			<unicode>
@@ -848,28 +859,28 @@ The commands are to be defined in WebEdit.ini file, in the "[Commands]" section.
 			</ansi>
 		</install>
 	</plugin>
-	<plugin name="TextFX">
+	<plugin name="TextFX Characters">
 		<ansiVersion>0.25</ansiVersion>
 		<unicodeVersion>0.26</unicodeVersion>
 		<homepage>http://textfx.no-ip.com/textfx/</homepage>
 		<description>TextFX includes numerous features to transform selected text.  
 		Featuring:
-&#13;&#10;* Interactive Brace Matching
-&#13;&#10;* Quote handling
-&#13;&#10;* Character case alternation
-&#13;&#10;* Text rewrap
-&#13;&#10;* Column Lineup
-&#13;&#10;* Fill Text Down
-&#13;&#10;* Insert counter text down
-&#13;&#10;* Text to code conversion
-&#13;&#10;* Numeric Conversion
-&#13;&#10;* URI &amp; HTML encoding
-&#13;&#10;* HTML to text conversion
-&#13;&#10;* Submit text to W3C
-&#13;&#10;* Text sorting
-&#13;&#10;* Ascii Chart
-&#13;&#10;* Leading whitespace repair
-&#13;&#10;* Autoclose HTML &amp; braces</description>
+\n* Interactive Brace Matching
+\n* Quote handling
+\n* Character case alternation
+\n* Text rewrap
+\n* Column Lineup
+\n* Fill Text Down
+\n* Insert counter text down
+\n* Text to code conversion
+\n* Numeric Conversion
+\n* URI &amp; HTML encoding
+\n* HTML to text conversion
+\n* Submit text to W3C
+\n* Text sorting
+\n* Ascii Chart
+\n* Leading whitespace repair
+\n* Autoclose HTML &amp; braces</description>
 
 		<versions>
 			<version number="0.25" md5="c2113cbe87c5d370a72ccb759ce8403c" comment="Ansi 0.25"/>
@@ -890,8 +901,8 @@ The commands are to be defined in WebEdit.ini file, in the "[Commands]" section.
 		<unicodeVersion>1.1</unicodeVersion>
 		<ansiVersion>1.1</ansiVersion>
 		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion:
-&#13;&#10;    * next character is analysed for ([{ brackets;
-&#13;&#10;    * next &amp; previous characters are analysed for " quote. 
+\n   * next character is analysed for ([{ brackets;
+\n    * next &amp; previous characters are analysed for " quote. 
         </description>
 		<author>Dovgan Vitaliy</author>
 		<install>
@@ -907,13 +918,15 @@ The commands are to be defined in WebEdit.ini file, in the "[Commands]" section.
 	</plugin>
 	
 	<plugin name="ScrollPastEOF">
-		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<description>This plugin simply configures the Scintilla components on
 
 startup to allow scrolling up to one page down past the end of file. Currently (as of Notepad++ 5.0 BETA) there is no GUI setting to enable this feature. It may be added at a later time, but if you are using an older version, you may still want to use this plugin. 
         </description>
 		<author>Alexander Iljin</author>
+		<versions>
+			<version number="1.0" md5="eb3744daf364793da4b6aa24e327a834" />
+		</versions>
 		<install>
 			<download>http://downloads.sourceforge.net/project/npp-plugins/ScrollPastEOF/ScrollPastEOF%201.0/ScrollPastEOF.1.0.zip</download>
 			<copy from="ScrollPastEOF.dll" to="$PLUGINDIR$" validate="true" />
@@ -957,19 +970,27 @@ startup to allow scrolling up to one page down past the end of file. Currently (
 		</install>
 	</plugin>
 	
-	<plugin name="Sort Plugin">
+	<plugin name="Powershell Lexer">
+		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
-		<description>Awaiting description</description>
-		<author>Greg Bullock</author>
+		<description>Syntax highlighting and folding for Powershell scripts</description>
+		<author>Thell Fowlor</author>
+		<sourceUrl>http://poshcode.org/notepad++lexer/ExternalLexer.1.0.src.zip</sourceUrl>
+		<homepage>http://poshcode.org/notepad++lexer/</homepage>
 		<versions>
-			<version number="1.0" md5="b6214a8a98b5230e10275a40606b53cb" />
+			<version number="1.0" md5="b663f742a17c455233752c41e127468e" comment="ansi" />
+			<version number="1.0" md5="22359d39c6a7aab44fb56891e608b80d" comment="unicode" />
 		</versions>
 		<install>
+			<unicode>
+				<download>http://poshcode.org/notepad++lexer/ExternalLexer.1.0.unicode.zip</download>
+			</unicode>
 			<ansi>
-				<download>http://tsppd.com/SortPluginForNotePad++/Sort%20Plugin%20for%20NotePad++.zip</download>
-				<copy from="bin\SortPlugin.dll" to="$PLUGINDIR$" validate="true" />
+				<download>http://poshcode.org/notepad++lexer/ExternalLexer.1.0.ansi.zip</download>
 			</ansi>
+			<copy from="NppExternalLexers.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="config\Doc\NppExtLexer_PluginHelp.txt" to="$CONFIGDIR$" />
+			<copy from="config\NppExternalLexers.xml" to="$CONFIGDIR$" backup="true" />
 		</install>
 	</plugin>
-	
 </plugins>
