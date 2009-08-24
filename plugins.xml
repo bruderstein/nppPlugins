@@ -118,7 +118,10 @@
 			<version number="1.1" md5="7f27bc83d17ca673b64b25c597489fd8" comment="ansi"/>
 			<version number="1.0" md5="a6194f93000521821bec806a7acf9d9a" comment="ansi"/>
 		</versions>
-		<category>Common</category>
+		<stability>Good</stability>
+        <latestUpdate>
+\n- Side bar no include scrolling
+\n- Fixed a bug causing Notepad++ to crash with R/O files</latestUpdate>
 		<install>
 			<ansi>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/Compare_1_5_4_ANSI_dll.zip</download>
@@ -203,7 +206,7 @@
 	</plugin>
 	<plugin name="File Switcher">
 		<ansiVersion>1.0.3.0</ansiVersion>
-		<unicodeVersion>1.0.3.0</unicodeVersion>
+		<unicodeVersion>1.0.4.0</unicodeVersion>
 		<description>This plugin allows you to switch the active buffer using just the keyboard.  You can type any  	part of the filename, path or tab index.  You can also use it as a replacement for the Ctrl-Tab functionality built into Notepad++.</description>
 		<author>Dave Brotherstone</author>
 		<sourceUrl>http://www.brotherstone.co.uk/npp/FileSwithcer_src.zip</sourceUrl>
@@ -488,6 +491,13 @@
 		<ansiVersion>0.9</ansiVersion>
 		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
 		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
+        <stability>Good</stability>
+        <latestUpdate>
+        \n - A few bugfixes
+        \n - Ability to show stability of plugins
+        \n - Shows latest update where information is available
+        \n - Descriptions now can contain newlines
+        \n - Only checks for new plugins once every 3 days now (will always check if plugin manager is opened)</latestUpdate>
 		<install>
 			<unicode>
 				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9_UNI.zip</download>
@@ -745,7 +755,7 @@
 	<plugin name="SearchInFiles">
 		<ansiVersion>1.12</ansiVersion>
 		<description>A nicely done Find in files plugin which shows the information in a neat tree view.</description>
-		<author>Jose Javier Sanjosé</author>
+		<author>Jose Javier Sanjose</author>
 		<install>
 			<ansi>
 				<download>http://downloads.sourceforge.net/project/npp-plugins/SearchInFiles/SearchInFiles%201.12/SearchInFiles_1_12_dll.zip</download>
