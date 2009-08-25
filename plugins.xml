@@ -875,22 +875,22 @@ The commands are to be defined in WebEdit.ini file, in the "[Commands]" section.
 		<homepage>http://textfx.no-ip.com/textfx/</homepage>
 		<description>TextFX includes numerous features to transform selected text.  
 		Featuring:
-\n* Interactive Brace Matching
-\n* Quote handling
-\n* Character case alternation
-\n* Text rewrap
-\n* Column Lineup
-\n* Fill Text Down
-\n* Insert counter text down
-\n* Text to code conversion
-\n* Numeric Conversion
-\n* URI &amp; HTML encoding
-\n* HTML to text conversion
-\n* Submit text to W3C
-\n* Text sorting
-\n* Ascii Chart
-\n* Leading whitespace repair
-\n* Autoclose HTML &amp; braces</description>
+* Interactive Brace Matching
+* Quote handling
+* Character case alternation
+* Text rewrap
+* Column Lineup
+* Fill Text Down
+* Insert counter text down
+* Text to code conversion
+* Numeric Conversion
+* URI &amp; HTML encoding
+* HTML to text conversion
+* Submit text to W3C
+* Text sorting
+* Ascii Chart
+* Leading whitespace repair
+* Autoclose HTML &amp; braces</description>
 
 		<versions>
 			<version number="0.25" md5="c2113cbe87c5d370a72ccb759ce8403c" comment="Ansi 0.25"/>
@@ -911,8 +911,8 @@ The commands are to be defined in WebEdit.ini file, in the "[Commands]" section.
 		<unicodeVersion>1.1</unicodeVersion>
 		<ansiVersion>1.1</ansiVersion>
 		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion:
-\n   * next character is analysed for ([{ brackets;
-\n    * next &amp; previous characters are analysed for " quote. 
+   * next character is analysed for ([{ brackets;
+    * next &amp; previous characters are analysed for " quote. 
         </description>
 		<author>Dovgan Vitaliy</author>
 		<install>
