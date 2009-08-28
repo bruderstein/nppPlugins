@@ -118,7 +118,6 @@
 			<version number="1.1" md5="7f27bc83d17ca673b64b25c597489fd8" comment="ansi"/>
 			<version number="1.0" md5="a6194f93000521821bec806a7acf9d9a" comment="ansi"/>
 		</versions>
-		<stability>Good</stability>
         <latestUpdate>
 \n- Side bar no include scrolling
 \n- Fixed a bug causing Notepad++ to crash with R/O files</latestUpdate>
@@ -206,10 +205,12 @@
 	</plugin>
 	<plugin name="File Switcher">
 		<ansiVersion>1.0.3.0</ansiVersion>
-		<unicodeVersion>1.0.4.0</unicodeVersion>
+		<unicodeVersion>1.0.3.0</unicodeVersion>
 		<description>This plugin allows you to switch the active buffer using just the keyboard.  You can type any  	part of the filename, path or tab index.  You can also use it as a replacement for the Ctrl-Tab functionality built into Notepad++.</description>
 		<author>Dave Brotherstone</author>
 		<sourceUrl>http://www.brotherstone.co.uk/npp/FileSwithcer_src.zip</sourceUrl>
+
+       
 		<install>
 			<unicode>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FileSwitcher1030_UNI.zip</download>
@@ -224,6 +225,7 @@
 		<unicodeVersion>2.0.0.0</unicodeVersion>
 		<ansiVersion>1.2.0.0</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
+        <stability>Occasional issues</stability>
 		<install>
 			<unicode>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FunctionList_2_0_UNI_dll.zip</download>
@@ -287,6 +289,7 @@
 		<unicodeVersion>0.9.4.0</unicodeVersion>
 		<ansiVersion>0.9.3.0</ansiVersion>
 		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
+        <stability>Some issues, particularly with comparing, occasional crash</stability>
 		<install>
 			<unicode>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/HexEditor_0_9_4_UNI_dll.zip</download>
@@ -491,7 +494,6 @@
 		<ansiVersion>0.9</ansiVersion>
 		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
 		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
-        <stability>Good</stability>
         <latestUpdate>
         \n - A few bugfixes
         \n - Ability to show stability of plugins
@@ -711,6 +713,7 @@
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/WindowManager/WindowManager_1_2_2_src.zip/download</sourceUrl>
 		<author>Jens Lorenz</author>
 		<description>Window Manager gives a short overview of your open documents in Notepad++. This overview is dockable and gives you the same capability as the tabs have. Left click on a list item selects the document. Right click opens the tab context menu from Notepad++. When documents are opened in main and second view (by duplicate or move), two lists are shown in dialog window.</description>
+        <stability>Occasional issue with prolonged use</stability>
 		<install>
 			<unicode>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_2_2_UNI_dll.zip</download>
@@ -768,6 +771,7 @@
 		<ansiVersion>0.9.6.1</ansiVersion>
 		<description>A FTP client which is integrated in Notepad++ seamlessly.  Open a php file from a server of distance, modify it, save it and try it on your browser directly just like you work locally. </description>
 		<author>Harry B</author>
+        <stability>Some issues</stability>
 		<install>
 			<download>http://downloads.sourceforge.net/project/npp-plugins/FTP_synchronize/FTP_synchronize%20Plugin%20v0.9.6.1/FTP_synchronize_0_9_6_1_dll.zip</download>
 			<unicode>
