@@ -253,12 +253,12 @@
 				<copy from="gtagfornplus.dll" to="$PLUGINDIR$" validate="true"/>
 				<!-- Global has been temporarily re-hosted, as the link has become dead.  Need to change this link as soon as GNU host it again -->
 				<download>http://www.brotherstone.co.uk/npp/global/glo574wb.zip</download>
-				<copy from="bin\global.exe" to="$PLUGINDIR\gtagfornplus" validate="true"/>
-				<copy from="bin\gozilla.exe" to="$PLUGINDIR\gtagfornplus" validate="true"/>
-				<copy from="bin\gtags-cscope.exe" to="$PLUGINDIR\gtagfornplus" validate="true"/>
-				<copy from="bin\gtags-parser.exe" to="$PLUGINDIR\gtagfornplus" validate="true"/>
-				<copy from="bin\gtags.exe" to="$PLUGINDIR\gtagfornplus" validate="true"/>
-				<copy from="bin\htags.exe" to="$PLUGINDIR\gtagfornplus" validate="true"/>
+				<copy from="bin\global.exe" to="$PLUGINDIR$\gtagfornplus" validate="true"/>
+				<copy from="bin\gozilla.exe" to="$PLUGINDIR$\gtagfornplus" validate="true"/>
+				<copy from="bin\gtags-cscope.exe" to="$PLUGINDIR$\gtagfornplus" validate="true"/>
+				<copy from="bin\gtags-parser.exe" to="$PLUGINDIR$\gtagfornplus" validate="true"/>
+				<copy from="bin\gtags.exe" to="$PLUGINDIR$\gtagfornplus" validate="true"/>
+				<copy from="bin\htags.exe" to="$PLUGINDIR$\gtagfornplus" validate="true"/>
 				<download>http://downloads.sourceforge.net/sourceforge/ctags/ctags58.zip</download>
 				<copy from="ctags58\ctags.exe" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
