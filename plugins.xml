@@ -27,10 +27,7 @@
 	</plugin>
 	<plugin name="CCompletion">
 		<unicodeVersion>1.11.0.0</unicodeVersion>
-		<description>It's an autocompletion plugin, that also features two other similar functionalities:  
-        \n* find identifier and display it in secondary view  
-        \n* go to identitifer  For more information on usage, see the plugin help.    
-        \nThe plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
+		<description>It's an autocompletion plugin, that also features two other similar functionalities:   \n* find identifier and display it in secondary view   \n* go to identitifer  For more information on usage, see the plugin help.     \nThe plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
 		<author>Bostjan Mihoric</author>
 		<sourceUrl/>
 		<install>
@@ -49,6 +46,7 @@
 		<unicodeVersion>1.0</unicodeVersion>
 		<description>This plugin tracks changes made to documents, and enables navigation between changes, with a distinction being mafe between saved and unsaved changes. The change indicator is either a bar in the left margin or a specific highlighting. Or none.</description>
 		<author>Thell Fowler</author>
+		<stability>Issues with save-all and search all open files. Can cause a hang</stability>
 		<sourceUrl/>
 		<dependencies>
 			<plugin name="SciMarkerSymbol"/>
@@ -118,9 +116,7 @@
 			<version number="1.1" md5="7f27bc83d17ca673b64b25c597489fd8" comment="ansi"/>
 			<version number="1.0" md5="a6194f93000521821bec806a7acf9d9a" comment="ansi"/>
 		</versions>
-        <latestUpdate>
-\n- Side bar no include scrolling
-\n- Fixed a bug causing Notepad++ to crash with R/O files</latestUpdate>
+		<latestUpdate>\n- Side bar no include scrolling \n- Fixed a bug causing Notepad++ to crash with R/O files</latestUpdate>
 		<install>
 			<ansi>
 				<download>http://downloads.sourceforge.net/project/npp-plugins/ComparePlugin/Compare%201.5.5/Compare_1_5_5_ANSI_dll.zip</download>
@@ -147,14 +143,16 @@
 		</install>
 	</plugin>
 	<plugin name="DBGp">
-		<!--	Removed, until we can get it to launch without crashing<unicodeVersion>0.0.11.20</unicodeVersion>--><description>This is a php debugger (XDebug) which talks DBGP protocol. Use this plugin to transform your Notepad++ to a php IDE.</description>
+		<ansiVersion>0.0.11.20</ansiVersion>
+		<description>This is a php debugger (XDebug) which talks DBGP protocol. Use this plugin to transform your Notepad++ to a php IDE.</description>
 		<author>Damjan Zobo Cvetko</author>
 		<sourceUrl>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DBGpPlugin_0_11b_src.zip&amp;a=17984321</sourceUrl>
+		<stability>Reported issues with port conflicts</stability>
 		<install>
-			<unicode>
+			<ansi>
 				<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DBGpPlugin_0_11b_dll.zip&amp;a=29716592</download>
 				<copy from="*.dll" to="$PLUGINDIR$"/>
-			</unicode>
+			</ansi>
 		</install>
 	</plugin>
 	<plugin name="Document Monitor">
@@ -209,8 +207,6 @@
 		<description>This plugin allows you to switch the active buffer using just the keyboard.  You can type any  	part of the filename, path or tab index.  You can also use it as a replacement for the Ctrl-Tab functionality built into Notepad++.</description>
 		<author>Dave Brotherstone</author>
 		<sourceUrl>http://www.brotherstone.co.uk/npp/FileSwithcer_src.zip</sourceUrl>
-
-       
 		<install>
 			<unicode>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FileSwitcher1030_UNI.zip</download>
@@ -225,7 +221,7 @@
 		<unicodeVersion>2.0.0.0</unicodeVersion>
 		<ansiVersion>1.2.0.0</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
-        <stability>Occasional issues</stability>
+		<stability>Occasional issues</stability>
 		<install>
 			<unicode>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FunctionList_2_0_UNI_dll.zip</download>
@@ -289,7 +285,7 @@
 		<unicodeVersion>0.9.4.0</unicodeVersion>
 		<ansiVersion>0.9.3.0</ansiVersion>
 		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
-        <stability>Some issues, particularly with comparing, occasional crash</stability>
+		<stability>Some issues, particularly with comparing, occasional crash</stability>
 		<install>
 			<unicode>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/HexEditor_0_9_4_UNI_dll.zip</download>
@@ -322,11 +318,15 @@
 		</install>
 	</plugin>
 	<plugin name="LanguageHelp">
-		<unicodeVersion>1.2.0.0</unicodeVersion>
-		<ansiVersion>1.2.0.0</ansiVersion>
+		<unicodeVersion>1.3.1.1</unicodeVersion>
+		<ansiVersion>1.3.1.1</ansiVersion>
 		<description>LanguageHelp allows to run a language specific help file (CHM, HLP, PDF) and search for the keyword under the cursor. The latest versions allow also to show the help file as menu entries for quick launch.</description>
+		<latestUpdate>- a toolbar button for calling the help on the currently selected word \n
+- the possibility of showing the help command on the context menu \n
+- the possibility of searching for the currently selected word even when using the menu \n
+        </latestUpdate>
 		<install>
-			<download>http://fstellari.googlepages.com/LanguageHelp_dll_1v20.zip</download>
+			<download>http://fstellari.googlepages.com/LanguageHelp_dll_1v311.zip</download>
 			<unicode>
 				<copy from="LanguageHelpU.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
@@ -490,22 +490,17 @@
 		</install>
 	</plugin>
 	<plugin name="Plugin Manager">
-		<unicodeVersion>0.9</unicodeVersion>
-		<ansiVersion>0.9</ansiVersion>
+		<unicodeVersion>0.9.2.1</unicodeVersion>
+		<ansiVersion>0.9.2.1</ansiVersion>
 		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
 		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
-        <latestUpdate>
-        \n - A few bugfixes
-        \n - Ability to show stability of plugins
-        \n - Shows latest update where information is available
-        \n - Descriptions now can contain newlines
-        \n - Only checks for new plugins once every 3 days now (will always check if plugin manager is opened)</latestUpdate>
+		<latestUpdate>\n - A few bugfixes \n - Ability to show stability of plugins \n - Shows latest update where information is available \n - Descriptions now can contain newlines \n - Only checks for new plugins once every 3 days now (will always check if plugin manager is opened)</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9_UNI.zip</download>
+				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9.2.1_UNI.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9_ANSI.zip</download>
+				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9.2.1_ANSI.zip</download>
 			</ansi>
 			<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true"/>
@@ -577,12 +572,13 @@
 		</install>
 	</plugin>
 	<plugin name="RunMe">
-		<unicodeVersion>1.2.0.0</unicodeVersion>
-		<ansiVersion>1.2.0.0</ansiVersion>
+		<unicodeVersion>1.3.0.0</unicodeVersion>
+		<ansiVersion>1.3.0.0</ansiVersion>
 		<author>Franco Stellari</author>
 		<description>RunMe allows to execute the currently open file, based on its shell association.</description>
+		<latestUpdate>Adds customizable entries in the file tab context menu.</latestUpdate>
 		<install>
-			<download>http://fstellari.googlepages.com/RunMe_dll_1v20.zip</download>
+			<download>http://fstellari.googlepages.com/RunMe_dll_1v30.zip</download>
 			<ansi>
 				<copy from="RunMeA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
@@ -687,8 +683,7 @@
 		</install>
 	</plugin>
 	<plugin name="Universal Indenter">
-		<!--  Removed until it installs cleanly<unicodeVersion>1.0</unicodeVersion><ansiVersion>1.0</ansiVersion>!-->
-        <homepage>http://sourceforge.net/projects/universalindent/</homepage>
+		<!--  Removed until it installs cleanly<unicodeVersion>1.0</unicodeVersion><ansiVersion>1.0</ansiVersion>!--><homepage>http://sourceforge.net/projects/universalindent/</homepage>
 		<description>A cross platform GUI for several code formatter, beautifier and indenter like AStyle, GNU Indent, GreatCode, HTML Tidy, Uncrustify and many more. Main feature is a live preview to directly see how the selected formatting option affects the source code. Several languages supported, among which far eastern ones, and a translation tool is also available at the project's files page.	PLEASE NOTE: For the moment, you will need to rename the file UniversalIndentGUI_NPP.dll_ansi or UniversalIndentGUI_NPP.dll_unicode to remove the _ansi or _unicode from the file in the plugins directory after installation.  This will be fixed in a later version of the Plugin Manager.</description>
 		<author>thomas_-_s</author>
 		<install>
@@ -713,7 +708,7 @@
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/WindowManager/WindowManager_1_2_2_src.zip/download</sourceUrl>
 		<author>Jens Lorenz</author>
 		<description>Window Manager gives a short overview of your open documents in Notepad++. This overview is dockable and gives you the same capability as the tabs have. Left click on a list item selects the document. Right click opens the tab context menu from Notepad++. When documents are opened in main and second view (by duplicate or move), two lists are shown in dialog window.</description>
-        <stability>Occasional issue with prolonged use</stability>
+		<stability>Occasional issue with prolonged use</stability>
 		<install>
 			<unicode>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_2_2_UNI_dll.zip</download>
@@ -754,7 +749,6 @@
 			<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" comment=""/>
 		</versions>
 	</plugin>
-	
 	<plugin name="SearchInFiles">
 		<ansiVersion>1.12</ansiVersion>
 		<description>A nicely done Find in files plugin which shows the information in a neat tree view.</description>
@@ -771,11 +765,11 @@
 		<ansiVersion>0.9.6.1</ansiVersion>
 		<description>A FTP client which is integrated in Notepad++ seamlessly.  Open a php file from a server of distance, modify it, save it and try it on your browser directly just like you work locally. </description>
 		<author>Harry B</author>
-        <stability>Some issues</stability>
+		<stability>Some issues</stability>
 		<install>
 			<download>http://downloads.sourceforge.net/project/npp-plugins/FTP_synchronize/FTP_synchronize%20Plugin%20v0.9.6.1/FTP_synchronize_0_9_6_1_dll.zip</download>
 			<unicode>
-					<copy from="FTP_synchronize.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="FTP_synchronize.dll" to="$PLUGINDIR$" validate="true" />
 			</unicode>
 			<ansi>
 				<copy from="FTP_synchronizeA.dll" to="$PLUGINDIR$" validate="true" />
@@ -830,21 +824,17 @@
 				<download>http://downloads.sourceforge.net/project/npp-plugins/Log%20Plugin/Log%20Plugin%20v1.0/NppLogPlugin.v1.0.dll.zip</download>
 				<copy from="NppLogPlugin.dll" to="$PLUGINDIR$" validate="true" />
 			</ansi>
-		</install>		
+		</install>
 	</plugin>
 	<plugin name="WebEdit">
 		<unicodeVersion>1.3.3</unicodeVersion>
 		<ansiVersion>1.3.3</ansiVersion>
-		<description>This plugin allows you to define up to 30 commands. Each command will surround
-
-the currently selected text with the Left and Right text defined for the command. If there is no selection, the Left text is inserted to the left of current caret position, and the Right text is inserted to the right. In any case the selection and relative cursor position are preserved. Clipboard is not used. Both text insertions can be undone/redone as a single action.
-
-The commands are to be defined in WebEdit.ini file, in the "[Commands]" section. At most 30 commands may be defined in the "[Commands]" section, all excess commands are ignored. </description>
+		<description>This plugin allows you to define up to 30 commands. Each command will surround the currently selected text with the Left and Right text defined for the command. If there is no selection, the Left text is inserted to the left of current caret position, and the Right text is inserted to the right. In any case the selection and relative cursor position are preserved. Clipboard is not used. Both text insertions can be undone/redone as a single action. The commands are to be defined in WebEdit.ini file, in the "[Commands]" section. At most 30 commands may be defined in the "[Commands]" section, all excess commands are ignored. </description>
 		<author>Alexander Iljin</author>
-        <versions>
-            <version number="1.3.3" md5="47a1a0d12d2c866bc594e4f085d70a47" comment="unicode"/>
+		<versions>
+			<version number="1.3.3" md5="47a1a0d12d2c866bc594e4f085d70a47" comment="unicode"/>
 			<version number="1.3.3" md5="5dad73b5261ea5cc2a75ad4455caefea" comment="ansi" />
-        </versions>
+		</versions>
 		<install>
 			<download>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%201.3.3/WebEdit.1.3.3.zip</download>
 			<unicode>
@@ -877,25 +867,7 @@ The commands are to be defined in WebEdit.ini file, in the "[Commands]" section.
 		<ansiVersion>0.25</ansiVersion>
 		<unicodeVersion>0.26</unicodeVersion>
 		<homepage>http://textfx.no-ip.com/textfx/</homepage>
-		<description>TextFX includes numerous features to transform selected text.  
-		Featuring:
-* Interactive Brace Matching
-* Quote handling
-* Character case alternation
-* Text rewrap
-* Column Lineup
-* Fill Text Down
-* Insert counter text down
-* Text to code conversion
-* Numeric Conversion
-* URI &amp; HTML encoding
-* HTML to text conversion
-* Submit text to W3C
-* Text sorting
-* Ascii Chart
-* Leading whitespace repair
-* Autoclose HTML &amp; braces</description>
-
+		<description>TextFX includes numerous features to transform selected text.  	Featuring: * Interactive Brace Matching * Quote handling * Character case alternation * Text rewrap * Column Lineup * Fill Text Down * Insert counter text down * Text to code conversion * Numeric Conversion * URI &amp; HTML encoding * HTML to text conversion * Submit text to W3C * Text sorting * Ascii Chart * Leading whitespace repair * Autoclose HTML &amp; braces</description>
 		<versions>
 			<version number="0.25" md5="c2113cbe87c5d370a72ccb759ce8403c" comment="Ansi 0.25"/>
 			<version number="0.25" md5="e3447cd9a578d4cbc93a59df68c8095c" comment="Unicode 0.25"/>
@@ -914,10 +886,7 @@ The commands are to be defined in WebEdit.ini file, in the "[Commands]" section.
 	<plugin name="XBrackets Lite">
 		<unicodeVersion>1.1</unicodeVersion>
 		<ansiVersion>1.1</ansiVersion>
-		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion:
-   * next character is analysed for ([{ brackets;
-    * next &amp; previous characters are analysed for " quote. 
-        </description>
+		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion: * next character is analysed for ([{ brackets; * next &amp; previous characters are analysed for " quote. </description>
 		<author>Dovgan Vitaliy</author>
 		<install>
 			<unicode>
@@ -930,13 +899,9 @@ The commands are to be defined in WebEdit.ini file, in the "[Commands]" section.
 			<copy from="XBrackets.txt" to="$PLUGINDIR$\doc\XBrackets" />
 		</install>
 	</plugin>
-	
 	<plugin name="ScrollPastEOF">
 		<ansiVersion>1.0</ansiVersion>
-		<description>This plugin simply configures the Scintilla components on
-
-startup to allow scrolling up to one page down past the end of file. Currently (as of Notepad++ 5.0 BETA) there is no GUI setting to enable this feature. It may be added at a later time, but if you are using an older version, you may still want to use this plugin. 
-        </description>
+		<description>This plugin simply configures the Scintilla components on startup to allow scrolling up to one page down past the end of file. Currently (as of Notepad++ 5.0 BETA) there is no GUI setting to enable this feature. It may be added at a later time, but if you are using an older version, you may still want to use this plugin. </description>
 		<author>Alexander Iljin</author>
 		<versions>
 			<version number="1.0" md5="eb3744daf364793da4b6aa24e327a834" />
@@ -946,10 +911,7 @@ startup to allow scrolling up to one page down past the end of file. Currently (
 			<copy from="ScrollPastEOF.dll" to="$PLUGINDIR$" validate="true" />
 		</install>
 	</plugin>
-	
-	<!-- Need .NET registration functionality in PM for this to work <plugin name="AwkPlugin"></plugin> -->
-	
-	<plugin name="Gmod LUA Syntax Highlighter">
+	<!-- Need .NET registration functionality in PM for this to work <plugin name="AwkPlugin"></plugin> --><plugin name="Gmod LUA Syntax Highlighter">
 		<unicodeVersion>1.2</unicodeVersion>
 		<homepage>http://code.google.com/p/npp-gmod-lua/</homepage>
 		<description>A Garry's Mod 10 lua syntax highlighter plugin. It's also a good demonstration of syntax highlighter plugins for Notepad++.</description>
@@ -967,8 +929,7 @@ startup to allow scrolling up to one page down past the end of file. Currently (
 	<plugin name="KVS Language">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
-		<description>Syntax highlighting for the KVS language (KVIrc Scripting language).
-				  An example of an external lexer</description>
+		<description>Syntax highlighting for the KVS language (KVIrc Scripting language). An example of an external lexer</description>
 		<author>Thell Fowler</author>
 		<sourceUrl>http://www.brotherstone.co.uk/npp/kvs/KVS_src.zip</sourceUrl>
 		<install>
@@ -980,10 +941,8 @@ startup to allow scrolling up to one page down past the end of file. Currently (
 			</ansi>
 			<copy from="ExternalLexerKVS.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="Config\ExternalLexerKVS.xml" to="$CONFIGDIR$" />
-			
 		</install>
 	</plugin>
-	
 	<plugin name="Powershell Lexer">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
