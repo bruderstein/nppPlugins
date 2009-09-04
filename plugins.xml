@@ -7,6 +7,8 @@
 		<pluginName md5="251302df44178f25e0844efe4f8ea3f0" name="Log Plugin" comment="1.0 ansi, reported name is NppLog"/>
 		<pluginName md5="b663f742a17c455233752c41e127468e" name="Powershell Lexer" comment="1.0 ansi, reported name is NppExternalLexers"/>
 		<pluginName md5="22359d39c6a7aab44fb56891e608b80d" name="Powershell Lexer" comment="1.0 unicode, reported name is NppExternalLexers"/>
+		<pluginName md5="de17cab5ab6244ce4ee328dcdd61bfcc" name="Language Help" commit="1.2 ansi, reported is LanguageHelp changed in 1.3.1.1"/>
+		<pluginName md5="0771b6dfdd657755fce8997e3a5a0daf" name="Language Help" commit="1.2 unicode, reported is LanguageHelp changed in 1.3.1.1"/>
 	</pluginNames>
 	<plugin name="AutoSave">
 		<ansiVersion>1.1.1.0</ansiVersion>
@@ -317,7 +319,7 @@
 			<copy from="HTMLTag-readme.txt" to="$PLUGINDIR$\doc\HTMLTag"/>
 		</install>
 	</plugin>
-	<plugin name="LanguageHelp">
+	<plugin name="Language Help">
 		<unicodeVersion>1.3.1.1</unicodeVersion>
 		<ansiVersion>1.3.1.1</ansiVersion>
 		<description>LanguageHelp allows to run a language specific help file (CHM, HLP, PDF) and search for the keyword under the cursor. The latest versions allow also to show the help file as menu entries for quick launch.</description>
