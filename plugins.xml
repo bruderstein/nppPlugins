@@ -321,10 +321,7 @@
 		<unicodeVersion>1.3.1.1</unicodeVersion>
 		<ansiVersion>1.3.1.1</ansiVersion>
 		<description>LanguageHelp allows to run a language specific help file (CHM, HLP, PDF) and search for the keyword under the cursor. The latest versions allow also to show the help file as menu entries for quick launch.</description>
-		<latestUpdate>- a toolbar button for calling the help on the currently selected word \n
-- the possibility of showing the help command on the context menu \n
-- the possibility of searching for the currently selected word even when using the menu \n
-        </latestUpdate>
+		<latestUpdate>- a toolbar button for calling the help on the currently selected word \n - the possibility of showing the help command on the context menu \n - the possibility of searching for the currently selected word even when using the menu \n</latestUpdate>
 		<install>
 			<download>http://fstellari.googlepages.com/LanguageHelp_dll_1v311.zip</download>
 			<unicode>
