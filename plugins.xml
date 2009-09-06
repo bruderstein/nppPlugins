@@ -787,7 +787,7 @@
 			</ansi>
 		</install>
 	</plugin>
-	<plugin name="SimpleScript">
+	<plugin name="Simple Script">
 		<ansiVersion>1.13</ansiVersion>
 		<description>Simple script plug-in allows you to make up your script from buid-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes. </description>
 		<author>Todd Hadley (Fidvo)</author>
@@ -926,7 +926,7 @@
 			</unicode>
 		</install>
 	</plugin>
-	<plugin name="KVS Language">
+	<plugin name="External Lexer KVS">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<description>Syntax highlighting for the KVS language (KVIrc Scripting language). An example of an external lexer</description>
