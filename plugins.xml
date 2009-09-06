@@ -9,6 +9,7 @@
 		<pluginName md5="22359d39c6a7aab44fb56891e608b80d" name="Powershell Lexer" comment="1.0 unicode, reported name is NppExternalLexers"/>
 		<pluginName md5="de17cab5ab6244ce4ee328dcdd61bfcc" name="Language Help" commit="1.2 ansi, reported is LanguageHelp changed in 1.3.1.1"/>
 		<pluginName md5="0771b6dfdd657755fce8997e3a5a0daf" name="Language Help" commit="1.2 unicode, reported is LanguageHelp changed in 1.3.1.1"/>
+		<pluginName md5="7f5a8f4593ae589529772b37690b443d" name="MultiClipboard" comment="1.4.1 ansi - reports Multi-Clipboard" />
 	</pluginNames>
 	<plugin name="AutoSave">
 		<ansiVersion>1.1.1.0</ansiVersion>
@@ -748,7 +749,7 @@
 			<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" comment=""/>
 		</versions>
 	</plugin>
-	<plugin name="SearchInFiles">
+	<plugin name="Search in Files">
 		<ansiVersion>1.12</ansiVersion>
 		<description>A nicely done Find in files plugin which shows the information in a neat tree view.</description>
 		<author>Jose Javier Sanjose</author>
@@ -800,7 +801,7 @@
 			</ansi>
 		</install>
 	</plugin>
-	<plugin name="ColorPicker">
+	<plugin name="Color Picker">
 		<ansiVersion>1.3</ansiVersion>
 		<description>A color picker which translates your selected colour in hexadecimal.</description>
 		<author>Matthew Edwards</author>
