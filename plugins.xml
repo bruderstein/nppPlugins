@@ -285,16 +285,18 @@
 		</install>
 	</plugin>
 	<plugin name="HEX-Editor">
-		<unicodeVersion>0.9.4.0</unicodeVersion>
-		<ansiVersion>0.9.3.0</ansiVersion>
+		<unicodeVersion>0.9.5.0</unicodeVersion>
+		<ansiVersion>0.9.5.0</ansiVersion>
 		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
-		<stability>Some issues, particularly with comparing, occasional crash</stability>
+		<author>Jens Lorenz</author>
+		<latestUpdate>\nFix: Menu of Npp++ isn't displayed properly after using hex [NPP-P-B-2799622] \nFix: HEX v0.9.3 forgets scroll position when switching tabs [NPP-P-B-2721661] \nFix: "Repleace" misspell in HEX-Editor plugins Help dialog [NPP-P-B-2351008] \nFix: Opening a file from outside with enabled Hex-Mode cause graphic issues. \nFix: "Go to another view" causes a crash if no document is opened. \nFix: Compare has no limitations anymore. \nFix: Bookmark color wasn't stored. \nFix: Restriction of Simple Compare removed. \nFix: Paste of data into combo box of Find dialog doesn't work in ANSI/HEX mode \nNew: Changed Bookmark style. \nNew: Shortcuts for Undo, Redo, Copy, Cut, Paste and Select All are now in sync with the Notepad++ shortcuts. </latestUpdate>
+		<stability>Some reported issues, however many bugs fixed in latest release</stability>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/HexEditor_0_9_4_UNI_dll.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/Hex%20Editor/Hex%20Editor%20Plugin%20v0.9.5/HexEditor_0_9_5_UNI_dll.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/HexEditor_0_9_3_dll_ANSI.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/Hex%20Editor/Hex%20Editor%20Plugin%20v0.9.5/HexEditor_0_9_5_ANSI_dll.zip</download>
 			</ansi>
 			<copy from="HexEditor.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
@@ -321,12 +323,12 @@
 		</install>
 	</plugin>
 	<plugin name="Language Help">
-		<unicodeVersion>1.3.1.1</unicodeVersion>
-		<ansiVersion>1.3.1.1</ansiVersion>
+		<unicodeVersion>1.3.2.0</unicodeVersion>
+		<ansiVersion>1.3.2.0</ansiVersion>
 		<description>LanguageHelp allows to run a language specific help file (CHM, HLP, PDF) and search for the keyword under the cursor. The latest versions allow also to show the help file as menu entries for quick launch.</description>
-		<latestUpdate>- a toolbar button for calling the help on the currently selected word \n - the possibility of showing the help command on the context menu \n - the possibility of searching for the currently selected word even when using the menu \n</latestUpdate>
+		<latestUpdate>Adds several options/features that were requested by users: \n- the context menu entry can be displayed either at the top or bottom (see options dialog box) \n- if no Acrobat program is found in the registry the PDF file is shell executed so that your preferred read is started (note that in this way no keyword search is possible) \n- the "Test" button in the language edit dialog box has been renamed to a more appropriated "Expand". A new "Test" button has been added to test the help file in the same way as calling the "Help" from the menu.</latestUpdate>
 		<install>
-			<download>http://fstellari.googlepages.com/LanguageHelp_dll_1v311.zip</download>
+			<download>http://fstellari.googlepages.com/LanguageHelp_dll_1v32.zip</download>
 			<unicode>
 				<copy from="LanguageHelpU.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
@@ -351,14 +353,15 @@
 		</install>
 	</plugin>
 	<plugin name="Math Evaluator">
-		<unicodeVersion>0.0.4.6</unicodeVersion>
+		<unicodeVersion>0.0.4.7</unicodeVersion>
 		<ansiVersion>0.0.3.0</ansiVersion>
 		<homepage>http://www.semelinanno.com/downloads/anmxnpp/anmXNpp_Page.html</homepage>
 		<description>This plugin allows evaluating mathematical expressions, as well as some simple formal calculus.</description>
 		<author>Somic</author>
+		<latestUpdate>\n- Added menu item: Build Matrix to facilitate the entry of a vector/matrix string \n- Modified Eval Line To Window (Ctrl + 2) menu item to claculate result without Expr = prefix. \n  es. Expr = 1 + 2 * 3 (Ctrl+2) = 7.0000 can be also written 1 + 2 * 3 [=], where = is optional </latestUpdate>
 		<install>
 			<unicode>
-				<download>http://www.semelinanno.com/downloads/anmxnpp/ver0046/anmXNpp_v0046.zip</download>
+				<download>http://www.semelinanno.com/downloads/anmxnpp/ver0047/anmXNpp_v0047.zip</download>
 				<copy from="plugins\anmXNppUC.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
 			<ansi>
@@ -422,6 +425,22 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="NppCrypt">
+		<unicodeVersion>1.0</unicodeVersion>
+		<author>lorenzmpower</author>
+		<sourceUrl>http://www.cerberus-design.de/nppcrypt.zip</sourceUrl>
+		<description>Allows encryption / decryption and hashing of text using a password.</description>
+		<versions>
+			<version number="1.0" md5="9ec7f2d0cf210772bce84700f38776c6" />
+		</versions>
+		<install>
+			<unicode>
+				<download>http://www.cerberus-design.de/nppcrypt.zip</download>
+				<copy from="NppCryptPlugin.dll" to="$PLUGINDIR$" validate="true"/>
+				<copy from="readme.txt" to="$PLUGINDIR$\doc\NppCrypt" />
+			</unicode>
+		</install>
+	</plugin>
 	<plugin name="NppDocShare">
 		<!-- Same as NppNetNote, just the old name -->
 		<sourceUrl>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_src.zip</sourceUrl>
@@ -454,17 +473,18 @@
 		</install>
 	</plugin>
 	<plugin name="NppExec">
-		<unicodeVersion>0.3.0.1</unicodeVersion>
-		<ansiVersion>0.3.0.1</ansiVersion>
-		<sourceUrl/>
+		<unicodeVersion>0.3.2.0</unicodeVersion>
+		<ansiVersion>0.3.2.0</ansiVersion>
+		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
 		<author>Dovgan Vitaliy</author>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
+		<latestUpdate>+ new feature: TAB autocompletes file paths (in the Console) \n(* thanks to ILme for initial implementation) \n+ new feature: Shift+Tab (in the Console, the same as TAB but backwards) \n- fixed: 'cd \path', 'dir \path' did not jump to the root of current drive \n- fixed: on-exit script was not executed \n+ new command: NPE_CMDALIAS \n+ new menu item: Disable command aliases \n+ new option in NPE_CONSOLE: q+/q-</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppExec_031_dll_Unicode.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.3.2/NppExec_032_dll_Unicode.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppExec_031_dll_ANSI.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.3.2/NppExec_032_dll_ANSI.zip</download>
 			</ansi>
 			<copy from="NppExec.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
@@ -788,7 +808,7 @@
 		</install>
 	</plugin>
 	<plugin name="Simple Script">
-		<ansiVersion>1.13</ansiVersion>
+		<ansiVersion>1.1.3</ansiVersion>
 		<description>Simple script plug-in allows you to make up your script from buid-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes. </description>
 		<author>Todd Hadley (Fidvo)</author>
 		<install>
