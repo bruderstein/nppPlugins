@@ -426,12 +426,14 @@
 		</install>
 	</plugin>
 	<plugin name="NppCrypt">
-		<unicodeVersion>1.0</unicodeVersion>
+		<unicodeVersion>1.0.1</unicodeVersion>
 		<author>lorenzmpower</author>
 		<sourceUrl>http://www.cerberus-design.de/nppcrypt.zip</sourceUrl>
 		<description>Allows encryption / decryption and hashing of text using a password.</description>
+		<latestUpdate>Add switches to enable reading and writing hex and to use unsalted encryption</latestUpdate>
 		<versions>
 			<version number="1.0" md5="9ec7f2d0cf210772bce84700f38776c6" />
+			<version number="1.0.1" md5="eeea34937d317fd9c5fde569ee3540a4" />
 		</versions>
 		<install>
 			<unicode>
