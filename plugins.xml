@@ -438,7 +438,7 @@
 		<install>
 			<unicode>
 				<download>http://www.cerberus-design.de/nppcrypt.zip</download>
-				<copy from="NppCryptPlugin.dll" to="$PLUGINDIR$" validate="true"/>
+				<copy from="NppCrypt.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\NppCrypt" />
 			</unicode>
 		</install>
