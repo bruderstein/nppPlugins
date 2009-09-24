@@ -704,24 +704,39 @@
 			<copy from="readme.txt" to="$PLUGINDIR$\doc\switcher"/>
 		</install>
 	</plugin>
-	<plugin name="Universal Indenter">
-		<!--  Removed until it installs cleanly<unicodeVersion>1.0</unicodeVersion><ansiVersion>1.0</ansiVersion>!--><homepage>http://sourceforge.net/projects/universalindent/</homepage>
-		<description>A cross platform GUI for several code formatter, beautifier and indenter like AStyle, GNU Indent, GreatCode, HTML Tidy, Uncrustify and many more. Main feature is a live preview to directly see how the selected formatting option affects the source code. Several languages supported, among which far eastern ones, and a translation tool is also available at the project's files page.	PLEASE NOTE: For the moment, you will need to rename the file UniversalIndentGUI_NPP.dll_ansi or UniversalIndentGUI_NPP.dll_unicode to remove the _ansi or _unicode from the file in the plugins directory after installation.  This will be fixed in a later version of the Plugin Manager.</description>
+	<plugin name="UniversalIndentGUI">
+		<unicodeVersion>1.0.2</unicodeVersion>
+		<ansiVersion>1.0.2</ansiVersion>
+		<homepage>http://sourceforge.net/projects/universalindent/</homepage>
+		<description>A cross platform GUI for several code formatter, beautifier and indenter like AStyle, GNU Indent, GreatCode, HTML Tidy, Uncrustify and many more. Main feature is a live preview to directly see how the selected formatting option affects the source code. Several languages supported, among which far eastern ones, and a translation tool is also available at the project's files page.</description>
 		<author>thomas_-_s</author>
 		<install>
 			<download>http://sourceforge.net/projects/universalindent/files/universalindent/UniversalIndentGUI_1.0.2_NotepadPPplugin.zip</download>
 			<ansi>
-				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_ansi" to="$PLUGINDIR$" validate="true"/>
+				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_ansi" toFile="$PLUGINDIR$\UniversalIndentGUI_NPP.dll" validate="true"/>
 			</ansi>
 			<unicode>
-				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_unicode" to="$PLUGINDIR$" validate="true"/>
+				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_unicode" toFile="$PLUGINDIR$\UniversalIndentGUI_NPP.dll" validate="true"/>
 			</unicode>
-			<copy from="QtCore4.dll" to="$NPPDIR$" validate="true"/>
-			<copy from="QtGui4.dll" to="$NPPDIR$" validate="true"/>
-			<copy from="QtScript4.dll" to="$NPPDIR$" validate="true"/>
-			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\config\*.*" to="$CONFIGDIR$"/>
-			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.*" to="$PLUGINDIR$\uigui\indenters"/>
-			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.*" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\QtCore4.dll" to="$NPPDIR$" validate="true"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\QtGui4.dll" to="$NPPDIR$" validate="true"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\QtScript4.dll" to="$NPPDIR$" validate="true"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\config\*.ini" to="$PLUGINDIR$\uigui\config"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.exe" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.dll" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.awk" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.html" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.ini" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\hindent" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\perltidy" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.js" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.php" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.pm" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.py" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.rb" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.txt" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\example.*" to="$PLUGINDIR$\uigui\indenters" replace="true"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\translations\*.qm" to="$PLUGINDIR$\uigui\translations"/>
 		</install>
 	</plugin>
 	<plugin name="Window Manager">
