@@ -513,17 +513,17 @@
 		</install>
 	</plugin>
 	<plugin name="Plugin Manager">
-		<unicodeVersion>0.9.2.1</unicodeVersion>
-		<ansiVersion>0.9.2.1</ansiVersion>
+		<unicodeVersion>0.9.3.0</unicodeVersion>
+		<ansiVersion>0.9.3.0</ansiVersion>
 		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
 		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
-		<latestUpdate>\n - A few bugfixes \n - Ability to show stability of plugins \n - Shows latest update where information is available \n - Descriptions now can contain newlines \n - Only checks for new plugins once every 3 days now (will always check if plugin manager is opened)</latestUpdate>
+		<latestUpdate>Fixes issue with paths with extended (non-latin ASCII) characters\nAdds plugin alias facility for plugins with multiple names</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9.2.1_UNI.zip</download>
+				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9.3_UNI.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9.2.1_ANSI.zip</download>
+				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9.3_ANSI.zip</download>
 			</ansi>
 			<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true"/>
