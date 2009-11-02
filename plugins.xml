@@ -512,6 +512,23 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="Perforce actions">
+		<unicodeVersion>2.0.0.1</unicodeVersion>
+		<ansiVersion>2.0.0.1</ansiVersion>
+		<sourceUrl>http://www.brotherstone.co.uk/npp/perforce/NppPerforcePlugin_Source.zip</sourceUrl>
+		<description>Provides integration with Perforce. Checkout, mark for add, mark for delete and revert operations are supported through the plugin's menu. Also, the file is automatically checked out when you start typing in it.</description>
+		<author>Henrik Ravn</author>
+		<install>
+			<unicode>
+				<download>http://www.brotherstone.co.uk/npp/perforce/NppPerforcePlugin_Unicode.zip</download>
+				<copy from="NppPerforcePlugin.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<download>http://www.brotherstone.co.uk/npp/perforce/NppPerforcePlugin_Ansi.zip</download>
+				<copy from="NppPerforcePlugin_Ansi.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+		</install>
+	</plugin>
 	<plugin name="Plugin Manager">
 		<unicodeVersion>0.9.3.0</unicodeVersion>
 		<ansiVersion>0.9.3.0</ansiVersion>
@@ -759,19 +776,20 @@
 		</install>
 	</plugin>
 	<plugin name="XML Tools">
-		<unicodeVersion>2.3.1.697</unicodeVersion>
-		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/XML%20Tools/xmltools_2.3.1_r639_source.zip/download</sourceUrl>
-		<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based. The plugin features are: - XML syntax Check - XML Schema (XSD) + DTD Validation - XML tag autoclose - Pretty print - Linarize XML - Current XML Path - Conversion XML &lt;-&gt; Text - Comment / Uncomment - XPath expression evaluation</description>
+		<unicodeVersion>2.3.1.764</unicodeVersion>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/XML%20Tools/xmltools_2.3.1_r639_source.zip/download (older version)</sourceUrl>
+		<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based. The plugin features are:\n- XML syntax Check\n- XML Schema (XSD) + DTD Validation\n- XML tag autoclose\n- Pretty print\n- Linarize XML\n- Current XML Path\n- Conversion XML &lt;-&gt; Text\n- Comment / Uncomment\n- XPath expression evaluation</description>
+		<latestUpdate>\n* XPath evaluation crash bug\n* Fix relative DTD / XMLSchema issue</latestUpdate>
 		<author>Nicolas Crittin</author>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/xmltools_2.3.1_r697_unicode_alpha4.zip</download>
-				<copy from="XMLTools.dll" to="$PLUGINDIR$" validate="true"/>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/ext_libs.zip</download>
 				<copy from="iconv.dll" to="$NPPDIR$" validate="true"/>
 				<copy from="libxml2.dll" to="$NPPDIR$" validate="true"/>
 				<copy from="libxslt.dll" to="$NPPDIR$" validate="true"/>
 				<copy from="zlib1.dll" to="$NPPDIR$" validate="true"/>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/XML%20Tools/Xml%20Tools%202.3.1%20r764%20Unicode%20Beta1/xmltools_2.3.1_r764_unicode_beta1.zip</download>
+				<copy from="XMLTools.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
 		</install>
 		<versions>
@@ -785,6 +803,7 @@
 			<version number="2.3.1.671" md5="88a5063bb0c864f1cb196ab141ea0c6d" comment=""/>
 			<version number="2.3.1.685" md5="fa999eb776a218d68b2c5705a9f7c10d" comment=""/>
 			<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" comment=""/>
+			<version number="2.3.1.764" md5="cb1556f0a9bcde3431e2b00ea8daac80" comment=""/>
 		</versions>
 	</plugin>
 	<plugin name="Search in Files">
