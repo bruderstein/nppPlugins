@@ -512,6 +512,30 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="Oberon-2 Lexer">
+		<unicodeVersion>0.3</unicodeVersion>
+		<ansiVersion>0.3</ansiVersion>
+		<description>Oberon-2 Lexer plugin provides syntax highlighting for the Oberon-2 programming language.</description>
+		<author>Alexander Iljin</author>
+		<versions>
+			<version number="0.3" md5="d0999f6603dfb5153a1ef54c687b271d" comment="unicode"/>
+			<version number="0.3" md5="ef9610e37644482515aa525123cdb8fb" comment="ansi"/>
+		</versions>
+		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3/Oberon2Lexer.v0.3.zip</sourceUrl>
+		<latestUpdate>First public release.</latestUpdate>
+		<install>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3/Oberon2Lexer.v0.3.zip</download>
+			<ansi>
+				<copy from="Oberon2Lexer\Oberon2Lexer.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="Oberon2Lexer\Config\Oberon2Lexer.xml" to="$CONFIGDIR$" backup="true" />
+			</ansi>
+			<unicode>
+				<copy from="Oberon2Lexer\Oberon2LexerU.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="Oberon2Lexer\Config\Oberon2LexerU.xml" to="$CONFIGDIR$" backup="true" />
+			</unicode>
+			<copy from="Oberon2Lexer\*.txt" to="$PLUGINDIR$\doc\Oberon2Lexer" />
+		</install>
+	</plugin>
 	<plugin name="Perforce actions">
 		<unicodeVersion>2.0.0.1</unicodeVersion>
 		<ansiVersion>2.0.0.1</ansiVersion>
