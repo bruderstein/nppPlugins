@@ -957,15 +957,23 @@
 		</install>
 	</plugin>
 	<plugin name="ScrollPastEOF">
+		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
-		<description>This plugin simply configures the Scintilla components on startup to allow scrolling up to one page down past the end of file. Currently (as of Notepad++ 5.0 BETA) there is no GUI setting to enable this feature. It may be added at a later time, but if you are using an older version, you may still want to use this plugin. </description>
+		<description>This plugin simply configures the Scintilla components on startup to allow scrolling up to one page down past the end of file. Currently (as of Notepad++ 5.6.2) there is no GUI setting to enable this feature. It may be added at a later time, but if you are using an older version, you may still want to use this plugin. </description>
 		<author>Alexander Iljin</author>
 		<versions>
-			<version number="1.0" md5="eb3744daf364793da4b6aa24e327a834" />
+			<version number="1.0" md5="ec336b3a0f1248a4d7e81cb108bffbd0" comment="unicode"/>
+			<version number="1.0" md5="eb3744daf364793da4b6aa24e327a834" comment="ansi" />
 		</versions>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/ScrollPastEOF/ScrollPastEOF%201.0/ScrollPastEOF.1.0.zip</download>
-			<copy from="ScrollPastEOF.dll" to="$PLUGINDIR$" validate="true" />
+			<download>http://downloads.sourceforge.net/project/npp-plugins/ScrollPastEOF/ScrollPastEOF%201.0U/ScrollPastEOF.1.0U.zip</download>
+			<ansi>
+				<copy from="ScrollPastEOF.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+			<unicode>
+				<copy from="ScrollPastEOFUni.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<copy from="*.txt" to="$PLUGINDIR$\doc\ScrollPastEOF" />
 		</install>
 	</plugin>
 	<!-- Need .NET registration functionality in PM for this to work <plugin name="AwkPlugin"></plugin> --><plugin name="Gmod LUA Syntax Highlighter">
