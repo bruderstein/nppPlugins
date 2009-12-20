@@ -731,7 +731,7 @@
 			</unicode>
 		</install>
 	</plugin>
-	<plugin name="switcher">
+	<plugin name="Switcher">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<homepage>http://f0dder.dcmembers.com/nppplugs.index.php</homepage>
@@ -741,6 +741,9 @@
 			<version number="1.0" md5="301c72341ba758b3cdfc8a56d576c7f0" comment="ansi"/>
 			<version number="1.0" md5="5a19bd60aa18e4454f1c4a6432ae5a72" comment="unicode"/>
 		</versions>
+		<aliases>
+			<alias name="switcher"/>
+		</aliases>
 		<install>
 			<download>http://f0dder.dcmembers.com/nppplugs/npp_plugins.zip</download>
 			<ansi>
@@ -749,7 +752,7 @@
 			<unicode>
 				<copy from="unicode\switcher.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
-			<copy from="readme.txt" to="$PLUGINDIR$\doc\switcher"/>
+			<copy from="readme.txt" to="$PLUGINDIR$\doc\Switcher"/>
 		</install>
 	</plugin>
 	<plugin name="UniversalIndentGUI">
