@@ -268,7 +268,7 @@
 	<plugin name="GuidGuard">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
-		<homepage>http://f0dder.dcmembers.com/npp_plugins/</homepage>
+		<homepage>http://f0dder.dcmembers.com/nppplugs.index.php</homepage>
 		<description>GuidGuard: a plugin that generates C++ style header include guards, using GUIDs for the guard identifier - this ensures you won't have identifier clashes even in larger projects, which traditional filename-based guards theoretically risk.</description>
 		<author>f0dder</author>
 		<versions>
@@ -276,7 +276,7 @@
 			<version number="1.0" md5="43d223b7fb94b5b664da762a2339a1fe" comment="unicode"/>
 		</versions>
 		<install>
-			<download>http://f0dder.dcmembers.com/npp_plugins/npp_plugins.zip</download>
+			<download>http://f0dder.dcmembers.com/nppplugs/npp_plugins.zip</download>
 			<ansi>
 				<copy from="ansi\guidguard.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
@@ -622,7 +622,7 @@
 	<plugin name="RegRexPlace">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
-		<homepage>http://f0dder.dcmembers.com/npp_plugins/</homepage>
+		<homepage>http://f0dder.dcmembers.com/nppplugs.index.php</homepage>
 		<description>RegRexPlace: a plugin to do "regular regular-expression replaces". Useful when you have often-used regex replacements. I personally use this when writing posts on forums, so I can use my own simplified markup and automatically generated BBCode markup from that. A sample .ini file is included.</description>
 		<author>f0dder</author>
 		<versions>
@@ -630,7 +630,7 @@
 			<version number="1.0" md5="8d26be3d399ea8d491cc83532205eea3" comment="ansi"/>
 		</versions>
 		<install>
-			<download>http://f0dder.dcmembers.com/npp_plugins/npp_plugins.zip</download>
+			<download>http://f0dder.dcmembers.com/nppplugs/npp_plugins.zip</download>
 			<ansi>
 				<copy from="ansi\regrexplace.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
@@ -734,7 +734,7 @@
 	<plugin name="switcher">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
-		<homepage>http://f0dder.dcmembers.com/npp_plugins/</homepage>
+		<homepage>http://f0dder.dcmembers.com/nppplugs.index.php</homepage>
 		<description>Switcher: a plugin to switch between 'associated' files. Currently it handles switching between asm&lt;&gt;inc, cpp&lt;&gt;h, cc&lt;&gt;h and c&lt;&gt;h. Useful when assigned to a hotkey.</description>
 		<author>f0dder</author>
 		<versions>
@@ -742,7 +742,7 @@
 			<version number="1.0" md5="5a19bd60aa18e4454f1c4a6432ae5a72" comment="unicode"/>
 		</versions>
 		<install>
-			<download>http://f0dder.dcmembers.com/npp_plugins/npp_plugins.zip</download>
+			<download>http://f0dder.dcmembers.com/nppplugs/npp_plugins.zip</download>
 			<ansi>
 				<copy from="ansi\switcher.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
