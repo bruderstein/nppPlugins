@@ -922,6 +922,7 @@
 			<version number="1.3.3" md5="47a1a0d12d2c866bc594e4f085d70a47" comment="unicode"/>
 			<version number="1.3.3" md5="5dad73b5261ea5cc2a75ad4455caefea" comment="ansi" />
 		</versions>
+		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%201.3.3/WebEdit.1.3.3.zip</sourceUrl>
 		<install>
 			<download>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%201.3.3/WebEdit.1.3.3.zip</download>
 			<unicode>
@@ -995,6 +996,7 @@
 			<version number="1.0" md5="ec336b3a0f1248a4d7e81cb108bffbd0" comment="unicode"/>
 			<version number="1.0" md5="eb3744daf364793da4b6aa24e327a834" comment="ansi" />
 		</versions>
+		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/ScrollPastEOF/ScrollPastEOF%201.0U/ScrollPastEOF.1.0U.zip</sourceUrl>
 		<install>
 			<download>http://downloads.sourceforge.net/project/npp-plugins/ScrollPastEOF/ScrollPastEOF%201.0U/ScrollPastEOF.1.0U.zip</download>
 			<ansi>
