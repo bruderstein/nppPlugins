@@ -29,7 +29,7 @@
 		</install>
 	</plugin>
 	<plugin name="CCompletion">
-		<unicodeVersion>1.12.0.0</unicodeVersion>
+		<unicodeVersion>1.15</unicodeVersion>
 		<description>It's an autocompletion plugin, that also features two other similar functionalities:   \n* find identifier and display it in secondary view   \n* go to identitifer  For more information on usage, see the plugin help.     \nThe plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
 		<author>Bostjan Mihoric</author>
 		<sourceUrl/>
@@ -42,6 +42,7 @@
 		<versions>
 			<version number="1.11.0.0" md5="ec262eb016aafc02afc59e8dd3b94e4f"/>
 			<version number="1.12" md5="7d56894e3a98704e9a8e34811d3e5440" />
+			<version number="1.15" md5="514320a0af90b6c85424fba5ac965da8" />
 		</versions>
 		<issues/>
 	</plugin>
@@ -353,23 +354,27 @@
 			<copy from="LightExplorer.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-	<plugin name="Math Evaluator">
-		<unicodeVersion>0.0.4.7</unicodeVersion>
+	<plugin name="MathPad">
+		<unicodeVersion>0.0.5.0</unicodeVersion>
 		<ansiVersion>0.0.3.0</ansiVersion>
 		<homepage>http://www.semelinanno.com/downloads/anmxnpp/anmXNpp_Page.html</homepage>
 		<description>This plugin allows evaluating mathematical expressions, as well as some simple formal calculus.</description>
 		<author>Somic</author>
-		<latestUpdate>\n- Added menu item: Build Matrix to facilitate the entry of a vector/matrix string \n- Modified Eval Line To Window (Ctrl + 2) menu item to claculate result without Expr = prefix. \n  es. Expr = 1 + 2 * 3 (Ctrl+2) = 7.0000 can be also written 1 + 2 * 3 [=], where = is optional </latestUpdate>
+		<latestUpdate>Fixed bug with Mathpad and use with Plugin Manager</latestUpdate>
+		<aliases>
+			<alias name="Math Evaluator"/>
+		</aliases>
 		<install>
 			<unicode>
-				<download>http://www.semelinanno.com/downloads/anmxnpp/ver0047/anmXNpp_v0047.zip</download>
-				<copy from="plugins\anmXNppUC.dll" to="$PLUGINDIR$" validate="true"/>
+				<download>http://www.semelinanno.com/downloads/mathpad/ver0050/MathPad_v0050.zip</download>
+				<copy from="plugins\mathpad.dll" to="$PLUGINDIR$" validate="true"/>
+				<copy from="plugins\mathpad\*.*" to="$PLUGINDIR$\mathpad" />
 			</unicode>
 			<ansi>
 				<download>http://www.semelinanno.com/downloads/anmxnpp/ver0030/anmXNpp_v0030.zip</download>
 				<copy from="plugins\anmXNpp.dll" to="$PLUGINDIR$" validate="true"/>
+				<copy from="plugins\anmXNpp\*.*" to="$PLUGINDIR$\anmXNpp"/>
 			</ansi>
-			<copy from="plugins\anmXNpp\*.*" to="$PLUGINDIR$\anmXNpp"/>
 		</install>
 	</plugin>
 	<plugin name="MultiClipboard">
@@ -559,6 +564,7 @@
 		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
 		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
 		<latestUpdate>Fixes issue with paths with extended (non-latin ASCII) characters\nAdds plugin alias facility for plugins with multiple names</latestUpdate>
+		<homepage>http://www.brotherstone.co.uk/npp/pm</homepage>
 		<install>
 			<unicode>
 				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9.3_UNI.zip</download>
@@ -1036,7 +1042,7 @@
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<description>Syntax highlighting and folding for Powershell scripts</description>
-		<author>Thell Fowlor</author>
+		<author>Thell Fowler</author>
 		<sourceUrl>http://poshcode.org/notepad++lexer/ExternalLexer.1.0.src.zip</sourceUrl>
 		<homepage>http://poshcode.org/notepad++lexer/</homepage>
 		<versions>
