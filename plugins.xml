@@ -521,7 +521,7 @@
 		<unicodeVersion>0.3</unicodeVersion>
 		<ansiVersion>0.3</ansiVersion>
 		<description>Oberon-2 Lexer plugin provides syntax highlighting for the Oberon-2 programming language.</description>
-		<author>Alexander Iljin</author>
+		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
 		<versions>
 			<version number="0.3" md5="d0999f6603dfb5153a1ef54c687b271d" comment="unicode"/>
 			<version number="0.3" md5="ef9610e37644482515aa525123cdb8fb" comment="ansi"/>
@@ -917,7 +917,7 @@
 		<unicodeVersion>1.3.3</unicodeVersion>
 		<ansiVersion>1.3.3</ansiVersion>
 		<description>This plugin allows you to define up to 30 commands. Each command will surround the currently selected text with the Left and Right text defined for the command. If there is no selection, the Left text is inserted to the left of current caret position, and the Right text is inserted to the right. In any case the selection and relative cursor position are preserved. Clipboard is not used. Both text insertions can be undone/redone as a single action. The commands are to be defined in WebEdit.ini file, in the "[Commands]" section. At most 30 commands may be defined in the "[Commands]" section, all excess commands are ignored. You can put WebEdit commands on the toolbar.</description>
-		<author>Alexander Iljin</author>
+		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
 		<versions>
 			<version number="1.3.3" md5="47a1a0d12d2c866bc594e4f085d70a47" comment="unicode"/>
 			<version number="1.3.3" md5="5dad73b5261ea5cc2a75ad4455caefea" comment="ansi" />
@@ -990,7 +990,7 @@
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<description>This plugin simply configures the Scintilla components on startup to allow scrolling up to one page down past the end of file. Currently (as of Notepad++ 5.6.2) there is no GUI setting to enable this feature. It may be added at a later time, but if you are using an older version, you may still want to use this plugin. </description>
-		<author>Alexander Iljin</author>
+		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
 		<versions>
 			<version number="1.0" md5="ec336b3a0f1248a4d7e81cb108bffbd0" comment="unicode"/>
 			<version number="1.0" md5="eb3744daf364793da4b6aa24e327a834" comment="ansi" />
