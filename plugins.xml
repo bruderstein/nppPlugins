@@ -605,6 +605,7 @@
 		<unicodeVersion>0.3.0.0</unicodeVersion>
 		<description>Allows plugins to maintain their own automatic updates.  A plugin must implement the information in its INI file, and provide a download URL.</description>
 		<author>Franco Stellari</author>
+		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
 		<install>
 			<unicode>
 				<download>http://fstellari.googlepages.com/PluginUpdate_dll_0v30.zip</download>
@@ -645,6 +646,7 @@
 		<unicodeVersion>1.3.0.1</unicodeVersion>
 		<ansiVersion>1.3.0.1</ansiVersion>
 		<author>Franco Stellari</author>
+		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
 		<description>RunMe allows to execute the currently open file, based on its shell association.</description>
 		<latestUpdate>Fixes the context menu feature that was broken in Notepad++ v5.5</latestUpdate>
 		<install>
