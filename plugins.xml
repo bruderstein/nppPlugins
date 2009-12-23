@@ -664,6 +664,7 @@
 		<unicodeVersion>1.0.0.0</unicodeVersion>
 		<ansiVersion>1.0.0.0</ansiVersion>
 		<description>This plugin is used by other plugins. It retrieves the marker symbol type for a line marker from Scintilla. If the marker has not had a marker symbol defined to it the value SC_MARK_AVAILABLE type is returned. This allows plugins to cooperate when when using line markers.</description>
+		<author>Thell Fowler</author>
 		<versions>
 			<version number="1.0" md5="f4691efbfcffe43a0b22b49edfc167a1" comment="unicode"/>
 			<version number="1.0" md5="f335b835a34ec90326c7c163f91862cc" comment="ansi" />
