@@ -239,6 +239,37 @@
 			<copy from="FunctionList.dll" to="$PLUGINDIR$"/>
 		</install>
 	</plugin>
+	<plugin name="Gmod Lua Lexer">
+		<unicodeVersion>1.3</unicodeVersion>
+		<ansiVersion>1.1</ansiVersion>
+		<description>A Garry's Mod 10 lua syntax highlighter plugin. It's also a good demonstration of syntax highlighter plugins for Notepad++.</description>
+		<author>Kyle Fleming (aka Garthex)</author>
+		<homepage>http://code.google.com/p/npp-gmod-lua/</homepage>
+		<sourceUrl>http://npp-gmod-lua.googlecode.com/files/NppGmodLuaPlugin-v1.3.src.zip</sourceUrl>
+		<latestUpdate>\n- Updated keyword list and comment font</latestUpdate>
+		<stability>Good</stability>
+		<aliases>
+			<alias name="Gmod Lua" />
+			<alias name="Gmod 10 Lua Lexer" />
+		</aliases>
+		<install>
+			<unicode>
+				<download>http://npp-gmod-lua.googlecode.com/files/NppGmodLuaPlugin-v1.3.zip</download>
+				<copy from="doc\GmodLua-readme.txt" to="$PLUGINDIR$\doc" />
+			</unicode>
+			<ansi>
+				<download>http://npp-gmod-lua.googlecode.com/files/NppGmodLuaPlugin-1.1.zip</download>
+			</ansi>
+			<copy from="GmodLua.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="Config\GmodLua.xml" to="$CONFIGDIR$" />
+		</install>
+		<versions>
+			<version number="1.0" md5="6d7e70aa9a902c943d34ef66a39356a0" comment="Ansi, known as Gmod Lua" />
+			<version number="1.1" md5="b7b50c7a306afb2fa236bb812b3c0980" comment="Ansi, known as Gmod Lua" />
+			<version number="1.2" md5="45278a3477e48874854c0cb332cb9745" comment="Unicode, known as Gmod 10 Lua Lexer" />
+			<version number="1.3" md5="e1f79cd2c9c243e093baaa7ed63fa04d" comment="Unicode, known as Gmod 10 Lua Lexer" />
+		</version>
+	</plugin>
 	<plugin name="Gtag Search">
 		<unicodeVersion>0.2</unicodeVersion>
 		<description>Early release of a plugin for a gtags and ctags based search for Notepad++.  You need to run "ctags -r" and "gtags" from your code root.</description>
@@ -1007,33 +1038,6 @@
 		</install>
 	</plugin>
 	<!-- Need .NET registration functionality in PM for this to work <plugin name="AwkPlugin"></plugin> -->
-	<plugin name="Gmod Lua Syntax Highlighter">
-		<unicodeVersion>1.3</unicodeVersion>
-		<ansiVersion>1.1</ansiVersion>
-		<homepage>http://code.google.com/p/npp-gmod-lua/</homepage>
-		<description>A Garry's Mod 10 lua syntax highlighter plugin. It's also a good demonstration of syntax highlighter plugins for Notepad++.</description>
-		<author>Kyle Fleming (aka Garthex)</author>
-		<sourceUrl>http://npp-gmod-lua.googlecode.com/files/NppGmodLuaPlugin-v1.3.src.zip</sourceUrl>
-		<latestUpdate>\n- Updated keyword list and comment font</latestUpdate>
-		<stability>Good</stability>
-		<install>
-			<unicode>
-				<download>http://npp-gmod-lua.googlecode.com/files/NppGmodLuaPlugin-v1.3.zip</download>
-				<copy from="doc\GmodLua-readme.txt" to="$PLUGINDIR$\doc" />
-			</unicode>
-			<ansi>
-				<download>http://npp-gmod-lua.googlecode.com/files/NppGmodLuaPlugin-1.1.zip</download>
-			</ansi>
-			<copy from="GmodLua.dll" to="$PLUGINDIR$" validate="true"/>
-			<copy from="Config\GmodLua.xml" to="$CONFIGDIR$" />
-		</install>
-		<versions>
-			<version number="1.0" md5="6d7e70aa9a902c943d34ef66a39356a0" comment="Ansi" />
-			<version number="1.1" md5="b7b50c7a306afb2fa236bb812b3c0980" comment="Ansi" />
-			<version number="1.2" md5="45278a3477e48874854c0cb332cb9745" comment="Unicode" />
-			<version number="1.3" md5="e1f79cd2c9c243e093baaa7ed63fa04d" comment="Unicode" />
-		</version>
-	</plugin>
 	<plugin name="External Lexer KVS">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
