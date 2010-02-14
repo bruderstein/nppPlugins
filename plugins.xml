@@ -10,6 +10,8 @@
 		<pluginName md5="de17cab5ab6244ce4ee328dcdd61bfcc" name="Language Help" commit="1.2 ansi, reported is LanguageHelp changed in 1.3.1.1"/>
 		<pluginName md5="0771b6dfdd657755fce8997e3a5a0daf" name="Language Help" commit="1.2 unicode, reported is LanguageHelp changed in 1.3.1.1"/>
 		<pluginName md5="7f5a8f4593ae589529772b37690b443d" name="MultiClipboard" comment="1.4.1 ansi - reports Multi-Clipboard" />
+		<pluginName md5="301c72341ba758b3cdfc8a56d576c7f0" name="Switcher" comment="ansi - capitalisation of S"/>
+		<pluginName md5="5a19bd60aa18e4454f1c4a6432ae5a72" name="Switcher" comment="unicode"/>
 	</pluginNames>
 	<plugin name="AutoSave">
 		<ansiVersion>1.1.1.0</ansiVersion>
@@ -355,20 +357,27 @@
 		</install>
 	</plugin>
 	<plugin name="MathPad">
-		<unicodeVersion>0.0.5.0</unicodeVersion>
+		<unicodeVersion>0.0.5.2</unicodeVersion>
 		<ansiVersion>0.0.3.0</ansiVersion>
 		<homepage>http://www.semelinanno.com/downloads/anmxnpp/anmXNpp_Page.html</homepage>
 		<description>This plugin allows evaluating mathematical expressions, as well as some simple formal calculus.</description>
 		<author>Somic</author>
-		<latestUpdate>Fixed bug with Mathpad and use with Plugin Manager</latestUpdate>
+		<latestUpdate>- Fixed a minor bug showing a square in calltips on some systems (choose your own New Line character)
+\n- Moved all the log and debug output to the System Debug (use the free tool DebugView to view it). Menu updated#
+\n- Fixed a bug with Options menu (not shown)
+\n- New CallTip with Hexadecimal and Binary results (see picture)
+\n- Added Custom Menu (Ctrl + Right Click) after CallTip shows with conversion &amp; clipboard functions
+\n- Plugin Log writes to System Debug pipe (use Sysinternals@ free DebugView to view it, filtering by 'MathPad' string)
+\n- List of Commands now in HTML format (copy in plugins\mathpad folder) </latestUpdate>
 		<aliases>
 			<alias name="Math Evaluator"/>
 		</aliases>
 		<install>
 			<unicode>
-				<download>http://www.semelinanno.com/downloads/mathpad/ver0050/MathPad_v0050.zip</download>
-				<copy from="plugins\mathpad.dll" to="$PLUGINDIR$" validate="true"/>
+				<download>http://semelinanno.com/downloads/mathpad/ver0050/MathPad_v0050.zip</download>
 				<copy from="plugins\mathpad\*.*" to="$PLUGINDIR$\mathpad" />
+				<download>http://semelinanno.com/downloads/mathpad/ver0052/MathPad_v0052.zip</download>
+				<copy from="mathpad.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
 			<ansi>
 				<download>http://www.semelinanno.com/downloads/anmxnpp/ver0030/anmXNpp_v0030.zip</download>
@@ -481,18 +490,21 @@
 		</install>
 	</plugin>
 	<plugin name="NppExec">
-		<unicodeVersion>0.3.2.0</unicodeVersion>
-		<ansiVersion>0.3.2.0</ansiVersion>
+		<unicodeVersion>0.3.3.1</unicodeVersion>
+		<ansiVersion>0.3.3.1</ansiVersion>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
 		<author>Dovgan Vitaliy</author>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
-		<latestUpdate>+ new feature: TAB autocompletes file paths (in the Console) \n(* thanks to ILme for initial implementation) \n+ new feature: Shift+Tab (in the Console, the same as TAB but backwards) \n- fixed: 'cd \path', 'dir \path' did not jump to the root of current drive \n- fixed: on-exit script was not executed \n+ new command: NPE_CMDALIAS \n+ new menu item: Disable command aliases \n+ new option in NPE_CONSOLE: q+/q-</latestUpdate>
+		<latestUpdate>fix1: now CRLF (Enter key emulation) is sent to the pipe separately
+\n- fix2: n++'es unsubclassing on exit removed (might be dangerous)
+\n- fix3: now the Console should keep its font always (IMF_AUTOFONT turned off)
+\n+ Help/Manual updated (sections 4.6.3 and 4.6.4 added)</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.3.2/NppExec_032_dll_Unicode.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.3.3.1/NppExec_0331_dll_Unicode.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.3.2/NppExec_032_dll_ANSI.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.3.3.1/NppExec_0331_dll_ANSI.zip</download>
 			</ansi>
 			<copy from="NppExec.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
@@ -620,6 +632,24 @@
 		<description>A fantastic generic snippet manager, which supports all the languages supported by Notepad++.  This plugin cannot be installed automatically, as the binaries are distributed in RAR format.  If this changes, this plugin will be able to be installed.  You can install it manually, by visiting the SourceForge page http://sourceforge.net/projects/quicktext/</description>
 		<sourceUrl/>
 	</plugin>
+	
+	<plugin name="RegEx Helper">
+		<unicodeVersion>0.0.2.2</unicodeVersion>
+		<author>lbarsanti</author>
+		<description>Highlights all matches of a regular expression within a document.  Clicking on an individual result shows the matching groups for that result.</description>
+		<sourceUrl>http://sourceforge.net/projects/nppregexhelper/</sourceUrl>
+		<homepage>http://sourceforge.net/projects/nppregexhelper/</homepage>
+		<versions>
+			<version number="0.0.2.2" md5="8c9d4f54e12dfa0be8bde87d1bc586c6" />
+		</versions>
+		<install>
+			<unicode>
+				<download filename="nppRegEx.dll">http://www.brotherstone.co.uk/npp/nppRegEx/nppRegEx.zip</download>
+				<copy from="nppRegEx.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+		</install>
+	</plugin>
+	
 	<plugin name="RegRexPlace">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
@@ -854,17 +884,22 @@
 		</install>
 	</plugin>
 	<plugin name="FTP_synchronize">
-		<unicodeVersion>0.9.6.1</unicodeVersion>
+		<unicodeVersion>0.9.6.2</unicodeVersion>
 		<ansiVersion>0.9.6.1</ansiVersion>
 		<description>A FTP client which is integrated in Notepad++ seamlessly.  Open a php file from a server of distance, modify it, save it and try it on your browser directly just like you work locally. </description>
-		<author>Harry B</author>
+		<latestUpdate>Unofficial patch to fix some issues</latestUpdate>
+		<author>Harry B, unofficial patch by XianJun Zhang</author>
 		<stability>Some issues</stability>
+		<versions>
+			<version number="0.9.6.2" md5="b6d239afd7d415695b492631204f8ae5" />
+		</versions>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/FTP_synchronize/FTP_synchronize%20Plugin%20v0.9.6.1/FTP_synchronize_0_9_6_1_dll.zip</download>
 			<unicode>
+				<download>http://www.brotherstone.co.uk/npp/FTP_Synchronise/FTP_synchronize_amend.zip</download>
 				<copy from="FTP_synchronize.dll" to="$PLUGINDIR$" validate="true" />
 			</unicode>
 			<ansi>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/FTP_synchronize/FTP_synchronize%20Plugin%20v0.9.6.1/FTP_synchronize_0_9_6_1_dll.zip</download>
 				<copy from="FTP_synchronizeA.dll" to="$PLUGINDIR$" validate="true" />
 			</ansi>
 		</install>
@@ -1035,7 +1070,7 @@
 		<description>Syntax highlighting for the KVS language (KVIrc Scripting language). An example of an external lexer</description>
 		<author>Thell Fowler</author>
 		<sourceUrl>http://www.brotherstone.co.uk/npp/kvs/KVS_src.zip</sourceUrl>
-		<install>
+		<install>	
 			<unicode>
 				<download>http://www.brotherstone.co.uk/npp/kvs/KVS_Unicode.zip</download>
 			</unicode>
@@ -1067,6 +1102,41 @@
 			<copy from="NppExternalLexers.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="config\Doc\NppExtLexer_PluginHelp.txt" to="$CONFIGDIR$" />
 			<copy from="config\NppExternalLexers.xml" to="$CONFIGDIR$" backup="true" />
+		</install>
+	</plugin>
+	<plugin name="Source Cookifier">
+		<unicodeVersion>0.5</unicodeVersion>
+		<description>A plugin which uses Exuberant Ctags to parse either only the currently activated source file or multiple files of so-called sessions. The results are shown and can be browsed in a treeview inside of a dockable window.</description>
+		<author>UFO-Pu55y</author>
+		<homepage>http://sourceforge.net/projects/sourcecookifier/</homepage>
+		<aliases>
+			<alias name="SourceCookifier" />
+		</aliases>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.5/SourceCookifier.v0.5.bin.zip</download>
+				<copy from="SourceCookifier.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="SourceCookifier\SourceCookifierCore.dll" to="$PLUGINDIR$\SourceCookifier" validate="true" />
+				<copy from="SourceCookifier\SourceCookifierWrapper.dll" to="$PLUGINDIR$\SourceCookifier" validate="true" />
+				<copy from="SourceCookifier\ctags.exe" to="$PLUGINDIR$\SourceCookifier" validate="true" />
+				<copy from="SourceCookifier\icons\*.png" to="$PLUGINDIR$\SourceCookifier\icons" />
+				<copy from="Config\SourceCookifier.languages.model.xml" to="$CONFIGDIR$" />
+			</unicode>
+		</install>
+	</plugin>
+	<plugin name="Snippets">
+		<unicodeVersion>0.3</unicodeVersion>
+		<description>Adds the possibility to add code snippets to the current document by selecting it from a simple list.</description>
+		<author>Frank Fesevur</author>
+		<homepage>http://www.fesevur.com/nppsnippets</homepage>
+		<install>
+			<unicode>
+				<download>http://www.fesevur.com/downloads/NppSnippets-030.zip</download>
+				<copy from="NppSnippets.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="NppSnippets\SQL\*.sql" to="$PLUGINDIR$\NppSnippets" />
+				<copy from="NppSnippets\Docs\*.html" to="$PLUGINDIR$\doc\NppSnippets" />
+				<copy from="NppSnippets\Docs\*.pdf" to="$PLUGINDIR$\doc\NppSnippets" />
+			</unicode>
 		</install>
 	</plugin>
 </plugins>
