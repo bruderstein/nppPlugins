@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
-  <pluginNames>
+	<pluginNames>
 		<pluginName md5="ad32f0f59e70823de864387f65debcea" name="NppExport" comment="unicode 0.2.8"/>
 		<pluginName md5="48ae59abb0224ecc252d35e953ce0496" name="NppExport" comment="ansi 0.2.8"/>
 		<pluginName md5="30b4065fd4aa37ac62d061db73c00222" name="SecurePad" comment="ansi 1.0, reported name is Crypt"/>
@@ -13,7 +13,7 @@
 		<pluginName md5="301c72341ba758b3cdfc8a56d576c7f0" name="Switcher" comment="ansi - capitalisation of S"/>
 		<pluginName md5="5a19bd60aa18e4454f1c4a6432ae5a72" name="Switcher" comment="unicode"/>
 	</pluginNames>
-  <plugin name="AutoSave">
+	<plugin name="AutoSave">
 		<ansiVersion>1.1.1.0</ansiVersion>
 		<unicodeVersion>1.1.1.0</unicodeVersion>
 		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
@@ -30,7 +30,7 @@
 			</unicode>
 		</install>
 	</plugin>
-  <plugin name="CCompletion">
+	<plugin name="CCompletion">
 		<unicodeVersion>1.15</unicodeVersion>
 		<description>It's an autocompletion plugin, that also features two other similar functionalities:   \n* find identifier and display it in secondary view   \n* go to identitifer  For more information on usage, see the plugin help.     \nThe plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
 		<author>Bostjan Mihoric</author>
@@ -48,7 +48,7 @@
 		</versions>
 		<issues/>
 	</plugin>
-  <plugin name="Change Markers">
+	<plugin name="Change Markers">
 		<ansiVersion>1.0</ansiVersion>
 		<unicodeVersion>1.0</unicodeVersion>
 		<description>This plugin tracks changes made to documents, and enables navigation between changes, with a distinction being mafe between saved and unsaved changes. The change indicator is either a bar in the left margin or a specific highlighting. Or none.</description>
@@ -88,7 +88,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="CharM">
+	<plugin name="CharM">
 		<ansiVersion>0.9.0.0</ansiVersion>
 		<description>CharM (CHARacter Map) plugin for Notepad++. Highlight a character, select Plugins-&gt;CharM-&gt;Character Map, and it will give you variations of that character. Version 0.9 is functional, although it could use some work on the interface.</description>
 		<author>Todd Hadley (Fidvo)</author>
@@ -102,7 +102,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Color Picker">
+	<plugin name="Color Picker">
 		<ansiVersion>1.3</ansiVersion>
 		<description>A color picker which translates your selected colour in hexadecimal.</description>
 		<author>Matthew Edwards</author>
@@ -113,7 +113,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Compare">
+	<plugin name="Compare">
 		<ansiVersion>1.5.5</ansiVersion>
 		<unicodeVersion>1.5.5</unicodeVersion>
 		<description>A very useful diff plugin to show the difference between 2 files (side by side).</description>
@@ -145,7 +145,7 @@
 			<copy from="ComparePlugin.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-  <plugin name="ConvertExt...">
+	<plugin name="ConvertExt...">
 		<ansiVersion>1.1.0.0</ansiVersion>
 		<description>ConvertExt is a plugin for Notepad++ 3.5 and above. This plugin allows Notepad++ to: - view a text file in different encodings (codepages); - convert a text file from one encoding to another; - add and work with your own [external] encoding tables; - replace a typed character by another user-defined character; - autocomplete a left bracket with a corresponding right bracket</description>
 		<author>Dovgan Vitaliy</author>
@@ -160,7 +160,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="DBGp">
+	<plugin name="DBGp">
 		<ansiVersion>0.0.11.20</ansiVersion>
 		<description>This is a php debugger (XDebug) which talks DBGP protocol. Use this plugin to transform your Notepad++ to a php IDE.</description>
 		<author>Damjan Zobo Cvetko</author>
@@ -173,7 +173,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Document Monitor">
+	<plugin name="Document Monitor">
 		<ansiVersion>2.2.0.0</ansiVersion>
 		<unicodeVersion>2.2.0.0</unicodeVersion>
 		<description>Document updater updates your opened documents in Notepad++ every 3 seconds</description>
@@ -189,7 +189,7 @@
 			</unicode>
 		</install>
 	</plugin>
-  <plugin name="Explorer">
+	<plugin name="Explorer">
 		<unicodeVersion>1.8.2.0</unicodeVersion>
 		<ansiVersion>1.7.3.0</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
@@ -205,13 +205,13 @@
 			<copy from="Explorer.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-  <plugin name="External Lexer KVS">
+	<plugin name="External Lexer KVS">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<description>Syntax highlighting for the KVS language (KVIrc Scripting language). An example of an external lexer</description>
 		<author>Thell Fowler</author>
 		<sourceUrl>http://www.brotherstone.co.uk/npp/kvs/KVS_src.zip</sourceUrl>
-		<install>	
+		<install>
 			<unicode>
 				<download>http://www.brotherstone.co.uk/npp/kvs/KVS_Unicode.zip</download>
 			</unicode>
@@ -222,7 +222,7 @@
 			<copy from="Config\ExternalLexerKVS.xml" to="$CONFIGDIR$"/>
 		</install>
 	</plugin>
-  <plugin name="FTP_synchronize">
+	<plugin name="FTP_synchronize">
 		<unicodeVersion>0.9.6.2</unicodeVersion>
 		<ansiVersion>0.9.6.1</ansiVersion>
 		<description>A FTP client which is integrated in Notepad++ seamlessly.  Open a php file from a server of distance, modify it, save it and try it on your browser directly just like you work locally. </description>
@@ -243,7 +243,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Falling Bricks">
+	<plugin name="Falling Bricks">
 		<unicodeVersion>1.1.0.0</unicodeVersion>
 		<description>This plugin for Notepad++ is a simple tetris-like game that you can play from within Notepad++.The rules are exactly the same, so I hope no explanation is needed :-P This is the most bare-basic implementation of tetris, so don't expect any fancy 3D graphics or surround sound effects. If you close the dialog box of this plugin (maybe your boss just appeared?), the game will auto pause, and you can resume from where you last left it. Your high scores are not remembered, So please scribble it into Notepad++ yourself!</description>
 		<author>loonychewy</author>
@@ -257,7 +257,7 @@
 			</unicode>
 		</install>
 	</plugin>
-  <plugin name="File Switcher">
+	<plugin name="File Switcher">
 		<ansiVersion>1.0.3.0</ansiVersion>
 		<unicodeVersion>1.0.3.0</unicodeVersion>
 		<description>This plugin allows you to switch the active buffer using just the keyboard.  You can type any  	part of the filename, path or tab index.  You can also use it as a replacement for the Ctrl-Tab functionality built into Notepad++.</description>
@@ -273,7 +273,7 @@
 			<copy from="FileSwitcher.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-  <plugin name="Function List">
+	<plugin name="Function List">
 		<unicodeVersion>2.0.0.0</unicodeVersion>
 		<ansiVersion>1.2.0.0</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
@@ -290,7 +290,7 @@
 			<copy from="FunctionList.dll" to="$PLUGINDIR$"/>
 		</install>
 	</plugin>
-  <plugin name="Gmod Lua Lexer">
+	<plugin name="Gmod Lua Lexer">
 		<unicodeVersion>1.3</unicodeVersion>
 		<ansiVersion>1.1</ansiVersion>
 		<description>A Garry's Mod 10 lua syntax highlighter plugin. It's also a good demonstration of syntax highlighter plugins for Notepad++.</description>
@@ -321,7 +321,7 @@
 			<version number="1.3" md5="e1f79cd2c9c243e093baaa7ed63fa04d" comment="Unicode, known as Gmod 10 Lua Lexer"/>
 		</versions>
 	</plugin>
-  <plugin name="Gtag Search">
+	<plugin name="Gtag Search">
 		<unicodeVersion>0.2</unicodeVersion>
 		<description>Early release of a plugin for a gtags and ctags based search for Notepad++.  You need to run "ctags -r" and "gtags" from your code root.</description>
 		<author>Mohan Kumar S</author>
@@ -347,7 +347,7 @@
 			</unicode>
 		</install>
 	</plugin>
-  <plugin name="GuidGuard">
+	<plugin name="GuidGuard">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<homepage>http://f0dder.dcmembers.com/nppplugs.index.php</homepage>
@@ -368,7 +368,7 @@
 			<copy from="readme.txt" to="$PLUGINDIR$\doc\Guidguard"/>
 		</install>
 	</plugin>
-  <plugin name="HEX-Editor">
+	<plugin name="HEX-Editor">
 		<unicodeVersion>0.9.5.0</unicodeVersion>
 		<ansiVersion>0.9.5.0</ansiVersion>
 		<sourceUrl>https://sourceforge.net/projects/npp-plugins/files/</sourceUrl>
@@ -385,7 +385,7 @@
 			<copy from="HexEditor.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-  <plugin name="HTML Tag">
+	<plugin name="HTML Tag">
 		<unicodeVersion>0.2.2.437</unicodeVersion>
 		<ansiVersion>0.2.2.437</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/HTMLTag/HTMLTag_plugin_v0.2.2_src.zip/download</sourceUrl>
@@ -406,7 +406,7 @@
 			<copy from="HTMLTag-readme.txt" to="$PLUGINDIR$\doc\HTMLTag"/>
 		</install>
 	</plugin>
-  <plugin name="Language Help">
+	<plugin name="Language Help">
 		<unicodeVersion>1.3.2.1</unicodeVersion>
 		<ansiVersion>1.3.2.1</ansiVersion>
 		<description>LanguageHelp allows to run a language specific help file (CHM, HLP, PDF) and search for the keyword under the cursor. The latest versions allow also to show the help file as menu entries for quick launch.</description>
@@ -421,7 +421,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Light Explorer">
+	<plugin name="Light Explorer">
 		<unicodeVersion>2.0.0.0</unicodeVersion>
 		<ansiVersion>1.6.0.0</ansiVersion>
 		<author>Javier Sanjose</author>
@@ -436,7 +436,7 @@
 			<copy from="LightExplorer.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-  <plugin name="Log Plugin">
+	<plugin name="Log Plugin">
 		<ansiVersion>1.0</ansiVersion>
 		<description>Log plugin allows Notepad++ has one of MS Notepad basic features : Append the date/time at the end of file after a file is opened in Notepad++, if file begins with ".LOG".</description>
 		<author>Nicholas Heckman</author>
@@ -450,7 +450,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="MIME Tools">
+	<plugin name="MIME Tools">
 		<unicodeVersion>1.5</unicodeVersion>
 		<ansiVersion>1.5</ansiVersion>
 		<description>Converts to and from Base64 as well as Quoted Printable formats. This is suitable to process texts from emails or to be emailed. </description>
@@ -465,19 +465,13 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="MathPad">
+	<plugin name="MathPad">
 		<unicodeVersion>0.0.5.2</unicodeVersion>
 		<ansiVersion>0.0.3.0</ansiVersion>
 		<homepage>http://www.semelinanno.com/downloads/anmxnpp/anmXNpp_Page.html</homepage>
 		<description>This plugin allows evaluating mathematical expressions, as well as some simple formal calculus.</description>
 		<author>Somic</author>
-		<latestUpdate>- Fixed a minor bug showing a square in calltips on some systems (choose your own New Line character)
-\n- Moved all the log and debug output to the System Debug (use the free tool DebugView to view it). Menu updated#
-\n- Fixed a bug with Options menu (not shown)
-\n- New CallTip with Hexadecimal and Binary results (see picture)
-\n- Added Custom Menu (Ctrl + Right Click) after CallTip shows with conversion &amp; clipboard functions
-\n- Plugin Log writes to System Debug pipe (use Sysinternals@ free DebugView to view it, filtering by 'MathPad' string)
-\n- List of Commands now in HTML format (copy in plugins\mathpad folder) </latestUpdate>
+		<latestUpdate>- Fixed a minor bug showing a square in calltips on some systems (choose your own New Line character) \n- Moved all the log and debug output to the System Debug (use the free tool DebugView to view it). Menu updated# \n- Fixed a bug with Options menu (not shown) \n- New CallTip with Hexadecimal and Binary results (see picture) \n- Added Custom Menu (Ctrl + Right Click) after CallTip shows with conversion &amp; clipboard functions \n- Plugin Log writes to System Debug pipe (use Sysinternals@ free DebugView to view it, filtering by 'MathPad' string) \n- List of Commands now in HTML format (copy in plugins\mathpad folder) </latestUpdate>
 		<aliases>
 			<alias name="Math Evaluator"/>
 		</aliases>
@@ -495,7 +489,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="MultiClipboard">
+	<plugin name="MultiClipboard">
 		<unicodeVersion>2.0.0.0</unicodeVersion>
 		<ansiVersion>1.4.1.0</ansiVersion>
 		<description>MultiClipboard plugin implements multiple (10) text buffers that is filled up via copying and/or cutting of text. To paste any text from the buffers, use Ctrl-V or middle mouse click (normal paste): to paste the most recently copied/cut text Ctrl-Shift-V or Shift-middle mouse click: to pop up a menu with the text buffer entries. Select the desired menu item to paste it</description>
@@ -514,7 +508,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="NativeLang">
+	<plugin name="NativeLang">
 		<unicodeVersion>1.2.0.0</unicodeVersion>
 		<ansiVersion>1.1.0.0</ansiVersion>
 		<author>Jens Lorenz</author>
@@ -533,7 +527,7 @@
 			<copy from="NativeLang.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-  <plugin name="NppAutoIndent">
+	<plugin name="NppAutoIndent">
 		<unicodeVersion>1.2.0.0</unicodeVersion>
 		<ansiVersion>1.2.0.0</ansiVersion>
 		<sourceUrl/>
@@ -549,7 +543,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="NppCrypt">
+	<plugin name="NppCrypt">
 		<unicodeVersion>1.0.0.4</unicodeVersion>
 		<author>Max Waghals</author>
 		<sourceUrl>http://www.cerberus-design.de/nppcryptv1004.zip</sourceUrl>
@@ -567,7 +561,7 @@
 			</unicode>
 		</install>
 	</plugin>
-  <plugin name="NppDocShare">
+	<plugin name="NppDocShare">
 		<!-- Same as NppNetNote, just the old name -->
 		<sourceUrl>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_src.zip</sourceUrl>
 		<description>Allows the same document to be edited in real time on two different computers.  Only needs a network connection between the two.  Now known as NppNetNote.</description>
@@ -580,18 +574,15 @@
 			<ansi>
 				<copy from="NppDocShareA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
-		</install
-	</plugin
-  <plugin name="NppExec">
+		</install>
+	</plugin>
+	<plugin name="NppExec">
 		<unicodeVersion>0.3.3.1</unicodeVersion>
 		<ansiVersion>0.3.3.1</ansiVersion>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
 		<author>Dovgan Vitaliy</author>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
-		<latestUpdate>fix1: now CRLF (Enter key emulation) is sent to the pipe separately
-\n- fix2: n++'es unsubclassing on exit removed (might be dangerous)
-\n- fix3: now the Console should keep its font always (IMF_AUTOFONT turned off)
-\n+ Help/Manual updated (sections 4.6.3 and 4.6.4 added)</latestUpdate>
+		<latestUpdate>fix1: now CRLF (Enter key emulation) is sent to the pipe separately \n- fix2: n++'es unsubclassing on exit removed (might be dangerous) \n- fix3: now the Console should keep its font always (IMF_AUTOFONT turned off) \n+ Help/Manual updated (sections 4.6.3 and 4.6.4 added)</latestUpdate>
 		<install>
 			<unicode>
 				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.3.3.1/NppExec_0331_dll_Unicode.zip</download>
@@ -603,7 +594,7 @@
 			<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
 		</install>
 	</plugin>
-  <plugin name="NppExport">
+	<plugin name="NppExport">
 		<unicodeVersion>0.2.8.0</unicodeVersion>
 		<ansiVersion>0.2.8.0</ansiVersion>
 		<sourceUrl/>
@@ -622,7 +613,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="NppNetNote">
+	<plugin name="NppNetNote">
 		<unicodeVersion>0.1.0.0</unicodeVersion>
 		<ansiVersion>0.1.0.0</ansiVersion>
 		<sourceUrl>http://downloads.sourceforge.net/sourceforge/npp-plugins/NppDocShare_0_1_src.zip</sourceUrl>
@@ -638,7 +629,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Oberon-2 Lexer">
+	<plugin name="Oberon-2 Lexer">
 		<unicodeVersion>0.3</unicodeVersion>
 		<ansiVersion>0.3</ansiVersion>
 		<description>Oberon-2 Lexer plugin provides syntax highlighting for the Oberon-2 programming language.</description>
@@ -662,7 +653,7 @@
 			<copy from="Oberon2Lexer\*.txt" to="$PLUGINDIR$\doc\Oberon2Lexer"/>
 		</install>
 	</plugin>
-  <plugin name="Perforce actions">
+	<plugin name="Perforce actions">
 		<unicodeVersion>2.0.0.1</unicodeVersion>
 		<ansiVersion>2.0.0.1</ansiVersion>
 		<sourceUrl>http://www.brotherstone.co.uk/npp/perforce/NppPerforcePlugin_Source.zip</sourceUrl>
@@ -679,7 +670,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Plugin Manager">
+	<plugin name="Plugin Manager">
 		<unicodeVersion>0.9.3.0</unicodeVersion>
 		<ansiVersion>0.9.3.0</ansiVersion>
 		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
@@ -697,7 +688,7 @@
 			<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true"/>
 		</install>
 	</plugin>
-  <plugin name="Plugin Marker Margin">
+	<plugin name="Plugin Marker Margin">
 		<unicodeVersion>1.0.0.0</unicodeVersion>
 		<ansiVersion>1.0.0.0</ansiVersion>
 		<description>This plugin is used by other plugins.  It enables "free" margin for plugin usage on either view.</description>
@@ -722,7 +713,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Plugin update">
+	<plugin name="Plugin update">
 		<unicodeVersion>0.3.0.0</unicodeVersion>
 		<description>Allows plugins to maintain their own automatic updates.  A plugin must implement the information in its INI file, and provide a download URL.</description>
 		<author>Franco Stellari</author>
@@ -734,7 +725,7 @@
 			</unicode>
 		</install>
 	</plugin>
-  <plugin name="Powershell Lexer">
+	<plugin name="Powershell Lexer">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<description>Syntax highlighting and folding for Powershell scripts</description>
@@ -757,14 +748,14 @@
 			<copy from="config\NppExternalLexers.xml" to="$CONFIGDIR$" backup="true"/>
 		</install>
 	</plugin>
-  <plugin name="QuickText">
+	<plugin name="QuickText">
 		<unicodeVersion>0.0.2.0</unicodeVersion>
 		<ansiVersion>0.0.2.0</ansiVersion>
 		<author>Alph</author>
 		<description>A fantastic generic snippet manager, which supports all the languages supported by Notepad++.  This plugin cannot be installed automatically, as the binaries are distributed in RAR format.  If this changes, this plugin will be able to be installed.  You can install it manually, by visiting the SourceForge page http://sourceforge.net/projects/quicktext/</description>
 		<sourceUrl/>
-	</plugin
-  <plugin name="RegEx Helper">
+	</plugin>
+	<plugin name="RegEx Helper">
 		<unicodeVersion>0.0.2.2</unicodeVersion>
 		<author>lbarsanti</author>
 		<description>Highlights all matches of a regular expression within a document.  Clicking on an individual result shows the matching groups for that result.</description>
@@ -779,8 +770,8 @@
 				<copy from="nppRegEx.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
 		</install>
-	</plugin
-  <plugin name="RegRexPlace">
+	</plugin>
+	<plugin name="RegRexPlace">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<homepage>http://f0dder.dcmembers.com/nppplugs.index.php</homepage>
@@ -802,7 +793,7 @@
 			<copy from="RegRexPlace.ini" to="$CONFIGDIR$"/>
 		</install>
 	</plugin>
-  <plugin name="RunMe">
+	<plugin name="RunMe">
 		<unicodeVersion>1.3.0.1</unicodeVersion>
 		<ansiVersion>1.3.0.1</ansiVersion>
 		<author>Franco Stellari</author>
@@ -820,7 +811,7 @@
 			<copy from="license.txt" to="$PLUGINDIR$\doc\RunMe"/>
 		</install>
 	</plugin>
-  <plugin name="SciMarkerSymbol">
+	<plugin name="SciMarkerSymbol">
 		<unicodeVersion>1.0.0.0</unicodeVersion>
 		<ansiVersion>1.0.0.0</ansiVersion>
 		<description>This plugin is used by other plugins. It retrieves the marker symbol type for a line marker from Scintilla. If the marker has not had a marker symbol defined to it the value SC_MARK_AVAILABLE type is returned. This allows plugins to cooperate when when using line markers.</description>
@@ -847,7 +838,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="ScrollPastEOF">
+	<plugin name="ScrollPastEOF">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<description>This plugin simply configures the Scintilla components on startup to allow scrolling up to one page down past the end of file. Currently (as of Notepad++ 5.6.2) there is no GUI setting to enable this feature. It may be added at a later time, but if you are using an older version, you may still want to use this plugin. </description>
@@ -868,7 +859,7 @@
 			<copy from="*.txt" to="$PLUGINDIR$\doc\ScrollPastEOF"/>
 		</install>
 	</plugin>
-  <plugin name="Search in Files">
+	<plugin name="Search in Files">
 		<ansiVersion>1.12</ansiVersion>
 		<description>A nicely done Find in files plugin which shows the information in a neat tree view.</description>
 		<author>Jose Javier Sanjose</author>
@@ -879,7 +870,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="SecurePad">
+	<plugin name="SecurePad">
 		<ansiVersion>1.0</ansiVersion>
 		<description>With this you can encrypt/decrypt whole documents or selected text with your own key.  It is useful for storing sensitive information like logins and you don't want them lying around in a plaintext file. </description>
 		<author>Dominic Tobias</author>
@@ -890,7 +881,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Simple Script">
+	<plugin name="Simple Script">
 		<ansiVersion>1.1.3</ansiVersion>
 		<description>Simple script plug-in allows you to make up your script from buid-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes. </description>
 		<author>Todd Hadley (Fidvo)</author>
@@ -904,7 +895,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Snippets">
+	<plugin name="Snippets">
 		<unicodeVersion>0.3</unicodeVersion>
 		<description>Adds the possibility to add code snippets to the current document by selecting it from a simple list.</description>
 		<author>Frank Fesevur</author>
@@ -919,7 +910,7 @@
 			</unicode>
 		</install>
 	</plugin>
-  <plugin name="Source Cookifier">
+	<plugin name="Source Cookifier">
 		<unicodeVersion>0.5</unicodeVersion>
 		<description>A plugin which uses Exuberant Ctags to parse either only the currently activated source file or multiple files of so-called sessions. The results are shown and can be browsed in a treeview inside of a dockable window.</description>
 		<author>UFO-Pu55y</author>
@@ -939,7 +930,7 @@
 			</unicode>
 		</install>
 	</plugin>
-  <plugin name="Speech">
+	<plugin name="Speech">
 		<unicodeVersion>0.2.1.0</unicodeVersion>
 		<ansiVersion>0.2.0.1</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/SpeechPlugin/SpeechPlugin_0_2_1_src.zip/download</sourceUrl>
@@ -956,7 +947,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="Spell-Checker">
+	<plugin name="Spell-Checker">
 		<unicodeVersion>1.3.3.0</unicodeVersion>
 		<ansiVersion>1.3.1.0</ansiVersion>
 		<description>Spellchecker can correct your typos in your language. 	Before using it, you will need to install GNU Aspell and a dictionary for your language(s) in the Aspell directory. Aspell and dictionaries are available from http://aspell.net/win32.</description>
@@ -972,7 +963,7 @@
 			<copy from="SpellChecker.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-  <plugin name="Subversion">
+	<plugin name="Subversion">
 		<unicodeVersion>1.0</unicodeVersion>
 		<versions>
 			<version number="1.0" md5="0b84262c0151ee3ba1e40a2e13951882" comment="unicode"/>
@@ -986,7 +977,7 @@
 			</unicode>
 		</install>
 	</plugin>
-  <plugin name="Switcher">
+	<plugin name="Switcher">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
 		<homepage>http://f0dder.dcmembers.com/nppplugs.index.php</homepage>
@@ -1010,7 +1001,7 @@
 			<copy from="readme.txt" to="$PLUGINDIR$\doc\Switcher"/>
 		</install>
 	</plugin>
-  <plugin name="TextFX Characters">
+	<plugin name="TextFX Characters">
 		<ansiVersion>0.25</ansiVersion>
 		<unicodeVersion>0.26</unicodeVersion>
 		<homepage>http://textfx.no-ip.com/textfx/</homepage>
@@ -1030,7 +1021,7 @@
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="UniversalIndentGUI">
+	<plugin name="UniversalIndentGUI">
 		<unicodeVersion>1.0.2</unicodeVersion>
 		<ansiVersion>1.0.2</ansiVersion>
 		<homepage>http://sourceforge.net/projects/universalindent/</homepage>
@@ -1063,9 +1054,9 @@
 			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.txt" to="$PLUGINDIR$\uigui\indenters"/>
 			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\example.*" to="$PLUGINDIR$\uigui\indenters" replace="true"/>
 			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\translations\*.qm" to="$PLUGINDIR$\uigui\translations"/>
-		</install
-	</plugin
-  <plugin name="WebEdit">
+		</install>
+	</plugin>
+	<plugin name="WebEdit">
 		<unicodeVersion>1.3.3</unicodeVersion>
 		<ansiVersion>1.3.3</ansiVersion>
 		<description>This plugin allows you to define up to 30 commands. Each command will surround the currently selected text with the Left and Right text defined for the command. If there is no selection, the Left text is inserted to the left of current caret position, and the Right text is inserted to the right. In any case the selection and relative cursor position are preserved. Clipboard is not used. Both text insertions can be undone/redone as a single action. The commands are to be defined in WebEdit.ini file, in the "[Commands]" section. At most 30 commands may be defined in the "[Commands]" section, all excess commands are ignored. You can put WebEdit commands on the toolbar.</description>
@@ -1086,27 +1077,27 @@
 			<copy from="WebEdit\Config\WebEdit.ini" to="$CONFIGDIR$" backup="true"/>
 			<copy from="WebEdit\Config\*.bmp" to="$CONFIGDIR$"/>
 			<copy from="WebEdit\*.txt" to="$PLUGINDIR$\doc\WebEdit"/>
-		</install
-	</plugin
-  <plugin name="Window Manager">
+		</install>
+	</plugin>
+	<plugin name="Window Manager">
 		<unicodeVersion>1.2.2.0</unicodeVersion>
 		<ansiVersion>1.1.2.0</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/WindowManager/WindowManager_1_2_2_src.zip/download</sourceUrl>
 		<author>Jens Lorenz</author>
 		<description>Window Manager gives a short overview of your open documents in Notepad++. This overview is dockable and gives you the same capability as the tabs have. Left click on a list item selects the document. Right click opens the tab context menu from Notepad++. When documents are opened in main and second view (by duplicate or move), two lists are shown in dialog window.</description>
 		<stability>Occasional issue with prolonged use</stability>
-		<install
-			<unicode
+		<install>
+			<unicode>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_2_2_UNI_dll.zip</download>
 				<copy from="WindowManager.dll" to="$PLUGINDIR$" validate="true"/>
-			</unicode
-			<ansi
+			</unicode>
+			<ansi>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_1_2_dll.zip</download>
 				<copy from="WindowManager.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
 		</install>
 	</plugin>
-  <plugin name="XBrackets Lite">
+	<plugin name="XBrackets Lite">
 		<unicodeVersion>1.1</unicodeVersion>
 		<ansiVersion>1.1</ansiVersion>
 		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion: * next character is analysed for ([{ brackets; * next &amp; previous characters are analysed for " quote. </description>
@@ -1119,17 +1110,17 @@
 				<download>http://downloads.sourceforge.net/project/npp-plugins/XBrackets%20Lite/XBrackets%20Plugin%20v1.1/XBrackets_v11_dll_ANSI.zip</download>
 			</ansi>
 			<copy from="XBrackets.dll" to="$PLUGINDIR$" validate="true"/>
-			<copy from="XBrackets.txt" to="$PLUGINDIR$\doc\XBrackets"/
-		</install
-	</plugin
-  <plugin name="XML Tools">
+			<copy from="XBrackets.txt" to="$PLUGINDIR$\doc\XBrackets"/>
+		</install>
+	</plugin>
+	<plugin name="XML Tools">
 		<unicodeVersion>2.3.1.764</unicodeVersion>
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/XML%20Tools/xmltools_2.3.1_r639_source.zip/download (older version)</sourceUrl>
 		<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based. The plugin features are:\n- XML syntax Check\n- XML Schema (XSD) + DTD Validation\n- XML tag autoclose\n- Pretty print\n- Linarize XML\n- Current XML Path\n- Conversion XML &lt;-&gt; Text\n- Comment / Uncomment\n- XPath expression evaluation</description>
 		<latestUpdate>\n* XPath evaluation crash bug\n* Fix relative DTD / XMLSchema issue</latestUpdate>
 		<author>Nicolas Crittin</author>
-		<install
-			<unicode
+		<install>
+			<unicode>
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/ext_libs.zip</download>
 				<copy from="iconv.dll" to="$NPPDIR$" validate="true"/>
 				<copy from="libxml2.dll" to="$NPPDIR$" validate="true"/>
@@ -1137,9 +1128,9 @@
 				<copy from="zlib1.dll" to="$NPPDIR$" validate="true"/>
 				<download>http://downloads.sourceforge.net/project/npp-plugins/XML%20Tools/Xml%20Tools%202.3.1%20r764%20Unicode%20Beta1/xmltools_2.3.1_r764_unicode_beta1.zip</download>
 				<copy from="XMLTools.dll" to="$PLUGINDIR$" validate="true"/>
-			</unicode
-		</install
-		<versions
+			</unicode>
+		</install>
+		<versions>
 			<version number="2.0.0.513" md5="9225365583eb42e94680fefe38e37798" comment=""/>
 			<version number="2.1.0" md5="1d16dcd481915ba3d29b8f8c9890661c" comment=""/>
 			<version number="2.1.1.548" md5="75b40f4f8aa66c5b98bc31b1e4f628fb" comment=""/>
@@ -1151,6 +1142,6 @@
 			<version number="2.3.1.685" md5="fa999eb776a218d68b2c5705a9f7c10d" comment=""/>
 			<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" comment=""/>
 			<version number="2.3.1.764" md5="cb1556f0a9bcde3431e2b00ea8daac80" comment=""/>
-		</versions
-	</plugin
+		</versions>
+	</plugin>
 </plugins>
