@@ -1060,6 +1060,7 @@
 		<unicodeVersion>1.4</unicodeVersion>
 		<ansiVersion>1.4</ansiVersion>
 		<description>This plugin allows you to define up to 30 commands. Each command will surround the currently selected text with the Left and Right text defined for the command. If there is no selection, the Left text is inserted to the left of current caret position, and the Right text is inserted to the right. In any case the selection and relative cursor position are preserved. Clipboard is not used. Both text insertions can be undone/redone as a single action. The commands are to be defined in WebEdit.ini file, in the "[Commands]" section. At most 30 commands may be defined in the "[Commands]" section, all excess commands are ignored. You can put WebEdit commands on the toolbar.</description>
+		<latestUpdate>\n- Added "Edit Config" menu item.\n- Updated documentation, clarified wording.\n- Scintilla "direct access" function is used for a tiny bit of speed improvement.</latestUpdate>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
 		<versions>
 			<version number="1.3.3" md5="47a1a0d12d2c866bc594e4f085d70a47" comment="unicode"/>
