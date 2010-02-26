@@ -154,4 +154,6 @@ INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('5a
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('3c172d3dabb7c2b29276266fa3989a82','NppExec.dll','','2010-02-14','ok');
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('e1f79cd2c9c243e093baaa7ed63fa04d','GmodLua.dll','','2010-02-14','ok');
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('b7b50c7a306afb2fa236bb812b3c0980','GmodLua.dll','','2010-02-14','ok');
+INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('545e56112f406df8d45bbbad7672fca2','WebEdit.dll',NULL,'2010-02-26 00:00:00','ok');
+INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('68eb1b17c13a48fc2482ad2546851e66','WebEditU.dll',NULL,'2010-02-26 00:00:00','ok');
 commit;
