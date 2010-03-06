@@ -31,9 +31,10 @@
 		</install>
 	</plugin>
 	<plugin name="CCompletion">
-		<unicodeVersion>1.15</unicodeVersion>
+		<unicodeVersion>1.17</unicodeVersion>
 		<description>It's an autocompletion plugin, that also features two other similar functionalities:   \n* find identifier and display it in secondary view   \n* go to identitifer  For more information on usage, see the plugin help.     \nThe plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
 		<author>Bostjan Mihoric</author>
+		<latestUpdate>Moved exubarant Ctags parameters to the settings file\nFixed DLL issue from 1.16</latestUpdate>
 		<sourceUrl/>
 		<install>
 			<download>http://freeweb.siol.net/rmihor/NppCCompletionPlugin.zip</download>
@@ -45,6 +46,7 @@
 			<version number="1.11.0.0" md5="ec262eb016aafc02afc59e8dd3b94e4f"/>
 			<version number="1.12" md5="7d56894e3a98704e9a8e34811d3e5440"/>
 			<version number="1.15" md5="514320a0af90b6c85424fba5ac965da8"/>
+			<version number="1.17" md5="b871d612d87acb35b1d7bc3d144d8087"/>
 		</versions>
 		<issues/>
 	</plugin>
@@ -466,12 +468,12 @@
 		</install>
 	</plugin>
 	<plugin name="MathPad">
-		<unicodeVersion>0.0.5.2</unicodeVersion>
+		<unicodeVersion>0.0.5.3</unicodeVersion>
 		<ansiVersion>0.0.3.0</ansiVersion>
 		<homepage>http://www.semelinanno.com/downloads/anmxnpp/anmXNpp_Page.html</homepage>
 		<description>This plugin allows evaluating mathematical expressions, as well as some simple formal calculus.</description>
-		<author>Somic</author>
-		<latestUpdate>- Fixed a minor bug showing a square in calltips on some systems (choose your own New Line character) \n- Moved all the log and debug output to the System Debug (use the free tool DebugView to view it). Menu updated# \n- Fixed a bug with Options menu (not shown) \n- New CallTip with Hexadecimal and Binary results (see picture) \n- Added Custom Menu (Ctrl + Right Click) after CallTip shows with conversion &amp; clipboard functions \n- Plugin Log writes to System Debug pipe (use Sysinternals@ free DebugView to view it, filtering by 'MathPad' string) \n- List of Commands now in HTML format (copy in plugins\mathpad folder) </latestUpdate>
+		<author>Carlo Somigliana</author>
+		<latestUpdate>-Fixed undo/redo\n- Fixed a minor bug showing a square in calltips on some systems (choose your own New Line character) \n- Moved all the log and debug output to the System Debug (use the free tool DebugView to view it). Menu updated# \n- Fixed a bug with Options menu (not shown) \n- New CallTip with Hexadecimal and Binary results (see picture) \n- Added Custom Menu (Ctrl + Right Click) after CallTip shows with conversion &amp; clipboard functions \n- Plugin Log writes to System Debug pipe (use Sysinternals@ free DebugView to view it, filtering by 'MathPad' string) \n- List of Commands now in HTML format (copy in plugins\mathpad folder) </latestUpdate>
 		<aliases>
 			<alias name="Math Evaluator"/>
 		</aliases>
@@ -479,7 +481,7 @@
 			<unicode>
 				<download>http://semelinanno.com/downloads/mathpad/ver0050/MathPad_v0050.zip</download>
 				<copy from="plugins\mathpad\*.*" to="$PLUGINDIR$\mathpad"/>
-				<download>http://semelinanno.com/downloads/mathpad/ver0052/MathPad_v0052.zip</download>
+				<download>http://www.semelinanno.com/downloads/mathpad/ver0053/MathPad_v0053.zip</download>
 				<copy from="mathpad.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
 			<ansi>
@@ -671,18 +673,18 @@
 		</install>
 	</plugin>
 	<plugin name="Plugin Manager">
-		<unicodeVersion>0.9.3.0</unicodeVersion>
-		<ansiVersion>0.9.3.0</ansiVersion>
+		<unicodeVersion>0.9.3.1</unicodeVersion>
+		<ansiVersion>0.9.3.1</ansiVersion>
 		<sourceUrl>http://github.com/davegb3/nppPluginManager</sourceUrl>
 		<description>The Plugin Manager is this plugin, that allows installation, update and removal of Notepad++ plugins.  	It will notify you of updates to plugins that you have installed, and automatically install dependencies and required 	files into the correct places.</description>
-		<latestUpdate>Fixes issue with paths with extended (non-latin ASCII) characters\nAdds plugin alias facility for plugins with multiple names</latestUpdate>
+		<latestUpdate>Now functions correctly with Windows7 and Vista UAC\nBug fixed with using proxies when validating downloaded files</latestUpdate>
 		<homepage>http://www.brotherstone.co.uk/npp/pm</homepage>
 		<install>
 			<unicode>
-				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9.3_UNI.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/PluginManager/PluginManager%200.9.3.1/PluginManager_0.9.3.1_UNI.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://www.brotherstone.co.uk/npp/pm/PluginManager_0.9.3_ANSI.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/PluginManager/PluginManager%200.9.3.1/PluginManager_0.9.3.1_ANSI.zip</download>
 			</ansi>
 			<copy from="plugins\PluginManager.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="updater\gpup.exe" to="$NPPDIR$\updater" validate="true" replace="true"/>
@@ -911,16 +913,17 @@
 		</install>
 	</plugin>
 	<plugin name="Source Cookifier">
-		<unicodeVersion>0.5</unicodeVersion>
+		<unicodeVersion>0.5.1</unicodeVersion>
 		<description>A plugin which uses Exuberant Ctags to parse either only the currently activated source file or multiple files of so-called sessions. The results are shown and can be browsed in a treeview inside of a dockable window.</description>
 		<author>UFO-Pu55y</author>
 		<homepage>http://sourceforge.net/projects/sourcecookifier/</homepage>
+		<latestUpdate>-fix: N++ deadlocks while using sourcecookifier window in floating state (not docked) \n-fix: when switching between file buffers with windowmanager plugin, tags weren't refreshed in Single-File-Mode, when the treeview was hidden (by windowmanager plugin again) \n-fix: write error log files into plugins config folder instead of sourcecookifier folder; might have failed due to missing admin rights in previous versions; also into one and the same file (appending) now instead of 1 file per error</latestUpdate>
 		<aliases>
 			<alias name="SourceCookifier"/>
 		</aliases>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.5/SourceCookifier.v0.5.bin.zip</download>
+				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.5.1/SourceCookifier.v0.5.1.bin.zip</download>
 				<copy from="SourceCookifier.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="SourceCookifier\SourceCookifierCore.dll" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
 				<copy from="SourceCookifier\SourceCookifierWrapper.dll" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
@@ -999,6 +1002,26 @@
 				<copy from="unicode\switcher.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
 			<copy from="readme.txt" to="$PLUGINDIR$\doc\Switcher"/>
+		</install>
+	</plugin>
+	<plugin name="TagsView">
+		<unicodeVersion>1.0</unicodeVersion>
+		<description>TagsView is a generic plugin which provides user interface for ctags parsed result. \nCurrently supported editors are Notepad++ and AkelPad. \nPowered by Win32++ (by David Nash) and by Exuberant Ctags (by Darren Hiebert). \nInspired by FunctionList plugin (by Jens Lorenz) for Notepad++ text editor (by Don HO).</description>
+		<author>Dovgan Vitaliy</author>
+		<versions>
+			<version number="1.0" md5="11e02b00ba8f7822621500ce630f0545" />
+		</versions>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/tagsview/TagsView%20for%20Notepad%2B%2B/TagsView_Npp_01alpha.zip</download>
+				<copy from="TagsView\ctags.exe" to="$PLUGINDIR$\TagsView" validate="true" />
+				<copy from="TagsView\*.html" to="$PLUGINDIR$\TagsView" />
+				<copy from="TagsView\README" to="$PLUGINDIR$\TagsView" />
+				<copy from="TagsView\COPYING" to="$PLUGINDIR$\TagsView" />
+				<copy from="TagsView\.ctags" to="$PLUGINDIR$\TagsView" />
+				<copy from="doc\TagsView.txt" to="$PLUGINDIR$\doc\TagsView" />
+				<copy from="TagsView.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
 		</install>
 	</plugin>
 	<plugin name="TextFX Characters">

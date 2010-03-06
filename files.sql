@@ -156,4 +156,15 @@ INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('e1
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('b7b50c7a306afb2fa236bb812b3c0980','GmodLua.dll','','2010-02-14','ok');
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('545e56112f406df8d45bbbad7672fca2','WebEdit.dll',NULL,'2010-02-26 00:00:00','ok');
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('68eb1b17c13a48fc2482ad2546851e66','WebEditU.dll',NULL,'2010-02-26 00:00:00','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('b871d612d87acb35b1d7bc3d144d8087','NppCCompletionPlugin.dll','','2010-03-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('aafd0a7105bfe614a0e3c730d6ca1cb6','PluginManager.dll','','2010-03-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('ddb63dc361b9ec87d22a81b706666694','gpup.exe','','2010-03-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('bc18089d5fc484da5d8ff3f8596b6d11','PluginManager.dll','','2010-03-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('befd1a5297fc4767d181229b2c2903a0','gpup.exe','','2010-03-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('2b581769e2e1972854644e35e8b95ee0','MathPad.dll','','2010-03-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('11e02b00ba8f7822621500ce630f0545','TagsView.dll','','2010-03-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('9114189034bf9ed6c6b9963725e77813','SourceCookifier.dll','','2010-03-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('af3fa1913db231985896c49ab7c80f7b','SourceCookifierCore.dll','','2010-03-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('31394814fdc677fe02a1b70e8c9f27be','SourceCookifierWrapper.dll','','2010-03-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5b0685cf1ce2b4c14a24ecf77c7d7bc7','MathPad.dll','','2010-03-06','ok');
 commit;
