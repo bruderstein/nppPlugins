@@ -656,21 +656,13 @@
 		</install>
 	</plugin>
 	<plugin name="Obide">
-		<unicodeVersion>2.2</unicodeVersion>
-		<ansiVersion>2.2</ansiVersion>
+		<unicodeVersion>2.2.1</unicodeVersion>
+		<ansiVersion>2.2.1</ansiVersion>
 		<description>Obide provides IDE capabilities for XDS Oberon-2 developers: autocompletion, source navigation, code hints, etc.</description>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
-		<latestUpdate>\n
-			- Created Unicode build of the plugin.\n
-			- Added code hint for modules (alias and full file/path to the module).\n
-			- Module lookup paths are now read from Obide.ini, if any.\n
-			- "Go to Definition" menu item is renamed "Go to Declaration".\n
-			- When trying to "Go to Declaration" of a module that can't be found, the appropriate hint message is displayed. Fixed position of the hint, added lookup paths to the message.\n
-			- Fixed invalid Version Information format.\n
-			- Added version number to the About box title.
-		</latestUpdate>
+		<latestUpdate>Fixed a minor bug in procedure end parsing.</latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/Obide/Obide%202.2/Obide.v.2.2.zip</download>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/Obide/Obide%202.2.1/Obide.v.2.2.1.zip</download>
 			<ansi>
 				<copy from="Obide\Obide.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>

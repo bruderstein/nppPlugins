@@ -171,4 +171,6 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('9
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('ffd13064825608450dc3bd94a81528e5','ObideU.dll','','2010-03-20','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('12adc1fc03548237c8e6b524133c5048','QuickText.ANSI.dll','','2010-03-26','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('cae0991c9c78bf098e7566709f850aea','QuickText.UNI.dll','','2010-03-26','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('cc1d69880e57dcb45165d74aefb12161','Obide.dll','','2010-03-26','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5bc743195f85fb27cf1edd4d4200e3f0','ObideU.dll','','2010-03-26','ok');
 commit;
