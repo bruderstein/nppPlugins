@@ -169,4 +169,5 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('3
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5b0685cf1ce2b4c14a24ecf77c7d7bc7','MathPad.dll','','2010-03-06','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('9d541624d25fa45a039a390118107dc2','Obide.dll','','2010-03-20','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('ffd13064825608450dc3bd94a81528e5','ObideU.dll','','2010-03-20','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('dc52c9f0ab821a0868d2630bcb086143','GmodLua.dll','','2010-03-26','ok');
 commit;
