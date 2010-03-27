@@ -659,21 +659,13 @@
 		</install>
 	</plugin>
 	<plugin name="Obide">
-		<unicodeVersion>2.2</unicodeVersion>
-		<ansiVersion>2.2</ansiVersion>
+		<unicodeVersion>2.2.1</unicodeVersion>
+		<ansiVersion>2.2.1</ansiVersion>
 		<description>Obide provides IDE capabilities for XDS Oberon-2 developers: autocompletion, source navigation, code hints, etc.</description>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
-		<latestUpdate>\n
-			- Created Unicode build of the plugin.\n
-			- Added code hint for modules (alias and full file/path to the module).\n
-			- Module lookup paths are now read from Obide.ini, if any.\n
-			- "Go to Definition" menu item is renamed "Go to Declaration".\n
-			- When trying to "Go to Declaration" of a module that can't be found, the appropriate hint message is displayed. Fixed position of the hint, added lookup paths to the message.\n
-			- Fixed invalid Version Information format.\n
-			- Added version number to the About box title.
-		</latestUpdate>
+		<latestUpdate>Fixed a minor bug in procedure end parsing.</latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/Obide/Obide%202.2/Obide.v.2.2.zip</download>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/Obide/Obide%202.2.1/Obide.v.2.2.1.zip</download>
 			<ansi>
 				<copy from="Obide\Obide.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
@@ -780,11 +772,34 @@
 		</install>
 	</plugin>
 	<plugin name="QuickText">
-		<unicodeVersion>0.0.2.0</unicodeVersion>
-		<ansiVersion>0.0.2.0</ansiVersion>
-		<author>Alph</author>
-		<description>A fantastic generic snippet manager, which supports all the languages supported by Notepad++.  This plugin cannot be installed automatically, as the binaries are distributed in RAR format.  If this changes, this plugin will be able to be installed.  You can install it manually, by visiting the SourceForge page http://sourceforge.net/projects/quicktext/</description>
+		<unicodeVersion>0.0.2.1</unicodeVersion>
+		<ansiVersion>0.0.2.1</ansiVersion>
+		<author>Joao Moreno</author>
+		<description>QuickText is a Notepad++ plugin for quick text substitution, including multi field inputs. It's similar to Tab Triggers in TextMate: type a short identifier, press the magic key (default is Tab) and the short text will be replaced with the full version.</description>
+		<latestUpdate>\n
+* [M] Changed default key to Tab\n
+* [M] Moved QuickText.ini from \QuickText.ini to \plugins\Config\QuickText.ini\n
+* [M] Increased substitution text length (max is 8bytes number of chars)\n
+* [+] Valid tag keys (abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~!@#$%^&amp;*()_+{}|:?&gt;&lt;`-=[]\/.,)\n
+* [+] Global tag added. Current language tag takes priority over Global tag\n
+* [M] bigger and friendlier logic for inputting tag/subtitution\n
+* [M] fixed tab indenting of HTML UL tag under UNIX format\n
+* [+] Created Unicode version of the plugin\n
+		</latestUpdate>
 		<sourceUrl/>
+		<install>
+			<download>http://downloads.sourceforge.net/project/quicktext/QuickText/QuickText%200.2.1/QuickText.v0.2.1.zip</download>
+			<unicode>
+				<copy from="QuickText.v0.2.1\QuickText.UNI.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+			<ansi>
+				<copy from="QuickText.v0.2.1\QuickText.ANSI.dll" to="$PLUGINDIR$" validate="true"/>
+			</ansi>
+			<copy from="QuickText.v0.2.1\QuickText.ini" to="$CONFIGDIR$" backup="true"/>
+			<copy from="QuickText.v0.2.1\CHANGELOG" to="$PLUGINDIR$\doc\QuickText"/>
+			<copy from="QuickText.v0.2.1\LICENCE" to="$PLUGINDIR$\doc\QuickText"/>
+			<copy from="QuickText.v0.2.1\README" to="$PLUGINDIR$\doc\QuickText"/>
+		</install>
 	</plugin>
 	<plugin name="RegEx Helper">
 		<unicodeVersion>0.0.2.2</unicodeVersion>
