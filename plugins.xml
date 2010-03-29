@@ -1121,10 +1121,21 @@
 		</install>
 	</plugin>
 	<plugin name="WebEdit">
-		<unicodeVersion>1.4</unicodeVersion>
-		<ansiVersion>1.4</ansiVersion>
-		<description>This plugin allows you to define up to 30 commands. Each command will surround the currently selected text with the Left and Right text defined for the command. If there is no selection, the Left text is inserted to the left of current caret position, and the Right text is inserted to the right. In any case the selection and relative cursor position are preserved. Clipboard is not used. Both text insertions can be undone/redone as a single action. The commands are to be defined in WebEdit.ini file, in the "[Commands]" section. At most 30 commands may be defined in the "[Commands]" section, all excess commands are ignored. You can put WebEdit commands on the toolbar.</description>
-		<latestUpdate>\n- Added "Edit Config" menu item.\n- Updated documentation, clarified wording.\n- Scintilla "direct access" function is used for a tiny bit of speed improvement.</latestUpdate>
+		<unicodeVersion>2.0</unicodeVersion>
+		<ansiVersion>2.0</ansiVersion>
+		<description>WebEdit is another attempt to integrate a user-configurable code template collection into Notepad++. With WebEdit you have the following options:\n
+* create a menu command for pasting some text, possibly surrounding the current selection, if any. Imagine selecting a word and putting "&lt;p&gt;...&lt;/p&gt;" around it with a single hotkey. You can create up to 30 such commands and assign keyboard shortcuts to them, or simply use the menu;\n
+* the same 30 commands can also be represented by buttons on the main toolbar for quick access with the mouse;\n
+* you can create a set of "tags" or abbreviations. Type one of them, then press Alt+Enter and it will be replaced with the corresponding block of text. If the replacement consists of multiple lines, all of them will be indented same as the first one. The caret will be placed in a predefined position within the new text.\n
+\n
+The plugin configuration is stored in the WebEdit.ini file. Use "WebEdit\Edit Config" command from the "Plugins" menu to open the file in Notepad++ for editing.\n
+\n
+All keyboard shortcuts can be assigned/modified using the standard Shortcut Mapper. For more information see the WebEdit.txt help file.\n
+		</description>
+		<latestUpdate>\n
+			- Added "Replace Tag" menu item.\n
+			- Added version number to the About box title.
+		</latestUpdate>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
 		<versions>
 			<version number="1.3.3" md5="47a1a0d12d2c866bc594e4f085d70a47" comment="unicode"/>
@@ -1132,9 +1143,9 @@
 			<version number="1.4" md5="68eb1b17c13a48fc2482ad2546851e66" comment="unicode"/>
 			<version number="1.4" md5="545e56112f406df8d45bbbad7672fca2" comment="ansi"/>
 		</versions>
-		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%201.4/WebEdit.1.4.zip</sourceUrl>
+		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%202.0/WebEdit.v2.0.zip</sourceUrl>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%201.4/WebEdit.1.4.zip</download>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%202.0/WebEdit.v2.0.zip</download>
 			<unicode>
 				<copy from="WebEdit\WebEditU.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
