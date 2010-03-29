@@ -174,4 +174,6 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('1
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('cae0991c9c78bf098e7566709f850aea','QuickText.UNI.dll','','2010-03-26','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('cc1d69880e57dcb45165d74aefb12161','Obide.dll','','2010-03-26','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5bc743195f85fb27cf1edd4d4200e3f0','ObideU.dll','','2010-03-26','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('cfaf43a5ac85b4b96847ce95cd524b84','WebEdit.dll','','2010-03-29','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('907738d1e72884b84449cd340f43e134','WebEditU.dll','','2010-03-29','ok');
 commit;
