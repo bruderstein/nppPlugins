@@ -1124,20 +1124,23 @@
 		</install>
 	</plugin>
 	<plugin name="WebEdit">
-		<unicodeVersion>2.0</unicodeVersion>
-		<ansiVersion>2.0</ansiVersion>
+		<unicodeVersion>2.1</unicodeVersion>
+		<ansiVersion>2.1</ansiVersion>
 		<description>WebEdit is another attempt to integrate a user-configurable code template collection into Notepad++. With WebEdit you have the following options:\n
 * create a menu command for pasting some text, possibly surrounding the current selection, if any. Imagine selecting a word and putting "&lt;p&gt;...&lt;/p&gt;" around it with a single hotkey. You can create up to 30 such commands and assign keyboard shortcuts to them, or simply use the menu;\n
 * the same 30 commands can also be represented by buttons on the main toolbar for quick access with the mouse;\n
-* you can create a set of "tags" or abbreviations. Type one of them, then press Alt+Enter and it will be replaced with the corresponding block of text. If the replacement consists of multiple lines, all of them will be indented same as the first one. The caret will be placed in a predefined position within the new text.\n
+* you can create a set of "tags" or abbreviations. Type one of them, then press Alt+Enter and it will be replaced with the corresponding block of text. If the replacement consists of multiple lines, all of them will be indented same as the first one. The caret will be placed in a predefined position within the new text. You can even have the current clipboard contents pasted as part of the tag replacement operation.\n
 \n
 The plugin configuration is stored in the WebEdit.ini file. Use "WebEdit\Edit Config" command from the "Plugins" menu to open the file in Notepad++ for editing.\n
 \n
 All keyboard shortcuts can be assigned/modified using the standard Shortcut Mapper. For more information see the WebEdit.txt help file.\n
 		</description>
 		<latestUpdate>\n
-			- Added "Replace Tag" menu item.\n
-			- Added version number to the About box title.
+			- Added "\c" escape sequence to paste clipboard contents when replacing a tag.\n
+			- Added "\i" escape sequence to increase indentation level when replacing a tag.\n
+			- Removed error message box from the "Edit Config" command.\n
+			- Fixed: "\n" now indents by copying only the leading whitespace of the first line, not the whole part up to the tag.\n
+			- Fixed invalid caret placement after replacing a tag when you move the caret with up and down keys (it used to jump to a different column, probably due to a Scintilla bug).
 		</latestUpdate>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
 		<versions>
@@ -1146,9 +1149,9 @@ All keyboard shortcuts can be assigned/modified using the standard Shortcut Mapp
 			<version number="1.4" md5="68eb1b17c13a48fc2482ad2546851e66" comment="unicode"/>
 			<version number="1.4" md5="545e56112f406df8d45bbbad7672fca2" comment="ansi"/>
 		</versions>
-		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%202.0/WebEdit.v2.0.zip</sourceUrl>
+		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%202.1/WebEdit.v2.1.zip</sourceUrl>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%202.0/WebEdit.v2.0.zip</download>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%202.1/WebEdit.v2.1.zip</download>
 			<unicode>
 				<copy from="WebEdit\WebEditU.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
