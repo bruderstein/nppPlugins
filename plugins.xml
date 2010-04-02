@@ -659,13 +659,20 @@
 		</install>
 	</plugin>
 	<plugin name="Obide">
-		<unicodeVersion>2.2.1</unicodeVersion>
-		<ansiVersion>2.2.1</ansiVersion>
+		<unicodeVersion>2.3</unicodeVersion>
+		<ansiVersion>2.3</ansiVersion>
 		<description>Obide provides IDE capabilities for XDS Oberon-2 developers: autocompletion, source navigation, code hints, etc.</description>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
-		<latestUpdate>Fixed a minor bug in procedure end parsing.</latestUpdate>
+		<latestUpdate>\n
+			- Added Global.autoCMaxHeight option to set the autocompletion box maximum height. Default value is 32.\n
+			- The height of the autocompletion box will not exceed half the number of lines visible on screen.\n
+			- Added: on selecting an item from autocompletion list the rest of the curret identifier will be replaced with the selected text.\n
+			- Changed: don't close the autocompletion list unless the identifier being completed was fully erased.\n
+			- Typing the following character now confirms the selection from the autocompletion list (previously it was only confirmed by pressing the Enter key): ([{}]).:;,+-*/|<>=#^& tab space Enter. These are all characters allowed in the Oberon-2 language after an identifier.\n
+			- Added: code hints are now displayed after holding the mouse cursor over an identifier for half a second. See Global.mouseHintDelay option.\n
+		</latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/Obide/Obide%202.2.1/Obide.v.2.2.1.zip</download>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/Obide/Obide%202.3/Obide.v.2.3.zip</download>
 			<ansi>
 				<copy from="Obide\Obide.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
