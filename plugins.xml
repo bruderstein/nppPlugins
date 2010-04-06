@@ -793,6 +793,7 @@
 * [M] fixed tab indenting of HTML UL tag under UNIX format\n
 * [+] Created Unicode version of the plugin\n
 		</latestUpdate>
+		<stability>Multiple UI issues: http://sourceforge.net/projects/notepad-plus/forums/forum/482781/topic/3659788</stability>
 		<sourceUrl/>
 		<install>
 			<download>http://downloads.sourceforge.net/project/quicktext/QuickText/QuickText%200.2.1/QuickText.v0.2.1.zip</download>
