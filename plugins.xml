@@ -1235,4 +1235,26 @@ All keyboard shortcuts can be assigned/modified using the standard Shortcut Mapp
 			<version number="2.3.1.764" md5="cb1556f0a9bcde3431e2b00ea8daac80" comment=""/>
 		</versions>
 	</plugin>
+	<plugin name="Zen Coding">
+		<aliases>
+			<alias name="Npp Scripting" />
+		</aliases>
+		<unicodeVersion>0.1</unicodeVersion>
+		<homepage>http://code.google.com/p/zen-coding/</homepage>
+		<description>Allows full support for the Zen Coding method created by Sergey Chikuyonok fwithin Notepad++.\n* Create HTML and CSS fast with expanding shortcuts (e.g. tr*3&gt;td*5)\n* Jump quickly between edit points\n* See the full demo at http://code.google.com/p/zen-coding\nZen Coding for Notepad++ is based on NppScripting plugin by sieukrem.</description>
+		<author>Sergey Chikuyonok for Zen, sieukrem for NppScripting</author>
+		<install>
+			<unicode>
+				<download>http://zen-coding.googlecode.com/files/Zen.Coding-Notepad%2B%2B.v0.6.zip</download>
+				<copy from="NppScripting.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="NppScripting\*.js" to="$PLUGINDIR$\NppScripting" />
+				<copy from="NppScripting\includes\*.js" to="$PLUGINDIR$\NppScripting\includes" />
+			</unicode>
+		</install>
+		<remove>
+			<unicode>
+				<delete file="$PLUGINDIR$\NppScripting" isDirectory="true" />
+			</unicode>
+		</remove>
+	</plugin>
 </plugins>
