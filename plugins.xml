@@ -549,18 +549,18 @@
 		</install>
 	</plugin>
 	<plugin name="NppCrypt">
-		<unicodeVersion>1.0.0.4</unicodeVersion>
+		<unicodeVersion>1.0.0.6</unicodeVersion>
 		<author>Max Waghals</author>
 		<sourceUrl>http://www.cerberus-design.de/nppcryptv1004.zip</sourceUrl>
 		<description>Allows encryption / decryption and hashing of text using a password.</description>
-		<latestUpdate>Add switches to enable reading and writing hex and to use unsalted encryption</latestUpdate>
+		<latestUpdate>- added whirlpool hash \n- you now can specify the cipher-mode (cbc,ecb,cfb,ofb) \n- if no text is selected when you click "encrypt" all open documents can be encrypted.</latestUpdate>
 		<versions>
 			<version number="1.0" md5="9ec7f2d0cf210772bce84700f38776c6"/>
 			<version number="1.0.0.1" md5="eeea34937d317fd9c5fde569ee3540a4"/>
 		</versions>
 		<install>
 			<unicode>
-				<download>http://www.cerberus-design.de/nppcryptv1004.zip</download>
+				<download>http://www.cerberus-design.de/nppcryptv1006.zip</download>
 				<copy from="NppCrypt.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\NppCrypt"/>
 			</unicode>
@@ -582,18 +582,18 @@
 		</install>
 	</plugin>
 	<plugin name="NppExec">
-		<unicodeVersion>0.3.3.1</unicodeVersion>
-		<ansiVersion>0.3.3.1</ansiVersion>
+		<unicodeVersion>0.4</unicodeVersion>
+		<ansiVersion>0.4</ansiVersion>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
 		<author>Dovgan Vitaliy</author>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
-		<latestUpdate>fix1: now CRLF (Enter key emulation) is sent to the pipe separately \n- fix2: n++'es unsubclassing on exit removed (might be dangerous) \n- fix3: now the Console should keep its font always (IMF_AUTOFONT turned off) \n+ Help/Manual updated (sections 4.6.3 and 4.6.4 added)</latestUpdate>
+		<latestUpdate>new commands: NPP_SENDMSG, SCI_SENDMSG + SET command extension: set &lt;var&gt; ~ &lt;math expression&gt; (using Function Parser by Juha Nieminen, Joel Yliluoma) + several small improvements</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.3.3.1/NppExec_0331_dll_Unicode.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4/NppExec_04_dll_Unicode.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.3.3.1/NppExec_0331_dll_ANSI.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4/NppExec_04_dll_ANSI.zip</download>
 			</ansi>
 			<copy from="NppExec.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
@@ -663,10 +663,7 @@
 		<ansiVersion>2.3.1</ansiVersion>
 		<description>Obide provides IDE capabilities for XDS Oberon-2 developers: autocompletion, source navigation, code hints, etc.</description>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
-		<latestUpdate>\n
-			- Fixed: changing Global.mouseHintDelay in the ini-file had no effect.\n
-			- Fixed: Code Hint will be hidden after keeping mouse cursor for Global.mouseHintDelay milliseconds away from an identifier.
-		</latestUpdate>
+		<latestUpdate>\n	- Fixed: changing Global.mouseHintDelay in the ini-file had no effect.\n	- Fixed: Code Hint will be hidden after keeping mouse cursor for Global.mouseHintDelay milliseconds away from an identifier.</latestUpdate>
 		<install>
 			<download>http://downloads.sourceforge.net/project/npp-plugins/Obide/Obide%202.3.1/Obide.v.2.3.1.zip</download>
 			<ansi>
@@ -779,16 +776,7 @@
 		<ansiVersion>0.0.2.1</ansiVersion>
 		<author>Joao Moreno</author>
 		<description>QuickText is a Notepad++ plugin for quick text substitution, including multi field inputs. It's similar to Tab Triggers in TextMate: type a short identifier, press the magic key (default is Tab) and the short text will be replaced with the full version.</description>
-		<latestUpdate>\n
-* [M] Changed default key to Tab\n
-* [M] Moved QuickText.ini from \QuickText.ini to \plugins\Config\QuickText.ini\n
-* [M] Increased substitution text length (max is 8bytes number of chars)\n
-* [+] Valid tag keys (abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~!@#$%^&amp;*()_+{}|:?&gt;&lt;`-=[]\/.,)\n
-* [+] Global tag added. Current language tag takes priority over Global tag\n
-* [M] bigger and friendlier logic for inputting tag/subtitution\n
-* [M] fixed tab indenting of HTML UL tag under UNIX format\n
-* [+] Created Unicode version of the plugin\n
-		</latestUpdate>
+		<latestUpdate>\n * [M] Changed default key to Tab\n * [M] Moved QuickText.ini from \QuickText.ini to \plugins\Config\QuickText.ini\n * [M] Increased substitution text length (max is 8bytes number of chars)\n * [+] Valid tag keys (abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~!@#$%^&amp;*()_+{}|:?&gt;&lt;`-=[]\/.,)\n * [+] Global tag added. Current language tag takes priority over Global tag\n * [M] bigger and friendlier logic for inputting tag/subtitution\n * [M] fixed tab indenting of HTML UL tag under UNIX format\n * [+] Created Unicode version of the plugin\n</latestUpdate>
 		<stability>Multiple UI issues: http://sourceforge.net/projects/notepad-plus/forums/forum/482781/topic/3659788</stability>
 		<sourceUrl/>
 		<install>
@@ -945,6 +933,23 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="SnippetPlus">
+		<unicodeVersion>1.1</unicodeVersion>
+		<description>Code snippet and Surround With plugin for Notepad++. Write snippet name and replace it with real code or select some text and surround it with something like IF,TryCatch,Table,Div or whatever.Will give you hint if you don't remember the snippet name</description>
+		<author>Rajesh Kumar</author>
+		<homepage>http://sourceforge.net/projects/snippetplus/</homepage>
+		<versions>
+			<version number="1.1" md5="0485e56f7786f8c91d11164acc954bd6" comment="unicode, reported 0.3" />
+		</versions>
+		<install>
+			<download>http://downloads.sourceforge.net/project/snippetplus/SnippetPlus_V1.1_Release.zip</download>
+			<copy from="SnippetPlus_V1.1_Release\SnippetPlus.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="SnippetPlus_V1.1_Release\SnippetPlus.xml" to="$CONFIGDIR$" backup="true" />
+			<copy from="SnippetPlus_V1.1_Release\SnippetPlus\SnippetPlusPlus.dll" to="$PLUGINDIR$\SnippetPlus" validate="true" />
+			<copy from="SnippetPlus_V1.1_Release\SnippetPlus_Changelog.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
+			<copy from="SnippetPlus_V1.1_Release\SnippetPlus_ReadMe.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
+		</install>
+	</plugin>
 	<plugin name="Snippets">
 		<unicodeVersion>0.3</unicodeVersion>
 		<description>Adds the possibility to add code snippets to the current document by selecting it from a simple list.</description>
@@ -961,17 +966,17 @@
 		</install>
 	</plugin>
 	<plugin name="Source Cookifier">
-		<unicodeVersion>0.5.1</unicodeVersion>
+		<unicodeVersion>0.5.2</unicodeVersion>
 		<description>A plugin which uses Exuberant Ctags to parse either only the currently activated source file or multiple files of so-called sessions. The results are shown and can be browsed in a treeview inside of a dockable window.</description>
 		<author>UFO-Pu55y</author>
 		<homepage>http://sourceforge.net/projects/sourcecookifier/</homepage>
-		<latestUpdate>-fix: N++ deadlocks while using sourcecookifier window in floating state (not docked) \n-fix: when switching between file buffers with windowmanager plugin, tags weren't refreshed in Single-File-Mode, when the treeview was hidden (by windowmanager plugin again) \n-fix: write error log files into plugins config folder instead of sourcecookifier folder; might have failed due to missing admin rights in previous versions; also into one and the same file (appending) now instead of 1 file per error</latestUpdate>
+		<latestUpdate>-new: PHP appearance customization (thanks to Theriault) \n-new: session button icon overlays \n-new: always turn to cookie session mode on drag &amp; drop file(s) \n-fix: supress error message box on invalid source \n-fix: show invalid sources in red letters \n-fix: include invalid sources on multi file import \n-fix: show invalid sources in INCLUDE files too \n-fix: char '|' in input regex expressions or results caused exceptions \n-fix: 'unquiet' exceptions in tag parsing \n-fix: correct source tag color and tooltip, when source turns from valid to invalid and vice versa \n-fix: "Show invalid sources": show them in import dialog, else not \n-fix: extensions with dots in between not recognized (like ANT's ".build.xml") \n-fix: hide invalid source nodes when searching \n-fix: space char in front of tag signature instead of after signature \n-import dialog: auto enlarge window when importing many different file types \n-import dialog: better sorting of file types (all valid ones at top)</latestUpdate>
 		<aliases>
 			<alias name="SourceCookifier"/>
 		</aliases>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.5.1/SourceCookifier.v0.5.1.bin.zip</download>
+				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.5.2/SourceCookifier.v0.5.2.bin.zip</download>
 				<copy from="SourceCookifier.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="SourceCookifier\SourceCookifierCore.dll" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
 				<copy from="SourceCookifier\SourceCookifierWrapper.dll" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
@@ -979,6 +984,27 @@
 				<copy from="SourceCookifier\icons\*.png" to="$PLUGINDIR$\SourceCookifier\icons"/>
 				<copy from="Config\SourceCookifier.languages.model.xml" to="$CONFIGDIR$"/>
 			</unicode>
+		</install>
+	</plugin>
+	<plugin name="SourceSwitch">
+		<unicodeVersion>0.3</unicodeVersion>
+		<ansiVersion>0.3</ansiVersion>
+		<description> Designed to allow easy switching between project source and header files using a configurable shortcut. \nSo far it supports: \n- .c , .cpp, .cc &gt; .h \n- .cpp &gt; .hpp \n- .cxx &gt; .hxx \n- .asm &gt; .inc \n- .xml &gt; .xsd \n- .xml &gt; .xsl \n- .aspx &gt; .aspx.cs \n- .aspx.cs &gt; .designer.aspx.cs \n- .pas &gt; .dfm \n- .pas &gt; .lfm \n- .frm &gt; .frx</description>
+		<author>ViZioN</author>
+		<homepage>http://sourceforge.net/projects/sourceswitch</homepage>
+		<versions>
+			<version number="0.3" md5="738753a2faec5af196e12978a0e5a9a8" comment="unicode" />
+			<version number="0.3" md5="c84c74b41991b208b36b9d52671ca0ec" comment="ansi" />
+		</versions>
+		<install>
+			<download>http://downloads.sourceforge.net/project/sourceswitch/SourceSwitch/bin/SourceSwitch_0.3.zip</download>
+			<copy from="Readme.txt" to="$PLUGINDIR$\doc\SourceSwitch" />
+			<unicode>
+				<copy from="SourceSwitch.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<copy from="SourceSwitchA.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
 		</install>
 	</plugin>
 	<plugin name="Speech">
@@ -1130,22 +1156,8 @@
 	<plugin name="WebEdit">
 		<unicodeVersion>2.1</unicodeVersion>
 		<ansiVersion>2.1</ansiVersion>
-		<description>WebEdit is another attempt to integrate a user-configurable code template collection into Notepad++. With WebEdit you have the following options:\n
-* create a menu command for pasting some text, possibly surrounding the current selection, if any. Imagine selecting a word and putting "&lt;p&gt;...&lt;/p&gt;" around it with a single hotkey. You can create up to 30 such commands and assign keyboard shortcuts to them, or simply use the menu;\n
-* the same 30 commands can also be represented by buttons on the main toolbar for quick access with the mouse;\n
-* you can create a set of "tags" or abbreviations. Type one of them, then press Alt+Enter and it will be replaced with the corresponding block of text. If the replacement consists of multiple lines, all of them will be indented same as the first one. The caret will be placed in a predefined position within the new text. You can even have the current clipboard contents pasted as part of the tag replacement operation.\n
-\n
-The plugin configuration is stored in the WebEdit.ini file. Use "WebEdit\Edit Config" command from the "Plugins" menu to open the file in Notepad++ for editing.\n
-\n
-All keyboard shortcuts can be assigned/modified using the standard Shortcut Mapper. For more information see the WebEdit.txt help file.\n
-		</description>
-		<latestUpdate>\n
-			- Added "\c" escape sequence to paste clipboard contents when replacing a tag.\n
-			- Added "\i" escape sequence to increase indentation level when replacing a tag.\n
-			- Removed error message box from the "Edit Config" command.\n
-			- Fixed: "\n" now indents by copying only the leading whitespace of the first line, not the whole part up to the tag.\n
-			- Fixed invalid caret placement after replacing a tag when you move the caret with up and down keys (it used to jump to a different column, probably due to a Scintilla bug).
-		</latestUpdate>
+		<description>WebEdit is another attempt to integrate a user-configurable code template collection into Notepad++. With WebEdit you have the following options:\n * create a menu command for pasting some text, possibly surrounding the current selection, if any. Imagine selecting a word and putting "&lt;p&gt;...&lt;/p&gt;" around it with a single hotkey. You can create up to 30 such commands and assign keyboard shortcuts to them, or simply use the menu;\n * the same 30 commands can also be represented by buttons on the main toolbar for quick access with the mouse;\n * you can create a set of "tags" or abbreviations. Type one of them, then press Alt+Enter and it will be replaced with the corresponding block of text. If the replacement consists of multiple lines, all of them will be indented same as the first one. The caret will be placed in a predefined position within the new text. You can even have the current clipboard contents pasted as part of the tag replacement operation.\n \n The plugin configuration is stored in the WebEdit.ini file. Use "WebEdit\Edit Config" command from the "Plugins" menu to open the file in Notepad++ for editing.\n \n All keyboard shortcuts can be assigned/modified using the standard Shortcut Mapper. For more information see the WebEdit.txt help file.\n</description>
+		<latestUpdate>\n	- Added "\c" escape sequence to paste clipboard contents when replacing a tag.\n	- Added "\i" escape sequence to increase indentation level when replacing a tag.\n	- Removed error message box from the "Edit Config" command.\n	- Fixed: "\n" now indents by copying only the leading whitespace of the first line, not the whole part up to the tag.\n	- Fixed invalid caret placement after replacing a tag when you move the caret with up and down keys (it used to jump to a different column, probably due to a Scintilla bug).</latestUpdate>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
 		<versions>
 			<version number="1.3.3" md5="47a1a0d12d2c866bc594e4f085d70a47" comment="unicode"/>

@@ -182,4 +182,15 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('b
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('06395b719dbff75a70393b2473ad3c88','ObideU.dll','','2010-04-02','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('2574e81ffd2b0c0e380843ddeeb9f293','Obide.dll','','2010-04-07','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('f2de7f6c5cf174d0463ccabe04acdce0','ObideU.dll','','2010-04-07','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('0485e56f7786f8c91d11164acc954bd6','SnippetPlus.dll','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('0e06a3cd5d2f85e1f8e676e9fcb71b56','SnippetPlusPlus.dll','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('01ddc47496b476ad5f674e078832b833','NppExec.dll','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('7dfdb0ef26d1d8aa613bcc820e7a5c28','NppExec.dll','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('13416125f48dbfe806430f54c7179591','SourceCookifier.dll','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('879ecbd6763e348a26224f1e8f659eb3','SourceCookifierCore.dll','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('12fbfd478ed37c4f4b08e674bc796dbe','SourceCookifierWrapper.dll','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('8a01e5c066b116d1da0e3a6f85533a3d','ctags.exe','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('738753a2faec5af196e12978a0e5a9a8','SourceSwitch.dll','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('c84c74b41991b208b36b9d52671ca0ec','SourceSwitchA.dll','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('e9d7ffd2794def3b9334f1c4cf14c6db','NppCrypt.dll','','2010-05-09','ok');
 commit;
