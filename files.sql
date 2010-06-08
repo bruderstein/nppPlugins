@@ -193,4 +193,16 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('8
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('738753a2faec5af196e12978a0e5a9a8','SourceSwitch.dll','','2010-05-09','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('c84c74b41991b208b36b9d52671ca0ec','SourceSwitchA.dll','','2010-05-09','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('e9d7ffd2794def3b9334f1c4cf14c6db','NppCrypt.dll','','2010-05-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('67b1a2bbd80bfd18c5122ffa65d774d5','NppFTP.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('995c3f0cbe883d3fff599d688b1c2dfd','NppFTPA.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('472dc79552caec35f29a22afe22d2c42','ctags.exe','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('19cab981801b2885f50434e44e062571','SourceCookifierCore.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('c32ab66c3d0226289f52f673ae3b7c49','SourceCookifierWrapper.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('919d9d915ce468c5ce092038ce2fb27a','SourceCookifier.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('2ead8da0e29c10d9d1e72942e4b11c8a','XMLTools.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('559147ade5e6594f503847642e31a985','libxml2.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('7884afa5b63cca9f2fb2effc1a0a3c9d','libxslt.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('506121e5be1b41339ce88bae84466634','ComparePlugin.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('069bc31aa167650b56047d81df1fa323','ComparePlugin.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('3df2a42517639559490aecebabf5d654','QuickText.dll','','2010-06-08','ok');
 commit;
