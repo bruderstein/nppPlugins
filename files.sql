@@ -205,4 +205,8 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('7
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('506121e5be1b41339ce88bae84466634','ComparePlugin.dll','','2010-06-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('069bc31aa167650b56047d81df1fa323','ComparePlugin.dll','','2010-06-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('3df2a42517639559490aecebabf5d654','QuickText.dll','','2010-06-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4d5effb36b7edf520e679790b9183daf','NppFTP.dll','','2010-07-04','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('858b17aa4e3c07ce1034f718275e326a','NppFTPA.dll','','2010-07-04','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('60ccda33c8a197b0eee78e640d7d6996','NppFTP.dll','','2010-07-04','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('aa0d5071faa75669de82a51e6ffd7847','NppFTPA.dll','','2010-07-04','ok');
 commit;

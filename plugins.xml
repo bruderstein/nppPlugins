@@ -619,16 +619,22 @@
 		</install>
 	</plugin>
 	<plugin name="NppFTP">
-		<unicodeVersion>0.13</unicodeVersion>
-		<ansiVersion>0.13</ansiVersion>
+		<unicodeVersion>0.21</unicodeVersion>
+		<ansiVersion>0.21</ansiVersion>
 		<homepage>http://sourceforge.net/projects/nppftp/</homepage>
 		<description>NppFTP: a plugin that allows FTP, FTPS, FTPES and SFTP communications. Very useful for web development.</description>
 		<author>harrybharry</author>
 		<aliases>
 			<alias name="nppftp" />
 		</aliases>
+		<versions>
+			<version number="0.20" md5="4d5effb36b7edf520e679790b9183daf" comment="uni 0.2.0" />
+			<version number="0.20" md5="858b17aa4e3c07ce1034f718275e326a" comment="ansi 0.2.0" />
+			<version number="0.21" md5="60ccda33c8a197b0eee78e640d7d6996" comment="uni 0.2.1" />
+			<version number="0.21" md5="aa0d5071faa75669de82a51e6ffd7847" comment="ansi 0.2.1" />
+		</versions>
 		<install>
-			<download>http://downloads.sourceforge.net/sourceforge/nppftp/files/NppFTP_0.13.zip</download>
+			<download>http://downloads.sourceforge.net/project/nppftp/NppFTP_0.2.1.zip</download>
 			<ansi>
 				<copy from="bin\NppFTPA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
@@ -637,6 +643,10 @@
 			</unicode>
 			<copy from="doc\Readme.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			<copy from="doc\license_NppFTP.txt" to="$PLUGINDIR$\doc\NppFTP"/>
+			<copy from="doc\license_OpenSSL.txt" to="$PLUGINDIR$\doc\NppFTP"/>
+			<copy from="doc\license_TiXML.txt" to="$PLUGINDIR$\doc\NppFTP"/>
+			<copy from="doc\license_UTCP.htm" to="$PLUGINDIR$\doc\NppFTP"/>
+			<copy from="doc\license_ZLIB.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 		</install>
 	</plugin>
 	<plugin name="NppNetNote">
