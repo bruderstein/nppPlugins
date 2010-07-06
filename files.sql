@@ -209,4 +209,6 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('858b17aa4e3c07ce1034f718275e326a','NppFTPA.dll','','2010-07-04','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('60ccda33c8a197b0eee78e640d7d6996','NppFTP.dll','','2010-07-04','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('aa0d5071faa75669de82a51e6ffd7847','NppFTPA.dll','','2010-07-04','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('ba52724bb5ca6ff7f37576bf41597714','Obide.dll','','2010-07-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('1cbeb0187e69f0f5c2fd13a36ec007f5','ObideU.dll','','2010-07-06','ok');
 commit;
