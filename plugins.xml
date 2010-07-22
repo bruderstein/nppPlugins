@@ -586,18 +586,18 @@
 		</install>
 	</plugin>
 	<plugin name="NppExec">
-		<unicodeVersion>0.4</unicodeVersion>
-		<ansiVersion>0.4</ansiVersion>
+		<unicodeVersion>0.4.1</unicodeVersion>
+		<ansiVersion>0.4.1</ansiVersion>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
 		<author>Dovgan Vitaliy</author>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
-		<latestUpdate>new commands: NPP_SENDMSG, SCI_SENDMSG + SET command extension: set &lt;var&gt; ~ &lt;math expression&gt; (using Function Parser by Juha Nieminen, Joel Yliluoma) + several small improvements</latestUpdate>
+		<latestUpdate>- fix for NPP_SENDMSG/SCI_SENDMSG with parameters containing dbl-quote(s) \n+ fparser updated to v4.2 \n+ NppExec Manual updated</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4/NppExec_04_dll_Unicode.zip</download>
+				<download>https://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4.1/NppExec_041_dll_Unicode.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4/NppExec_04_dll_ANSI.zip</download>
+				<download>https://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4.1/NppExec_041_dll_ANSI.zip</download>
 			</ansi>
 			<copy from="NppExec.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
