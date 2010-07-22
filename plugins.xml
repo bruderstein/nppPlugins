@@ -1083,6 +1083,23 @@
 		<copy from="SpellChecker.dll" to="$PLUGINDIR$" validate="true"/>
 	</install>
 </plugin>
+<plugin name="Squiggly Spell">
+	<unicodeVersion>1.0</unicodeVersion>
+	<description>Spellchecker tbat underlines misspelled words as you type.  Requires Aspell to be installed (http://aspell.net/win32).</description>
+	<sourceUrl>http://sourceforge.net/projects/squiggly/develop</sourceUrl>
+	<homepage>http://squiggly.sourceforge.net/</homepage>
+	<author>Karim Sharif</author>
+	<versions>
+		<version md5="aaa794ed8a07bcb16ca3ae651da9846c" number="1.0" />
+	</versions>
+	<install>
+		<unicode>
+			<download>http://downloads.sourceforge.net/project/squiggly/SquigglySpellCheck.zip</download>
+			<copy from="SquigglySpellCheck.dll" to="$PLUGINDIR$" validate="true"/>
+		</unicode>
+	</install>
+</plugin>
+
 <plugin name="Subversion">
 	<unicodeVersion>1.0</unicodeVersion>
 	<versions>
