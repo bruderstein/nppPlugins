@@ -591,16 +591,17 @@
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/</sourceUrl>
 		<author>Dovgan Vitaliy</author>
 		<description>With this NppExec plugin you can execute your commands or saved scripts without leaving Notepad++. It makes you triple your productivity!</description>
-		<latestUpdate>- fix for NPP_SENDMSG/SCI_SENDMSG with parameters containing dbl-quote(s) \n+ fparser updated to v4.2 \n+ NppExec Manual updated</latestUpdate>
+		<latestUpdate>Improved installation - recommended updated\n- fix for NPP_SENDMSG/SCI_SENDMSG with parameters containing dbl-quote(s) \n+ fparser updated to v4.2 \n+ NppExec Manual updated</latestUpdate>
 		<install>
 			<unicode>
-				<download>https://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4.1/NppExec_041_dll_Unicode.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4.1/NppExec_041_dll_Unicode.zip</download>
 			</unicode>
 			<ansi>
-				<download>https://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4.1/NppExec_041_dll_ANSI.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4.1/NppExec_041_dll_ANSI.zip</download>
 			</ansi>
-			<copy from="NppExec.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
+			<copy from="NppExec\*.*" to="$PLUGINDIR$\NppExec"/>
+			<copy from="NppExec.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
 	<plugin name="NppExport">
@@ -1088,17 +1089,17 @@
 	</install>
 </plugin>
 <plugin name="Squiggly Spell">
-	<unicodeVersion>1.0</unicodeVersion>
+	<unicodeVersion>0.0.1</unicodeVersion>
 	<description>Spellchecker tbat underlines misspelled words as you type.  Requires Aspell to be installed (http://aspell.net/win32).</description>
 	<sourceUrl>http://sourceforge.net/projects/squiggly/develop</sourceUrl>
 	<homepage>http://squiggly.sourceforge.net/</homepage>
 	<author>Karim Sharif</author>
 	<versions>
-		<version md5="aaa794ed8a07bcb16ca3ae651da9846c" number="1.0" />
+		<version md5="aaa794ed8a07bcb16ca3ae651da9846c" number="0.0.1" />
 	</versions>
 	<install>
 		<unicode>
-			<download>http://downloads.sourceforge.net/project/squiggly/SquigglySpellCheck.zip</download>
+			<download>http://downloads.sourceforge.net/project/squiggly/0.0.1/SquigglySpellCheck.zip</download>
 			<copy from="SquigglySpellCheck.dll" to="$PLUGINDIR$" validate="true"/>
 		</unicode>
 	</install>

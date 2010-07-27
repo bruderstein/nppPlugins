@@ -209,4 +209,13 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('858b17aa4e3c07ce1034f718275e326a','NppFTPA.dll','','2010-07-04','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('60ccda33c8a197b0eee78e640d7d6996','NppFTP.dll','','2010-07-04','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('aa0d5071faa75669de82a51e6ffd7847','NppFTPA.dll','','2010-07-04','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('b0e5c6ade63c85cebb03e1220e330150','AutoSaveA.dll','','2010-07-27','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('e3588cc2a3511b635f349ce16200a493','AutoSaveU.dll','','2010-07-27','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('9723f95b3adade18ac0d1ee14dc08987','RunMeU.dll','','2010-07-27','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('75d428d9ffc760d405cf04d798018a02','RunMeA.dll','','2010-07-27','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('174e5bed8982f1b3b5145bf463b1a7aa','LanguageHelpU.dll','','2010-07-27','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('f79fc02b8f83fde37d3e1dc0932cb152','LanguageHelpA.dll','','2010-07-27','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('aaa794ed8a07bcb16ca3ae651da9846c','SquigglySpellCheck.dll','','2010-07-27','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('99a9934829680e1688cd9409aeda0b38','NppExec.dll','','2010-07-27','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5977ea45f4b05a7056a6177d392412ea','NppExec.dll','','2010-07-27','ok');
 commit;
