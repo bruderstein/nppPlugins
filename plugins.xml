@@ -695,13 +695,13 @@
 		</install>
 	</plugin>
 	<plugin name="Obide">
-		<unicodeVersion>2.3.1</unicodeVersion>
-		<ansiVersion>2.3.1</ansiVersion>
+		<unicodeVersion>2.3.2</unicodeVersion>
+		<ansiVersion>2.3.2</ansiVersion>
 		<description>Obide provides IDE capabilities for XDS Oberon-2 developers: autocompletion, source navigation, code hints, etc.</description>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
-		<latestUpdate>\n	- Fixed: changing Global.mouseHintDelay in the ini-file had no effect.\n	- Fixed: Code Hint will be hidden after keeping mouse cursor for Global.mouseHintDelay milliseconds away from an identifier.</latestUpdate>
+		<latestUpdate>\n	- Fixed: parser now tolerates excess semicolons in variable lists, including RECORD declarations.</latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/Obide/Obide%202.3.1/Obide.v.2.3.1.zip</download>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/Obide/Obide%202.3.2/Obide.v.2.3.2.zip</download>
 			<ansi>
 				<copy from="Obide\Obide.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
