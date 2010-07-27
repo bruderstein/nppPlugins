@@ -15,15 +15,15 @@
 	</pluginNames>
 	<plugin name="AutoSave">
 		<ansiVersion>1.2</ansiVersion>
-		<unicodeVersion>1.2</unicodeVersion>
+		<unicodeVersion>1.2</unicodeVersion><br/>
+		<aliases>
+			<alias name="Auto Save" />
+		</aliases>
 		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
 		<author>Franco Stellari</author>
 		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
 		<sourceUrl/>
-		<latestUpdate>
-			\n+ enable new features that allow to save unamed buffers as well as create autorecovery files
-			\n+ fixes a problem that disabled previous version under NPP v5.7
-		</latestUpdate>
+		<latestUpdate>\n+ enable new features that allow to save unamed buffers as well as create autorecovery files	\n+ fixes a problem that disabled previous version under NPP v5.7</latestUpdate>
 		<install>
 			<download>http://sites.google.com/site/fstellari/cab/AutoSave_dll_1v20.zip?attredirects=0</download>
 			<ansi>
@@ -231,7 +231,7 @@
 	<plugin name="FTP_synchronize">
 		<unicodeVersion>0.9.6.2</unicodeVersion>
 		<ansiVersion>0.9.6.1</ansiVersion>
-		<description>A FTP client which is integrated in Notepad++ seamlessly.  Open a php file from a server of distance, modify it, save it and try it on your browser directly just like you work locally. </description>
+		<description>**Replaced by NppFTP - please install that instead**\n\n A FTP client which is integrated in Notepad++ seamlessly.  Open a php file from a server of distance, modify it, save it and try it on your browser directly just like you work locally. </description>
 		<latestUpdate>Unofficial patch to fix some issues</latestUpdate>
 		<author>Harry B, unofficial patch by XianJun Zhang</author>
 		<stability>Some issues</stability>
@@ -1089,8 +1089,7 @@
 	</install>
 </plugin>
 <plugin name="Squiggly Spell">
-	<unicodeVersion>0.0.1</unicodeVersion>
-	<description>Spellchecker tbat underlines misspelled words as you type.  Requires Aspell to be installed (http://aspell.net/win32).</description>
+	<!-- Disabled until errors repaired <unicodeVersion>0.0.1</unicodeVersion> --> <description>Spellchecker tbat underlines misspelled words as you type.  Requires Aspell to be installed (http://aspell.net/win32).</description>
 	<sourceUrl>http://sourceforge.net/projects/squiggly/develop</sourceUrl>
 	<homepage>http://squiggly.sourceforge.net/</homepage>
 	<author>Karim Sharif</author>
@@ -1104,7 +1103,6 @@
 		</unicode>
 	</install>
 </plugin>
-
 <plugin name="Subversion">
 	<unicodeVersion>1.0</unicodeVersion>
 	<versions>
