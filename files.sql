@@ -220,4 +220,6 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('f
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('aaa794ed8a07bcb16ca3ae651da9846c','SquigglySpellCheck.dll','','2010-07-27','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('99a9934829680e1688cd9409aeda0b38','NppExec.dll','','2010-07-27','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5977ea45f4b05a7056a6177d392412ea','NppExec.dll','','2010-07-27','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('09b9dfb3d28ad01259b2537747f77697','python26.dll','','2010-08-05','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5c49f31418625fd0b21c02216e8418c9','PythonScript.dll','','2010-08-05','ok');
 commit;

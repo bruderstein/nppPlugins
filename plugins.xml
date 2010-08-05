@@ -15,7 +15,7 @@
 	</pluginNames>
 	<plugin name="AutoSave">
 		<ansiVersion>1.2</ansiVersion>
-		<unicodeVersion>1.2</unicodeVersion><br/>
+		<unicodeVersion>1.2</unicodeVersion>
 		<aliases>
 			<alias name="Auto Save" />
 		</aliases>
@@ -805,6 +805,60 @@
 			<copy from="NppExternalLexers.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="config\Doc\NppExtLexer_PluginHelp.txt" to="$CONFIGDIR$"/>
 			<copy from="config\NppExternalLexers.xml" to="$CONFIGDIR$" backup="true"/>
+		</install>
+	</plugin>
+	<plugin name="Python Script">
+		<unicodeVersion>0.6.2.1</unicodeVersion>
+		<description>Scripting plugin for Notepad++\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
+		<author>Dave Brotherstone</author>
+		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
+		<homepage>http://npppythonscript.sourceforge.net</homepage>
+		<stability>Unknown - no complaints, but very new</stability>
+		<install>
+			<unicode>
+				<download>http://www.brotherstone.co.uk/npp/ps/downloads/PythonScript_full_0.6.2.1.zip</download>
+				<copy from="python26.dll" to="$NPPDIR$" validate="true"/>
+				<copy from="plugins\PythonScript\lib\*.py" to="$PLUGINDIR$\PythonScript\lib" />
+				<copy from="plugins\PythonScript\lib\bsddb\*.py" to="$PLUGINDIR$\PythonScript\lib\bsddb" />
+				<copy from="plugins\PythonScript\lib\compiler\*.py" to="$PLUGINDIR$\PythonScript\lib\compiler" />
+				<copy from="plugins\PythonScript\lib\ctypes\*.py" to="$PLUGINDIR$\PythonScript\lib\ctypes" />
+				<copy from="plugins\PythonScript\lib\ctypes\macholib\*.py" to="$PLUGINDIR$\PythonScript\lib\ctypes\macholib" />
+				<copy from="plugins\PythonScript\lib\curses\*.py" to="$PLUGINDIR$\PythonScript\lib\curses" />
+				<copy from="plugins\PythonScript\lib\distutils\*.py" to="$PLUGINDIR$\PythonScript\lib\distutils" />
+				<copy from="plugins\PythonScript\lib\distutils\command\*.py" to="$PLUGINDIR$\PythonScript\lib\distutils\command" />
+				<copy from="plugins\PythonScript\lib\email\*.py" to="$PLUGINDIR$\PythonScript\lib\email" />
+				<copy from="plugins\PythonScript\lib\email\mime\*.py" to="$PLUGINDIR$\PythonScript\lib\email\mime" />
+				<copy from="plugins\PythonScript\lib\encodings\*.py" to="$PLUGINDIR$\PythonScript\lib\encodings" />
+				<copy from="plugins\PythonScript\lib\encodings\*.pyo" to="$PLUGINDIR$\PythonScript\lib\encodings" />
+				<copy from="plugins\PythonScript\lib\hotshot\*.py" to="$PLUGINDIR$\PythonScript\lib\hotshot" />
+				<copy from="plugins\PythonScript\lib\idlelib\*.py" to="$PLUGINDIR$\PythonScript\lib\idlelib" />
+				<copy from="plugins\PythonScript\lib\idlelib\*.def" to="$PLUGINDIR$\PythonScript\lib\idlelib" />
+				<copy from="plugins\PythonScript\lib\idlelib\*.txt" to="$PLUGINDIR$\PythonScript\lib\idlelib" />
+				<copy from="plugins\PythonScript\lib\idlelib\*.bat" to="$PLUGINDIR$\PythonScript\lib\idlelib" />
+				<copy from="plugins\PythonScript\lib\idlelib\Icons\*.gif" to="$PLUGINDIR$\PythonScript\lib\idlelib\Icons" />
+				<copy from="plugins\PythonScript\lib\idlelib\Icons\*.icns" to="$PLUGINDIR$\PythonScript\lib\idlelib\Icons" />
+				<copy from="plugins\PythonScript\lib\json\*.py" to="$PLUGINDIR$\PythonScript\lib\json" />
+				<copy from="plugins\PythonScript\lib\lib-tk\*.py" to="$PLUGINDIR$\PythonScript\lib\lib-tk" />
+				<copy from="plugins\PythonScript\lib\lib2to3\*.py" to="$PLUGINDIR$\PythonScript\lib\lib2to3" />
+				<copy from="plugins\PythonScript\lib\lib2to3\*.txt" to="$PLUGINDIR$\PythonScript\lib\lib2to3" />
+				<copy from="plugins\PythonScript\lib\lib2to3\fixes\*.py" to="$PLUGINDIR$\PythonScript\lib\lib2to3\fixes" />
+				<copy from="plugins\PythonScript\lib\lib2to3\pgen2\*.py" to="$PLUGINDIR$\PythonScript\lib\lib2to3\pgen2" />
+				<copy from="plugins\PythonScript\lib\logging\*.py" to="$PLUGINDIR$\PythonScript\lib\logging" />
+				<copy from="plugins\PythonScript\lib\msilib\*.py" to="$PLUGINDIR$\PythonScript\lib\msilib" />
+				<copy from="plugins\PythonScript\lib\multiprocessing\*.py" to="$PLUGINDIR$\PythonScript\lib\multiprocessing" />
+				<copy from="plugins\PythonScript\lib\multiprocessing\dummy\*.py" to="$PLUGINDIR$\PythonScript\lib\multiprocessing\dummy" />
+				<copy from="plugins\PythonScript\lib\sqlite3\*.py" to="$PLUGINDIR$\PythonScript\lib\sqlite3" />
+				<copy from="plugins\PythonScript\lib\wsgiref\*.py" to="$PLUGINDIR$\PythonScript\lib\wsgiref" />
+				<copy from="plugins\PythonScript\lib\xml\*.py" to="$PLUGINDIR$\PythonScript\lib\xml" />
+				<copy from="plugins\PythonScript\lib\xml\dom\*.py" to="$PLUGINDIR$\PythonScript\lib\xml\dom" />
+				<copy from="plugins\PythonScript\lib\xml\etree\*.py" to="$PLUGINDIR$\PythonScript\lib\xml\etree" />
+				<copy from="plugins\PythonScript\lib\xml\parsers\*.py" to="$PLUGINDIR$\PythonScript\lib\xml\parsers" />
+				<copy from="plugins\PythonScript\lib\xml\sax\*.py" to="$PLUGINDIR$\PythonScript\lib\xml\sax" />
+				<copy from="plugins\PythonScript\scripts\Samples\*.py" to="$CONFIGDIR$\PythonScript\scripts\Samples" />
+				<copy from="plugins\PythonScript\scripts\startup.py" to="$PLUGINDIR$\PythonScript\scripts" />
+				<copy from="plugins\doc\PythonScript\PythonScript.chm" to="$PLUGINDIR$\doc\PythonScript" />
+				<copy from="plugins\PythonScript.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
 		</install>
 	</plugin>
 	<plugin name="QuickText">
