@@ -35,7 +35,7 @@
 		</install>
 	</plugin>
 	<plugin name="CCompletion">
-		<unicodeVersion>1.17</unicodeVersion>
+		<unicodeVersion>1.18</unicodeVersion>
 		<description>It's an autocompletion plugin, that also features two other similar functionalities:   \n* find identifier and display it in secondary view   \n* go to identitifer  For more information on usage, see the plugin help.     \nThe plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
 		<author>Bostjan Mihoric</author>
 		<latestUpdate>Moved exubarant Ctags parameters to the settings file\nFixed DLL issue from 1.16</latestUpdate>
@@ -51,8 +51,8 @@
 			<version number="1.12" md5="7d56894e3a98704e9a8e34811d3e5440"/>
 			<version number="1.15" md5="514320a0af90b6c85424fba5ac965da8"/>
 			<version number="1.17" md5="b871d612d87acb35b1d7bc3d144d8087"/>
+			<version number="1.18" md5="13cfdf84e2667d335301dfc07b51a79f"/>
 		</versions>
-		<issues/>
 	</plugin>
 	<plugin name="Change Markers">
 		<ansiVersion>1.0</ansiVersion>
@@ -808,15 +808,16 @@
 		</install>
 	</plugin>
 	<plugin name="Python Script">
-		<unicodeVersion>0.6.2.1</unicodeVersion>
+		<unicodeVersion>0.6.3.0</unicodeVersion>
 		<description>Scripting plugin for Notepad++\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
 		<author>Dave Brotherstone</author>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
-		<stability>Unknown - no complaints, but very new</stability>
+		<stability>Unknown - very new, previous crash bugs found but fixed</stability>
+		<latestUpdate>\n* NEW: console.run now outputs stderr, and returns the result of the process\n* FIXED: Crash on notepad.prompt on some systems\n* FIXED: editor.pyreplace had trouble with lookahead-only regexs like "$"\n* FIXED: Potential crash on some systems when up arrow pressed in console prior to any history</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://www.brotherstone.co.uk/npp/ps/downloads/PythonScript_full_0.6.2.1.zip</download>
+				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%200.6.3.0/PythonScript_full_0.6.3.0.zip</download>
 				<copy from="python26.dll" to="$NPPDIR$" validate="true"/>
 				<copy from="plugins\PythonScript\lib\*.py" to="$PLUGINDIR$\PythonScript\lib" />
 				<copy from="plugins\PythonScript\lib\bsddb\*.py" to="$PLUGINDIR$\PythonScript\lib\bsddb" />
@@ -855,7 +856,7 @@
 				<copy from="plugins\PythonScript\lib\xml\parsers\*.py" to="$PLUGINDIR$\PythonScript\lib\xml\parsers" />
 				<copy from="plugins\PythonScript\lib\xml\sax\*.py" to="$PLUGINDIR$\PythonScript\lib\xml\sax" />
 				<copy from="plugins\PythonScript\scripts\Samples\*.py" to="$CONFIGDIR$\PythonScript\scripts\Samples" />
-				<copy from="plugins\PythonScript\scripts\startup.py" to="$PLUGINDIR$\PythonScript\scripts" />
+				<copy from="plugins\PythonScript\scripts\startup.py" to="$PLUGINDIR$\PythonScript\scripts" backup="true"/>
 				<copy from="plugins\doc\PythonScript\PythonScript.chm" to="$PLUGINDIR$\doc\PythonScript" />
 				<copy from="plugins\PythonScript.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
