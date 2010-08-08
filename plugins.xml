@@ -623,6 +623,21 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="F# Interactive">
+		<unicodeVersion>0.1</unicodeVersion>
+		<sourceUrl>http://github.com/ppv/NPPFSIPlugin/tree/master/Source/Plugin</sourceUrl>
+		<description>This plugin hosts F# Interactive inside Notepad++ (Note: F# should be installed separately).</description>
+		<author>Prapin Peethambaran</author>
+		<install>
+			<unicode>
+				<download>http://github.com/downloads/ppv/NPPFSIPlugin/NPPFSIPlugin.zip</download>
+				<copy from="NPPFSIPlugin.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+		</install>
+		<versions>
+			<version number="0.1.0.0" md5="4cb393534d36559bedcb50a0a0183e64" />
+		</versions>
+	</plugin>
 	<plugin name="NppFTP">
 		<unicodeVersion>0.21</unicodeVersion>
 		<ansiVersion>0.21</ansiVersion>
@@ -1361,21 +1376,6 @@
 		<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" />
 		<version number="2.3.1.764" md5="cb1556f0a9bcde3431e2b00ea8daac80" />
 		<version number="2.3.1.805" md5="2ead8da0e29c10d9d1e72942e4b11c8a" />
-	</versions>
-</plugin>
-<plugin name="F# Interactive">
-	<unicodeVersion>0.1</unicodeVersion>
-	<sourceUrl>http://github.com/ppv/NPPFSIPlugin/tree/master/Source/Plugin</sourceUrl>
-	<description>This plugin hosts F# Interactive inside Notepad++ (Note: F# should be installed separately).</description>
-	<author>Prapin Peethambaran</author>
-	<install>
-		<unicode>
-			<download>http://github.com/downloads/ppv/NPPFSIPlugin/NPPFSIPlugin.zip</download>
-			<copy from="NPPFSIPlugin.dll" to="$PLUGINDIR$" validate="true"/>
-		</unicode>
-	</install>
-	<versions>
-		<version number="0.1.0.0" md5="4cb393534d36559bedcb50a0a0183e64" />
 	</versions>
 </plugin>
 </plugins>

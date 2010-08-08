@@ -224,4 +224,5 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('0
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5c49f31418625fd0b21c02216e8418c9','PythonScript.dll','','2010-08-05','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5a227c430eb0e5d8b1bde5cc4c988c58','PythonScript.dll','','2010-08-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('13cfdf84e2667d335301dfc07b51a79f','NppCCompletionPlugin.dll','','2010-08-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4cb393534d36559bedcb50a0a0183e64','NPPFSIPlugin.dll','','2010-08-08','ok');
 commit;
