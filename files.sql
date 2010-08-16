@@ -225,4 +225,9 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5a227c430eb0e5d8b1bde5cc4c988c58','PythonScript.dll','','2010-08-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('13cfdf84e2667d335301dfc07b51a79f','NppCCompletionPlugin.dll','','2010-08-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4cb393534d36559bedcb50a0a0183e64','NPPFSIPlugin.dll','','2010-08-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('c649268732c1dd01aba6379be25e0796','NppCCompletionPlugin.dll','','2010-08-16','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('db3d33df37720961c2521b1f7ae83153','ctags.exe','','2010-08-16','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('6ab53efa884da485aeb88e741e7b323b','NppFTP.dll','','2010-08-16','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('e4bed22538be7e92ce129880c5566a20','NppFTPA.dll','','2010-08-16','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('228be42996505a6f27f833de0f06a484','PythonScript.dll','','2010-08-16','ok');
 commit;

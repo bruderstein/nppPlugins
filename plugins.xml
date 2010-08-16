@@ -35,23 +35,23 @@
 		</install>
 	</plugin>
 	<plugin name="CCompletion">
-		<unicodeVersion>1.18</unicodeVersion>
-		<description>It's an autocompletion plugin, that also features two other similar functionalities:   \n* find identifier and display it in secondary view   \n* go to identitifer  For more information on usage, see the plugin help.     \nThe plugin uses Exuberant Ctags and can operate with all identifiers that Ctags recognizes. </description>
+		<unicodeVersion>1.19</unicodeVersion>
+		<description>CCompletion is a code autocompletion plugin, with other useful features like listing functions / variables, quicky moving to their definition and easily returning to where you were before</description>
 		<author>Bostjan Mihoric</author>
-		<latestUpdate>Moved exubarant Ctags parameters to the settings file\nFixed DLL issue from 1.16</latestUpdate>
+		<latestUpdate>1. Fixed out-of-scope indetifiers for some go-to-identifier functions.\n2. Adds support for function-like macros</latestUpdate>
 		<sourceUrl/>
 		<install>
 			<download>http://freeweb.siol.net/rmihor/NppCCompletionPlugin.zip</download>
 			<copy from="NppCCompletionPlugin.dll" to="$PLUGINDIR$" validate="true"/>
-			<download>http://downloads.sourceforge.net/sourceforge/ctags/ctags58.zip</download>
-			<copy from="ctags58\ctags.exe" to="$PLUGINDIR$" validate="true"/>
+			<copy from="ctags.exe" to="$PLUGINDIR$" validate="true"/>
 		</install>
 		<versions>
-			<version number="1.11.0.0" md5="ec262eb016aafc02afc59e8dd3b94e4f"/>
+			<version number="1.11" md5="ec262eb016aafc02afc59e8dd3b94e4f"/>
 			<version number="1.12" md5="7d56894e3a98704e9a8e34811d3e5440"/>
 			<version number="1.15" md5="514320a0af90b6c85424fba5ac965da8"/>
 			<version number="1.17" md5="b871d612d87acb35b1d7bc3d144d8087"/>
 			<version number="1.18" md5="13cfdf84e2667d335301dfc07b51a79f"/>
+			<version number="1.19" md5="c649268732c1dd01aba6379be25e0796"/>
 		</versions>
 	</plugin>
 	<plugin name="Change Markers">
@@ -639,8 +639,8 @@
 		</versions>
 	</plugin>
 	<plugin name="NppFTP">
-		<unicodeVersion>0.21</unicodeVersion>
-		<ansiVersion>0.21</ansiVersion>
+		<unicodeVersion>0.23</unicodeVersion>
+		<ansiVersion>0.23</ansiVersion>
 		<homepage>http://sourceforge.net/projects/nppftp/</homepage>
 		<description>NppFTP: a plugin that allows FTP, FTPS, FTPES and SFTP communications. Very useful for web development.</description>
 		<author>harrybharry</author>
@@ -652,15 +652,18 @@
 			<version number="0.20" md5="858b17aa4e3c07ce1034f718275e326a" comment="ansi 0.2.0" />
 			<version number="0.21" md5="60ccda33c8a197b0eee78e640d7d6996" comment="uni 0.2.1" />
 			<version number="0.21" md5="aa0d5071faa75669de82a51e6ffd7847" comment="ansi 0.2.1" />
+			<version number="0.23" md5="6ab53efa884da485aeb88e741e7b323b" comment="uni 0.2.3" />
+			<version number="0.23" md5="e4bed22538be7e92ce129880c5566a20" comment="ansi 0.2.3" />
 		</versions>
 		<install>
-			<download>http://downloads.sourceforge.net/project/nppftp/NppFTP_0.2.1.zip</download>
+			<download>http://downloads.sourceforge.net/project/nppftp/NppFTP_0.23.zip</download>
 			<ansi>
 				<copy from="bin\NppFTPA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
 			<unicode>
 				<copy from="bin\NppFTP.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
+			<copy from="doc\license_libssh.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			<copy from="doc\Readme.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			<copy from="doc\license_NppFTP.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 			<copy from="doc\license_OpenSSL.txt" to="$PLUGINDIR$\doc\NppFTP"/>
@@ -823,16 +826,15 @@
 		</install>
 	</plugin>
 	<plugin name="Python Script">
-		<unicodeVersion>0.6.3.0</unicodeVersion>
-		<description>Scripting plugin for Notepad++\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
+		<unicodeVersion>0.7.0.0</unicodeVersion>
+		<description>Scripting plugin for Notepad++, help included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
 		<author>Dave Brotherstone</author>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
-		<stability>Unknown - very new, previous crash bugs found but fixed</stability>
-		<latestUpdate>\n* NEW: console.run now outputs stderr, and returns the result of the process\n* FIXED: Crash on notepad.prompt on some systems\n* FIXED: editor.pyreplace had trouble with lookahead-only regexs like "$"\n* FIXED: Potential crash on some systems when up arrow pressed in console prior to any history</latestUpdate>
+		<latestUpdate>* Console now has a lexer, so errors and warnings from Python, Visual Studio and gcc are parsed and highlighted. Click the filename to open the file and jump to the line number \n* there's a console.editor attribute, allowing you to change all the styles and so on (or anything else you'd like to do with the console!) \n* run previous script menu option \n* console.run() now works from within a callback \n* Bugs fixed in notepad.runMenuCommand and runPluginCommand, and now run faster. \n* editor.getCurrentWord() and editor.getWord(position) functions added \n* Documentation updates and corrections \n* Numerous other fixes and minor improvements</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%200.6.3.0/PythonScript_full_0.6.3.0.zip</download>
+				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%200.7.0.0/PythonScript_full_0.7.0.0.zip</download>
 				<copy from="python26.dll" to="$NPPDIR$" validate="true"/>
 				<copy from="plugins\PythonScript\lib\*.py" to="$PLUGINDIR$\PythonScript\lib" />
 				<copy from="plugins\PythonScript\lib\bsddb\*.py" to="$PLUGINDIR$\PythonScript\lib\bsddb" />
