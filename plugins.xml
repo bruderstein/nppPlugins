@@ -624,9 +624,10 @@
 		</install>
 	</plugin>
 	<plugin name="F# Interactive">
-		<unicodeVersion>0.1</unicodeVersion>
+		<unicodeVersion>0.1.1</unicodeVersion>
 		<sourceUrl>http://github.com/ppv/NPPFSIPlugin/tree/master/Source/Plugin</sourceUrl>
 		<description>This plugin hosts F# Interactive inside Notepad++ (Note: F# should be installed separately).</description>
+		<latestUpdate>Fix for about box error in Win7 systems.</latestUpdate>
 		<author>Prapin Peethambaran</author>
 		<install>
 			<unicode>
@@ -636,6 +637,7 @@
 		</install>
 		<versions>
 			<version number="0.1.0.0" md5="4cb393534d36559bedcb50a0a0183e64" />
+			<version number="0.1.1.0" md5="60138dbfc6cfbf00550bb9b17728e61f" />
 		</versions>
 	</plugin>
 	<plugin name="NppFTP">

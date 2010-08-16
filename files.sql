@@ -230,4 +230,5 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('d
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('6ab53efa884da485aeb88e741e7b323b','NppFTP.dll','','2010-08-16','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('e4bed22538be7e92ce129880c5566a20','NppFTPA.dll','','2010-08-16','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('228be42996505a6f27f833de0f06a484','PythonScript.dll','','2010-08-16','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('60138dbfc6cfbf00550bb9b17728e61f','NPPFSIPlugin.dll','','2010-08-16','ok');
 commit;
