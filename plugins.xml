@@ -804,6 +804,19 @@
 			</unicode>
 		</install>
 	</plugin>
+	<plugin name="Pork2Sausage">
+		<unicodeVersion>1.0</unicodeVersion>
+		<description>Transforms selected text to through a transformer (a console program which takes inputs then generates output).  Up to 20 transformers can be defined</description>
+		<author>Don Ho</author>
+		<install>
+			<unicode>
+				<download>http://download.tuxfamily.org/nppplugins/Pork2Sausage/Pork2Sausage.bin.1.0.zip</download>
+				<copy from="Config\Pork2Sausage.ini" to="$CONFIGDIR$" />
+				<copy from="ReadMe.txt" to="$PLUGINDIR$\doc\Pork2Sausage" />
+				<copy from="Pork2Sausage.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+		</install>
+	</plugin>
 	<plugin name="Powershell Lexer">
 		<unicodeVersion>1.0</unicodeVersion>
 		<ansiVersion>1.0</ansiVersion>
@@ -829,7 +842,7 @@
 	</plugin>
 	<plugin name="Python Script">
 		<unicodeVersion>0.7.0.0</unicodeVersion>
-		<description>Scripting plugin for Notepad++, help included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
+		<description>Scripting plugin for Notepad++, help included\nNeeds Microsoft Visual C++ Runtime 2008 - link below.\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods\n\nGet Visual C++ Runtime 2008 from: http://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&amp;displaylang=en</description>
 		<author>Dave Brotherstone</author>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
@@ -1053,20 +1066,20 @@
 		</install>
 	</plugin>
 	<plugin name="SnippetPlus">
-		<unicodeVersion>1.1</unicodeVersion>
-		<description>Code snippet and Surround With plugin for Notepad++. Write snippet name and replace it with real code or select some text and surround it with something like IF,TryCatch,Table,Div or whatever.Will give you hint if you don't remember the snippet name</description>
+		<unicodeVersion>1.2</unicodeVersion>
+		<description>.NET 2.0 Required!  Code snippet and Surround With plugin for Notepad++. Write snippet name and replace it with real code or select some text and surround it with something like IF,TryCatch,Table,Div or whatever.Will give you hint if you don't remember the snippet name</description>
 		<author>Rajesh Kumar</author>
 		<homepage>http://sourceforge.net/projects/snippetplus/</homepage>
 		<versions>
-			<version number="1.1" md5="0485e56f7786f8c91d11164acc954bd6" comment="unicode, reported 0.3" />
+			<version number="1.2" md5="0485e56f7786f8c91d11164acc954bd6" comment="this is both 1.1 and 1.2 - the .NET dll has changed but not the wrapper" />
 		</versions>
 		<install>
-			<download>http://downloads.sourceforge.net/project/snippetplus/SnippetPlus_V1.1_Release.zip</download>
-			<copy from="SnippetPlus_V1.1_Release\SnippetPlus.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="SnippetPlus_V1.1_Release\SnippetPlus.xml" to="$CONFIGDIR$" backup="true" />
-			<copy from="SnippetPlus_V1.1_Release\SnippetPlus\SnippetPlusPlus.dll" to="$PLUGINDIR$\SnippetPlus" validate="true" />
-			<copy from="SnippetPlus_V1.1_Release\SnippetPlus_Changelog.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
-			<copy from="SnippetPlus_V1.1_Release\SnippetPlus_ReadMe.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
+			<download>http://downloads.sourceforge.net/project/snippetplus/SnippetPlus_V1.2_Release.zip</download>
+			<copy from="SnippetPlus_V1.2_Release\SnippetPlus.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="SnippetPlus_V1.2_Release\SnippetPlus.xml" to="$CONFIGDIR$" backup="true" />
+			<copy from="SnippetPlus_V1.2_Release\SnippetPlus\SnippetPlusPlus.dll" to="$PLUGINDIR$\SnippetPlus" validate="true" />
+			<copy from="SnippetPlus_V1.2_Release\SnippetPlus_Changelog.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
+			<copy from="SnippetPlus_V1.2_Release\SnippetPlus_ReadMe.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
 		</install>
 	</plugin>
 	<plugin name="Snippets">
@@ -1382,4 +1395,25 @@
 		<version number="2.3.1.805" md5="2ead8da0e29c10d9d1e72942e4b11c8a" />
 	</versions>
 </plugin>
+<plugin name="Zen Coding - Python">
+	<unicodeVersion>0.2</unicodeVersion>
+	<sourceUrl>http://github.com/davegb3/ZenCoding-Python</sourceUrl>
+	<description>An implementation of the Zen Coding method by Sergey Chikuyonok.  Needs Visual C++ Runtime 2008 for Python plugin - link below. Expand HTML, CSS, XML, XSLT and XSD from abbreviations\ntr#head1.header>td*2 becomes &lt;tr id="head1" class="header"&gt;\n  &lt;td&gt;&lt;/td&gt;\n  &lt;td&gt;&lt;/td&gt;\n&lt;/tr&gt;\nUses the Python Script plugin.\n\nGet Visual C++ Runtime 2008 from: http://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&amp;displaylang=en</description>
+	<latestUpdate>XSD mode, Tab key support for Expand abbreviation, Profile selection, and a quick edit settings option</latestUpdate>
+	<author>Dave Brotherstone</author>
+	<dependencies>
+			<plugin name="Python Script"/>
+	</dependencies>
+	<install>
+		<unicode>
+			<download>http://downloads.sourceforge.net/project/npppythonscript/ZenCoding-Python/ZenCoding-Python-0.2.zip</download>
+			<copy from="ZenCodingPython\*.py" to="$CONFIGDIR$\ZenCodingPython" />
+			<copy from="ZenCodingPython\zencoding\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding" />
+			<copy from="ZenCodingPython\zencoding\filters\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding\filters" />
+			<copy from="ReadMe.txt" to="$PLUGINDIR$\doc\ZenCodingPython" />
+			<copy from="ZenCoding-Python.dll" to="$PLUGINDIR$" validate="true" />
+		</unicode>
+	</install>
+</plugin>
+
 </plugins>
