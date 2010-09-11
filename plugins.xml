@@ -98,10 +98,10 @@
 		<ansiVersion>0.9.0.0</ansiVersion>
 		<description>CharM (CHARacter Map) plugin for Notepad++. Highlight a character, select Plugins-&gt;CharM-&gt;Character Map, and it will give you variations of that character. Version 0.9 is functional, although it could use some work on the interface.</description>
 		<author>Todd Hadley (Fidvo)</author>
-		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/CharM/CharM_0_9_src.zip/download</sourceUrl>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files</sourceUrl>
 		<install>
 			<ansi>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/CharM_0_9_dll.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/CharM/CharM%200.9/CharM_0_9_dll.zip</download>
 				<copy from="CharM.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="Config\*.ini" to="$CONFIGDIR$"/>
 				<copy from="*.txt" to="$PLUGINDIR$\doc\CharM"/>
@@ -170,11 +170,11 @@
 		<ansiVersion>0.0.11.20</ansiVersion>
 		<description>This is a php debugger (XDebug) which talks DBGP protocol. Use this plugin to transform your Notepad++ to a php IDE.</description>
 		<author>Damjan Zobo Cvetko</author>
-		<sourceUrl>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DBGpPlugin_0_11b_src.zip&amp;a=17984321</sourceUrl>
+		<sourceUrl>http://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DBGpPlugin_0_11b_src.zip&amp;a=17984321</sourceUrl>
 		<stability>Reported issues with port conflicts</stability>
 		<install>
 			<ansi>
-				<download>https://sourceforge.net/project/downloading.php?group_id=189927&amp;filename=DBGpPlugin_0_11b_dll.zip&amp;a=29716592</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/DBGP%20Plugin/DBGP%20Plugin%20v0.11%20beta/DBGpPlugin_0_11b_dll.zip</download>
 				<copy from="*.dll" to="$PLUGINDIR$"/>
 			</ansi>
 		</install>
@@ -203,10 +203,10 @@
 		<author>Jens Lorenz</author>
 		<install>
 			<unicode>
-				<download>http://sourceforge.net/projects/npp-plugins/files/Explorer/Explorer_1_8_2_UNI_dll.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/Explorer/Explorer%20Plugin%20v1.8.2/Explorer_1_8_2_UNI_dll.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://sourceforge.net/projects/npp-plugins/files/Explorer/Explorer_1_7_3_dll.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/Explorer/Explorer%20Plugin%20v1.7.3/Explorer_1_7_3_dll.zip</download>
 			</ansi>
 			<copy from="Explorer.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
@@ -255,7 +255,7 @@
 		<author>loonychewy</author>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/fallingbricks_v1.1_unicode_dll.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/DBGP%20Plugin/DBGP%20Plugin%20v0.11%20beta/DBGpPlugin_0_11b_dll.zip</download>
 				<copy from="FallingBricks.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="change.log" to="$PLUGINDIR$\doc\FallingBricks"/>
 				<copy from="license.txt" to="$PLUGINDIR$\doc\FallingBricks"/>
@@ -271,10 +271,10 @@
 		<sourceUrl>http://www.brotherstone.co.uk/npp/FileSwithcer_src.zip</sourceUrl>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FileSwitcher1030_UNI.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/File%20Switcher/FileSwitcher%201.0.3.0/FileSwitcher1030_UNI.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/FileSwitcher1030_ANSI.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/File%20Switcher/FileSwitcher%201.0.3.0/FileSwitcher1030_ANSI.zip</download>
 			</ansi>
 			<copy from="FileSwitcher.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
@@ -437,10 +437,10 @@
 		<description>Allows documents to be opened from a dockable file explorer, that is very light weight and fast.</description>
 		<install>
 			<unicode>
-				<download>http://sourceforge.net/projects/npp-plugins/files/LightExplorer/LightExplorer_2_0_dll.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/LightExplorer/LightExplorer%202.0%20UNICODE/LightExplorer_2_0_dll.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://sourceforge.net/projects/npp-plugins/files/LightExplorer/LightExplorer_1_6_dll.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/LightExplorer/LightExplorer%201.6/LightExplorer_1_6_dll.zip</download>
 			</ansi>
 			<copy from="LightExplorer.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
@@ -1124,285 +1124,285 @@
 		<description> Designed to allow easy switching between project source and header files using a configurable shortcut. \nSo far it supports: \n- .c , .cpp, .cc &gt; .h \n- .cpp &gt; .hpp \n- .cxx &gt; .hxx \n- .asm &gt; .inc \n- .xml &gt; .xsd \n- .xml &gt; .xsl \n- .aspx &gt; .aspx.cs \n- .aspx.cs &gt; .designer.aspx.cs \n- .pas &gt; .dfm \n- .pas &gt; .lfm \n- .frm &gt; .frx</description>
 		<author>ViZioN</author>
 		<homepage>http://sourceforge.net/projects/sourceswitch</homepage>
-		<latestUpdate>- Added user prompt if file chosen to switch from has multiple matches. (i.e .h --> .c, .cpp or .cc) (Thanks to davegb3)\n- Setting can also be made default.</latestUpdate>
-	<versions>
-		<version number="0.3" md5="738753a2faec5af196e12978a0e5a9a8" comment="unicode" />
-		<version number="0.3" md5="c84c74b41991b208b36b9d52671ca0ec" comment="ansi" />
-		<version number="0.4" md5="c98ba095c760377e2acb75a0c5eca5b7" comment="ansi" />
-		<version number="0.4" md5="5796f1754d040a7ab17e7d2e57bea728" comment="unicode" />
-	</versions>
-	<install>
-		<download>http://downloads.sourceforge.net/project/sourceswitch/SourceSwitch/bin/SourceSwitch_0.4.zip</download>
-		<copy from="Readme.txt" to="$PLUGINDIR$\doc\SourceSwitch" />
-		<unicode>
-			<copy from="SourceSwitch.dll" to="$PLUGINDIR$" validate="true" />
-		</unicode>
-		<ansi>
-			<copy from="SourceSwitchA.dll" to="$PLUGINDIR$" validate="true" />
-		</ansi>
-	</install>
-</plugin>
-<plugin name="Speech">
-	<unicodeVersion>0.2.1.0</unicodeVersion>
-	<ansiVersion>0.2.0.1</ansiVersion>
-	<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/SpeechPlugin/SpeechPlugin_0_2_1_src.zip/download</sourceUrl>
-	<author>Jim Xochellis</author>
-	<description>No kidding, Notepad++ speakes now. With SpeechPlugin, you can make Notepad++ dictate your text or source code. Of course, speakers are necessary.</description>
-	<install>
-		<unicode>
-			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpeechPlugin_0_2_1_dll.zip</download>
-			<copy from="SpeechPlugin_0_2_1_dll\SpeechPlugin.dll" to="$PLUGINDIR$" validate="true"/>
-		</unicode>
-		<ansi>
-			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpeechPlugin_0_2_dll.zip</download>
-			<copy from="SpeechPlugin_0_2_dll\SpeechPlugin.dll" to="$PLUGINDIR$" validate="true"/>
-		</ansi>
-	</install>
-</plugin>
-<plugin name="Spell-Checker">
-	<unicodeVersion>1.3.3.0</unicodeVersion>
-	<ansiVersion>1.3.1.0</ansiVersion>
-	<description>Spellchecker can correct your typos in your language. 	Before using it, you will need to install GNU Aspell and a dictionary for your language(s) in the Aspell directory. Aspell and dictionaries are available from http://aspell.net/win32.</description>
-	<sourceUrl/>
-	<author>Jens Lorenz</author>
-	<install>
-		<unicode>
-			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpellChecker_1_3_3_UNI_dll.zip</download>
-		</unicode>
-		<ansi>
-			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpellChecker_1_3_1_dll.zip</download>
-		</ansi>
-		<copy from="SpellChecker.dll" to="$PLUGINDIR$" validate="true"/>
-	</install>
-</plugin>
-<plugin name="Squiggly Spell">
-	<!-- Disabled until errors repaired <unicodeVersion>0.0.1</unicodeVersion> --> <description>Spellchecker tbat underlines misspelled words as you type.  Requires Aspell to be installed (http://aspell.net/win32).</description>
-	<sourceUrl>http://sourceforge.net/projects/squiggly/develop</sourceUrl>
-	<homepage>http://squiggly.sourceforge.net/</homepage>
-	<author>Karim Sharif</author>
-	<versions>
-		<version md5="aaa794ed8a07bcb16ca3ae651da9846c" number="0.0.1" />
-	</versions>
-	<install>
-		<unicode>
-			<download>http://downloads.sourceforge.net/project/squiggly/0.0.1/SquigglySpellCheck.zip</download>
-			<copy from="SquigglySpellCheck.dll" to="$PLUGINDIR$" validate="true"/>
-		</unicode>
-	</install>
-</plugin>
-<plugin name="Subversion">
-	<unicodeVersion>1.0</unicodeVersion>
-	<versions>
-		<version number="1.0" md5="0b84262c0151ee3ba1e40a2e13951882" comment="unicode"/>
-	</versions>
-	<author>Brandon Cannaday</author>
-	<description>In this version, the basic update/commit commands are implemented. 	Depending on whether or not anyone else finds this plugin useful, or if I find extra time, I might slowly expand the features.	NOTE: You need to have TortoiseSVN installed for this plugin to function.  Available from http://tortoisesvn.tigris.org/</description>
-	<install>
-		<unicode>
-			<download>http://www.switchonthecode.com/sites/default/files/319/source/NPPSvn_v1.0.zip</download>
-			<copy from="NPPSvn.dll" to="$PLUGINDIR$" validate="true"/>
-		</unicode>
-	</install>
-</plugin>
-<plugin name="Switcher">
-	<unicodeVersion>1.0</unicodeVersion>
-	<ansiVersion>1.0</ansiVersion>
-	<homepage>http://f0dder.dcmembers.com/nppplugs.index.php</homepage>
-	<description>Switcher: a plugin to switch between 'associated' files. Currently it handles switching between asm&lt;&gt;inc, cpp&lt;&gt;h, cc&lt;&gt;h and c&lt;&gt;h. Useful when assigned to a hotkey.</description>
-	<author>f0dder</author>
-	<versions>
-		<version number="1.0" md5="301c72341ba758b3cdfc8a56d576c7f0" comment="ansi"/>
-		<version number="1.0" md5="5a19bd60aa18e4454f1c4a6432ae5a72" comment="unicode"/>
-	</versions>
-	<aliases>
-		<alias name="switcher"/>
-	</aliases>
-	<install>
-		<download>http://f0dder.dcmembers.com/nppplugs/npp_plugins.zip</download>
-		<ansi>
-			<copy from="ansi\switcher.dll" to="$PLUGINDIR$" validate="true"/>
-		</ansi>
-		<unicode>
-			<copy from="unicode\switcher.dll" to="$PLUGINDIR$" validate="true"/>
-		</unicode>
-		<copy from="readme.txt" to="$PLUGINDIR$\doc\Switcher"/>
-	</install>
-</plugin>
-<plugin name="TagsView">
-	<unicodeVersion>1.0</unicodeVersion>
-	<description>TagsView is a generic plugin which provides user interface for ctags parsed result. \nCurrently supported editors are Notepad++ and AkelPad. \nPowered by Win32++ (by David Nash) and by Exuberant Ctags (by Darren Hiebert). \nInspired by FunctionList plugin (by Jens Lorenz) for Notepad++ text editor (by Don HO).</description>
-	<author>Dovgan Vitaliy</author>
-	<versions>
-		<version number="1.0" md5="11e02b00ba8f7822621500ce630f0545" />
-	</versions>
-	<install>
-		<unicode>
-			<download>http://downloads.sourceforge.net/project/tagsview/TagsView%20for%20Notepad%2B%2B/TagsView_Npp_01alpha.zip</download>
-			<copy from="TagsView\ctags.exe" to="$PLUGINDIR$\TagsView" validate="true" />
-			<copy from="TagsView\*.html" to="$PLUGINDIR$\TagsView" />
-			<copy from="TagsView\README" to="$PLUGINDIR$\TagsView" />
-			<copy from="TagsView\COPYING" to="$PLUGINDIR$\TagsView" />
-			<copy from="TagsView\.ctags" to="$PLUGINDIR$\TagsView" />
-			<copy from="doc\TagsView.txt" to="$PLUGINDIR$\doc\TagsView" />
-			<copy from="TagsView.dll" to="$PLUGINDIR$" validate="true" />
-		</unicode>
-	</install>
-</plugin>
-<plugin name="TextFX Characters">
-	<ansiVersion>0.25</ansiVersion>
-	<unicodeVersion>0.26</unicodeVersion>
-	<homepage>http://textfx.no-ip.com/textfx/</homepage>
-	<description>TextFX includes numerous features to transform selected text.  	Featuring: * Interactive Brace Matching * Quote handling * Character case alternation * Text rewrap * Column Lineup * Fill Text Down * Insert counter text down * Text to code conversion * Numeric Conversion * URI &amp; HTML encoding * HTML to text conversion * Submit text to W3C * Text sorting * Ascii Chart * Leading whitespace repair * Autoclose HTML &amp; braces</description>
-	<versions>
-		<version number="0.25" md5="c2113cbe87c5d370a72ccb759ce8403c" comment="Ansi 0.25"/>
-		<version number="0.25" md5="e3447cd9a578d4cbc93a59df68c8095c" comment="Unicode 0.25"/>
-	</versions>
-	<install>
-		<unicode>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/TextFX/TextFX%20v0.26/TextFX.v0.26.unicode.bin.zip</download>
-			<copy from="NppTextFX.dll" to="$PLUGINDIR$" validate="true"/>
-		</unicode>
-		<ansi>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/TextFX/TextFX%20v0.25/NPPTextFX.v0.25.bin.zip</download>
-			<copy from="NppTextFXA.dll" to="$PLUGINDIR$" validate="true"/>
-		</ansi>
-	</install>
-</plugin>
-<plugin name="UniversalIndentGUI">
-	<unicodeVersion>1.0.2</unicodeVersion>
-	<ansiVersion>1.0.2</ansiVersion>
-	<homepage>http://sourceforge.net/projects/universalindent/</homepage>
-	<description>A cross platform GUI for several code formatter, beautifier and indenter like AStyle, GNU Indent, GreatCode, HTML Tidy, Uncrustify and many more. Main feature is a live preview to directly see how the selected formatting option affects the source code. Several languages supported, among which far eastern ones, and a translation tool is also available at the project's files page.</description>
-	<author>thomas_-_s</author>
-	<install>
-		<download>http://sourceforge.net/projects/universalindent/files/universalindent/UniversalIndentGUI_1.0.2_NotepadPPplugin.zip</download>
-		<ansi>
-			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_ansi" toFile="$PLUGINDIR$\UniversalIndentGUI_NPP.dll" validate="true"/>
-		</ansi>
-		<unicode>
-			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_unicode" toFile="$PLUGINDIR$\UniversalIndentGUI_NPP.dll" validate="true"/>
-		</unicode>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\QtCore4.dll" to="$NPPDIR$" validate="true"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\QtGui4.dll" to="$NPPDIR$" validate="true"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\QtScript4.dll" to="$NPPDIR$" validate="true"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\config\*.ini" to="$PLUGINDIR$\uigui\config"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.exe" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.dll" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.awk" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.html" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.ini" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\hindent" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\perltidy" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.js" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.php" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.pm" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.py" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.rb" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.txt" to="$PLUGINDIR$\uigui\indenters"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\example.*" to="$PLUGINDIR$\uigui\indenters" replace="true"/>
-		<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\translations\*.qm" to="$PLUGINDIR$\uigui\translations"/>
-	</install>
-</plugin>
-<plugin name="WebEdit">
-	<unicodeVersion>2.1</unicodeVersion>
-	<ansiVersion>2.1</ansiVersion>
-	<description>WebEdit is another attempt to integrate a user-configurable code template collection into Notepad++. With WebEdit you have the following options:\n * create a menu command for pasting some text, possibly surrounding the current selection, if any. Imagine selecting a word and putting "&lt;p&gt;...&lt;/p&gt;" around it with a single hotkey. You can create up to 30 such commands and assign keyboard shortcuts to them, or simply use the menu;\n * the same 30 commands can also be represented by buttons on the main toolbar for quick access with the mouse;\n * you can create a set of "tags" or abbreviations. Type one of them, then press Alt+Enter and it will be replaced with the corresponding block of text. If the replacement consists of multiple lines, all of them will be indented same as the first one. The caret will be placed in a predefined position within the new text. You can even have the current clipboard contents pasted as part of the tag replacement operation.\n \n The plugin configuration is stored in the WebEdit.ini file. Use "WebEdit\Edit Config" command from the "Plugins" menu to open the file in Notepad++ for editing.\n \n All keyboard shortcuts can be assigned/modified using the standard Shortcut Mapper. For more information see the WebEdit.txt help file.\n</description>
-	<latestUpdate>\n	- Added "\c" escape sequence to paste clipboard contents when replacing a tag.\n	- Added "\i" escape sequence to increase indentation level when replacing a tag.\n	- Removed error message box from the "Edit Config" command.\n	- Fixed: "\n" now indents by copying only the leading whitespace of the first line, not the whole part up to the tag.\n	- Fixed invalid caret placement after replacing a tag when you move the caret with up and down keys (it used to jump to a different column, probably due to a Scintilla bug).</latestUpdate>
-	<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
-	<versions>
-		<version number="1.3.3" md5="47a1a0d12d2c866bc594e4f085d70a47" comment="unicode"/>
-		<version number="1.3.3" md5="5dad73b5261ea5cc2a75ad4455caefea" comment="ansi"/>
-		<version number="1.4" md5="68eb1b17c13a48fc2482ad2546851e66" comment="unicode"/>
-		<version number="1.4" md5="545e56112f406df8d45bbbad7672fca2" comment="ansi"/>
-	</versions>
-	<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%202.1/WebEdit.v2.1.zip</sourceUrl>
-	<install>
-		<download>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%202.1/WebEdit.v2.1.zip</download>
-		<unicode>
-			<copy from="WebEdit\WebEditU.dll" to="$PLUGINDIR$" validate="true"/>
-		</unicode>
-		<ansi>
-			<copy from="WebEdit\WebEdit.dll" to="$PLUGINDIR$" validate="true"/>
-		</ansi>
-		<copy from="WebEdit\Config\WebEdit.ini" to="$CONFIGDIR$" backup="true"/>
-		<copy from="WebEdit\Config\*.bmp" to="$CONFIGDIR$"/>
-		<copy from="WebEdit\*.txt" to="$PLUGINDIR$\doc\WebEdit"/>
-	</install>
-</plugin>
-<plugin name="Window Manager">
-	<unicodeVersion>1.2.2.0</unicodeVersion>
-	<ansiVersion>1.1.2.0</ansiVersion>
-	<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/WindowManager/WindowManager_1_2_2_src.zip/download</sourceUrl>
-	<author>Jens Lorenz</author>
-	<description>Window Manager gives a short overview of your open documents in Notepad++. This overview is dockable and gives you the same capability as the tabs have. Left click on a list item selects the document. Right click opens the tab context menu from Notepad++. When documents are opened in main and second view (by duplicate or move), two lists are shown in dialog window.</description>
-	<stability>Occasional issue with prolonged use</stability>
-	<install>
-		<unicode>
-			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_2_2_UNI_dll.zip</download>
-			<copy from="WindowManager.dll" to="$PLUGINDIR$" validate="true"/>
-		</unicode>
-		<ansi>
-			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_1_2_dll.zip</download>
-			<copy from="WindowManager.dll" to="$PLUGINDIR$" validate="true"/>
-		</ansi>
-	</install>
-</plugin>
-<plugin name="XBrackets Lite">
-	<unicodeVersion>1.1</unicodeVersion>
-	<ansiVersion>1.1</ansiVersion>
-	<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion: * next character is analysed for ([{ brackets; * next &amp; previous characters are analysed for " quote. </description>
-	<author>Dovgan Vitaliy</author>
-	<install>
-		<unicode>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/XBrackets%20Lite/XBrackets%20Plugin%20v1.1/XBrackets_v11_dll_Unicode.zip</download>
-		</unicode>
-		<ansi>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/XBrackets%20Lite/XBrackets%20Plugin%20v1.1/XBrackets_v11_dll_ANSI.zip</download>
-		</ansi>
-		<copy from="XBrackets.dll" to="$PLUGINDIR$" validate="true"/>
-		<copy from="XBrackets.txt" to="$PLUGINDIR$\doc\XBrackets"/>
-	</install>
-</plugin>
-<plugin name="XML Tools">
-	<unicodeVersion>2.3.1.805</unicodeVersion>
-	<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/XML%20Tools/xmltools_2.3.1_r639_source.zip/download (older version)</sourceUrl>
-	<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based. The plugin features are:\n- XML syntax Check\n- XML Schema (XSD) + DTD Validation\n- XML tag autoclose\n- Pretty print\n- Linarize XML\n- Current XML Path\n- Conversion XML &lt;-&gt; Text\n- Comment / Uncomment\n- XPath expression evaluation</description>
-	<latestUpdate>\nIt adds a "Copy" (to clipboard) button in the XPath Expression Evaluation dialog.\nIt also fixes a crash error during XML validation.</latestUpdate>
-	<author>Nicolas Crittin</author>
-	<install>
-		<unicode>
-			<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/ext_libs.zip</download>
-			<copy from="iconv.dll" to="$NPPDIR$" validate="true"/>
-			<copy from="libxml2.dll" to="$NPPDIR$" validate="true"/>
-			<copy from="libxslt.dll" to="$NPPDIR$" validate="true"/>
-			<copy from="zlib1.dll" to="$NPPDIR$" validate="true"/>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/XML%20Tools/Xml%20Tools%202.3.1%20r764%20Unicode%20Beta1/xmltools_2.3.1_r805_unicode_beta2.zip</download>
-			<copy from="XMLTools.dll" to="$PLUGINDIR$" validate="true"/>
-		</unicode>
-	</install>
-	<versions>
-		<version number="2.0.0.513" md5="9225365583eb42e94680fefe38e37798" />
-		<version number="2.1.0" md5="1d16dcd481915ba3d29b8f8c9890661c" />
-		<version number="2.1.1.548" md5="75b40f4f8aa66c5b98bc31b1e4f628fb" />
-		<version number="2.2.0.560" md5="9887e4d5fa5c8b5259bd6d29dc8c617d" />
-		<version number="2.3.0.583" md5="23bbc67ce5a98f19f0906b25bdc7f094" />
-		<version number="2.3.1.639" md5="49d24000cf6a265439545cf68a71291c" />
-		<version number="2.3.1.670" md5="662080c9f50ee2da870e6350ae53144f" />
-		<version number="2.3.1.671" md5="88a5063bb0c864f1cb196ab141ea0c6d" />
-		<version number="2.3.1.685" md5="fa999eb776a218d68b2c5705a9f7c10d" />
-		<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" />
-		<version number="2.3.1.764" md5="cb1556f0a9bcde3431e2b00ea8daac80" />
-		<version number="2.3.1.805" md5="2ead8da0e29c10d9d1e72942e4b11c8a" />
-	</versions>
-</plugin>
-<plugin name="Zen Coding - Python">
-	<unicodeVersion>0.2</unicodeVersion>
-	<sourceUrl>http://github.com/davegb3/ZenCoding-Python</sourceUrl>
-	<description>An implementation of the Zen Coding method by Sergey Chikuyonok.  Needs Visual C++ Runtime 2008 for Python plugin - link below. Expand HTML, CSS, XML, XSLT and XSD from abbreviations\ntr#head1.header>td*2 becomes &lt;tr id="head1" class="header"&gt;\n  &lt;td&gt;&lt;/td&gt;\n  &lt;td&gt;&lt;/td&gt;\n&lt;/tr&gt;\nUses the Python Script plugin.\n\nGet Visual C++ Runtime 2008 from: http://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&amp;displaylang=en</description>
+		<latestUpdate>- Added user prompt if file chosen to switch from has multiple matches. (i.e .h --&gt; .c, .cpp or .cc) (Thanks to davegb3)\n- Setting can also be made default.</latestUpdate>
+		<versions>
+			<version number="0.3" md5="738753a2faec5af196e12978a0e5a9a8" comment="unicode" />
+			<version number="0.3" md5="c84c74b41991b208b36b9d52671ca0ec" comment="ansi" />
+			<version number="0.4" md5="c98ba095c760377e2acb75a0c5eca5b7" comment="ansi" />
+			<version number="0.4" md5="5796f1754d040a7ab17e7d2e57bea728" comment="unicode" />
+		</versions>
+		<install>
+			<download>http://downloads.sourceforge.net/project/sourceswitch/SourceSwitch/bin/SourceSwitch_0.4.zip</download>
+			<copy from="Readme.txt" to="$PLUGINDIR$\doc\SourceSwitch" />
+			<unicode>
+				<copy from="SourceSwitch.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+			<ansi>
+				<copy from="SourceSwitchA.dll" to="$PLUGINDIR$" validate="true" />
+			</ansi>
+		</install>
+	</plugin>
+	<plugin name="Speech">
+		<unicodeVersion>0.2.1.0</unicodeVersion>
+		<ansiVersion>0.2.0.1</ansiVersion>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/SpeechPlugin/SpeechPlugin_0_2_1_src.zip/download</sourceUrl>
+		<author>Jim Xochellis</author>
+		<description>No kidding, Notepad++ speakes now. With SpeechPlugin, you can make Notepad++ dictate your text or source code. Of course, speakers are necessary.</description>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpeechPlugin_0_2_1_dll.zip</download>
+				<copy from="SpeechPlugin_0_2_1_dll\SpeechPlugin.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpeechPlugin_0_2_dll.zip</download>
+				<copy from="SpeechPlugin_0_2_dll\SpeechPlugin.dll" to="$PLUGINDIR$" validate="true"/>
+			</ansi>
+		</install>
+	</plugin>
+	<plugin name="Spell-Checker">
+		<unicodeVersion>1.3.3.0</unicodeVersion>
+		<ansiVersion>1.3.1.0</ansiVersion>
+		<description>Spellchecker can correct your typos in your language. 	Before using it, you will need to install GNU Aspell and a dictionary for your language(s) in the Aspell directory. Aspell and dictionaries are available from http://aspell.net/win32.</description>
+		<sourceUrl/>
+		<author>Jens Lorenz</author>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpellChecker_1_3_3_UNI_dll.zip</download>
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/SpellChecker_1_3_1_dll.zip</download>
+			</ansi>
+			<copy from="SpellChecker.dll" to="$PLUGINDIR$" validate="true"/>
+		</install>
+	</plugin>
+	<plugin name="Squiggly Spell">
+		<!-- Disabled until errors repaired <unicodeVersion>0.0.1</unicodeVersion> --> <description>Spellchecker tbat underlines misspelled words as you type.  Requires Aspell to be installed (http://aspell.net/win32).</description>
+		<sourceUrl>http://sourceforge.net/projects/squiggly/develop</sourceUrl>
+		<homepage>http://squiggly.sourceforge.net/</homepage>
+		<author>Karim Sharif</author>
+		<versions>
+			<version md5="aaa794ed8a07bcb16ca3ae651da9846c" number="0.0.1" />
+		</versions>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/squiggly/0.0.1/SquigglySpellCheck.zip</download>
+				<copy from="SquigglySpellCheck.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+		</install>
+	</plugin>
+	<plugin name="Subversion">
+		<unicodeVersion>1.0</unicodeVersion>
+		<versions>
+			<version number="1.0" md5="0b84262c0151ee3ba1e40a2e13951882" comment="unicode"/>
+		</versions>
+		<author>Brandon Cannaday</author>
+		<description>In this version, the basic update/commit commands are implemented. 	Depending on whether or not anyone else finds this plugin useful, or if I find extra time, I might slowly expand the features.	NOTE: You need to have TortoiseSVN installed for this plugin to function.  Available from http://tortoisesvn.tigris.org/</description>
+		<install>
+			<unicode>
+				<download>http://www.switchonthecode.com/sites/default/files/319/source/NPPSvn_v1.0.zip</download>
+				<copy from="NPPSvn.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+		</install>
+	</plugin>
+	<plugin name="Switcher">
+		<unicodeVersion>1.0</unicodeVersion>
+		<ansiVersion>1.0</ansiVersion>
+		<homepage>http://f0dder.dcmembers.com/nppplugs.index.php</homepage>
+		<description>Switcher: a plugin to switch between 'associated' files. Currently it handles switching between asm&lt;&gt;inc, cpp&lt;&gt;h, cc&lt;&gt;h and c&lt;&gt;h. Useful when assigned to a hotkey.</description>
+		<author>f0dder</author>
+		<versions>
+			<version number="1.0" md5="301c72341ba758b3cdfc8a56d576c7f0" comment="ansi"/>
+			<version number="1.0" md5="5a19bd60aa18e4454f1c4a6432ae5a72" comment="unicode"/>
+		</versions>
+		<aliases>
+			<alias name="switcher"/>
+		</aliases>
+		<install>
+			<download>http://f0dder.dcmembers.com/nppplugs/npp_plugins.zip</download>
+			<ansi>
+				<copy from="ansi\switcher.dll" to="$PLUGINDIR$" validate="true"/>
+			</ansi>
+			<unicode>
+				<copy from="unicode\switcher.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+			<copy from="readme.txt" to="$PLUGINDIR$\doc\Switcher"/>
+		</install>
+	</plugin>
+	<plugin name="TagsView">
+		<unicodeVersion>1.0</unicodeVersion>
+		<description>TagsView is a generic plugin which provides user interface for ctags parsed result. \nCurrently supported editors are Notepad++ and AkelPad. \nPowered by Win32++ (by David Nash) and by Exuberant Ctags (by Darren Hiebert). \nInspired by FunctionList plugin (by Jens Lorenz) for Notepad++ text editor (by Don HO).</description>
+		<author>Dovgan Vitaliy</author>
+		<versions>
+			<version number="1.0" md5="11e02b00ba8f7822621500ce630f0545" />
+		</versions>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/tagsview/TagsView%20for%20Notepad%2B%2B/TagsView_Npp_01alpha.zip</download>
+				<copy from="TagsView\ctags.exe" to="$PLUGINDIR$\TagsView" validate="true" />
+				<copy from="TagsView\*.html" to="$PLUGINDIR$\TagsView" />
+				<copy from="TagsView\README" to="$PLUGINDIR$\TagsView" />
+				<copy from="TagsView\COPYING" to="$PLUGINDIR$\TagsView" />
+				<copy from="TagsView\.ctags" to="$PLUGINDIR$\TagsView" />
+				<copy from="doc\TagsView.txt" to="$PLUGINDIR$\doc\TagsView" />
+				<copy from="TagsView.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+		</install>
+	</plugin>
+	<plugin name="TextFX Characters">
+		<ansiVersion>0.25</ansiVersion>
+		<unicodeVersion>0.26</unicodeVersion>
+		<homepage>http://textfx.no-ip.com/textfx/</homepage>
+		<description>TextFX includes numerous features to transform selected text.  	Featuring: * Interactive Brace Matching * Quote handling * Character case alternation * Text rewrap * Column Lineup * Fill Text Down * Insert counter text down * Text to code conversion * Numeric Conversion * URI &amp; HTML encoding * HTML to text conversion * Submit text to W3C * Text sorting * Ascii Chart * Leading whitespace repair * Autoclose HTML &amp; braces</description>
+		<versions>
+			<version number="0.25" md5="c2113cbe87c5d370a72ccb759ce8403c" comment="Ansi 0.25"/>
+			<version number="0.25" md5="e3447cd9a578d4cbc93a59df68c8095c" comment="Unicode 0.25"/>
+		</versions>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/TextFX/TextFX%20v0.26/TextFX.v0.26.unicode.bin.zip</download>
+				<copy from="NppTextFX.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/TextFX/TextFX%20v0.25/NPPTextFX.v0.25.bin.zip</download>
+				<copy from="NppTextFXA.dll" to="$PLUGINDIR$" validate="true"/>
+			</ansi>
+		</install>
+	</plugin>
+	<plugin name="UniversalIndentGUI">
+		<unicodeVersion>1.0.2</unicodeVersion>
+		<ansiVersion>1.0.2</ansiVersion>
+		<homepage>http://sourceforge.net/projects/universalindent/</homepage>
+		<description>A cross platform GUI for several code formatter, beautifier and indenter like AStyle, GNU Indent, GreatCode, HTML Tidy, Uncrustify and many more. Main feature is a live preview to directly see how the selected formatting option affects the source code. Several languages supported, among which far eastern ones, and a translation tool is also available at the project's files page.</description>
+		<author>thomas_-_s</author>
+		<install>
+			<download>http://sourceforge.net/projects/universalindent/files/universalindent/UniversalIndentGUI_1.0.2_NotepadPPplugin.zip</download>
+			<ansi>
+				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_ansi" toFile="$PLUGINDIR$\UniversalIndentGUI_NPP.dll" validate="true"/>
+			</ansi>
+			<unicode>
+				<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\UniversalIndentGUI_NPP.dll_unicode" toFile="$PLUGINDIR$\UniversalIndentGUI_NPP.dll" validate="true"/>
+			</unicode>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\QtCore4.dll" to="$NPPDIR$" validate="true"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\QtGui4.dll" to="$NPPDIR$" validate="true"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\QtScript4.dll" to="$NPPDIR$" validate="true"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\config\*.ini" to="$PLUGINDIR$\uigui\config"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.exe" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.dll" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.awk" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.html" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.ini" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\hindent" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\perltidy" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.js" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.php" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.pm" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.py" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.rb" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\*.txt" to="$PLUGINDIR$\uigui\indenters"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\indenters\example.*" to="$PLUGINDIR$\uigui\indenters" replace="true"/>
+			<copy from="UniversalIndentGUI_1.0.2_NotepadPPplugin\plugins\uigui\translations\*.qm" to="$PLUGINDIR$\uigui\translations"/>
+		</install>
+	</plugin>
+	<plugin name="WebEdit">
+		<unicodeVersion>2.1</unicodeVersion>
+		<ansiVersion>2.1</ansiVersion>
+		<description>WebEdit is another attempt to integrate a user-configurable code template collection into Notepad++. With WebEdit you have the following options:\n * create a menu command for pasting some text, possibly surrounding the current selection, if any. Imagine selecting a word and putting "&lt;p&gt;...&lt;/p&gt;" around it with a single hotkey. You can create up to 30 such commands and assign keyboard shortcuts to them, or simply use the menu;\n * the same 30 commands can also be represented by buttons on the main toolbar for quick access with the mouse;\n * you can create a set of "tags" or abbreviations. Type one of them, then press Alt+Enter and it will be replaced with the corresponding block of text. If the replacement consists of multiple lines, all of them will be indented same as the first one. The caret will be placed in a predefined position within the new text. You can even have the current clipboard contents pasted as part of the tag replacement operation.\n \n The plugin configuration is stored in the WebEdit.ini file. Use "WebEdit\Edit Config" command from the "Plugins" menu to open the file in Notepad++ for editing.\n \n All keyboard shortcuts can be assigned/modified using the standard Shortcut Mapper. For more information see the WebEdit.txt help file.\n</description>
+		<latestUpdate>\n	- Added "\c" escape sequence to paste clipboard contents when replacing a tag.\n	- Added "\i" escape sequence to increase indentation level when replacing a tag.\n	- Removed error message box from the "Edit Config" command.\n	- Fixed: "\n" now indents by copying only the leading whitespace of the first line, not the whole part up to the tag.\n	- Fixed invalid caret placement after replacing a tag when you move the caret with up and down keys (it used to jump to a different column, probably due to a Scintilla bug).</latestUpdate>
+		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
+		<versions>
+			<version number="1.3.3" md5="47a1a0d12d2c866bc594e4f085d70a47" comment="unicode"/>
+			<version number="1.3.3" md5="5dad73b5261ea5cc2a75ad4455caefea" comment="ansi"/>
+			<version number="1.4" md5="68eb1b17c13a48fc2482ad2546851e66" comment="unicode"/>
+			<version number="1.4" md5="545e56112f406df8d45bbbad7672fca2" comment="ansi"/>
+		</versions>
+		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%202.1/WebEdit.v2.1.zip</sourceUrl>
+		<install>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/WebEdit/WebEdit%202.1/WebEdit.v2.1.zip</download>
+			<unicode>
+				<copy from="WebEdit\WebEditU.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+			<ansi>
+				<copy from="WebEdit\WebEdit.dll" to="$PLUGINDIR$" validate="true"/>
+			</ansi>
+			<copy from="WebEdit\Config\WebEdit.ini" to="$CONFIGDIR$" backup="true"/>
+			<copy from="WebEdit\Config\*.bmp" to="$CONFIGDIR$"/>
+			<copy from="WebEdit\*.txt" to="$PLUGINDIR$\doc\WebEdit"/>
+		</install>
+	</plugin>
+	<plugin name="Window Manager">
+		<unicodeVersion>1.2.2.0</unicodeVersion>
+		<ansiVersion>1.1.2.0</ansiVersion>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/WindowManager/WindowManager_1_2_2_src.zip/download</sourceUrl>
+		<author>Jens Lorenz</author>
+		<description>Window Manager gives a short overview of your open documents in Notepad++. This overview is dockable and gives you the same capability as the tabs have. Left click on a list item selects the document. Right click opens the tab context menu from Notepad++. When documents are opened in main and second view (by duplicate or move), two lists are shown in dialog window.</description>
+		<stability>Occasional issue with prolonged use</stability>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_2_2_UNI_dll.zip</download>
+				<copy from="WindowManager.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_1_2_dll.zip</download>
+				<copy from="WindowManager.dll" to="$PLUGINDIR$" validate="true"/>
+			</ansi>
+		</install>
+	</plugin>
+	<plugin name="XBrackets Lite">
+		<unicodeVersion>1.1</unicodeVersion>
+		<ansiVersion>1.1</ansiVersion>
+		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion: * next character is analysed for ([{ brackets; * next &amp; previous characters are analysed for " quote. </description>
+		<author>Dovgan Vitaliy</author>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/XBrackets%20Lite/XBrackets%20Plugin%20v1.1/XBrackets_v11_dll_Unicode.zip</download>
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/XBrackets%20Lite/XBrackets%20Plugin%20v1.1/XBrackets_v11_dll_ANSI.zip</download>
+			</ansi>
+			<copy from="XBrackets.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="XBrackets.txt" to="$PLUGINDIR$\doc\XBrackets"/>
+		</install>
+	</plugin>
+	<plugin name="XML Tools">
+		<unicodeVersion>2.3.1.805</unicodeVersion>
+		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/XML%20Tools/xmltools_2.3.1_r639_source.zip/download (older version)</sourceUrl>
+		<description>This plugin is a small set of useful tools for editing XML with Notepad++. The plugin is libXML2-based. The plugin features are:\n- XML syntax Check\n- XML Schema (XSD) + DTD Validation\n- XML tag autoclose\n- Pretty print\n- Linarize XML\n- Current XML Path\n- Conversion XML &lt;-&gt; Text\n- Comment / Uncomment\n- XPath expression evaluation</description>
+		<latestUpdate>\nIt adds a "Copy" (to clipboard) button in the XPath Expression Evaluation dialog.\nIt also fixes a crash error during XML validation.</latestUpdate>
+		<author>Nicolas Crittin</author>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/ext_libs.zip</download>
+				<copy from="iconv.dll" to="$NPPDIR$" validate="true"/>
+				<copy from="libxml2.dll" to="$NPPDIR$" validate="true"/>
+				<copy from="libxslt.dll" to="$NPPDIR$" validate="true"/>
+				<copy from="zlib1.dll" to="$NPPDIR$" validate="true"/>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/XML%20Tools/Xml%20Tools%202.3.1%20r764%20Unicode%20Beta1/xmltools_2.3.1_r805_unicode_beta2.zip</download>
+				<copy from="XMLTools.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+		</install>
+		<versions>
+			<version number="2.0.0.513" md5="9225365583eb42e94680fefe38e37798" />
+			<version number="2.1.0" md5="1d16dcd481915ba3d29b8f8c9890661c" />
+			<version number="2.1.1.548" md5="75b40f4f8aa66c5b98bc31b1e4f628fb" />
+			<version number="2.2.0.560" md5="9887e4d5fa5c8b5259bd6d29dc8c617d" />
+			<version number="2.3.0.583" md5="23bbc67ce5a98f19f0906b25bdc7f094" />
+			<version number="2.3.1.639" md5="49d24000cf6a265439545cf68a71291c" />
+			<version number="2.3.1.670" md5="662080c9f50ee2da870e6350ae53144f" />
+			<version number="2.3.1.671" md5="88a5063bb0c864f1cb196ab141ea0c6d" />
+			<version number="2.3.1.685" md5="fa999eb776a218d68b2c5705a9f7c10d" />
+			<version number="2.3.1.697" md5="378ac66c15df48ba3b5dad5585e743be" />
+			<version number="2.3.1.764" md5="cb1556f0a9bcde3431e2b00ea8daac80" />
+			<version number="2.3.1.805" md5="2ead8da0e29c10d9d1e72942e4b11c8a" />
+		</versions>
+	</plugin>
+	<plugin name="Zen Coding - Python">
+		<unicodeVersion>0.2</unicodeVersion>
+		<sourceUrl>http://github.com/davegb3/ZenCoding-Python</sourceUrl>
+		<description>An implementation of the Zen Coding method by Sergey Chikuyonok.  Needs Visual C++ Runtime 2008 for Python plugin - link below. Expand HTML, CSS, XML, XSLT and XSD from abbreviations\ntr#head1.header>td*2 becomes &lt;tr id="head1" class="header"&gt;\n  &lt;td&gt;&lt;/td&gt;\n  &lt;td&gt;&lt;/td&gt;\n&lt;/tr&gt;\nUses the Python Script plugin.\n\nGet Visual C++ Runtime 2008 from: http://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&amp;displaylang=en</description>
 	<latestUpdate>XSD mode, Tab key support for Expand abbreviation, Profile selection, and a quick edit settings option</latestUpdate>
 	<author>Dave Brotherstone</author>
 	<dependencies>
-			<plugin name="Python Script"/>
+		<plugin name="Python Script"/>
 	</dependencies>
 	<install>
 		<unicode>
@@ -1415,5 +1415,4 @@
 		</unicode>
 	</install>
 </plugin>
-
 </plugins>
