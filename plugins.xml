@@ -255,7 +255,7 @@
 		<author>loonychewy</author>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npp-plugins/DBGP%20Plugin/DBGP%20Plugin%20v0.11%20beta/DBGpPlugin_0_11b_dll.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/FallingBricks/FallingBricks%201.1%20UNI/fallingbricks_v1.1_unicode_dll.zip</download>
 				<copy from="FallingBricks.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="change.log" to="$PLUGINDIR$\doc\FallingBricks"/>
 				<copy from="license.txt" to="$PLUGINDIR$\doc\FallingBricks"/>
@@ -413,6 +413,17 @@
 			</unicode>
 			<copy from="HTMLTag-entities.ini" to="$CONFIGDIR$"/>
 			<copy from="HTMLTag-readme.txt" to="$PLUGINDIR$\doc\HTMLTag"/>
+		</install>
+	</plugin>
+	<plugin name="JSMin">
+		<unicodeVersion>1.1</unicodeVersion>
+		<sourceUrl>http://sourceforge.net/projects/jsminnpp/</sourceUrl>
+		<author>Junwen Sun</author>
+		<description>A Javascript minimizing plugin, uses the JSMin algorithm by Douglas Crockford</description>
+		<homepage>http://sunblog.72pines.com/development-center/jsminnpp/</homepage>
+		<install>
+			<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.01.zip</download>
+			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
 	<plugin name="Language Help">

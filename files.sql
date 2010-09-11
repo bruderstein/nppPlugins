@@ -234,4 +234,5 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('6
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('40c0e84430b7744add4dedd07e8d8a74','SnippetPlusPlus.dll','','2010-09-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('1ca4e13bdf3f59555cdd1bdc8f8ea207','Pork2Sausage.dll','','2010-09-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('85e31c040b6eae1fd6a7ef66eaa920b6','ZenCoding-Python.dll','','2010-09-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('9eeb7b34a98fe89283a12eca0f34aa6b','JSMinNPP.dll','','2010-09-11','ok');
 commit;
