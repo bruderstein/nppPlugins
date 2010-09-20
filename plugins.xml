@@ -1109,23 +1109,24 @@
 		</install>
 	</plugin>
 	<plugin name="Source Cookifier">
-		<unicodeVersion>0.5.3</unicodeVersion>
+		<unicodeVersion>0.5.4</unicodeVersion>
 		<description>A plugin which uses Exuberant Ctags to parse either only the currently activated source file or multiple files of so-called sessions. The results are shown and can be browsed in a treeview inside of a dockable window.</description>
 		<author>UFO-Pu55y</author>
 		<homepage>http://sourceforge.net/projects/sourcecookifier/</homepage>
-		<latestUpdate>-new: show session mode/name in toolbar caption \n-fix: 1252 as default encoding for streams and stdout (since v0.5 SourceCookifier didn't work at all for people using non-western-european region/language on their machine!) \n-fix: show error in node tooltip when ctags.exe returns error (while not using tags file) \n-fix: remove/move in context menu for invalid source nodes \n-fix: save error/path info of invalid source nodes (in .c00k!e files)</latestUpdate>
+		<latestUpdate>-new: 2 batch files for adding/removing a .NET policy for the plugin on the current machine\n-   this policy is required when starting N++ on a network location and using sourcecookifier!\n-new: enable (in CTAGS) 'Mac OS 9' form for source code parser (EOL = CR)\n-fix: bring import dialog to top\n-fix: crash when tab window is initialized in 'N++ session mode'\n-fix: sources in treeview don't get added/removed when tab window is in 'N++ session mode' but hidden\n-changed: disable treeview ui while importing sources (speedup)\n-changed: scope-name-delimiter now '.' instead of '::'\n-changed: show invalid sources by default</latestUpdate>
 		<aliases>
 			<alias name="SourceCookifier"/>
 		</aliases>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.5.3/SourceCookifier.v0.5.3.bin.zip</download>
+				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.5.4/SourceCookifier.v0.5.4.bin.zip</download>
 				<copy from="SourceCookifier.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="SourceCookifier\SourceCookifierCore.dll" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
 				<copy from="SourceCookifier\SourceCookifierWrapper.dll" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
 				<copy from="SourceCookifier\ctags.exe" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
 				<copy from="SourceCookifier\icons\*.png" to="$PLUGINDIR$\SourceCookifier\icons"/>
 				<copy from="Config\SourceCookifier.languages.model.xml" to="$CONFIGDIR$"/>
+				<copy from="SourceCookifier\*.bat" to="$PLUGINDIR$\doc\SourceCookifier" />
 			</unicode>
 		</install>
 	</plugin>
