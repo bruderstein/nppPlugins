@@ -1064,6 +1064,18 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="Select 'N' Launch">
+		<unicodeVersion>1.0</unicodeVersion>
+		<author>Don Ho</author>
+		<description>This plugin gets your selected text, saves it as file with the extension you
+customize in the system temporary directory, then call system to open it with the extension associated program.
+		</description>
+		<install>
+			<download>http://download.tuxfamily.org/nppplugins/SelectNLaunch/SelectNLaunch.bin.v1.0.zip</download>
+			<copy from="SelectNLaunch.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="*.txt" to="$PLUGINDIR$\doc\SelectNLaunch" />
+		</install>
+	</plugin>
 	<plugin name="Simple Script">
 		<ansiVersion>1.1.3</ansiVersion>
 		<description>Simple script plug-in allows you to make up your script from buid-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes. </description>
