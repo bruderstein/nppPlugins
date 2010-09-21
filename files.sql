@@ -235,4 +235,6 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('1ca4e13bdf3f59555cdd1bdc8f8ea207','Pork2Sausage.dll','','2010-09-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('85e31c040b6eae1fd6a7ef66eaa920b6','ZenCoding-Python.dll','','2010-09-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('9eeb7b34a98fe89283a12eca0f34aa6b','JSMinNPP.dll','','2010-09-11','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('204af221ad225f5be785399f24431574','GmodLua.dll','','2010-09-21','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('189fbaaa9550e32ffef551731141f132','GmodLua.dll','','2010-09-21','ok');
 commit;
