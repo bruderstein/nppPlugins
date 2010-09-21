@@ -1067,9 +1067,7 @@
 	<plugin name="Select 'N' Launch">
 		<unicodeVersion>1.0</unicodeVersion>
 		<author>Don Ho</author>
-		<description>This plugin gets your selected text, saves it as file with the extension you
-customize in the system temporary directory, then call system to open it with the extension associated program.
-		</description>
+		<description>This plugin gets your selected text, saves it as file with the extension you customize in the system temporary directory, then call system to open it with the extension associated program.</description>
 		<install>
 			<download>http://download.tuxfamily.org/nppplugins/SelectNLaunch/SelectNLaunch.bin.v1.0.zip</download>
 			<copy from="SelectNLaunch.dll" to="$PLUGINDIR$" validate="true"/>
