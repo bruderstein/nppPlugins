@@ -235,6 +235,8 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('1ca4e13bdf3f59555cdd1bdc8f8ea207','Pork2Sausage.dll','','2010-09-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('85e31c040b6eae1fd6a7ef66eaa920b6','ZenCoding-Python.dll','','2010-09-08','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('9eeb7b34a98fe89283a12eca0f34aa6b','JSMinNPP.dll','','2010-09-11','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('204af221ad225f5be785399f24431574','GmodLua.dll','','2010-09-21','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('189fbaaa9550e32ffef551731141f132','GmodLua.dll','','2010-09-21','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('7d0f221476aacb4a705e68b19692ea6c','SourceCookifier.dll','','2010-09-20','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('45d439091359f61cc9b80dbdf6e67d60','SourceCookifierCore.dll','','2010-09-20','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('b1d7b91c38aa21b6654b49fd18cdd304','SourceCookifierWrapper.dll','','2010-09-20','ok');
