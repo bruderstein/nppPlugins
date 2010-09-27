@@ -186,7 +186,7 @@
 		<author>Don Ho</author>
 		<sourceUrl>http://sourceforge.net/projects/npp-plugins/files/DocMonitor/</sourceUrl>
 		<install>
-			<download>https://downloads.sourceforge.net/project/npp-plugins/DocMonitor/DocMonitor%20v2.2/DocMonitor.v2.2.dll.zip</download>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/DocMonitor/DocMonitor%20v2.2/DocMonitor.v2.2.dll.zip</download>
 			<ansi>
 				<copy from="docMonitor.ansi.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
