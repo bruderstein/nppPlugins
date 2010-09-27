@@ -242,4 +242,5 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('b1d7b91c38aa21b6654b49fd18cdd304','SourceCookifierWrapper.dll','','2010-09-20','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('c01720bbaa8644966f6f817587eb6dc6','ctags.exe','','2010-09-20','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('be041995b4fcd48c331329362e6e3d1c','SelectNLaunch.dll','','2010-09-20','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('693c56037ef9a10718e7ad6b16fb66d4','JSMinNPP.dll','','2010-09-27','ok');
 commit;

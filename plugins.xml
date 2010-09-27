@@ -418,13 +418,13 @@
 		</install>
 	</plugin>
 	<plugin name="JSMin">
-		<unicodeVersion>1.1</unicodeVersion>
+		<unicodeVersion>1.5</unicodeVersion>
 		<sourceUrl>http://sourceforge.net/projects/jsminnpp/</sourceUrl>
 		<author>Junwen Sun</author>
 		<description>A Javascript minimizing plugin, uses the JSMin algorithm by Douglas Crockford</description>
 		<homepage>http://sunblog.72pines.com/development-center/jsminnpp/</homepage>
 		<install>
-			<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.01.zip</download>
+			<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.05.uni.zip</download>
 			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
