@@ -418,13 +418,13 @@
 		</install>
 	</plugin>
 	<plugin name="JSMin">
-		<unicodeVersion>1.1</unicodeVersion>
+		<unicodeVersion>1.5</unicodeVersion>
 		<sourceUrl>http://sourceforge.net/projects/jsminnpp/</sourceUrl>
 		<author>Junwen Sun</author>
 		<description>A Javascript minimizing plugin, uses the JSMin algorithm by Douglas Crockford</description>
 		<homepage>http://sunblog.72pines.com/development-center/jsminnpp/</homepage>
 		<install>
-			<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.01.zip</download>
+			<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.05.uni.zip</download>
 			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
@@ -1143,26 +1143,28 @@
 		</install>
 	</plugin>
 	<plugin name="SourceSwitch">
-		<unicodeVersion>0.4</unicodeVersion>
-		<ansiVersion>0.4</ansiVersion>
+		<unicodeVersion>0.5</unicodeVersion>
+		<ansiVersion>0.5</ansiVersion>
 		<description> Designed to allow easy switching between project source and header files using a configurable shortcut. \nSo far it supports: \n- .c , .cpp, .cc &gt; .h \n- .cpp &gt; .hpp \n- .cxx &gt; .hxx \n- .asm &gt; .inc \n- .xml &gt; .xsd \n- .xml &gt; .xsl \n- .aspx &gt; .aspx.cs \n- .aspx.cs &gt; .designer.aspx.cs \n- .pas &gt; .dfm \n- .pas &gt; .lfm \n- .frm &gt; .frx</description>
 		<author>ViZioN</author>
 		<homepage>http://sourceforge.net/projects/sourceswitch</homepage>
-		<latestUpdate>- Added user prompt if file chosen to switch from has multiple matches. (i.e .h --&gt; .c, .cpp or .cc) (Thanks to davegb3)\n- Setting can also be made default.</latestUpdate>
+		<latestUpdate>Added support for opening header files directly, rather than performing a switch.</latestUpdate>
 		<versions>
 			<version number="0.3" md5="738753a2faec5af196e12978a0e5a9a8" comment="unicode" />
 			<version number="0.3" md5="c84c74b41991b208b36b9d52671ca0ec" comment="ansi" />
 			<version number="0.4" md5="c98ba095c760377e2acb75a0c5eca5b7" comment="ansi" />
 			<version number="0.4" md5="5796f1754d040a7ab17e7d2e57bea728" comment="unicode" />
+			<version number="0.5" md5="966fc7fd3566d9e22825e79aecd6ea0d" comment="ansi" />
+			<version number="0.5" md5="8e0e6dfc344c021f168b49f19027a36c" comment="unicode" />
 		</versions>
 		<install>
-			<download>http://downloads.sourceforge.net/project/sourceswitch/SourceSwitch/bin/SourceSwitch_0.4.zip</download>
-			<copy from="Readme.txt" to="$PLUGINDIR$\doc\SourceSwitch" />
+			<download>http://downloads.sourceforge.net/project/sourceswitch/SourceSwitch/bin/SourceSwitch_0.5.zip</download>
+			<copy from="SourceSwitch_0.5\Readme.txt" to="$PLUGINDIR$\doc\SourceSwitch" />
 			<unicode>
-				<copy from="SourceSwitch.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="SourceSwitch_0.5\SourceSwitch.dll" to="$PLUGINDIR$" validate="true" />
 			</unicode>
 			<ansi>
-				<copy from="SourceSwitchA.dll" to="$PLUGINDIR$" validate="true" />
+				<copy from="SourceSwitch_0.5\SourceSwitchA.dll" to="$PLUGINDIR$" validate="true" />
 			</ansi>
 		</install>
 	</plugin>
