@@ -245,4 +245,6 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('b
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('693c56037ef9a10718e7ad6b16fb66d4','JSMinNPP.dll','','2010-09-27','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('8e0e6dfc344c021f168b49f19027a36c','SourceSwitch.dll','','2010-11-09','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('966fc7fd3566d9e22825e79aecd6ea0d','SourceSwitchA.dll','','2010-11-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('d4710dea9acf119c2e8b6c7accabda98','JSLintNpp.dll','','2010-12-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('afbc59278cb52f61af20c2949854eca5','JSLintNppA.dll','','2010-12-08','ok');
 commit;
