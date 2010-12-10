@@ -1130,20 +1130,29 @@
 		</install>
 	</plugin>
 	<plugin name="SnippetPlus">
-		<unicodeVersion>1.2</unicodeVersion>
-		<description>.NET 2.0 Required!  Code snippet and Surround With plugin for Notepad++. Write snippet name and replace it with real code or select some text and surround it with something like IF,TryCatch,Table,Div or whatever.Will give you hint if you don't remember the snippet name</description>
+		<unicodeVersion>1.3</unicodeVersion>
+		<description>.NET 3.5 Required!  Code snippet and Surround With plugin for Notepad++. Write snippet name and replace it with real code or select some text and surround it with something like IF,TryCatch,Table,Div or whatever.Will give you hint if you don't remember the snippet name\nNote that the latest version may be shown, even though you have an older version installed.  Reinstall to ensure you have the latest version.</description>
 		<author>Rajesh Kumar</author>
 		<homepage>http://sourceforge.net/projects/snippetplus/</homepage>
 		<versions>
-			<version number="1.2" md5="0485e56f7786f8c91d11164acc954bd6" comment="this is both 1.1 and 1.2 - the .NET dll has changed but not the wrapper" />
+			<version number="1.3" md5="0485e56f7786f8c91d11164acc954bd6" comment="this is 1.1, 1.2 and 1.3 - the .NET dll has changed but not the wrapper" />
 		</versions>
+		<latestUpdate>+ Added rename functionality for snippets.\n
++ Added functionality to Add, Delete, Rename languages\n
+- Data is now kept filtered after deleting an item or changing language.\n
+- Fixed a minor bug.\n
+  When Notepad++ started, a message box was shown telling:\n
+  "SurroundWith LoadData: Value cannot be null. Parameter name: value".\n
+- Fixed a bug.\n
+  (SnippetPlus.xml was opened, edited manually and saved in Notepad++. Reload was not pressed and Notepad++ was closed. The edited data was lost when you reopened the SnippetPlus.xml. It was due to a bug that saved the file from memory to save "Use Surround With" status on Notepad++ exit. It started from version 1.2 when I introduced the options functionality)
+		</latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/snippetplus/SnippetPlus_V1.2_Release.zip</download>
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus.xml" to="$CONFIGDIR$" backup="true" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus\SnippetPlusPlus.dll" to="$PLUGINDIR$\SnippetPlus" validate="true" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus_Changelog.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus_ReadMe.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
+			<download>http://downloads.sourceforge.net/project/snippetplus/SnippetPlus_V1.3_Release.zip</download>
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus.xml" to="$CONFIGDIR$" backup="true" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus\SnippetPlusPlus.dll" to="$PLUGINDIR$\SnippetPlus" validate="true" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus_Changelog.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus_ReadMe.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
 		</install>
 	</plugin>
 	<plugin name="Snippets">
