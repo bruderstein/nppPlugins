@@ -14,8 +14,8 @@
 		<pluginName md5="5a19bd60aa18e4454f1c4a6432ae5a72" name="Switcher" comment="unicode"/>
 	</pluginNames>
 	<plugin name="AutoSave">
-		<ansiVersion>1.2</ansiVersion>
-		<unicodeVersion>1.2</unicodeVersion>
+		<ansiVersion>1.3</ansiVersion>
+		<unicodeVersion>1.3</unicodeVersion>
 		<aliases>
 			<alias name="Auto Save" />
 		</aliases>
@@ -23,15 +23,16 @@
 		<author>Franco Stellari</author>
 		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
 		<sourceUrl/>
-		<latestUpdate>\n+ enable new features that allow to save unamed buffers as well as create autorecovery files	\n+ fixes a problem that disabled previous version under NPP v5.7</latestUpdate>
+		<latestUpdate>adds a requested functionality to ignore files larger than a specified size.</latestUpdate>
 		<install>
-			<download>http://sites.google.com/site/fstellari/cab/AutoSave_dll_1v20.zip?attredirects=0</download>
+			<download>http://sites.google.com/site/fstellari/cab/AutoSave_dll_1v30.zip?attredirects=0</download>
 			<ansi>
 				<copy from="AutoSaveA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
 			<unicode>
 				<copy from="AutoSaveU.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
+			<copy from="license.txt" to="$PLUGINDIR$\doc\AutoSave" />
 		</install>
 	</plugin>
 	<plugin name="CCompletion">
