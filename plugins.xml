@@ -417,6 +417,23 @@
 			<copy from="HTMLTag-readme.txt" to="$PLUGINDIR$\doc\HTMLTag"/>
 		</install>
 	</plugin>
+	<plugin name="JSLint">
+		<unicodeVersion>0.2.1</unicodeVersion>
+		<ansiVersion>0.2.1</ansiVersion>
+		<sourceUrl>https://sourceforge.net/projects/jslintnpp/</sourceUrl>
+		<author>Martin Vladic</author>
+		<description>A Notepad++ plugin that allows users to run JSLint (The JavaScript Code Quality Tool) against their open JavaScript files (more about JSLint at http://www.jslint.com/lint.html).</description>
+		<install>
+			<unicode>
+				<download>http://sourceforge.net/projects/jslintnpp/files/0.2.1/JSLintNPP.0.2.1.zip/download</download>
+				<copy from="JSLintNpp.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+			<ansi>
+				<download>http://sourceforge.net/projects/jslintnpp/files/0.2.1/JSLintNPP_ANSI.0.2.1.zip/download</download>
+				<copy from="JSLintNppA.dll" to="$PLUGINDIR$" validate="true"/>
+			</ansi>
+		</install>
+	</plugin>
 	<plugin name="JSMin">
 		<unicodeVersion>1.5</unicodeVersion>
 		<sourceUrl>http://sourceforge.net/projects/jsminnpp/</sourceUrl>
