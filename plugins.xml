@@ -607,6 +607,19 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="nppColdFusion">
+		<unicodeVersion>0.5.3</unicodeVersion>
+		<author>bbluemel</author>
+		<description>Syntax highlighting, Call tips (Notepad++ 5.8.4 required) and autocomplete for the ColdFusion language</description>
+		<versions>
+			<version number="0.5.3" md5="63e009627d1c07c2064db276c3a22bd3" />
+		</versions>
+		<install>
+			<download>http://bitbucket.org/bbluemel/nppcoldfusion/downloads/nppColdFusion-0.5.3.zip</download>
+			<copy from="nppColdFusion.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="Config\nppColdFusion.xml" to="$CONFIGDIR$" />
+		</install>
+	</plugin>
 	<plugin name="NppCrypt">
 		<unicodeVersion>1.0.0.6</unicodeVersion>
 		<author>Max Waghals</author>
