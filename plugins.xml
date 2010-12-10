@@ -489,6 +489,30 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="Lorem Ipsum">
+		<ansiVersion>1.0</ansiVersion>
+		<unicodeVersion>1.0</unicodeVersion>
+		<description>Inserts Lorem Ipsum text.  Lorem Ipsum is a standard text used for print and website layout, before the actual copy text is decided.</description>
+		<author>Alexandru Ionita</author>
+		<sourceUrl>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_src.zip</sourceUrl>
+		<install>
+			<ansi>
+				<download>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_ANSI_release.zip</download>
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\InsertLoremIpsumNppPluginA.dll" to="$PLUGINDIR$" />
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\Config\InsertLoremIpsum_stats.cfg" to="$CONFIGDIR$" />
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\license.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\READ ME.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+			</ansi>
+			<unicode>
+				<download>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_Unicode_release.zip</download>
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\InsertLoremIpsumNppPlugin.dll" to="$PLUGINDIR$" />
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\Config\InsertLoremIpsum_stats.cfg" to="$CONFIGDIR$" />
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\license.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\READ ME.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+			</unicode>
+		</install>
+	</plugin>
+	</plugin>
 	<plugin name="MIME Tools">
 		<unicodeVersion>1.5</unicodeVersion>
 		<ansiVersion>1.5</ansiVersion>
