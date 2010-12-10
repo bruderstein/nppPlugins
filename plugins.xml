@@ -704,8 +704,8 @@
 		</install>
 	</plugin>
 	<plugin name="Oberon-2 Lexer">
-		<unicodeVersion>0.3</unicodeVersion>
-		<ansiVersion>0.3</ansiVersion>
+		<unicodeVersion>0.3.1</unicodeVersion>
+		<ansiVersion>0.3.1</ansiVersion>
 		<description>Oberon-2 Lexer plugin provides syntax highlighting for the Oberon-2 programming language.</description>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
 		<versions>
@@ -713,9 +713,9 @@
 			<version number="0.3" md5="ef9610e37644482515aa525123cdb8fb" comment="ansi"/>
 		</versions>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3/Oberon2Lexer.v0.3.zip</sourceUrl>
-		<latestUpdate>First public release.</latestUpdate>
+		<latestUpdate>Bug fixed invalid highlighting of hexadecimal constants (H and X suffixes) if the constant contained lower case characters.</latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3/Oberon2Lexer.v0.3.zip</download>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3.1/Oberon2Lexer.v0.3.1.zip</download>
 			<ansi>
 				<copy from="Oberon2Lexer\Oberon2Lexer.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="Oberon2Lexer\Config\Oberon2Lexer.xml" to="$CONFIGDIR$" backup="true"/>
