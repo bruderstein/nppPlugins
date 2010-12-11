@@ -245,4 +245,14 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('b
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('693c56037ef9a10718e7ad6b16fb66d4','JSMinNPP.dll','','2010-09-27','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('8e0e6dfc344c021f168b49f19027a36c','SourceSwitch.dll','','2010-11-09','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('966fc7fd3566d9e22825e79aecd6ea0d','SourceSwitchA.dll','','2010-11-09','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('d4710dea9acf119c2e8b6c7accabda98','JSLintNpp.dll','','2010-12-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('afbc59278cb52f61af20c2949854eca5','JSLintNppA.dll','','2010-12-08','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('dcf5c719f058c7244910af815770a7f0','AutoSaveU.dll','','2010-12-11','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('f1b7e7842f58cd4c9ea2169c0e47a292','InsertLoremIpsumNppPlugin.dll','','2010-12-11','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('66fd7ed3794ec6244150dce023fc3d4d','InsertLoremIpsumNppPluginA.dll','','2010-12-11','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('63e009627d1c07c2064db276c3a22bd3','nppColdFusion.dll','','2010-12-11','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('466feab32b1a653c027e09bd9b36e883','Oberon2Lexer.dll','','2010-12-11','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('50875eb73f420b1d5999f252cb93c3dc','Oberon2LexerU.dll','','2010-12-11','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('d86374986f7ca8a5dd2c286958e53da4','AutoSaveA.dll','','2010-12-11','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('29a0172aeb43285f0edfa897eddf0311','SnippetPlusPlus.dll','','2010-12-11','ok');
 commit;

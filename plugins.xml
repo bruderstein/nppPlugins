@@ -14,8 +14,8 @@
 		<pluginName md5="5a19bd60aa18e4454f1c4a6432ae5a72" name="Switcher" comment="unicode"/>
 	</pluginNames>
 	<plugin name="AutoSave">
-		<ansiVersion>1.2</ansiVersion>
-		<unicodeVersion>1.2</unicodeVersion>
+		<ansiVersion>1.3</ansiVersion>
+		<unicodeVersion>1.3</unicodeVersion>
 		<aliases>
 			<alias name="Auto Save" />
 		</aliases>
@@ -23,15 +23,16 @@
 		<author>Franco Stellari</author>
 		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
 		<sourceUrl/>
-		<latestUpdate>\n+ enable new features that allow to save unamed buffers as well as create autorecovery files	\n+ fixes a problem that disabled previous version under NPP v5.7</latestUpdate>
+		<latestUpdate>adds a requested functionality to ignore files larger than a specified size.</latestUpdate>
 		<install>
-			<download>http://sites.google.com/site/fstellari/cab/AutoSave_dll_1v20.zip?attredirects=0</download>
+			<download>http://sites.google.com/site/fstellari/cab/AutoSave_dll_1v30.zip?attredirects=0</download>
 			<ansi>
 				<copy from="AutoSaveA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
 			<unicode>
 				<copy from="AutoSaveU.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
+			<copy from="license.txt" to="$PLUGINDIR$\doc\AutoSave" />
 		</install>
 	</plugin>
 	<plugin name="CCompletion">
@@ -417,6 +418,23 @@
 			<copy from="HTMLTag-readme.txt" to="$PLUGINDIR$\doc\HTMLTag"/>
 		</install>
 	</plugin>
+	<plugin name="JSLint">
+		<unicodeVersion>0.2.1</unicodeVersion>
+		<ansiVersion>0.2.1</ansiVersion>
+		<sourceUrl>https://sourceforge.net/projects/jslintnpp/</sourceUrl>
+		<author>Martin Vladic</author>
+		<description>A Notepad++ plugin that allows users to run JSLint (The JavaScript Code Quality Tool) against their open JavaScript files (more about JSLint at http://www.jslint.com/lint.html).</description>
+		<install>
+			<unicode>
+				<download>http://sourceforge.net/projects/jslintnpp/files/0.2.1/JSLintNPP.0.2.1.zip/download</download>
+				<copy from="JSLintNpp.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+			<ansi>
+				<download>http://sourceforge.net/projects/jslintnpp/files/0.2.1/JSLintNPP_ANSI.0.2.1.zip/download</download>
+				<copy from="JSLintNppA.dll" to="$PLUGINDIR$" validate="true"/>
+			</ansi>
+		</install>
+	</plugin>
 	<plugin name="JSMin">
 		<unicodeVersion>1.5</unicodeVersion>
 		<sourceUrl>http://sourceforge.net/projects/jsminnpp/</sourceUrl>
@@ -470,6 +488,36 @@
 				<download>http://downloads.sourceforge.net/project/npp-plugins/Log%20Plugin/Log%20Plugin%20v1.0/NppLogPlugin.v1.0.dll.zip</download>
 				<copy from="NppLogPlugin.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
+		</install>
+	</plugin>
+	<plugin name="Lorem Ipsum">
+		<ansiVersion>1.0</ansiVersion>
+		<unicodeVersion>1.0</unicodeVersion>
+		<aliases>
+			<alias name="InsertLoremIpsum" />
+		</aliases>
+		<description>Inserts Lorem Ipsum text.  Lorem Ipsum is a standard text used for print and website layout, before the actual copy text is decided.</description>
+		<author>Alexandru Ionita</author>
+		<sourceUrl>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_src.zip</sourceUrl>
+		<versions>
+			<version number="1.0" md5="f1b7e7842f58cd4c9ea2169c0e47a292" comment="uni"/>
+			<version number="1.0" md5="66fd7ed3794ec6244150dce023fc3d4d" comment="ansi"/>
+		</versions>
+		<install>
+			<ansi>
+				<download>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_ANSI_release.zip</download>
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\InsertLoremIpsumNppPluginA.dll" to="$PLUGINDIR$" />
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\Config\InsertLoremIpsum_stats.cfg" to="$PLUGINDIR$\Config" />
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\license.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\READ ME.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+			</ansi>
+			<unicode>
+				<download>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_Unicode_release.zip</download>
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\InsertLoremIpsumNppPlugin.dll" to="$PLUGINDIR$" />
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\Config\InsertLoremIpsum_stats.cfg" to="$PLUGINDIR$\Config" />
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\license.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\READ ME.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+			</unicode>
 		</install>
 	</plugin>
 	<plugin name="MIME Tools">
@@ -563,6 +611,19 @@
 			<ansi>
 				<copy from="NppAutoIndentA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
+		</install>
+	</plugin>
+	<plugin name="ColdFusion Lexer">
+		<unicodeVersion>0.5.3</unicodeVersion>
+		<author>bbluemel</author>
+		<description>Syntax highlighting, Call tips (Notepad++ 5.8.4 required) and autocomplete for the ColdFusion language</description>
+		<versions>
+			<version number="0.5.3" md5="63e009627d1c07c2064db276c3a22bd3" />
+		</versions>
+		<install>
+			<download>http://bitbucket.org/bbluemel/nppcoldfusion/downloads/nppColdFusion-0.5.3.zip</download>
+			<copy from="nppColdFusion.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="Config\nppColdFusion.xml" to="$CONFIGDIR$" />
 		</install>
 	</plugin>
 	<plugin name="NppCrypt">
@@ -704,18 +765,20 @@
 		</install>
 	</plugin>
 	<plugin name="Oberon-2 Lexer">
-		<unicodeVersion>0.3</unicodeVersion>
-		<ansiVersion>0.3</ansiVersion>
+		<unicodeVersion>0.3.1</unicodeVersion>
+		<ansiVersion>0.3.1</ansiVersion>
 		<description>Oberon-2 Lexer plugin provides syntax highlighting for the Oberon-2 programming language.</description>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
 		<versions>
 			<version number="0.3" md5="d0999f6603dfb5153a1ef54c687b271d" comment="unicode"/>
 			<version number="0.3" md5="ef9610e37644482515aa525123cdb8fb" comment="ansi"/>
+			<version number="0.3.1" md5="50875eb73f420b1d5999f252cb93c3dc" comment="unicode"/>
+			<version number="0.3.1" md5="466feab32b1a653c027e09bd9b36e883" comment="ansi"/>
 		</versions>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3/Oberon2Lexer.v0.3.zip</sourceUrl>
-		<latestUpdate>First public release.</latestUpdate>
+		<latestUpdate>Bug fixed invalid highlighting of hexadecimal constants (H and X suffixes) if the constant contained lower case characters.</latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3/Oberon2Lexer.v0.3.zip</download>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3.1/Oberon2Lexer.v0.3.1.zip</download>
 			<ansi>
 				<copy from="Oberon2Lexer\Oberon2Lexer.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="Oberon2Lexer\Config\Oberon2Lexer.xml" to="$CONFIGDIR$" backup="true"/>
@@ -1089,20 +1152,29 @@
 		</install>
 	</plugin>
 	<plugin name="SnippetPlus">
-		<unicodeVersion>1.2</unicodeVersion>
-		<description>.NET 2.0 Required!  Code snippet and Surround With plugin for Notepad++. Write snippet name and replace it with real code or select some text and surround it with something like IF,TryCatch,Table,Div or whatever.Will give you hint if you don't remember the snippet name</description>
+		<unicodeVersion>1.3</unicodeVersion>
+		<description>.NET 3.5 Required!  Code snippet and Surround With plugin for Notepad++. Write snippet name and replace it with real code or select some text and surround it with something like IF,TryCatch,Table,Div or whatever.Will give you hint if you don't remember the snippet name\nNote that the latest version may be shown, even though you have an older version installed.  Reinstall to ensure you have the latest version.</description>
 		<author>Rajesh Kumar</author>
 		<homepage>http://sourceforge.net/projects/snippetplus/</homepage>
 		<versions>
-			<version number="1.2" md5="0485e56f7786f8c91d11164acc954bd6" comment="this is both 1.1 and 1.2 - the .NET dll has changed but not the wrapper" />
+			<version number="1.3" md5="0485e56f7786f8c91d11164acc954bd6" comment="this is 1.1, 1.2 and 1.3 - the .NET dll has changed but not the wrapper" />
 		</versions>
+		<latestUpdate>+ Added rename functionality for snippets.\n
++ Added functionality to Add, Delete, Rename languages\n
+- Data is now kept filtered after deleting an item or changing language.\n
+- Fixed a minor bug.\n
+  When Notepad++ started, a message box was shown telling:\n
+  "SurroundWith LoadData: Value cannot be null. Parameter name: value".\n
+- Fixed a bug.\n
+  (SnippetPlus.xml was opened, edited manually and saved in Notepad++. Reload was not pressed and Notepad++ was closed. The edited data was lost when you reopened the SnippetPlus.xml. It was due to a bug that saved the file from memory to save "Use Surround With" status on Notepad++ exit. It started from version 1.2 when I introduced the options functionality)
+		</latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/snippetplus/SnippetPlus_V1.2_Release.zip</download>
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus.xml" to="$CONFIGDIR$" backup="true" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus\SnippetPlusPlus.dll" to="$PLUGINDIR$\SnippetPlus" validate="true" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus_Changelog.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus_ReadMe.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
+			<download>http://downloads.sourceforge.net/project/snippetplus/SnippetPlus_V1.3_Release.zip</download>
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus.xml" to="$CONFIGDIR$" backup="true" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus\SnippetPlusPlus.dll" to="$PLUGINDIR$\SnippetPlus" validate="true" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus_Changelog.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus_ReadMe.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
 		</install>
 	</plugin>
 	<plugin name="Snippets">
