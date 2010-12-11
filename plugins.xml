@@ -493,26 +493,32 @@
 	<plugin name="Lorem Ipsum">
 		<ansiVersion>1.0</ansiVersion>
 		<unicodeVersion>1.0</unicodeVersion>
+		<aliases>
+			<alias name="InsertLoremIpsum" />
+		</aliases>
 		<description>Inserts Lorem Ipsum text.  Lorem Ipsum is a standard text used for print and website layout, before the actual copy text is decided.</description>
 		<author>Alexandru Ionita</author>
 		<sourceUrl>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_src.zip</sourceUrl>
+		<versions>
+			<version number="1.0" md5="f1b7e7842f58cd4c9ea2169c0e47a292" comment="uni"/>
+			<version number="1.0" md5="66fd7ed3794ec6244150dce023fc3d4d" comment="ansi"/>
+		</versions>
 		<install>
 			<ansi>
 				<download>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_ANSI_release.zip</download>
 				<copy from="InsertLoremIpsumNppPlugin ANSI release\InsertLoremIpsumNppPluginA.dll" to="$PLUGINDIR$" />
-				<copy from="InsertLoremIpsumNppPlugin ANSI release\Config\InsertLoremIpsum_stats.cfg" to="$CONFIGDIR$" />
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\Config\InsertLoremIpsum_stats.cfg" to="$PLUGINDIR$\Config" />
 				<copy from="InsertLoremIpsumNppPlugin ANSI release\license.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
 				<copy from="InsertLoremIpsumNppPlugin ANSI release\READ ME.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
 			</ansi>
 			<unicode>
 				<download>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_Unicode_release.zip</download>
 				<copy from="InsertLoremIpsumNppPlugin Unicode release\InsertLoremIpsumNppPlugin.dll" to="$PLUGINDIR$" />
-				<copy from="InsertLoremIpsumNppPlugin Unicode release\Config\InsertLoremIpsum_stats.cfg" to="$CONFIGDIR$" />
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\Config\InsertLoremIpsum_stats.cfg" to="$PLUGINDIR$\Config" />
 				<copy from="InsertLoremIpsumNppPlugin Unicode release\license.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
 				<copy from="InsertLoremIpsumNppPlugin Unicode release\READ ME.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
 			</unicode>
 		</install>
-	</plugin>
 	</plugin>
 	<plugin name="MIME Tools">
 		<unicodeVersion>1.5</unicodeVersion>
@@ -607,7 +613,7 @@
 			</ansi>
 		</install>
 	</plugin>
-	<plugin name="nppColdFusion">
+	<plugin name="ColdFusion Lexer">
 		<unicodeVersion>0.5.3</unicodeVersion>
 		<author>bbluemel</author>
 		<description>Syntax highlighting, Call tips (Notepad++ 5.8.4 required) and autocomplete for the ColdFusion language</description>
@@ -766,6 +772,8 @@
 		<versions>
 			<version number="0.3" md5="d0999f6603dfb5153a1ef54c687b271d" comment="unicode"/>
 			<version number="0.3" md5="ef9610e37644482515aa525123cdb8fb" comment="ansi"/>
+			<version number="0.3.1" md5="50875eb73f420b1d5999f252cb93c3dc" comment="unicode"/>
+			<version number="0.3.1" md5="466feab32b1a653c027e09bd9b36e883" comment="ansi"/>
 		</versions>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3/Oberon2Lexer.v0.3.zip</sourceUrl>
 		<latestUpdate>Bug fixed invalid highlighting of hexadecimal constants (H and X suffixes) if the constant contained lower case characters.</latestUpdate>
