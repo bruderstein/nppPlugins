@@ -780,6 +780,7 @@
 		<homepage>http://sourceforge.net/projects/nppjumplist/</homepage>
 		<description>Adds windows 7 jump list support.</description>
 		<author>ahvgeezer</author>
+		<stability>Crash reported on exit of Notepad++</stability>
 		<install>
 			<copy from="NppJumpList.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="readme.txt" to="$PLUGINDIR$\doc\NppJumpList" />
