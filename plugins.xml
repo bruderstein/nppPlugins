@@ -14,8 +14,8 @@
 		<pluginName md5="5a19bd60aa18e4454f1c4a6432ae5a72" name="Switcher" comment="unicode"/>
 	</pluginNames>
 	<plugin name="AutoSave">
-		<ansiVersion>1.2</ansiVersion>
-		<unicodeVersion>1.2</unicodeVersion>
+		<ansiVersion>1.3</ansiVersion>
+		<unicodeVersion>1.3</unicodeVersion>
 		<aliases>
 			<alias name="Auto Save" />
 		</aliases>
@@ -23,15 +23,16 @@
 		<author>Franco Stellari</author>
 		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
 		<sourceUrl/>
-		<latestUpdate>\n+ enable new features that allow to save unamed buffers as well as create autorecovery files	\n+ fixes a problem that disabled previous version under NPP v5.7</latestUpdate>
+		<latestUpdate>adds a requested functionality to ignore files larger than a specified size.</latestUpdate>
 		<install>
-			<download>http://sites.google.com/site/fstellari/cab/AutoSave_dll_1v20.zip?attredirects=0</download>
+			<download>http://sites.google.com/site/fstellari/cab/AutoSave_dll_1v30.zip?attredirects=0</download>
 			<ansi>
 				<copy from="AutoSaveA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
 			<unicode>
 				<copy from="AutoSaveU.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
+			<copy from="license.txt" to="$PLUGINDIR$\doc\AutoSave" />
 		</install>
 	</plugin>
 	<plugin name="CCompletion">
@@ -279,6 +280,27 @@
 			<copy from="FileSwitcher.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
+	<plugin name="FingerText">
+		<unicodeVersion>0.3.2</unicodeVersion>
+		<description>A Snippet plugin with support for multiple hotspots.  Set the shortcut to Tab and remove from the Scintilla tab command for best usage.</description>
+		<author>Tom Lam</author>
+		<homepage>http://sourceforge.net/projects/fingertext/</homepage>
+		<sourceUrl>http://github.com/erinata/FingerText</sourceUrl>
+		<versions>
+			<version number="0.3.2" md5="22fe35562cc4671f140748d1e1ec3001" />
+		</versions>
+		<install>
+			<download>http://downloads.sourceforge.net/project/fingertext/FingerText%20-%200.3.2.zip</download>
+			<copy from="FingerText - 0.3.2\plugins\FingerText.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet).c\*." to="$PLUGINDIR$\FingerText\(snippet).c" />
+			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet).cpp\*." to="$PLUGINDIR$\FingerText\(snippet).cpp"/>
+			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet).do\*." to="$PLUGINDIR$\FingerText\(snippet).do"/>
+			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet).r\*." to="$PLUGINDIR$\FingerText\(snippet).r"/>
+			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet).rb\*." to="$PLUGINDIR$\FingerText\(snippet).rb"/>
+			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet)Global\*." to="$PLUGINDIR$\FingerText\(snippet)Global"/>
+			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet)Makefile\*." to="$PLUGINDIR$\FingerText\(snippet)Makefile"/>
+		</install>
+	</plugin>
 	<plugin name="Function List">
 		<unicodeVersion>2.0.0.0</unicodeVersion>
 		<ansiVersion>1.2.0.0</ansiVersion>
@@ -417,14 +439,37 @@
 			<copy from="HTMLTag-readme.txt" to="$PLUGINDIR$\doc\HTMLTag"/>
 		</install>
 	</plugin>
+	<plugin name="JSLint">
+		<unicodeVersion>0.3.1.104</unicodeVersion>
+		<ansiVersion>0.3.1.105</ansiVersion>
+		<sourceUrl>https://sourceforge.net/projects/jslintnpp/</sourceUrl>
+		<author>Martin Vladic</author>
+		<description>A Notepad++ plugin that allows users to run JSLint (The JavaScript Code Quality Tool) against their open JavaScript files (more about JSLint at http://www.jslint.com/lint.html).</description>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/jslintnpp/0.3.1/JSLintNPP.0.3.1.zip</download>
+				<copy from="JSLintNpp.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/project/jslintnpp/0.3.1/JSLintNPP_ANSI.0.3.1.zip</download>
+				<copy from="JSLintNppA.dll" to="$PLUGINDIR$" validate="true"/>
+			</ansi>
+		</install>
+	</plugin>
 	<plugin name="JSMin">
-		<unicodeVersion>1.5</unicodeVersion>
+		<unicodeVersion>1.6.1</unicodeVersion>
+		<ansiVersion>1.6.1</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/jsminnpp/</sourceUrl>
 		<author>Junwen Sun</author>
 		<description>A Javascript minimizing plugin, uses the JSMin algorithm by Douglas Crockford</description>
 		<homepage>http://sunblog.72pines.com/development-center/jsminnpp/</homepage>
 		<install>
-			<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.05.uni.zip</download>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.6.1.uni.zip</download>
+			</unicode>
+			<ansi>
+				<download>http://downloads.sourceforge.net/project/jsminnpp/Asc/JSMinNPP.1.6.1.asc.zip</download>
+			</ansi>
 			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
@@ -470,6 +515,36 @@
 				<download>http://downloads.sourceforge.net/project/npp-plugins/Log%20Plugin/Log%20Plugin%20v1.0/NppLogPlugin.v1.0.dll.zip</download>
 				<copy from="NppLogPlugin.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
+		</install>
+	</plugin>
+	<plugin name="Lorem Ipsum">
+		<ansiVersion>1.0</ansiVersion>
+		<unicodeVersion>1.0</unicodeVersion>
+		<aliases>
+			<alias name="InsertLoremIpsum" />
+		</aliases>
+		<description>Inserts Lorem Ipsum text.  Lorem Ipsum is a standard text used for print and website layout, before the actual copy text is decided.</description>
+		<author>Alexandru Ionita</author>
+		<sourceUrl>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_src.zip</sourceUrl>
+		<versions>
+			<version number="1.0" md5="f1b7e7842f58cd4c9ea2169c0e47a292" comment="uni"/>
+			<version number="1.0" md5="66fd7ed3794ec6244150dce023fc3d4d" comment="ansi"/>
+		</versions>
+		<install>
+			<ansi>
+				<download>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_ANSI_release.zip</download>
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\InsertLoremIpsumNppPluginA.dll" to="$PLUGINDIR$" />
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\Config\InsertLoremIpsum_stats.cfg" to="$PLUGINDIR$\Config" />
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\license.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+				<copy from="InsertLoremIpsumNppPlugin ANSI release\READ ME.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+			</ansi>
+			<unicode>
+				<download>http://twenfour.com/opensource/InsertLoremIpsum/InsertLoremIpsumNppPlugin_Unicode_release.zip</download>
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\InsertLoremIpsumNppPlugin.dll" to="$PLUGINDIR$" />
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\Config\InsertLoremIpsum_stats.cfg" to="$PLUGINDIR$\Config" />
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\license.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+				<copy from="InsertLoremIpsumNppPlugin Unicode release\READ ME.txt" to="$PLUGINDIR$\doc\LoremIpsum" />
+			</unicode>
 		</install>
 	</plugin>
 	<plugin name="MIME Tools">
@@ -563,6 +638,19 @@
 			<ansi>
 				<copy from="NppAutoIndentA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
+		</install>
+	</plugin>
+	<plugin name="ColdFusion Lexer">
+		<unicodeVersion>0.5.3</unicodeVersion>
+		<author>bbluemel</author>
+		<description>Syntax highlighting, Call tips (Notepad++ 5.8.4 required) and autocomplete for the ColdFusion language</description>
+		<versions>
+			<version number="0.5.3" md5="63e009627d1c07c2064db276c3a22bd3" />
+		</versions>
+		<install>
+			<download>http://bitbucket.org/bbluemel/nppcoldfusion/downloads/nppColdFusion-0.5.3.zip</download>
+			<copy from="nppColdFusion.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="Config\nppColdFusion.xml" to="$CONFIGDIR$" />
 		</install>
 	</plugin>
 	<plugin name="NppCrypt">
@@ -687,6 +775,17 @@
 			<copy from="doc\license_ZLIB.txt" to="$PLUGINDIR$\doc\NppFTP"/>
 		</install>
 	</plugin>
+	<plugin name="NppJumpList">
+		<unicodeVersion>1.2</unicodeVersion>
+		<homepage>http://sourceforge.net/projects/nppjumplist/</homepage>
+		<description>Adds windows 7 jump list support.</description>
+		<author>ahvgeezer</author>
+		<stability>Crash reported on exit of Notepad++</stability>
+		<install>
+			<copy from="NppJumpList.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="readme.txt" to="$PLUGINDIR$\doc\NppJumpList" />
+		</install>
+	</plugin>
 	<plugin name="NppNetNote">
 		<unicodeVersion>0.1.0.0</unicodeVersion>
 		<ansiVersion>0.1.0.0</ansiVersion>
@@ -704,18 +803,20 @@
 		</install>
 	</plugin>
 	<plugin name="Oberon-2 Lexer">
-		<unicodeVersion>0.3</unicodeVersion>
-		<ansiVersion>0.3</ansiVersion>
+		<unicodeVersion>0.3.1</unicodeVersion>
+		<ansiVersion>0.3.1</ansiVersion>
 		<description>Oberon-2 Lexer plugin provides syntax highlighting for the Oberon-2 programming language.</description>
 		<author>Alexander Iljin &lt;AlexIljin@users.SourceForge.net&gt;</author>
 		<versions>
 			<version number="0.3" md5="d0999f6603dfb5153a1ef54c687b271d" comment="unicode"/>
 			<version number="0.3" md5="ef9610e37644482515aa525123cdb8fb" comment="ansi"/>
+			<version number="0.3.1" md5="50875eb73f420b1d5999f252cb93c3dc" comment="unicode"/>
+			<version number="0.3.1" md5="466feab32b1a653c027e09bd9b36e883" comment="ansi"/>
 		</versions>
 		<sourceUrl>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3/Oberon2Lexer.v0.3.zip</sourceUrl>
-		<latestUpdate>First public release.</latestUpdate>
+		<latestUpdate>Bug fixed invalid highlighting of hexadecimal constants (H and X suffixes) if the constant contained lower case characters.</latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3/Oberon2Lexer.v0.3.zip</download>
+			<download>http://downloads.sourceforge.net/project/npp-plugins/Oberon2Lexer/Oberon2Lexer%200.3.1/Oberon2Lexer.v0.3.1.zip</download>
 			<ansi>
 				<copy from="Oberon2Lexer\Oberon2Lexer.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="Oberon2Lexer\Config\Oberon2Lexer.xml" to="$CONFIGDIR$" backup="true"/>
@@ -743,6 +844,25 @@
 			</unicode>
 			<copy from="Obide\Config\Obide.ini" to="$CONFIGDIR$" backup="true"/>
 			<copy from="Obide\*.txt" to="$PLUGINDIR$\doc\Obide"/>
+		</install>
+	</plugin>
+	<plugin name="Open File In Solution">
+		<unicodeVersion>2.0</unicodeVersion>
+		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
+		<description>Lets you index specific folders and possible specific types of resources (xml-, cpp, py-files) for a fast indexing of files.</description>
+		<author>incfred</author>
+		<versions>
+			<version md5="b1c1902fae76a03a5a67981ef5c644c8" number="2.0" />
+		</versions>
+		<dependencies>
+			<plugin name="SolutionHub" />
+			<plugin name="SolutionHubUI" />
+		</dependencies>
+		<install>
+			<download>http://www.incrediblejunior.com/npp_plugins/plugins.zip</download>
+			<copy from="nppplugin_ofis2.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="nppplugin_ofis2.config" to="$CONFIGDIR$" />
+			<copy from="doc\nppplugin_ofis2_help.txt" to="$PLUGINDIR$\doc" />
 		</install>
 	</plugin>
 	<plugin name="Perforce actions">
@@ -1089,35 +1209,81 @@
 		</install>
 	</plugin>
 	<plugin name="SnippetPlus">
-		<unicodeVersion>1.2</unicodeVersion>
-		<description>.NET 2.0 Required!  Code snippet and Surround With plugin for Notepad++. Write snippet name and replace it with real code or select some text and surround it with something like IF,TryCatch,Table,Div or whatever.Will give you hint if you don't remember the snippet name</description>
+		<unicodeVersion>1.3</unicodeVersion>
+		<description>.NET 3.5 Required!  Code snippet and Surround With plugin for Notepad++. Write snippet name and replace it with real code or select some text and surround it with something like IF,TryCatch,Table,Div or whatever.Will give you hint if you don't remember the snippet name\nNote that the latest version may be shown, even though you have an older version installed.  Reinstall to ensure you have the latest version.</description>
 		<author>Rajesh Kumar</author>
 		<homepage>http://sourceforge.net/projects/snippetplus/</homepage>
 		<versions>
-			<version number="1.2" md5="0485e56f7786f8c91d11164acc954bd6" comment="this is both 1.1 and 1.2 - the .NET dll has changed but not the wrapper" />
+			<version number="1.3" md5="0485e56f7786f8c91d11164acc954bd6" comment="this is 1.1, 1.2 and 1.3 - the .NET dll has changed but not the wrapper" />
 		</versions>
+		<latestUpdate>+ Added rename functionality for snippets.\n + Added functionality to Add, Delete, Rename languages\n - Data is now kept filtered after deleting an item or changing language.\n - Fixed a minor bug.\n When Notepad++ started, a message box was shown telling:\n "SurroundWith LoadData: Value cannot be null. Parameter name: value".\n - Fixed a bug.\n (SnippetPlus.xml was opened, edited manually and saved in Notepad++. Reload was not pressed and Notepad++ was closed. The edited data was lost when you reopened the SnippetPlus.xml. It was due to a bug that saved the file from memory to save "Use Surround With" status on Notepad++ exit. It started from version 1.2 when I introduced the options functionality)</latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/snippetplus/SnippetPlus_V1.2_Release.zip</download>
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus.xml" to="$CONFIGDIR$" backup="true" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus\SnippetPlusPlus.dll" to="$PLUGINDIR$\SnippetPlus" validate="true" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus_Changelog.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
-			<copy from="SnippetPlus_V1.2_Release\SnippetPlus_ReadMe.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
+			<download>http://downloads.sourceforge.net/project/snippetplus/SnippetPlus_V1.3_Release.zip</download>
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus.xml" to="$CONFIGDIR$" backup="true" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus\SnippetPlusPlus.dll" to="$PLUGINDIR$\SnippetPlus" validate="true" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus_Changelog.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
+			<copy from="SnippetPlus_V1.3_Release\SnippetPlus_ReadMe.txt" to="$PLUGINDIR$\doc\SnippetPlus" />
 		</install>
 	</plugin>
 	<plugin name="Snippets">
-		<unicodeVersion>0.3</unicodeVersion>
+		<unicodeVersion>0.5</unicodeVersion>
 		<description>Adds the possibility to add code snippets to the current document by selecting it from a simple list.</description>
 		<author>Frank Fesevur</author>
 		<homepage>http://www.fesevur.com/nppsnippets</homepage>
+		<latestUpdate>- The plug-in remembers if it was shown when NPP is closed\n- The focus is put back on the edit window after inserting a snippet.</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://www.fesevur.com/downloads/NppSnippets-030.zip</download>
+				<download>http://www.fesevur.com/downloads/NppSnippets-050.zip</download>
 				<copy from="NppSnippets.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="NppSnippets\SQL\*.sql" to="$PLUGINDIR$\NppSnippets"/>
 				<copy from="NppSnippets\Docs\*.html" to="$PLUGINDIR$\doc\NppSnippets"/>
 				<copy from="NppSnippets\Docs\*.pdf" to="$PLUGINDIR$\doc\NppSnippets"/>
+				<copy from="Config\NppSnippets.sqlite" to="$CONFIGDIR$" backup="true"/>
 			</unicode>
+		</install>
+	</plugin>
+	<plugin name="SolutionHub">
+		<unicodeVersion>2.0</unicodeVersion>
+		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
+		<description>Base requirement for several plugins from incfred</description>
+		<versions>
+			<version number="2.0" md5="ac8c103085576b95ace2bbbb7dee7999" />
+		</versions>
+		<install>
+			<download>http://www.incrediblejunior.com/npp_plugins/plugins.zip</download>
+			<copy from="nppplugin_solutionhub.dll" to="$PLUGINDIR$" validate="true"/>
+		</install>
+	</plugin>
+	<plugin name="SolutionHubUI">
+		<unicodeVersion>2.0</unicodeVersion>
+		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
+		<description>Base requirement for several plugins from incfred</description>
+		<versions>
+			<version number="2.0" md5="49e65e9cfc3cd8931dce64b957b994ab" />
+		</versions>
+		<install>
+			<download>http://www.incrediblejunior.com/npp_plugins/plugins.zip</download>
+			<copy from="nppplugin_SolutionHubUI.dll" to="$PLUGINDIR$" validate="true"/>
+		</install>
+	</plugin>
+	<plugin name="Solution Tools">
+		<unicodeVersion>2.0</unicodeVersion>
+		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
+		<description>Currently it is only a 'goto file' implementation. Ex. stand on a line, press whatever shortcut you have bound to the GOTO command on a line like :\n#include "somefile.h"\nor\nrequire 'some_path/to_a_luafile'</description>
+		<author>incfred</author>
+		<versions>
+			<version md5="9ff44f6f126bb81fd7061879735d74d5" number="2.0" />
+		</versions>
+		<dependencies>
+			<plugin name="SolutionHub" />
+			<plugin name="SolutionHubUI" />
+		</dependencies>
+		<install>
+			<download>http://www.incrediblejunior.com/npp_plugins/plugins.zip</download>
+			<copy from="nppplugin_solutiontools.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="nppplugin_solutiontools.config" to="$CONFIGDIR$" />
+			<copy from="doc\nppplugin_solutiontools_help.txt" to="$PLUGINDIR$\doc" />
 		</install>
 	</plugin>
 	<plugin name="Source Cookifier">
@@ -1255,19 +1421,22 @@
 		</install>
 	</plugin>
 	<plugin name="TagsView">
-		<unicodeVersion>1.0</unicodeVersion>
+		<unicodeVersion>1.0.3</unicodeVersion>
 		<description>TagsView is a generic plugin which provides user interface for ctags parsed result. \nCurrently supported editors are Notepad++ and AkelPad. \nPowered by Win32++ (by David Nash) and by Exuberant Ctags (by Darren Hiebert). \nInspired by FunctionList plugin (by Jens Lorenz) for Notepad++ text editor (by Don HO).</description>
 		<author>Dovgan Vitaliy</author>
 		<versions>
 			<version number="1.0" md5="11e02b00ba8f7822621500ce630f0545" />
+			<version number="1.0.3" md5="df0f3b4bc8af0c74898dbbb6a7030d89" />
 		</versions>
+		<latestUpdate>+ now fully supports input files in UCS-2 with BOM and UTF-8 with BOM  \n- different fixes &amp; updates \n* a lot of internal improvements  \n* improvements in caret navigation  \n* TagsDlg: printed character goes directly to TagFilter\n* TagsDlg: Esc clears the filter\n* TagsDlg: Enter in Tree/List is the same as double-click\n* TagFilter: Ctrl+BS erases the text from right to left\n* TagFilter: Ctrl+Del erases the text from left to right\n* win32++ updated to 7.0.2\n* icon added (created by se7h)</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/tagsview/TagsView%20for%20Notepad%2B%2B/TagsView_Npp_01alpha.zip</download>
+				<download>http://downloads.sourceforge.net/project/tagsview/TagsView%20for%20Notepad%2B%2B/TagsView_Npp_03beta.zip</download>
 				<copy from="TagsView\ctags.exe" to="$PLUGINDIR$\TagsView" validate="true" />
 				<copy from="TagsView\*.html" to="$PLUGINDIR$\TagsView" />
 				<copy from="TagsView\README" to="$PLUGINDIR$\TagsView" />
 				<copy from="TagsView\COPYING" to="$PLUGINDIR$\TagsView" />
+				<copy from="TagsView\ctags.opt" to="$PLUGINDIR$\TagsView" />
 				<copy from="TagsView\.ctags" to="$PLUGINDIR$\TagsView" />
 				<copy from="doc\TagsView.txt" to="$PLUGINDIR$\doc\TagsView" />
 				<copy from="TagsView.dll" to="$PLUGINDIR$" validate="true" />
@@ -1292,6 +1461,24 @@
 				<download>http://downloads.sourceforge.net/project/npp-plugins/TextFX/TextFX%20v0.25/NPPTextFX.v0.25.bin.zip</download>
 				<copy from="NppTextFXA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
+		</install>
+	</plugin>
+	<plugin name="Tortoise SVN">
+		<unicodeVersion>2.0</unicodeVersion>
+		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
+		<description>Main operations for SVN, with a concept of a root solution directory.  Note: No connection to tigris TortoiseSVN.</description>
+		<author>incfred</author>
+		<versions>
+			<version md5="22f0c57d4e0fa1ab25ef7671da7a84c2" number="2.0" />
+		</versions>
+		<dependencies>
+			<plugin name="SolutionHub" />
+			<plugin name="SolutionHubUI" />
+		</dependencies>
+		<install>
+			<download>http://www.incrediblejunior.com/npp_plugins/plugins.zip</download>
+			<copy from="nppplugin_svn.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="doc\nppplugin_tsvn_help.txt" to="$PLUGINDIR$\doc" />
 		</install>
 	</plugin>
 	<plugin name="UniversalIndentGUI">
@@ -1371,6 +1558,18 @@
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/WindowManager_1_1_2_dll.zip</download>
 				<copy from="WindowManager.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
+		</install>
+	</plugin>
+	<plugin name="WLangLexer">
+		<unicodeVersion>4.1.0.16</unicodeVersion>
+		<description>Lexer for the WDScript language: WDScript and Linux portability of WDScript Project. WDScript is a CGI like php where native language is W-Langage from PCSoft (english and french). Can be used to access Hyperfile Databases from a web server.</description>
+		<author>tpruvot</author>
+		<install>
+			<download>http://downloads.sourceforge.net/project/wdscript/Syntax%20Highlighting/WDScript%202.5%20Notepad%2B%2B%20Syntax%20File/NPP.Plugin.WLangLexer.v4.1.0.16-wd16038f.zip</download>
+			<copy from="WLangLexer.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="APIs\WLang.xml" to="$PLUGINDIR$\APIs" />
+			<copy from="Config\WLangLexer.xml" to="$CONFIGDIR$" />
+			<copy from="readme.txt" to="$PLUGINDIR$\doc\WLangLexer" />
 		</install>
 	</plugin>
 	<plugin name="XBrackets Lite">
