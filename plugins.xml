@@ -847,21 +847,21 @@
 		</install>
 	</plugin>
 	<plugin name="Open File In Solution">
-		<unicodeVersion>2.0</unicodeVersion>
+		<unicodeVersion>2.176</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
 		<description>Lets you index specific folders and possible specific types of resources (xml-, cpp, py-files) for a fast indexing of files.</description>
 		<author>incfred</author>
 		<versions>
-			<version md5="b1c1902fae76a03a5a67981ef5c644c8" number="2.0" />
+			<version md5="b1c1902fae76a03a5a67981ef5c644c8" number="2.176" />
 		</versions>
 		<dependencies>
 			<plugin name="SolutionHub" />
 			<plugin name="SolutionHubUI" />
 		</dependencies>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/plugins.zip</download>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r1/ofis2.zip</download>
 			<copy from="nppplugin_ofis2.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="nppplugin_ofis2.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_ofis2.config" to="$CONFIGDIR$" />
 			<copy from="doc\nppplugin_ofis2_help.txt" to="$PLUGINDIR$\doc" />
 		</install>
 	</plugin>
@@ -1244,45 +1244,48 @@
 		</install>
 	</plugin>
 	<plugin name="SolutionHub">
-		<unicodeVersion>2.0</unicodeVersion>
+		<unicodeVersion>2.186</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
 		<description>Base requirement for several plugins from incfred</description>
 		<versions>
 			<version number="2.0" md5="ac8c103085576b95ace2bbbb7dee7999" />
+			<version number="2.186" md5="df4013cedbe175882467e204e0f10c6e" />
 		</versions>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/plugins.zip</download>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r186/solutionhub.zip</download>
 			<copy from="nppplugin_solutionhub.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
 	<plugin name="SolutionHubUI">
-		<unicodeVersion>2.0</unicodeVersion>
+		<unicodeVersion>2.178</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
-		<description>Base requirement for several plugins from incfred</description>
+		<description>Basic UI to create and setup solutions used by the SolutionHub.</description>
 		<versions>
-			<version number="2.0" md5="49e65e9cfc3cd8931dce64b957b994ab" />
+			<version number="2.178" md5="e9464679cd22fe5bb3cc5a1520b6f732" />
 		</versions>
+		<dependencies>
+			<plugin name="SolutionHub" />
+		</dependencies>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/plugins.zip</download>
-			<copy from="nppplugin_SolutionHubUI.dll" to="$PLUGINDIR$" validate="true"/>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r1/solutionhub_ui.zip</download>
+			<copy from="nppplugin_solutionhub_ui.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
 	<plugin name="Solution Tools">
-		<unicodeVersion>2.0</unicodeVersion>
+		<unicodeVersion>2.176</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
 		<description>Currently it is only a 'goto file' implementation. Ex. stand on a line, press whatever shortcut you have bound to the GOTO command on a line like :\n#include "somefile.h"\nor\nrequire 'some_path/to_a_luafile'</description>
 		<author>incfred</author>
 		<versions>
-			<version md5="9ff44f6f126bb81fd7061879735d74d5" number="2.0" />
+			<version md5="9ff44f6f126bb81fd7061879735d74d5" number="2.176" />
 		</versions>
 		<dependencies>
-			<plugin name="SolutionHub" />
-			<plugin name="SolutionHubUI" />
+			<plugin name="Open File In Solution" />
 		</dependencies>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/plugins.zip</download>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r1/solutiontools.zip</download>
 			<copy from="nppplugin_solutiontools.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="nppplugin_solutiontools.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_solutiontools.config" to="$CONFIGDIR$" />
 			<copy from="doc\nppplugin_solutiontools_help.txt" to="$PLUGINDIR$\doc" />
 		</install>
 	</plugin>
@@ -1464,21 +1467,23 @@
 		</install>
 	</plugin>
 	<plugin name="Tortoise SVN">
-		<unicodeVersion>2.0</unicodeVersion>
+		<unicodeVersion>2.186</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
-		<description>Main operations for SVN, with a concept of a root solution directory.  Note: No connection to tigris TortoiseSVN.</description>
+		<description>Main operations for SVN, with a concept of a root solution directory.  NOTE: The plugin uses Tortoise SVN internally so you have to have this installed. Available at http://tortoisesvn.tigris.org/</description>
 		<author>incfred</author>
 		<versions>
 			<version md5="22f0c57d4e0fa1ab25ef7671da7a84c2" number="2.0" />
+			<version md5="a9687fa8ddd0621783fa4c145e04d4bb" number="2.186" />
 		</versions>
 		<dependencies>
 			<plugin name="SolutionHub" />
 			<plugin name="SolutionHubUI" />
 		</dependencies>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/plugins.zip</download>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r186/tsvn.zip</download>
 			<copy from="nppplugin_svn.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="doc\nppplugin_tsvn_help.txt" to="$PLUGINDIR$\doc" />
+			<copy from="config\nppplugin_tsvn.config" to="$CONFIGDIR$" />
 		</install>
 	</plugin>
 	<plugin name="UniversalIndentGUI">
