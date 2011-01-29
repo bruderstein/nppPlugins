@@ -269,4 +269,8 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('b
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('ac8c103085576b95ace2bbbb7dee7999','nppplugin_solutionhub.dll','','2011-01-17','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('49e65e9cfc3cd8931dce64b957b994ab','nppplugin_solutionhub_ui.dll','','2011-01-17','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('22fe35562cc4671f140748d1e1ec3001','FingerText.dll','','2011-01-17','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('df4013cedbe175882467e204e0f10c6e','nppplugin_solutionhub.dll','','2011-01-29','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('e9464679cd22fe5bb3cc5a1520b6f732','nppplugin_solutionhub_ui.dll','','2011-01-29','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('a9687fa8ddd0621783fa4c145e04d4bb','nppplugin_svn.dll','','2011-01-29','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4a7b0234e9406bd0a4694434811a258e','FingerText.dll','','2011-01-29','ok');
 commit;

@@ -281,7 +281,7 @@
 		</install>
 	</plugin>
 	<plugin name="FingerText">
-		<unicodeVersion>0.3.2</unicodeVersion>
+		<unicodeVersion>0.4.11</unicodeVersion>
 		<description>A Snippet plugin with support for multiple hotspots.  Set the shortcut to Tab and remove from the Scintilla tab command for best usage.</description>
 		<author>Tom Lam</author>
 		<homepage>http://sourceforge.net/projects/fingertext/</homepage>
@@ -290,15 +290,11 @@
 			<version number="0.3.2" md5="22fe35562cc4671f140748d1e1ec3001" />
 		</versions>
 		<install>
-			<download>http://downloads.sourceforge.net/project/fingertext/FingerText%20-%200.3.2.zip</download>
-			<copy from="FingerText - 0.3.2\plugins\FingerText.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet).c\*." to="$PLUGINDIR$\FingerText\(snippet).c" />
-			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet).cpp\*." to="$PLUGINDIR$\FingerText\(snippet).cpp"/>
-			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet).do\*." to="$PLUGINDIR$\FingerText\(snippet).do"/>
-			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet).r\*." to="$PLUGINDIR$\FingerText\(snippet).r"/>
-			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet).rb\*." to="$PLUGINDIR$\FingerText\(snippet).rb"/>
-			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet)Global\*." to="$PLUGINDIR$\FingerText\(snippet)Global"/>
-			<copy from="FingerText - 0.3.2\plugins\FingerText\(snippet)Makefile\*." to="$PLUGINDIR$\FingerText\(snippet)Makefile"/>
+			<download>http://www.brotherstone.co.uk/npp/FingerText0411.zip</download>
+			<copy from="FingerText.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="FingerText0.4.11SampleSnippets.ftd" to="$CONFIGDIR$" />
+			<copy from="Changelog.txt" to="$PLUGINDIR$\doc\FingerText" />
+			<copy from="Readme.rdoc" to="$PLUGINDIR$\doc\FingerText" />
 		</install>
 	</plugin>
 	<plugin name="Function List">
