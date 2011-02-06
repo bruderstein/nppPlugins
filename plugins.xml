@@ -862,7 +862,7 @@
 		<install>
 			<download>http://www.incrediblejunior.com/npp_plugins/downloads/ofis2_r194.zip</download>
 			<copy from="nppplugin_ofis2.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="config\nppplugin_ofis2.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_ofis2.config" to="$PLUGINDIR$\config" />
 			<copy from="doc\nppplugin_ofis2_help.txt" to="$PLUGINDIR$\doc" />
 		</install>
 	</plugin>
@@ -1275,7 +1275,7 @@
 	<plugin name="Solution Tools">
 		<unicodeVersion>2.193</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
-		<description>Configurable priority based fileswitching(most common used when switching .h<->.cpp). Configurable what extensions map to which targets and in what order.\n'goto file' implementation, Ex. stand on a line, press whatever shortcut(or left mouseclick on the line) you have bound to the GOTO command on a line like :\n#include "somefile.h"\nor\nrequire 'some_path/to_a_luafile'</description>
+		<description>Configurable priority based fileswitching(most commonly used when switching between .h and .cpp). Configurable what extensions map to which targets and in what order.\n'goto file' implementation, Ex. stand on a line, press whatever shortcut(or left mouseclick on the line) you have bound to the GOTO command on a line like :\n#include "somefile.h"\nor\nrequire 'some_path/to_a_luafile'</description>
 		<author>incfred</author>
 		<versions>
 			<version md5="9ff44f6f126bb81fd7061879735d74d5" number="2.176" />
@@ -1287,9 +1287,8 @@
 		<install>
 			<download>http://www.incrediblejunior.com/npp_plugins/downloads/solutiontools_r193.zip</download>
 			<copy from="nppplugin_solutiontools.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="config\nppplugin_solutiontools.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_solutiontools.config" to="$PLUGINDIR$\config" />
 			<copy from="doc\nppplugin_solutiontools_help.txt" to="$PLUGINDIR$\doc" />
-			<copy from="config\nppplugin_solutiontools.config" to="$CONFIGDIR$" />
 		</install>
 	</plugin>
 	<plugin name="Source Cookifier">
@@ -1487,7 +1486,7 @@
 			<download>http://www.incrediblejunior.com/npp_plugins/downloads/tsvn_r195.zip</download>
 			<copy from="nppplugin_svn.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="doc\nppplugin_tsvn_help.txt" to="$PLUGINDIR$\doc" />
-			<copy from="config\nppplugin_tsvn.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_tsvn.config" to="$PLUGINDIR$\config" />
 		</install>
 	</plugin>
 	<plugin name="UniversalIndentGUI">
