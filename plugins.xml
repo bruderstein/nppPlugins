@@ -843,21 +843,22 @@
 		</install>
 	</plugin>
 	<plugin name="Open File In Solution">
-		<unicodeVersion>2.176</unicodeVersion>
+		<unicodeVersion>2.194</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
 		<description>Lets you index specific folders and possible specific types of resources (xml-, cpp, py-files) for a fast indexing of files.</description>
 		<author>incfred</author>
 		<versions>
 			<version md5="b1c1902fae76a03a5a67981ef5c644c8" number="2.176" />
+			<version md5="596ecdc4a79a8ca8c6cb8b626184af86" number="2.194" />
 		</versions>
 		<dependencies>
 			<plugin name="SolutionHub" />
 			<plugin name="SolutionHubUI" />
 		</dependencies>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r1/ofis2.zip</download>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/ofis2_r194.zip</download>
 			<copy from="nppplugin_ofis2.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="config\nppplugin_ofis2.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_ofis2.config" to="$PLUGINDIR$\config" />
 			<copy from="doc\nppplugin_ofis2_help.txt" to="$PLUGINDIR$\doc" />
 		</install>
 	</plugin>
@@ -1268,20 +1269,21 @@
 		</install>
 	</plugin>
 	<plugin name="Solution Tools">
-		<unicodeVersion>2.176</unicodeVersion>
+		<unicodeVersion>2.193</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
-		<description>Currently it is only a 'goto file' implementation. Ex. stand on a line, press whatever shortcut you have bound to the GOTO command on a line like :\n#include "somefile.h"\nor\nrequire 'some_path/to_a_luafile'</description>
+		<description>Configurable priority based fileswitching(most commonly used when switching between .h and .cpp). Configurable what extensions map to which targets and in what order.\n'goto file' implementation, Ex. stand on a line, press whatever shortcut(or left mouseclick on the line) you have bound to the GOTO command on a line like :\n#include "somefile.h"\nor\nrequire 'some_path/to_a_luafile'</description>
 		<author>incfred</author>
 		<versions>
 			<version md5="9ff44f6f126bb81fd7061879735d74d5" number="2.176" />
+			<version md5="528118dec86e9deee54e4362b6ae6012" number="2.193" />
 		</versions>
 		<dependencies>
 			<plugin name="Open File In Solution" />
 		</dependencies>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r1/solutiontools.zip</download>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/solutiontools_r193.zip</download>
 			<copy from="nppplugin_solutiontools.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="config\nppplugin_solutiontools.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_solutiontools.config" to="$PLUGINDIR$\config" />
 			<copy from="doc\nppplugin_solutiontools_help.txt" to="$PLUGINDIR$\doc" />
 		</install>
 	</plugin>
@@ -1463,23 +1465,24 @@
 		</install>
 	</plugin>
 	<plugin name="Tortoise SVN">
-		<unicodeVersion>2.186</unicodeVersion>
+		<unicodeVersion>2.195</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
 		<description>Main operations for SVN, with a concept of a root solution directory.  NOTE: The plugin uses Tortoise SVN internally so you have to have this installed. Available at http://tortoisesvn.tigris.org/</description>
 		<author>incfred</author>
 		<versions>
 			<version md5="22f0c57d4e0fa1ab25ef7671da7a84c2" number="2.0" />
 			<version md5="a9687fa8ddd0621783fa4c145e04d4bb" number="2.186" />
+			<version md5="975da2ce9a19af6118286c581f28b7a1" number="2.195" />
 		</versions>
 		<dependencies>
 			<plugin name="SolutionHub" />
 			<plugin name="SolutionHubUI" />
 		</dependencies>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r186/tsvn.zip</download>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/tsvn_r195.zip</download>
 			<copy from="nppplugin_svn.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="doc\nppplugin_tsvn_help.txt" to="$PLUGINDIR$\doc" />
-			<copy from="config\nppplugin_tsvn.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_tsvn.config" to="$PLUGINDIR$\config" />
 		</install>
 	</plugin>
 	<plugin name="UniversalIndentGUI">
