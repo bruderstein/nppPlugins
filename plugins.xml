@@ -469,6 +469,23 @@
 			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
+<plugin name="JSONViewer">
+		<unicodeVersion>1.0</unicodeVersion>
+		<homepage>http://nppjsonviewer.sourceforge.net/</homepage>
+		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
+		<author>kapilratnani</author>
+		<versions>
+			<version number="1.0" md5="39a208efce0900dfafc94c247220631d" comment="unicode"/>
+		</versions>
+		<aliases>
+			<alias name="JSONViewer" />
+		</aliases>
+		<install>
+			<download>http://downloads.sourceforge.net/project/nppjsonviewer/JSONViewer%20Unicode/NPPJSONViewer.zip</download>
+				<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="README" to="$PLUGINDIR$\doc\NPPJSONViewer"/>
+		</install>
+</plugin>
 	<plugin name="Language Help">
 		<unicodeVersion>1.3.3</unicodeVersion>
 		<ansiVersion>1.3.3</ansiVersion>
@@ -1641,24 +1658,4 @@
 		</unicode>
 	</install>
 </plugin>
-<plugin name="JSONViewer">
-		<unicodeVersion>1.0</unicodeVersion>
-		<homepage>http://nppjsonviewer.sourceforge.net/</homepage>
-		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
-		<author>kapilratnani</author>
-		<versions>
-			<version number="1.0" md5="39a208efce0900dfafc94c247220631d" comment="unicode"/>
-		</versions>
-		<aliases>
-			<alias name="JSONView" />
-		</aliases>
-		<install>
-			<download>https://downloads.sourceforge.net/project/nppjsonviewer/JSONViewer%20Unicode/NPPJSONViewer.zip?r= ts=1298036114&use_mirror=nchc</download>
-			<unicode>
-				<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$" validate="true"/>
-			</unicode>
-			<copy from="README" to="$PLUGINDIR$\doc\NPPJSONViewer"/>
-		</install>
-</plugin>
-
 </plugins>
