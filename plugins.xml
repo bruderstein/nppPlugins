@@ -473,6 +473,8 @@
 		<unicodeVersion>1.0</unicodeVersion>
 		<homepage>http://nppjsonviewer.sourceforge.net/</homepage>
 		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
+                <stability>Good</stability>
+                <category>Web</category>
 		<author>Kapil Ratnani</author>
 		<versions>
 			<version number="1.0" md5="39a208efce0900dfafc94c247220631d" comment="unicode" />
