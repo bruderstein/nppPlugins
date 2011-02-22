@@ -13,6 +13,19 @@
 		<pluginName md5="301c72341ba758b3cdfc8a56d576c7f0" name="Switcher" comment="ansi - capitalisation of S"/>
 		<pluginName md5="5a19bd60aa18e4454f1c4a6432ae5a72" name="Switcher" comment="unicode"/>
 	</pluginNames>
+	<plugin name="AnalysePlugin">
+		<unicodeVersion>1.6.8</unicodeVersion>
+		<description>AnalysePlugin will help you to search for more than one search pattern at a time.  Great for analysing log files.</description>
+		<author>Matthias Hessling</author>
+		<versions>
+			<version number="1.6.8" md5="f0ada8fc86c6b8304f27b8f211398e3c" />
+		</versions>
+		<install>
+			<download>http://downloads.sourceforge.net/project/analyseplugin/binaries/v01.06-R8.zip</download>
+			<copy from="AnalysePlugin\AnalysePlugin.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin" />
+		</install>
+	</plugin>
 	<plugin name="AutoSave">
 		<ansiVersion>1.3</ansiVersion>
 		<unicodeVersion>1.3</unicodeVersion>
@@ -109,6 +122,19 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="ColdFusion Lexer">
+		<unicodeVersion>0.5.3</unicodeVersion>
+		<author>bbluemel</author>
+		<description>Syntax highlighting, Call tips (Notepad++ 5.8.4 required) and autocomplete for the ColdFusion language</description>
+		<versions>
+			<version number="0.5.3" md5="63e009627d1c07c2064db276c3a22bd3" />
+		</versions>
+		<install>
+			<download>http://bitbucket.org/bbluemel/nppcoldfusion/downloads/nppColdFusion-0.5.3.zip</download>
+			<copy from="nppColdFusion.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="Config\nppColdFusion.xml" to="$CONFIGDIR$" />
+		</install>
+	</plugin>	
 	<plugin name="Color Picker">
 		<ansiVersion>1.3</ansiVersion>
 		<description>A color picker which translates your selected colour in hexadecimal.</description>
@@ -469,25 +495,21 @@
 			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-        <plugin name="JSONViewer">
+	<plugin name="JSON Viewer">
 		<unicodeVersion>1.0</unicodeVersion>
 		<homepage>http://nppjsonviewer.sourceforge.net/</homepage>
 		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
-                <stability>Good</stability>
-                <category>Web</category>
+		<category>Web</category>
 		<author>Kapil Ratnani</author>
 		<versions>
-			<version number="1.0" md5="39a208efce0900dfafc94c247220631d" comment="unicode" />
+			<version number="1.0" md5="cce54c17517b9d0c64654dd1a65f9c18" comment="unicode" />
 		</versions>
-		<aliases>
-			<alias name="JSONViewer" />
-		</aliases>
 		<install>
 			<download>http://downloads.sourceforge.net/project/nppjsonviewer/JSONViewer%20Unicode/NPPJSONViewer.zip</download>
 			<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="README" to="$PLUGINDIR$\doc\NPPJSONViewer" />
+			<copy from="NPPJSONViewer\README" to="$PLUGINDIR$\doc\NPPJSONViewer" />
 		</install>
-        </plugin>
+	</plugin>
 	<plugin name="Language Help">
 		<unicodeVersion>1.3.3</unicodeVersion>
 		<ansiVersion>1.3.3</ansiVersion>
@@ -655,19 +677,6 @@
 			</ansi>
 		</install>
 	</plugin>
-	<plugin name="ColdFusion Lexer">
-		<unicodeVersion>0.5.3</unicodeVersion>
-		<author>bbluemel</author>
-		<description>Syntax highlighting, Call tips (Notepad++ 5.8.4 required) and autocomplete for the ColdFusion language</description>
-		<versions>
-			<version number="0.5.3" md5="63e009627d1c07c2064db276c3a22bd3" />
-		</versions>
-		<install>
-			<download>http://bitbucket.org/bbluemel/nppcoldfusion/downloads/nppColdFusion-0.5.3.zip</download>
-			<copy from="nppColdFusion.dll" to="$PLUGINDIR$" validate="true"/>
-			<copy from="Config\nppColdFusion.xml" to="$CONFIGDIR$" />
-		</install>
-	</plugin>
 	<plugin name="NppCrypt">
 		<unicodeVersion>1.0.0.6</unicodeVersion>
 		<author>Max Waghals</author>
@@ -791,12 +800,13 @@
 		</install>
 	</plugin>
 	<plugin name="NppJumpList">
-		<unicodeVersion>1.2</unicodeVersion>
+		<unicodeVersion>1.2.1</unicodeVersion>
 		<homepage>http://sourceforge.net/projects/nppjumplist/</homepage>
 		<description>Adds windows 7 jump list support.</description>
+		<latestUpdate>Crash bug fixed</latestUpdate>
 		<author>ahvgeezer</author>
-		<stability>Crash reported on exit of Notepad++</stability>
 		<install>
+			<download>http://downloads.sourceforge.net/project/nppjumplist/1.2.1/NppJumpList.1.2.1.bin.zip</download>
 			<copy from="NppJumpList.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="readme.txt" to="$PLUGINDIR$\doc\NppJumpList" />
 		</install>
@@ -1073,6 +1083,13 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="Rainlexer">
+		<!--<unicodeVersion>1.0</unicodeVersion> - No zip version yet-->
+		<author>poiru</author>
+		<description>A plugin for Notepad++ 5.8.x that allows proper syntax highlighting for Rainmeter .ini skin files.</description>
+		<install>
+		</install>
+	</plugin>
 	<plugin name="RegEx Helper">
 		<unicodeVersion>0.0.2.2</unicodeVersion>
 		<author>lbarsanti</author>
@@ -1084,7 +1101,7 @@
 		</versions>
 		<install>
 			<unicode>
-				<download filename="nppRegEx.dll">http://www.brotherstone.co.uk/npp/nppRegEx/nppRegEx.zip</download>
+				<download>http://www.brotherstone.co.uk/npp/nppRegEx/nppRegEx.zip</download>
 				<copy from="nppRegEx.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
 		</install>
@@ -1190,13 +1207,17 @@
 	</plugin>
 	<plugin name="SecurePad">
 		<ansiVersion>1.0</ansiVersion>
+		<unicodeVersion>2.0</unicodeVersion>
 		<description>With this you can encrypt/decrypt whole documents or selected text with your own key.  It is useful for storing sensitive information like logins and you don't want them lying around in a plaintext file. </description>
 		<author>Dominic Tobias</author>
 		<install>
 			<ansi>
 				<download>http://downloads.sourceforge.net/project/npp-plugins/SecurePad/SecurePad%201.0/SecurePad.v1.0.bin.zip</download>
-				<copy from="SecurePad.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/SecurePad/SecurePad%202.0/SecurePad2.0.zip</download>
+			</unicode>
+			<copy from="SecurePad.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
 	<plugin name="Select 'N' Launch">
