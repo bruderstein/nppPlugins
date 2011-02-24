@@ -281,7 +281,7 @@
 		</install>
 	</plugin>
 	<plugin name="FingerText">
-		<unicodeVersion>0.4.11</unicodeVersion>
+		<unicodeVersion>0.5.0</unicodeVersion>
 		<description>A Snippet plugin with support for multiple hotspots.  Set the shortcut to Tab and remove from the Scintilla tab command for best usage.</description>
 		<author>Tom Lam</author>
 		<homepage>http://sourceforge.net/projects/fingertext/</homepage>
@@ -290,9 +290,9 @@
 			<version number="0.3.2" md5="22fe35562cc4671f140748d1e1ec3001" />
 		</versions>
 		<install>
-			<download>http://www.brotherstone.co.uk/npp/FingerText0411.zip</download>
+			<download>http://downloads.sourceforge.net/project/fingertext/FingerText%20-%200.5.0.zip</download>
 			<copy from="FingerText.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="FingerText0.4.11SampleSnippets.ftd" to="$CONFIGDIR$" />
+			<copy from="FingerText0.5.0SampleSnippets.ftd" to="$CONFIGDIR$" />
 			<copy from="Changelog.txt" to="$PLUGINDIR$\doc\FingerText" />
 			<copy from="Readme.rdoc" to="$PLUGINDIR$\doc\FingerText" />
 		</install>
@@ -1278,7 +1278,8 @@
 			<version md5="528118dec86e9deee54e4362b6ae6012" number="2.193" />
 		</versions>
 		<dependencies>
-			<plugin name="Open File In Solution" />
+			<plugin name="SolutionHub" />
+			<plugin name="SolutionHubUI" />
 		</dependencies>
 		<install>
 			<download>http://www.incrediblejunior.com/npp_plugins/downloads/solutiontools_r193.zip</download>
