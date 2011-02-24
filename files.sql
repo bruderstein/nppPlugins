@@ -278,4 +278,8 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('5
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('df4013cedbe175882467e204e0f10c6e','nppplugin_solutionhub.dll','','2011-02-06','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('528118dec86e9deee54e4362b6ae6012','nppplugin_solutiontools.dll','','2011-02-06','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('975da2ce9a19af6118286c581f28b7a1','nppplugin_svn.dll','','2011-02-06','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('a0da6e758955d535c67a34a7500913ea','SecurePad.dll','','2011-02-22','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('33de868c466c340963e0d3371d2bc7ad','NppJumpList.dll','','2011-02-22','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('f0ada8fc86c6b8304f27b8f211398e3c','AnalysePlugin.dll','','2011-02-22','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('cce54c17517b9d0c64654dd1a65f9c18','NPPJSONViewer.dll','','2011-02-22','ok');
 commit;
