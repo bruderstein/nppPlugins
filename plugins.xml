@@ -134,7 +134,7 @@
 			<copy from="nppColdFusion.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="Config\nppColdFusion.xml" to="$CONFIGDIR$" />
 		</install>
-	</plugin>	
+	</plugin>
 	<plugin name="Color Picker">
 		<ansiVersion>1.3</ansiVersion>
 		<description>A color picker which translates your selected colour in hexadecimal.</description>
@@ -1084,11 +1084,9 @@
 		</install>
 	</plugin>
 	<plugin name="Rainlexer">
-		<!--<unicodeVersion>1.0</unicodeVersion> - No zip version yet-->
-		<author>poiru</author>
+		<!--<unicodeVersion>1.0</unicodeVersion> - No zip version yet--><author>poiru</author>
 		<description>A plugin for Notepad++ 5.8.x that allows proper syntax highlighting for Rainmeter .ini skin files.</description>
-		<install>
-		</install>
+		<install/>
 	</plugin>
 	<plugin name="RegEx Helper">
 		<unicodeVersion>0.0.2.2</unicodeVersion>
