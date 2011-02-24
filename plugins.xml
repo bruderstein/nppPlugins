@@ -134,7 +134,7 @@
 			<copy from="nppColdFusion.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="Config\nppColdFusion.xml" to="$CONFIGDIR$" />
 		</install>
-	</plugin>	
+	</plugin>
 	<plugin name="Color Picker">
 		<ansiVersion>1.3</ansiVersion>
 		<description>A color picker which translates your selected colour in hexadecimal.</description>
@@ -307,7 +307,7 @@
 		</install>
 	</plugin>
 	<plugin name="FingerText">
-		<unicodeVersion>0.4.11</unicodeVersion>
+		<unicodeVersion>0.5.0</unicodeVersion>
 		<description>A Snippet plugin with support for multiple hotspots.  Set the shortcut to Tab and remove from the Scintilla tab command for best usage.</description>
 		<author>Tom Lam</author>
 		<homepage>http://sourceforge.net/projects/fingertext/</homepage>
@@ -316,9 +316,9 @@
 			<version number="0.3.2" md5="22fe35562cc4671f140748d1e1ec3001" />
 		</versions>
 		<install>
-			<download>http://www.brotherstone.co.uk/npp/FingerText0411.zip</download>
+			<download>http://downloads.sourceforge.net/project/fingertext/FingerText%20-%200.5.0.zip</download>
 			<copy from="FingerText.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="FingerText0.4.11SampleSnippets.ftd" to="$CONFIGDIR$" />
+			<copy from="FingerText0.5.0SampleSnippets.ftd" to="$CONFIGDIR$" />
 			<copy from="Changelog.txt" to="$PLUGINDIR$\doc\FingerText" />
 			<copy from="Readme.rdoc" to="$PLUGINDIR$\doc\FingerText" />
 		</install>
@@ -872,21 +872,22 @@
 		</install>
 	</plugin>
 	<plugin name="Open File In Solution">
-		<unicodeVersion>2.176</unicodeVersion>
+		<unicodeVersion>2.194</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
 		<description>Lets you index specific folders and possible specific types of resources (xml-, cpp, py-files) for a fast indexing of files.</description>
 		<author>incfred</author>
 		<versions>
 			<version md5="b1c1902fae76a03a5a67981ef5c644c8" number="2.176" />
+			<version md5="596ecdc4a79a8ca8c6cb8b626184af86" number="2.194" />
 		</versions>
 		<dependencies>
 			<plugin name="SolutionHub" />
 			<plugin name="SolutionHubUI" />
 		</dependencies>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r1/ofis2.zip</download>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/ofis2_r194.zip</download>
 			<copy from="nppplugin_ofis2.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="config\nppplugin_ofis2.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_ofis2.config" to="$PLUGINDIR$\config" />
 			<copy from="doc\nppplugin_ofis2_help.txt" to="$PLUGINDIR$\doc" />
 		</install>
 	</plugin>
@@ -1084,11 +1085,9 @@
 		</install>
 	</plugin>
 	<plugin name="Rainlexer">
-		<!--<unicodeVersion>1.0</unicodeVersion> - No zip version yet-->
-		<author>poiru</author>
+		<!--<unicodeVersion>1.0</unicodeVersion> - No zip version yet--><author>poiru</author>
 		<description>A plugin for Notepad++ 5.8.x that allows proper syntax highlighting for Rainmeter .ini skin files.</description>
-		<install>
-		</install>
+		<install/>
 	</plugin>
 	<plugin name="RegEx Helper">
 		<unicodeVersion>0.0.2.2</unicodeVersion>
@@ -1308,20 +1307,22 @@
 		</install>
 	</plugin>
 	<plugin name="Solution Tools">
-		<unicodeVersion>2.176</unicodeVersion>
+		<unicodeVersion>2.193</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
-		<description>Currently it is only a 'goto file' implementation. Ex. stand on a line, press whatever shortcut you have bound to the GOTO command on a line like :\n#include "somefile.h"\nor\nrequire 'some_path/to_a_luafile'</description>
+		<description>Configurable priority based fileswitching(most commonly used when switching between .h and .cpp). Configurable what extensions map to which targets and in what order.\n'goto file' implementation, Ex. stand on a line, press whatever shortcut(or left mouseclick on the line) you have bound to the GOTO command on a line like :\n#include "somefile.h"\nor\nrequire 'some_path/to_a_luafile'</description>
 		<author>incfred</author>
 		<versions>
 			<version md5="9ff44f6f126bb81fd7061879735d74d5" number="2.176" />
+			<version md5="528118dec86e9deee54e4362b6ae6012" number="2.193" />
 		</versions>
 		<dependencies>
-			<plugin name="Open File In Solution" />
+			<plugin name="SolutionHub" />
+			<plugin name="SolutionHubUI" />
 		</dependencies>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r1/solutiontools.zip</download>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/solutiontools_r193.zip</download>
 			<copy from="nppplugin_solutiontools.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="config\nppplugin_solutiontools.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_solutiontools.config" to="$PLUGINDIR$\config" />
 			<copy from="doc\nppplugin_solutiontools_help.txt" to="$PLUGINDIR$\doc" />
 		</install>
 	</plugin>
@@ -1503,23 +1504,24 @@
 		</install>
 	</plugin>
 	<plugin name="Tortoise SVN">
-		<unicodeVersion>2.186</unicodeVersion>
+		<unicodeVersion>2.195</unicodeVersion>
 		<homepage>http://www.incrediblejunior.com/npp_plugins/</homepage>
 		<description>Main operations for SVN, with a concept of a root solution directory.  NOTE: The plugin uses Tortoise SVN internally so you have to have this installed. Available at http://tortoisesvn.tigris.org/</description>
 		<author>incfred</author>
 		<versions>
 			<version md5="22f0c57d4e0fa1ab25ef7671da7a84c2" number="2.0" />
 			<version md5="a9687fa8ddd0621783fa4c145e04d4bb" number="2.186" />
+			<version md5="975da2ce9a19af6118286c581f28b7a1" number="2.195" />
 		</versions>
 		<dependencies>
 			<plugin name="SolutionHub" />
 			<plugin name="SolutionHubUI" />
 		</dependencies>
 		<install>
-			<download>http://www.incrediblejunior.com/npp_plugins/downloads/r186/tsvn.zip</download>
+			<download>http://www.incrediblejunior.com/npp_plugins/downloads/tsvn_r195.zip</download>
 			<copy from="nppplugin_svn.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="doc\nppplugin_tsvn_help.txt" to="$PLUGINDIR$\doc" />
-			<copy from="config\nppplugin_tsvn.config" to="$CONFIGDIR$" />
+			<copy from="config\nppplugin_tsvn.config" to="$PLUGINDIR$\config" />
 		</install>
 	</plugin>
 	<plugin name="UniversalIndentGUI">
