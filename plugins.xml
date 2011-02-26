@@ -470,22 +470,22 @@
 		</install>
 	</plugin>
         <plugin name="JSONViewer">
-		<unicodeVersion>1.0</unicodeVersion>
+		<unicodeVersion>1.1</unicodeVersion>
 		<homepage>http://nppjsonviewer.sourceforge.net/</homepage>
 		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
                 <stability>Good</stability>
                 <category>Web</category>
 		<author>Kapil Ratnani</author>
 		<versions>
-			<version number="1.0" md5="39a208efce0900dfafc94c247220631d" comment="unicode" />
+			<version number="1.1" md5="9cad27506a1c3fd80b81b020a3a85b79" comment="unicode" />
 		</versions>
 		<aliases>
 			<alias name="JSONViewer" />
 		</aliases>
 		<install>
-			<download>http://downloads.sourceforge.net/project/nppjsonviewer/JSONViewer%20Unicode/NPPJSONViewer.zip</download>
+			<download>http://sourceforge.net/projects/nppjsonviewer/files/JSONViewer%20Unicode/NPPJSONViewer1_1.zip</download>
 			<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="README" to="$PLUGINDIR$\doc\NPPJSONViewer" />
+			<copy from="NPPJSONViewer\README" to="$PLUGINDIR$\doc\NPPJSONViewer" />
 		</install>
         </plugin>
 	<plugin name="Language Help">
