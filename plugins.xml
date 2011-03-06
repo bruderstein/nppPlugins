@@ -14,14 +14,15 @@
 		<pluginName md5="5a19bd60aa18e4454f1c4a6432ae5a72" name="Switcher" comment="unicode"/>
 	</pluginNames>
 	<plugin name="AnalysePlugin">
-		<unicodeVersion>1.6.8</unicodeVersion>
+		<unicodeVersion>1.6.9</unicodeVersion>
 		<description>AnalysePlugin will help you to search for more than one search pattern at a time.  Great for analysing log files.</description>
 		<author>Matthias Hessling</author>
 		<versions>
 			<version number="1.6.8" md5="f0ada8fc86c6b8304f27b8f211398e3c" />
+			<version number="1.6.9" md5="7f39133444ffbff0c619a09a0b0c38ce" />
 		</versions>
 		<install>
-			<download>http://downloads.sourceforge.net/project/analyseplugin/binaries/v01.06-R8.zip</download>
+			<download>http://downloads.sourceforge.net/project/analyseplugin/binaries/v01.06-R9.zip</download>
 			<copy from="AnalysePlugin\AnalysePlugin.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="AnalysePlugin\*.txt" to="$PLUGINDIR$\doc\AnalysePlugin" />
 		</install>
@@ -34,7 +35,7 @@
 		</aliases>
 		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
 		<author>Franco Stellari</author>
-		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
 		<sourceUrl/>
 		<latestUpdate>adds a requested functionality to ignore files larger than a specified size.</latestUpdate>
 		<install>
@@ -178,6 +179,19 @@
 			<copy from="ComparePlugin.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
+	<plugin name="Converter">
+		<unicodeVersion>2.0</unicodeVersion>
+		<author>Don Ho</author>
+		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
+		<versions>
+			<version number="2.0" md5="0b178d918d1210188261e700426b9880" />
+		</versions>
+		<install>
+			<download>http://download.tuxfamily.org/nppplugins/Converter/NppConverter.v2.0.zip</download>
+			<copy from="NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="*.txt" to="$PLUGINDIR$\doc\NppConverter" />
+		</install>
+	</plugin>
 	<plugin name="ConvertExt...">
 		<ansiVersion>1.1.0.0</ansiVersion>
 		<description>ConvertExt is a plugin for Notepad++ 3.5 and above. This plugin allows Notepad++ to: - view a text file in different encodings (codepages); - convert a text file from one encoding to another; - add and work with your own [external] encoding tables; - replace a typed character by another user-defined character; - autocomplete a left bracket with a corresponding right bracket</description>
@@ -307,7 +321,7 @@
 		</install>
 	</plugin>
 	<plugin name="FingerText">
-		<unicodeVersion>0.5.0</unicodeVersion>
+		<unicodeVersion>0.5.6</unicodeVersion>
 		<description>A Snippet plugin with support for multiple hotspots.  Set the shortcut to Tab and remove from the Scintilla tab command for best usage.</description>
 		<author>Tom Lam</author>
 		<homepage>http://sourceforge.net/projects/fingertext/</homepage>
@@ -316,9 +330,9 @@
 			<version number="0.3.2" md5="22fe35562cc4671f140748d1e1ec3001" />
 		</versions>
 		<install>
-			<download>http://downloads.sourceforge.net/project/fingertext/FingerText%20-%200.5.0.zip</download>
+			<download>http://downloads.sourceforge.net/project/fingertext/Alpha%20Releases/FingerText%20-%200.5.6.zip</download>
 			<copy from="FingerText.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="FingerText0.5.0SampleSnippets.ftd" to="$CONFIGDIR$" />
+			<copy from="FingerText0.5.6SampleSnippets.ftd" to="$CONFIGDIR$" />
 			<copy from="Changelog.txt" to="$PLUGINDIR$\doc\FingerText" />
 			<copy from="Readme.rdoc" to="$PLUGINDIR$\doc\FingerText" />
 		</install>
@@ -479,34 +493,38 @@
 		</install>
 	</plugin>
 	<plugin name="JSMin">
-		<unicodeVersion>1.6.1</unicodeVersion>
-		<ansiVersion>1.6.1</ansiVersion>
+		<unicodeVersion>1.7</unicodeVersion>
+		<ansiVersion>1.7</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/jsminnpp/</sourceUrl>
 		<author>Junwen Sun</author>
-		<description>A Javascript minimizing plugin, uses the JSMin algorithm by Douglas Crockford</description>
+		<description>A Javascript plugin. Use Douglas Crockford's JSMin to minimize javascript code and uses own algorithm to format javascript code. Really helpful to javascript coder on Notepad++ and really easy to use.</description>
 		<homepage>http://sunblog.72pines.com/development-center/jsminnpp/</homepage>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.6.1.uni.zip</download>
+				<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.7.uni.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://downloads.sourceforge.net/project/jsminnpp/Asc/JSMinNPP.1.6.1.asc.zip</download>
+				<download>http://downloads.sourceforge.net/project/jsminnpp/Asc/JSMinNPP.1.7.asc.zip</download>
 			</ansi>
 			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
 	<plugin name="JSON Viewer">
-		<unicodeVersion>1.0</unicodeVersion>
+		<unicodeVersion>1.1</unicodeVersion>
 		<homepage>http://nppjsonviewer.sourceforge.net/</homepage>
 		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
 		<category>Web</category>
 		<author>Kapil Ratnani</author>
+		<latestUpdate>1. Fixed hotkey, now press CTRL+SHIFT+ALT+J(default).\n2. Marks error position in JSON</latestUpdate>
 		<versions>
-			<version number="1.0" md5="cce54c17517b9d0c64654dd1a65f9c18" comment="unicode" />
+			<version number="1.0" md5="39a208efce0900dfafc94c247220631d" comment="unicode" />
 		</versions>
+		<aliases>
+			<alias name="JSONViewer" />
+		</aliases>
 		<install>
-			<download>http://downloads.sourceforge.net/project/nppjsonviewer/JSONViewer%20Unicode/NPPJSONViewer.zip</download>
-			<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$" validate="true" />
+			<download>http://sourceforge.net/projects/nppjsonviewer/files/JSONViewer%20Unicode/NPPJSONViewer1_1.zip</download>
+			<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$" />
 			<copy from="NPPJSONViewer\README" to="$PLUGINDIR$\doc\NPPJSONViewer" />
 		</install>
 	</plugin>
@@ -515,6 +533,7 @@
 		<ansiVersion>1.3.3</ansiVersion>
 		<description>LanguageHelp allows to run a language specific help file (CHM, HLP, PDF) and search for the keyword under the cursor. The latest versions allow also to show the help file as menu entries for quick launch.</description>
 		<latestUpdate>Fixes compatibility problems with NPP v5.7</latestUpdate>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
 		<install>
 			<download>http://sites.google.com/site/fstellari/cab/LanguageHelp_dll_1v33.zip?attredirects=0</download>
 			<unicode>
@@ -678,18 +697,18 @@
 		</install>
 	</plugin>
 	<plugin name="NppCrypt">
-		<unicodeVersion>1.0.0.6</unicodeVersion>
+		<unicodeVersion>1.0.0.7</unicodeVersion>
 		<author>Max Waghals</author>
 		<sourceUrl>http://www.cerberus-design.de/nppcryptv1004.zip</sourceUrl>
 		<description>Allows encryption / decryption and hashing of text using a password.</description>
-		<latestUpdate>- added whirlpool hash \n- you now can specify the cipher-mode (cbc,ecb,cfb,ofb) \n- if no text is selected when you click "encrypt" all open documents can be encrypted.</latestUpdate>
+		<latestUpdate>Bugfix and includes the possibility to use your own extension for nppcrypt files.</latestUpdate>
 		<versions>
 			<version number="1.0" md5="9ec7f2d0cf210772bce84700f38776c6"/>
 			<version number="1.0.0.1" md5="eeea34937d317fd9c5fde569ee3540a4"/>
 		</versions>
 		<install>
 			<unicode>
-				<download>http://www.cerberus-design.de/nppcryptv1006.zip</download>
+				<download>http://www.cerberus-design.de/nppcryptv1007.zip</download>
 				<copy from="NppCrypt.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="readme.txt" to="$PLUGINDIR$\doc\NppCrypt"/>
 			</unicode>
@@ -955,7 +974,8 @@
 		<unicodeVersion>0.3.0.0</unicodeVersion>
 		<description>Allows plugins to maintain their own automatic updates.  A plugin must implement the information in its INI file, and provide a download URL.</description>
 		<author>Franco Stellari</author>
-		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
+		<stability>Poor - causes crashes.  Deprecated, use Plugin Manager instead.</stability>
 		<install>
 			<unicode>
 				<download>http://fstellari.googlepages.com/PluginUpdate_dll_0v30.zip</download>
@@ -1000,54 +1020,59 @@
 		</install>
 	</plugin>
 	<plugin name="Python Script">
-		<unicodeVersion>0.7.0.0</unicodeVersion>
-		<description>Scripting plugin for Notepad++, help included\nNeeds Microsoft Visual C++ Runtime 2008 - link below.\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods\n\nGet Visual C++ Runtime 2008 from: http://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&amp;displaylang=en</description>
-		<author>Dave Brotherstone</author>
+		<unicodeVersion>0.9.0.1</unicodeVersion>
+		<description>Scripting plugin for Notepad++, help included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
+		<author>Dave Brotherstone + Jocelyn Legault</author>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
-		<latestUpdate>* Console now has a lexer, so errors and warnings from Python, Visual Studio and gcc are parsed and highlighted. Click the filename to open the file and jump to the line number \n* there's a console.editor attribute, allowing you to change all the styles and so on (or anything else you'd like to do with the console!) \n* run previous script menu option \n* console.run() now works from within a callback \n* Bugs fixed in notepad.runMenuCommand and runPluginCommand, and now run faster. \n* editor.getCurrentWord() and editor.getWord(position) functions added \n* Documentation updates and corrections \n* Numerous other fixes and minor improvements</latestUpdate>
+		<latestUpdate>No dependency on Visual C++ Runtimes. All standard modules now included. Many many bug fixes and improvements from Jocelyn Legault.\nConsole bug fixes improvements for Unicode</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%200.7.0.0/PythonScript_full_0.7.0.0.zip</download>
-				<copy from="python26.dll" to="$NPPDIR$" validate="true"/>
+				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%200.9.0.1/PythonScript_full_0.9.0.1.zip</download>
+				<copy from="python27.dll" to="$NPPDIR$" validate="true"/>
 				<copy from="plugins\PythonScript\lib\*.py" to="$PLUGINDIR$\PythonScript\lib" />
+				<copy from="plugins\PythonScript\lib\*.pyd" to="$PLUGINDIR$\PythonScript\lib" />
 				<copy from="plugins\PythonScript\lib\bsddb\*.py" to="$PLUGINDIR$\PythonScript\lib\bsddb" />
 				<copy from="plugins\PythonScript\lib\compiler\*.py" to="$PLUGINDIR$\PythonScript\lib\compiler" />
 				<copy from="plugins\PythonScript\lib\ctypes\*.py" to="$PLUGINDIR$\PythonScript\lib\ctypes" />
 				<copy from="plugins\PythonScript\lib\ctypes\macholib\*.py" to="$PLUGINDIR$\PythonScript\lib\ctypes\macholib" />
 				<copy from="plugins\PythonScript\lib\curses\*.py" to="$PLUGINDIR$\PythonScript\lib\curses" />
-				<copy from="plugins\PythonScript\lib\distutils\*.py" to="$PLUGINDIR$\PythonScript\lib\distutils" />
-				<copy from="plugins\PythonScript\lib\distutils\command\*.py" to="$PLUGINDIR$\PythonScript\lib\distutils\command" />
 				<copy from="plugins\PythonScript\lib\email\*.py" to="$PLUGINDIR$\PythonScript\lib\email" />
 				<copy from="plugins\PythonScript\lib\email\mime\*.py" to="$PLUGINDIR$\PythonScript\lib\email\mime" />
 				<copy from="plugins\PythonScript\lib\encodings\*.py" to="$PLUGINDIR$\PythonScript\lib\encodings" />
 				<copy from="plugins\PythonScript\lib\encodings\*.pyo" to="$PLUGINDIR$\PythonScript\lib\encodings" />
 				<copy from="plugins\PythonScript\lib\hotshot\*.py" to="$PLUGINDIR$\PythonScript\lib\hotshot" />
 				<copy from="plugins\PythonScript\lib\idlelib\*.py" to="$PLUGINDIR$\PythonScript\lib\idlelib" />
+				<copy from="plugins\PythonScript\lib\idlelib\*.pyw" to="$PLUGINDIR$\PythonScript\lib\idlelib" />
 				<copy from="plugins\PythonScript\lib\idlelib\*.def" to="$PLUGINDIR$\PythonScript\lib\idlelib" />
 				<copy from="plugins\PythonScript\lib\idlelib\*.txt" to="$PLUGINDIR$\PythonScript\lib\idlelib" />
 				<copy from="plugins\PythonScript\lib\idlelib\*.bat" to="$PLUGINDIR$\PythonScript\lib\idlelib" />
 				<copy from="plugins\PythonScript\lib\idlelib\Icons\*.gif" to="$PLUGINDIR$\PythonScript\lib\idlelib\Icons" />
 				<copy from="plugins\PythonScript\lib\idlelib\Icons\*.icns" to="$PLUGINDIR$\PythonScript\lib\idlelib\Icons" />
+				<copy from="plugins\PythonScript\lib\importlib\*.py" to="$PLUGINDIR$\PythonScript\lib\importlib" />
 				<copy from="plugins\PythonScript\lib\json\*.py" to="$PLUGINDIR$\PythonScript\lib\json" />
 				<copy from="plugins\PythonScript\lib\lib-tk\*.py" to="$PLUGINDIR$\PythonScript\lib\lib-tk" />
 				<copy from="plugins\PythonScript\lib\lib2to3\*.py" to="$PLUGINDIR$\PythonScript\lib\lib2to3" />
 				<copy from="plugins\PythonScript\lib\lib2to3\*.txt" to="$PLUGINDIR$\PythonScript\lib\lib2to3" />
+				<copy from="plugins\PythonScript\lib\lib2to3\*.pickle" to="$PLUGINDIR$\PythonScript\lib\lib2to3" />
 				<copy from="plugins\PythonScript\lib\lib2to3\fixes\*.py" to="$PLUGINDIR$\PythonScript\lib\lib2to3\fixes" />
 				<copy from="plugins\PythonScript\lib\lib2to3\pgen2\*.py" to="$PLUGINDIR$\PythonScript\lib\lib2to3\pgen2" />
 				<copy from="plugins\PythonScript\lib\logging\*.py" to="$PLUGINDIR$\PythonScript\lib\logging" />
 				<copy from="plugins\PythonScript\lib\msilib\*.py" to="$PLUGINDIR$\PythonScript\lib\msilib" />
 				<copy from="plugins\PythonScript\lib\multiprocessing\*.py" to="$PLUGINDIR$\PythonScript\lib\multiprocessing" />
 				<copy from="plugins\PythonScript\lib\multiprocessing\dummy\*.py" to="$PLUGINDIR$\PythonScript\lib\multiprocessing\dummy" />
+				<copy from="plugins\PythonScript\lib\pydoc_data\*.py" to="$PLUGINDIR$\PythonScript\lib\pydoc_data" />
 				<copy from="plugins\PythonScript\lib\sqlite3\*.py" to="$PLUGINDIR$\PythonScript\lib\sqlite3" />
+				<copy from="plugins\PythonScript\lib\subnormal\*.py" to="$PLUGINDIR$\PythonScript\lib\subnormal" />
+				<copy from="plugins\PythonScript\lib\unittest\*.py" to="$PLUGINDIR$\PythonScript\lib\unittest" />
 				<copy from="plugins\PythonScript\lib\wsgiref\*.py" to="$PLUGINDIR$\PythonScript\lib\wsgiref" />
 				<copy from="plugins\PythonScript\lib\xml\*.py" to="$PLUGINDIR$\PythonScript\lib\xml" />
 				<copy from="plugins\PythonScript\lib\xml\dom\*.py" to="$PLUGINDIR$\PythonScript\lib\xml\dom" />
 				<copy from="plugins\PythonScript\lib\xml\etree\*.py" to="$PLUGINDIR$\PythonScript\lib\xml\etree" />
 				<copy from="plugins\PythonScript\lib\xml\parsers\*.py" to="$PLUGINDIR$\PythonScript\lib\xml\parsers" />
 				<copy from="plugins\PythonScript\lib\xml\sax\*.py" to="$PLUGINDIR$\PythonScript\lib\xml\sax" />
-				<copy from="plugins\PythonScript\scripts\Samples\*.py" to="$CONFIGDIR$\PythonScript\scripts\Samples" />
 				<copy from="plugins\PythonScript\scripts\startup.py" to="$PLUGINDIR$\PythonScript\scripts" backup="true"/>
+				<copy from="plugins\PythonScript\scripts\Samples\*.py" to="$PLUGINDIR$\PythonScript\scripts\Samples" />
 				<copy from="plugins\doc\PythonScript\PythonScript.chm" to="$PLUGINDIR$\doc\PythonScript" />
 				<copy from="plugins\PythonScript.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
@@ -1131,7 +1156,7 @@
 		<unicodeVersion>1.3.1</unicodeVersion>
 		<ansiVersion>1.3.1</ansiVersion>
 		<author>Franco Stellari</author>
-		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
 		<description>RunMe allows to execute the currently open file, based on its shell association.</description>
 		<latestUpdate>Fix compatibility with Notepad++ 5.7</latestUpdate>
 		<install>
@@ -1227,6 +1252,19 @@
 			<download>http://download.tuxfamily.org/nppplugins/SelectNLaunch/SelectNLaunch.bin.v1.0.zip</download>
 			<copy from="SelectNLaunch.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="*.txt" to="$PLUGINDIR$\doc\SelectNLaunch" />
+		</install>
+	</plugin>
+	<plugin name="SherloXplorer">
+		<unicodeVersion>0.1</unicodeVersion>
+		<author>UFO-pu55y</author>
+		<description>Explorer-like plugin (.NET 2.0 and C++ 2005 runtimes are required)</description>
+		<install>
+			<download>http://downloads.sourceforge.net/project/sourcecookifier/other%20plugins/SherloXplorer.v0.1.0.bin.zip</download>
+			<copy from="SherloXplorer.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="SherloXplorer.README.TXT" to="$PLUGINDIR$\doc\SherloXplorer" />
+			<copy from="SherloXplorer\SherloXplorerCore.dll" to="$PLUGINDIR$\SherloXplorer" validate="true" />
+			<copy from="SherloXplorer\SherloXplorerWrapper.dll" to="$PLUGINDIR$\SherloXplorer" validate="true" />
+			<copy from="SherloXplorer\*.bat" to="$PLUGINDIR$\SherloXplorer" />
 		</install>
 	</plugin>
 	<plugin name="Simple Script">
@@ -1327,7 +1365,7 @@
 		</install>
 	</plugin>
 	<plugin name="Source Cookifier">
-		<unicodeVersion>0.5.4</unicodeVersion>
+		<unicodeVersion>0.6</unicodeVersion>
 		<description>A plugin which uses Exuberant Ctags to parse either only the currently activated source file or multiple files of so-called sessions. The results are shown and can be browsed in a treeview inside of a dockable window.</description>
 		<author>UFO-Pu55y</author>
 		<homepage>http://sourceforge.net/projects/sourcecookifier/</homepage>
@@ -1337,14 +1375,15 @@
 		</aliases>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.5.4/SourceCookifier.v0.5.4.bin.zip</download>
+				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.6/SourceCookifier.v0.6.0.bin.zip</download>
 				<copy from="SourceCookifier.dll" to="$PLUGINDIR$" validate="true"/>
 				<copy from="SourceCookifier\SourceCookifierCore.dll" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
 				<copy from="SourceCookifier\SourceCookifierWrapper.dll" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
 				<copy from="SourceCookifier\ctags.exe" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
+				<copy from="SourceCookifier\AddPolicy.bat" to="$PLUGINDIR$\SourceCookifier" />
+				<copy from="SourceCookifier\RemovePolicy.bat" to="$PLUGINDIR$\SourceCookifier" />
 				<copy from="SourceCookifier\icons\*.png" to="$PLUGINDIR$\SourceCookifier\icons"/>
 				<copy from="Config\SourceCookifier.languages.model.xml" to="$CONFIGDIR$"/>
-				<copy from="SourceCookifier\*.bat" to="$PLUGINDIR$\doc\SourceCookifier" />
 			</unicode>
 		</install>
 	</plugin>
@@ -1666,21 +1705,21 @@
 	<plugin name="Zen Coding - Python">
 		<unicodeVersion>0.2</unicodeVersion>
 		<sourceUrl>http://github.com/davegb3/ZenCoding-Python</sourceUrl>
-		<description>An implementation of the Zen Coding method by Sergey Chikuyonok.  Needs Visual C++ Runtime 2008 for Python plugin - link below. Expand HTML, CSS, XML, XSLT and XSD from abbreviations\ntr#head1.header>td*2 becomes &lt;tr id="head1" class="header"&gt;\n  &lt;td&gt;&lt;/td&gt;\n  &lt;td&gt;&lt;/td&gt;\n&lt;/tr&gt;\nUses the Python Script plugin.\n\nGet Visual C++ Runtime 2008 from: http://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&amp;displaylang=en</description>
-	<latestUpdate>XSD mode, Tab key support for Expand abbreviation, Profile selection, and a quick edit settings option</latestUpdate>
-	<author>Dave Brotherstone</author>
-	<dependencies>
-		<plugin name="Python Script"/>
-	</dependencies>
-	<install>
-		<unicode>
-			<download>http://downloads.sourceforge.net/project/npppythonscript/ZenCoding-Python/ZenCoding-Python-0.2.zip</download>
-			<copy from="ZenCodingPython\*.py" to="$CONFIGDIR$\ZenCodingPython" />
-			<copy from="ZenCodingPython\zencoding\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding" />
-			<copy from="ZenCodingPython\zencoding\filters\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding\filters" />
-			<copy from="ReadMe.txt" to="$PLUGINDIR$\doc\ZenCodingPython" />
-			<copy from="ZenCoding-Python.dll" to="$PLUGINDIR$" validate="true" />
-		</unicode>
-	</install>
-</plugin>
+		<description>An implementation of the Zen Coding method by Sergey Chikuyonok. Expand HTML, CSS, XML, XSLT and XSD from abbreviations\ntr#head1.header&gt;td*2 becomes &lt;tr id="head1" class="header"&gt;\n  &lt;td&gt;&lt;/td&gt;\n  &lt;td&gt;&lt;/td&gt;\n&lt;/tr&gt;\nUses the Python Script plugin.</description>
+		<latestUpdate>XSD mode, Tab key support for Expand abbreviation, Profile selection, and a quick edit settings option</latestUpdate>
+		<author>Dave Brotherstone</author>
+		<dependencies>
+			<plugin name="Python Script"/>
+		</dependencies>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/npppythonscript/ZenCoding-Python/ZenCoding-Python-0.2.zip</download>
+				<copy from="ZenCodingPython\*.py" to="$CONFIGDIR$\ZenCodingPython" />
+				<copy from="ZenCodingPython\zencoding\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding" />
+				<copy from="ZenCodingPython\zencoding\filters\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding\filters" />
+				<copy from="ReadMe.txt" to="$PLUGINDIR$\doc\ZenCodingPython" />
+				<copy from="ZenCoding-Python.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+		</install>
+	</plugin>
 </plugins>
