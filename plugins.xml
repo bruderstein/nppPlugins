@@ -35,7 +35,7 @@
 		</aliases>
 		<description>AutoSave allows to automatically save the currently open files based on a timer schedule (default is 1 min) and/or upon the application losing focus. The plugin offers a couple of options to save the current (or all the files), selecting only the named ones, accessible through a menu.</description>
 		<author>Franco Stellari</author>
-		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
 		<sourceUrl/>
 		<latestUpdate>adds a requested functionality to ignore files larger than a specified size.</latestUpdate>
 		<install>
@@ -520,6 +520,7 @@
 		<ansiVersion>1.3.3</ansiVersion>
 		<description>LanguageHelp allows to run a language specific help file (CHM, HLP, PDF) and search for the keyword under the cursor. The latest versions allow also to show the help file as menu entries for quick launch.</description>
 		<latestUpdate>Fixes compatibility problems with NPP v5.7</latestUpdate>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
 		<install>
 			<download>http://sites.google.com/site/fstellari/cab/LanguageHelp_dll_1v33.zip?attredirects=0</download>
 			<unicode>
@@ -970,7 +971,8 @@
 		<unicodeVersion>0.3.0.0</unicodeVersion>
 		<description>Allows plugins to maintain their own automatic updates.  A plugin must implement the information in its INI file, and provide a download URL.</description>
 		<author>Franco Stellari</author>
-		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
+		<stability>Poor - causes crashes.  Deprecated, use Plugin Manager instead.</stability>
 		<install>
 			<unicode>
 				<download>http://fstellari.googlepages.com/PluginUpdate_dll_0v30.zip</download>
@@ -1151,7 +1153,7 @@
 		<unicodeVersion>1.3.1</unicodeVersion>
 		<ansiVersion>1.3.1</ansiVersion>
 		<author>Franco Stellari</author>
-		<homepage>http://fstellari.googlepages.com/npp_plugins</homepage>
+		<homepage>http://sites.google.com/site/fstellari/nppplugins</homepage>
 		<description>RunMe allows to execute the currently open file, based on its shell association.</description>
 		<latestUpdate>Fix compatibility with Notepad++ 5.7</latestUpdate>
 		<install>
