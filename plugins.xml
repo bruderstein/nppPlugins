@@ -469,22 +469,17 @@
 			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-        <plugin name="JSONViewer">
+        <plugin name="JSON Viewer">
 		<unicodeVersion>1.1</unicodeVersion>
 		<homepage>http://nppjsonviewer.sourceforge.net/</homepage>
 		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
-                <stability>Good</stability>
-                <category>Web</category>
+		<stability>Good</stability>
+		<category>Web</category>
 		<author>Kapil Ratnani</author>
-		<versions>
-			<version number="1.1" md5="9cad27506a1c3fd80b81b020a3a85b79" comment="unicode" />
-		</versions>
-		<aliases>
-			<alias name="JSONViewer" />
-		</aliases>
+		<latestUpdate>1. Fixed hotkey, now press CTRL+SHIFT+ALT+J(default).\n2. Marks error position in JSON</latestUpdate>
 		<install>
 			<download>http://sourceforge.net/projects/nppjsonviewer/files/JSONViewer%20Unicode/NPPJSONViewer1_1.zip</download>
-			<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$"/>
 			<copy from="NPPJSONViewer\README" to="$PLUGINDIR$\doc\NPPJSONViewer" />
 		</install>
         </plugin>
