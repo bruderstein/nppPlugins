@@ -179,6 +179,19 @@
 			<copy from="ComparePlugin.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
+	<plugin name="Converter">
+		<unicodeVersion>2.0</unicodeVersion>
+		<author>Don Ho</author>
+		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
+		<versions>
+			<version number="2.0" md5="0b178d918d1210188261e700426b9880" />
+		</versions>
+		<install>
+			<download>http://download.tuxfamily.org/nppplugins/Converter/NppConverter.v2.0.zip</download>
+			<copy from="NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="*.txt" to="$PLUGINDIR$\doc\NppConverter" />
+		</install>
+	</plugin>
 	<plugin name="ConvertExt...">
 		<ansiVersion>1.1.0.0</ansiVersion>
 		<description>ConvertExt is a plugin for Notepad++ 3.5 and above. This plugin allows Notepad++ to: - view a text file in different encodings (codepages); - convert a text file from one encoding to another; - add and work with your own [external] encoding tables; - replace a typed character by another user-defined character; - autocomplete a left bracket with a corresponding right bracket</description>
@@ -496,7 +509,7 @@
 			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-	<plugin name="JSONViewer">
+	<plugin name="JSON Viewer">
 		<unicodeVersion>1.1</unicodeVersion>
 		<homepage>http://nppjsonviewer.sourceforge.net/</homepage>
 		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
@@ -681,16 +694,6 @@
 			<ansi>
 				<copy from="NppAutoIndentA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
-		</install>
-	</plugin>
-	<plugin name="NppConverter">
-		<unicodeVersion>2.0</unicodeVersion>
-		<author>Don Ho</author>
-		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
-		<install>
-			<download>http://download.tuxfamily.org/nppplugins/Converter/NppConverter.v2.0.zip</download>
-			<copy from="NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
-			<copy from="*.txt" to="$PLUGINDIR$\doc\NppConverter" />
 		</install>
 	</plugin>
 	<plugin name="NppCrypt">
@@ -1025,7 +1028,7 @@
 		<latestUpdate>No dependency on Visual C++ Runtimes. All standard modules now included. Many many bug fixes and improvements from Jocelyn Legault.\nConsole bug fixes improvements for Unicode</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%200.7.0.0/PythonScript_full_0.7.0.0.zip</download>
+				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%200.9.0.1/PythonScript_full_0.9.0.1.zip</download>
 				<copy from="python27.dll" to="$NPPDIR$" validate="true"/>
 				<copy from="plugins\PythonScript\lib\*.py" to="$PLUGINDIR$\PythonScript\lib" />
 				<copy from="plugins\PythonScript\lib\*.pyd" to="$PLUGINDIR$\PythonScript\lib" />
@@ -1264,7 +1267,6 @@
 			<copy from="SherloXplorer\*.bat" to="$PLUGINDIR$\SherloXplorer" />
 		</install>
 	</plugin>
-
 	<plugin name="Simple Script">
 		<ansiVersion>1.1.3</ansiVersion>
 		<description>Simple script plug-in allows you to make up your script from buid-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes. </description>
@@ -1703,7 +1705,7 @@
 	<plugin name="Zen Coding - Python">
 		<unicodeVersion>0.2</unicodeVersion>
 		<sourceUrl>http://github.com/davegb3/ZenCoding-Python</sourceUrl>
-		<description>An implementation of the Zen Coding method by Sergey Chikuyonok.  Needs Visual C++ Runtime 2008 for Python plugin - link below. Expand HTML, CSS, XML, XSLT and XSD from abbreviations\ntr#head1.header>td*2 becomes &lt;tr id="head1" class="header"&gt;\n  &lt;td&gt;&lt;/td&gt;\n  &lt;td&gt;&lt;/td&gt;\n&lt;/tr&gt;\nUses the Python Script plugin.\n\nGet Visual C++ Runtime 2008 from: http://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&amp;displaylang=en</description>
+		<description>An implementation of the Zen Coding method by Sergey Chikuyonok. Expand HTML, CSS, XML, XSLT and XSD from abbreviations\ntr#head1.header&gt;td*2 becomes &lt;tr id="head1" class="header"&gt;\n  &lt;td&gt;&lt;/td&gt;\n  &lt;td&gt;&lt;/td&gt;\n&lt;/tr&gt;\nUses the Python Script plugin.</description>
 		<latestUpdate>XSD mode, Tab key support for Expand abbreviation, Profile selection, and a quick edit settings option</latestUpdate>
 		<author>Dave Brotherstone</author>
 		<dependencies>
