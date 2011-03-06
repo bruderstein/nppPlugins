@@ -496,18 +496,22 @@
 			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
-	<plugin name="JSON Viewer">
-		<unicodeVersion>1.0</unicodeVersion>
+	<plugin name="JSONViewer">
+		<unicodeVersion>1.1</unicodeVersion>
 		<homepage>http://nppjsonviewer.sourceforge.net/</homepage>
 		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
 		<category>Web</category>
 		<author>Kapil Ratnani</author>
+		<latestUpdate>1. Fixed hotkey, now press CTRL+SHIFT+ALT+J(default).\n2. Marks error position in JSON</latestUpdate>
 		<versions>
-			<version number="1.0" md5="cce54c17517b9d0c64654dd1a65f9c18" comment="unicode" />
+			<version number="1.0" md5="39a208efce0900dfafc94c247220631d" comment="unicode" />
 		</versions>
+		<aliases>
+			<alias name="JSONViewer" />
+		</aliases>
 		<install>
-			<download>http://downloads.sourceforge.net/project/nppjsonviewer/JSONViewer%20Unicode/NPPJSONViewer.zip</download>
-			<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$" validate="true" />
+			<download>http://sourceforge.net/projects/nppjsonviewer/files/JSONViewer%20Unicode/NPPJSONViewer1_1.zip</download>
+			<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$" />
 			<copy from="NPPJSONViewer\README" to="$PLUGINDIR$\doc\NPPJSONViewer" />
 		</install>
 	</plugin>
@@ -684,7 +688,7 @@
 		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
 		<install>
 			<download>http://download.tuxfamily.org/nppplugins/Converter/NppConverter.v2.0.zip</download>
-			<copy from="NppConverter.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="*.txt" to="$PLUGINDIR$\doc\NppConverter" />
 		</install>
 	</plugin>
@@ -1251,14 +1255,14 @@
 		<description>Explorer-like plugin (.NET 2.0 and C++ 2005 runtimes are required)</description>
 		<install>
 			<download>http://downloads.sourceforge.net/project/sourcecookifier/other%20plugins/SherloXplorer.v0.1.0.bin.zip</download>
-			<copy from="SherloXplorer.dll" to="$PLUGINDIR$" validate="true">
+			<copy from="SherloXplorer.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="SherloXplorer.README.TXT" to="$PLUGINDIR$\doc\SherloXplorer" />
 			<copy from="SherloXplorer\SherloXplorerCore.dll" to="$PLUGINDIR$\SherloXplorer" validate="true" />
 			<copy from="SherloXplorer\SherloXplorerWrapper.dll" to="$PLUGINDIR$\SherloXplorer" validate="true" />
 			<copy from="SherloXplorer\*.bat" to="$PLUGINDIR$\SherloXplorer" />
 		</install>
 	</plugin>
-	
+
 	<plugin name="Simple Script">
 		<ansiVersion>1.1.3</ansiVersion>
 		<description>Simple script plug-in allows you to make up your script from buid-in functions then execute the script in linear. It was originally designed to help format e-books for easier reading on a computer screen, but it's generic enough to use for a variety of different purposes. </description>
@@ -1698,20 +1702,20 @@
 		<unicodeVersion>0.2</unicodeVersion>
 		<sourceUrl>http://github.com/davegb3/ZenCoding-Python</sourceUrl>
 		<description>An implementation of the Zen Coding method by Sergey Chikuyonok.  Needs Visual C++ Runtime 2008 for Python plugin - link below. Expand HTML, CSS, XML, XSLT and XSD from abbreviations\ntr#head1.header>td*2 becomes &lt;tr id="head1" class="header"&gt;\n  &lt;td&gt;&lt;/td&gt;\n  &lt;td&gt;&lt;/td&gt;\n&lt;/tr&gt;\nUses the Python Script plugin.\n\nGet Visual C++ Runtime 2008 from: http://www.microsoft.com/downloads/details.aspx?FamilyID=9b2da534-3e03-4391-8a4d-074b9f2bc1bf&amp;displaylang=en</description>
-	<latestUpdate>XSD mode, Tab key support for Expand abbreviation, Profile selection, and a quick edit settings option</latestUpdate>
-	<author>Dave Brotherstone</author>
-	<dependencies>
-		<plugin name="Python Script"/>
-	</dependencies>
-	<install>
-		<unicode>
-			<download>http://downloads.sourceforge.net/project/npppythonscript/ZenCoding-Python/ZenCoding-Python-0.2.zip</download>
-			<copy from="ZenCodingPython\*.py" to="$CONFIGDIR$\ZenCodingPython" />
-			<copy from="ZenCodingPython\zencoding\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding" />
-			<copy from="ZenCodingPython\zencoding\filters\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding\filters" />
-			<copy from="ReadMe.txt" to="$PLUGINDIR$\doc\ZenCodingPython" />
-			<copy from="ZenCoding-Python.dll" to="$PLUGINDIR$" validate="true" />
-		</unicode>
-	</install>
-</plugin>
+		<latestUpdate>XSD mode, Tab key support for Expand abbreviation, Profile selection, and a quick edit settings option</latestUpdate>
+		<author>Dave Brotherstone</author>
+		<dependencies>
+			<plugin name="Python Script"/>
+		</dependencies>
+		<install>
+			<unicode>
+				<download>http://downloads.sourceforge.net/project/npppythonscript/ZenCoding-Python/ZenCoding-Python-0.2.zip</download>
+				<copy from="ZenCodingPython\*.py" to="$CONFIGDIR$\ZenCodingPython" />
+				<copy from="ZenCodingPython\zencoding\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding" />
+				<copy from="ZenCodingPython\zencoding\filters\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding\filters" />
+				<copy from="ReadMe.txt" to="$PLUGINDIR$\doc\ZenCodingPython" />
+				<copy from="ZenCoding-Python.dll" to="$PLUGINDIR$" validate="true" />
+			</unicode>
+		</install>
+	</plugin>
 </plugins>
