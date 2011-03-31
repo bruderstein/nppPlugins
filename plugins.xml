@@ -124,15 +124,17 @@
 		</install>
 	</plugin>
 	<plugin name="ColdFusion Lexer">
-		<unicodeVersion>0.5.3</unicodeVersion>
+		<unicodeVersion>0.6.0</unicodeVersion>
 		<author>bbluemel</author>
 		<description>Syntax highlighting, Call tips (Notepad++ 5.8.4 required) and autocomplete for the ColdFusion language</description>
 		<versions>
+			<version number="0.6.0" md5="0D9E0F7909A8E31C21A390EE7B25F017" />
 			<version number="0.5.3" md5="63e009627d1c07c2064db276c3a22bd3" />
 		</versions>
 		<install>
-			<download>http://bitbucket.org/bbluemel/nppcoldfusion/downloads/nppColdFusion-0.5.3.zip</download>
+			<download>http://www.nppcf.com/files/nppColdFusion-0.6.0beta.zip</download>
 			<copy from="nppColdFusion.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="nppColdFusion.db3" to="$CONFIGDIR$" />
 			<copy from="Config\nppColdFusion.xml" to="$CONFIGDIR$" />
 		</install>
 	</plugin>
