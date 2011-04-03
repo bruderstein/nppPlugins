@@ -123,16 +123,27 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="Code alignment">
+		<unicodeVersion>2.1</unicodeVersion>
+		<author>Chris McGrath</author>
+		<description>Make your code more readable! Align your code by any character. Has options for common alignments such as equals and period.</description>
+		<install>
+			<download>http://cpmcgrath.com/Downloads/CodeAlignmentNpp.zip</download>
+			<copy from="CodeAlignmentNpp.dll" to="$PLUGINDIR$" />
+		</install>
+	</plugin>
 	<plugin name="ColdFusion Lexer">
-		<unicodeVersion>0.5.3</unicodeVersion>
+		<unicodeVersion>0.6.0</unicodeVersion>
 		<author>bbluemel</author>
 		<description>Syntax highlighting, Call tips (Notepad++ 5.8.4 required) and autocomplete for the ColdFusion language</description>
 		<versions>
+			<version number="0.6.0" md5="0D9E0F7909A8E31C21A390EE7B25F017" />
 			<version number="0.5.3" md5="63e009627d1c07c2064db276c3a22bd3" />
 		</versions>
 		<install>
-			<download>http://bitbucket.org/bbluemel/nppcoldfusion/downloads/nppColdFusion-0.5.3.zip</download>
+			<download>http://www.nppcf.com/files/nppColdFusion-0.6.0beta.zip</download>
 			<copy from="nppColdFusion.dll" to="$PLUGINDIR$" validate="true"/>
+			<copy from="nppColdFusion.db3" to="$CONFIGDIR$" />
 			<copy from="Config\nppColdFusion.xml" to="$CONFIGDIR$" />
 		</install>
 	</plugin>
@@ -180,14 +191,16 @@
 		</install>
 	</plugin>
 	<plugin name="Converter">
-		<unicodeVersion>2.0</unicodeVersion>
+		<unicodeVersion>3.0</unicodeVersion>
 		<author>Don Ho</author>
 		<description>Converts selected text (hexadecimal string or ASCII string) to ASCII or hexadecimal string according your choice.</description>
+		<latestUpdate>Bug fixed:Fix a crash bug by adding a correct casting conversion.\nNew feature:The plugin provides a conversion panel. It could be useful when you need convert a value into ASCII, decimal, hexadecimal, octadecimal and binary.</latestUpdate>
 		<versions>
 			<version number="2.0" md5="0b178d918d1210188261e700426b9880" />
+			<version number="3.0" md5="4747b06ec6392fdd7668ba8628f7e83a" />
 		</versions>
 		<install>
-			<download>http://download.tuxfamily.org/nppplugins/Converter/NppConverter.v2.0.zip</download>
+			<download>http://download.tuxfamily.org/nppplugins/Converter/NppConverter.v3.0.zip</download>
 			<copy from="NppConverter.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="*.txt" to="$PLUGINDIR$\doc\NppConverter" />
 		</install>
@@ -476,20 +489,22 @@
 		</install>
 	</plugin>
 	<plugin name="JSLint">
-		<unicodeVersion>0.3.1.104</unicodeVersion>
-		<ansiVersion>0.3.1.105</ansiVersion>
+		<unicodeVersion>0.4.0.108</unicodeVersion>
+		<ansiVersion>0.4.0.108</ansiVersion>
 		<sourceUrl>https://sourceforge.net/projects/jslintnpp/</sourceUrl>
 		<author>Martin Vladic</author>
 		<description>A Notepad++ plugin that allows users to run JSLint (The JavaScript Code Quality Tool) against their open JavaScript files (more about JSLint at http://www.jslint.com/lint.html).</description>
+		<latestUpdate> - JSLint script updated to version from 2011-01-28\n - Added context menu in list control\n - Easily add predefined globals (Ticket ID 3159082)\n - Bug Fixes</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/jslintnpp/0.3.1/JSLintNPP.0.3.1.zip</download>
+				<download>http://downloads.sourceforge.net/project/jslintnpp/0.4.0/JSLintNPP.0.4.0.zip</download>
 				<copy from="JSLintNpp.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
 			<ansi>
-				<download>http://downloads.sourceforge.net/project/jslintnpp/0.3.1/JSLintNPP_ANSI.0.3.1.zip</download>
+				<download>http://downloads.sourceforge.net/project/jslintnpp/0.4.0/JSLintNPP_ANSI.0.4.0.zip</download>
 				<copy from="JSLintNppA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
+			<copy from="README.txt" to="$PLUGINDIR$\doc\JSLintNpp" />
 		</install>
 	</plugin>
 	<plugin name="JSMin">
@@ -743,8 +758,11 @@
 			<ansi>
 				<download>http://downloads.sourceforge.net/project/npp-plugins/NppExec/NppExec%20Plugin%20v0.4.1/NppExec_041_dll_ANSI.zip</download>
 			</ansi>
-			<copy from="doc\*.*" to="$PLUGINDIR$\doc\NppExec"/>
-			<copy from="NppExec\*.*" to="$PLUGINDIR$\NppExec"/>
+			<copy from="doc\*.html" to="$PLUGINDIR$\doc"/>
+			<copy from="doc\*.knt" to="$PLUGINDIR$\doc"/>
+			<copy from="doc\*.txt" to="$PLUGINDIR$\doc"/>
+			<copy from="doc\*.chm" to="$PLUGINDIR$\doc"/>
+			<copy from="NppExec\*.h" to="$PLUGINDIR$\NppExec"/>
 			<copy from="NppExec.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
 	</plugin>
@@ -1020,15 +1038,15 @@
 		</install>
 	</plugin>
 	<plugin name="Python Script">
-		<unicodeVersion>0.9.0.1</unicodeVersion>
-		<description>Scripting plugin for Notepad++, help included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
+		<unicodeVersion>0.9.2</unicodeVersion>
+		<description>Scripting plugin for Notepad++, documentation included\nAs easy as:\n     notepad.open('filename.txt')\n     editor.appendText("Hello World")\nFull programmatic access to Notepad++ features and menus\nFull programmatic access to all of Scintilla features\nCall other plugin menu items\nAssign menu items, shortcuts and toolbar icons to scripts\nProcess Notepad++ and Scintilla events, direct from a Python script\nPython console built-in\nFull regular expression support for search and replace - script Python regular expression replaces\nStart external programs and pipe the output direct to a Notepad++ document, or filter it, or simply to the console window\nFull documentation for all the objects and methods</description>
 		<author>Dave Brotherstone + Jocelyn Legault</author>
 		<sourceUrl>http://github.com/davegb3/PythonScript</sourceUrl>
 		<homepage>http://npppythonscript.sourceforge.net</homepage>
-		<latestUpdate>No dependency on Visual C++ Runtimes. All standard modules now included. Many many bug fixes and improvements from Jocelyn Legault.\nConsole bug fixes improvements for Unicode</latestUpdate>
+		<latestUpdate>Important bug fix for editor.pymlreplace()\nAdded editor.getCharacterPointer() that returns a string\nAdded notepad.getPluginVersion() to get version of Python Script</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%200.9.0.1/PythonScript_full_0.9.0.1.zip</download>
+				<download>http://downloads.sourceforge.net/project/npppythonscript/Python%20Script%200.9.2.0/PythonScript_full_0.9.2.0.zip</download>
 				<copy from="python27.dll" to="$NPPDIR$" validate="true"/>
 				<copy from="plugins\PythonScript\lib\*.py" to="$PLUGINDIR$\PythonScript\lib" />
 				<copy from="plugins\PythonScript\lib\*.pyd" to="$PLUGINDIR$\PythonScript\lib" />
@@ -1255,15 +1273,17 @@
 		</install>
 	</plugin>
 	<plugin name="SherloXplorer">
-		<unicodeVersion>0.1</unicodeVersion>
+		<unicodeVersion>0.2</unicodeVersion>
 		<author>UFO-pu55y</author>
 		<description>Explorer-like plugin (.NET 2.0 and C++ 2005 runtimes are required)</description>
+		<latestUpdate>-NEW: include python module 'sherloxplorer.py' which wraps some code to get current folder and selected items from explorer windows\n-FIX: use CreateEvent when calling PythonScript (clean up env vars when scripts finish; prevent multithreading)\n-FIX: use correct path for scanning 'Config/PythonScript/scripts'\n-FIX: check if PythonScript folders exist at all </latestUpdate>
 		<install>
-			<download>http://downloads.sourceforge.net/project/sourcecookifier/other%20plugins/SherloXplorer.v0.1.0.bin.zip</download>
+			<download>http://downloads.sourceforge.net/project/sourcecookifier/other%20plugins/SherloXplorer.v0.2.0.bin.zip</download>
 			<copy from="SherloXplorer.dll" to="$PLUGINDIR$" validate="true" />
 			<copy from="SherloXplorer.README.TXT" to="$PLUGINDIR$\doc\SherloXplorer" />
 			<copy from="SherloXplorer\SherloXplorerCore.dll" to="$PLUGINDIR$\SherloXplorer" validate="true" />
 			<copy from="SherloXplorer\SherloXplorerWrapper.dll" to="$PLUGINDIR$\SherloXplorer" validate="true" />
+			<copy from="PythonScript\lib\sherloxplorer.py" to="$PLUGINDIR$\PythonScript\lib" />
 			<copy from="SherloXplorer\*.bat" to="$PLUGINDIR$\SherloXplorer" />
 		</install>
 	</plugin>
@@ -1365,18 +1385,19 @@
 		</install>
 	</plugin>
 	<plugin name="Source Cookifier">
-		<unicodeVersion>0.6</unicodeVersion>
+		<unicodeVersion>0.6.1</unicodeVersion>
 		<description>A plugin which uses Exuberant Ctags to parse either only the currently activated source file or multiple files of so-called sessions. The results are shown and can be browsed in a treeview inside of a dockable window.</description>
 		<author>UFO-Pu55y</author>
 		<homepage>http://sourceforge.net/projects/sourcecookifier/</homepage>
-		<latestUpdate>-new: 2 batch files for adding/removing a .NET policy for the plugin on the current machine\n-   this policy is required when starting N++ on a network location and using sourcecookifier!\n-new: enable (in CTAGS) 'Mac OS 9' form for source code parser (EOL = CR)\n-fix: bring import dialog to top\n-fix: crash when tab window is initialized in 'N++ session mode'\n-fix: sources in treeview don't get added/removed when tab window is in 'N++ session mode' but hidden\n-changed: disable treeview ui while importing sources (speedup)\n-changed: scope-name-delimiter now '.' instead of '::'\n-changed: show invalid sources by default</latestUpdate>
+		<latestUpdate> -new: CTRL+C copies currently selected treeview item (tag name) to clipboard\n-fix: parsing of source files with UTF-16 format and windows-like EOL (CR + LF)\n-fix: prevent CTags from unintentionally finding config files in the PATH and using them\n   (may lead to unexpected behavior)\n-fix: exceptions when adding/changing source node files when both the treeview contains\n'invalid' source nodes and the search filter is in use\n-fix: editor didn't get focused when mouse middle button clicking on treeview items\n-changed: removed option "Use 'tags' file instead of StandardOut" - now always reading from tags file.\nUsing StandardOut was even slower anyway due to CTags always writing into a temp tags file.\nAlso the location of the tags file changed to the plugins config folder.\n</latestUpdate>
 		<aliases>
 			<alias name="SourceCookifier"/>
 		</aliases>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.6/SourceCookifier.v0.6.0.bin.zip</download>
+				<download>http://downloads.sourceforge.net/project/sourcecookifier/0.6.1/SourceCookifier.v0.6.1.bin.zip</download>
 				<copy from="SourceCookifier.dll" to="$PLUGINDIR$" validate="true"/>
+				<copy from="SourceCookifier.README.TXT" to="$PLUGINDIR$\doc\SourceCookifier" />
 				<copy from="SourceCookifier\SourceCookifierCore.dll" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
 				<copy from="SourceCookifier\SourceCookifierWrapper.dll" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
 				<copy from="SourceCookifier\ctags.exe" to="$PLUGINDIR$\SourceCookifier" validate="true"/>
