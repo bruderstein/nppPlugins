@@ -299,4 +299,17 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('7
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('f1e29bd1ffede7452e8a5c336d086001','NPPJSONViewer.dll','','2011-03-06','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('0cfe3e6182add839d2748a3986b8c5ab','ctags.exe','','2011-03-06','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('0D9E0F7909A8E31C21A390EE7B25F017','nppColdFusion.dll','','2011-03-31','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('b6d532da45667806f2117c7dc257931b','CodeAlignmentNpp.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4272d025bac4402b6f60f2a93f2d987f','SourceCookifier.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4d0d6015d30f7507faec593a2dfd4e7d','ctags.exe','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('6334d09216aaa583d9f916069c7c81e9','SourceCookifierCore.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('c5189ff741aec0bce3c79cf6ba8cd57f','SourceCookifierWrapper.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4747b06ec6392fdd7668ba8628f7e83a','NppConverter.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('d2a85c932154d6487ee8b4117a10990a','SherloXplorer.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('09660e9718ab21462f6998cc4c6f2c75','SherloXplorerCore.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('78dd8e1a75054a77387c409475ce4f98','SherloXplorerWrapper.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('3283e31360843cc6961b93595aa2c5ad','JSLintNpp.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('40d484fa1ed493d68127fe95dc624410','JSLintNppA.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('a86ed444a2bb156f763be87b33a115c4','PythonScript.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('0d9e0f7909a8e31c21a390ee7b25f017','nppColdFusion.dll','','2011-04-03','ok');
 commit;
