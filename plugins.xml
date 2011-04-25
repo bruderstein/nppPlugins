@@ -334,7 +334,7 @@
 		</install>
 	</plugin>
 	<plugin name="FingerText">
-		<unicodeVersion>0.5.6</unicodeVersion>
+		<unicodeVersion>0.5.7</unicodeVersion>
 		<description>A Snippet plugin with support for multiple hotspots.  Set the shortcut to Tab and remove from the Scintilla tab command for best usage.</description>
 		<author>Tom Lam</author>
 		<homepage>http://sourceforge.net/projects/fingertext/</homepage>
@@ -343,9 +343,9 @@
 			<version number="0.3.2" md5="22fe35562cc4671f140748d1e1ec3001" />
 		</versions>
 		<install>
-			<download>http://downloads.sourceforge.net/project/fingertext/Alpha%20Releases/FingerText%20-%200.5.6.zip</download>
+			<download>http://downloads.sourceforge.net/project/fingertext/Alpha%20Releases/FingerText%20-%200.5.7.zip</download>
 			<copy from="FingerText.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="FingerText0.5.6SampleSnippets.ftd" to="$CONFIGDIR$" />
+			<copy from="FingerText0.5.7SampleSnippets.ftd" to="$CONFIGDIR$" />
 			<copy from="Changelog.txt" to="$PLUGINDIR$\doc\FingerText" />
 			<copy from="Readme.rdoc" to="$PLUGINDIR$\doc\FingerText" />
 		</install>
@@ -525,12 +525,12 @@
 		</install>
 	</plugin>
 	<plugin name="JSON Viewer">
-		<unicodeVersion>1.1</unicodeVersion>
+		<unicodeVersion>1.15</unicodeVersion>
 		<homepage>http://nppjsonviewer.sourceforge.net/</homepage>
 		<description>A JSON viewer plugin for notepad++. Displays the selected JSON string in a tree view.</description>
 		<category>Web</category>
 		<author>Kapil Ratnani</author>
-		<latestUpdate>1. Fixed hotkey, now press CTRL+SHIFT+ALT+J(default).\n2. Marks error position in JSON</latestUpdate>
+		<latestUpdate>1. Fixed bug 3203739 "Unable to parse JSON Arrays"\n2. Fixed hotkey, now press CTRL+SHIFT+ALT+J(default).\n3. Marks error position in JSON</latestUpdate>
 		<versions>
 			<version number="1.0" md5="39a208efce0900dfafc94c247220631d" comment="unicode" />
 		</versions>
@@ -538,7 +538,7 @@
 			<alias name="JSONViewer" />
 		</aliases>
 		<install>
-			<download>http://sourceforge.net/projects/nppjsonviewer/files/JSONViewer%20Unicode/NPPJSONViewer1_1.zip</download>
+			<download>http://downloads.sourceforge.net/project/nppjsonviewer/JSONViewer%20Unicode/NPPJSONViewer1_15.zip</download>
 			<copy from="NPPJSONViewer\NPPJSONViewer.dll" to="$PLUGINDIR$" />
 			<copy from="NPPJSONViewer\README" to="$PLUGINDIR$\doc\NPPJSONViewer" />
 		</install>
@@ -1127,10 +1127,17 @@
 			</ansi>
 		</install>
 	</plugin>
-	<plugin name="Rainlexer">
-		<!--<unicodeVersion>1.0</unicodeVersion> - No zip version yet--><author>poiru</author>
+	<plugin name="RainLexer">
+		<unicodeVersion>1.0.1</unicodeVersion>
+		<author>Birunthan Mohanathas</author>
 		<description>A plugin for Notepad++ 5.8.x that allows proper syntax highlighting for Rainmeter .ini skin files.</description>
-		<install/>
+		<homepage>http://rainmeter.net/forum/viewtopic.php?f=15&amp;t=6336</homepage>
+		<install>
+			<download>http://rainlexer.googlecode.com/files/RainLexer101.zip</download>
+			<copy from="AutoComplete\WithEquals\Rainmeter.xml" to="$PLUGINDIR$\APIs" backup="true" />
+			<copy from="InstFiles\RainLexer.xml" to="$CONFIGDIR$" />
+			<copy from="InstFiles\RainLexer.dll" to="$PLUGINDIR$" validate="true" />
+		</install>
 	</plugin>
 	<plugin name="RegEx Helper">
 		<unicodeVersion>0.0.2.2</unicodeVersion>
@@ -1584,6 +1591,15 @@
 			<copy from="config\nppplugin_tsvn.config" to="$PLUGINDIR$\config" />
 		</install>
 	</plugin>
+	<plugin name="Translate">
+		<unicodeVersion>0.0.2</unicodeVersion>
+		<description>Translate plugin provides quick translation of selected text to your language of choice. Just select the text and press Ctrl+Alt+Z. Supports multiple languages.  Must be directly connected to the Internet in order to use.</description>
+		<author>Shaleen Mishra</author>
+		<install>
+			<download>http://downloads.sourceforge.net/project/npptranslate/bin/Translate.zip</download>
+			<copy from="Translate\Translate.dll" to="$PLUGINDIR$" validate="true" />
+		</install>
+	</plugin>
 	<plugin name="UniversalIndentGUI">
 		<unicodeVersion>1.0.2</unicodeVersion>
 		<ansiVersion>1.0.2</ansiVersion>
@@ -1724,21 +1740,23 @@
 		</versions>
 	</plugin>
 	<plugin name="Zen Coding - Python">
-		<unicodeVersion>0.2</unicodeVersion>
+		<unicodeVersion>0.7.0.1</unicodeVersion>
 		<sourceUrl>http://github.com/davegb3/ZenCoding-Python</sourceUrl>
 		<description>An implementation of the Zen Coding method by Sergey Chikuyonok. Expand HTML, CSS, XML, XSLT and XSD from abbreviations\ntr#head1.header&gt;td*2 becomes &lt;tr id="head1" class="header"&gt;\n  &lt;td&gt;&lt;/td&gt;\n  &lt;td&gt;&lt;/td&gt;\n&lt;/tr&gt;\nUses the Python Script plugin.</description>
-		<latestUpdate>XSD mode, Tab key support for Expand abbreviation, Profile selection, and a quick edit settings option</latestUpdate>
+		<latestUpdate>Update to 0.7 of Zen Coding. Lots of new features, and autocomplete for snippets and abbreviations.  Assign shortcuts with the normal shortcut mapper</latestUpdate>
 		<author>Dave Brotherstone</author>
 		<dependencies>
 			<plugin name="Python Script"/>
 		</dependencies>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npppythonscript/ZenCoding-Python/ZenCoding-Python-0.2.zip</download>
+				<download>http://downloads.sourceforge.net/project/npppythonscript/ZenCoding-Python/ZenCoding-Python-0.7.0.1a.zip</download>
 				<copy from="ZenCodingPython\*.py" to="$CONFIGDIR$\ZenCodingPython" />
 				<copy from="ZenCodingPython\zencoding\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding" />
+				<copy from="ZenCodingPython\zencoding\actions\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding\actions" />
 				<copy from="ZenCodingPython\zencoding\filters\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding\filters" />
-				<copy from="ReadMe.txt" to="$PLUGINDIR$\doc\ZenCodingPython" />
+				<copy from="ZenCodingPython\zencoding\interface\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding\interface" />
+				<copy from="ZenCodingPython\zencoding\parser\*.py" to="$CONFIGDIR$\ZenCodingPython\zencoding\parser" />
 				<copy from="ZenCoding-Python.dll" to="$PLUGINDIR$" validate="true" />
 			</unicode>
 		</install>

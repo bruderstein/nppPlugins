@@ -312,4 +312,9 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('3
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('40d484fa1ed493d68127fe95dc624410','JSLintNppA.dll','','2011-04-03','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('a86ed444a2bb156f763be87b33a115c4','PythonScript.dll','','2011-04-03','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('0d9e0f7909a8e31c21a390ee7b25f017','nppColdFusion.dll','','2011-04-03','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('f10c6754e2db2cf5bcabab8a6c7d4d68','FingerText.dll','','2011-04-25','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4786790767590d0e5b75eeedea43a08c','ZenCoding-Python.dll','','2011-04-25','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('51f860813c93b646666109b06b96c373','RainLexer.dll','','2011-04-25','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4470434a3d0c9f3e2f4a18418d583c5d','NPPJSONViewer.dll','','2011-04-25','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4a45dea6f15470b863d6b420c943a905','Translate.dll','','2011-04-25','ok');
 commit;
