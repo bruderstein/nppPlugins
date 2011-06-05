@@ -618,6 +618,22 @@
 			</unicode>
 		</install>
 	</plugin>
+	<plugin name="Notepad#">
+		<unicodeVersion>0.9.0</unicodeVersion>
+		<description>Plugin for Notepad++ with many many features.\n\n
+Implemented so far:\n\n- Proper new line inside DocBock for C, C++, Javascript, PHP\n- Proper new line for # comment in Ruby\n- Indent after opening curly brace for C-like languages\n  and proper indenting for closing curly brace\n- Delete current line keeping the column\n- Undo closed tab\n
+- Switching tabs with ALT + LEFT/RIGHT\n- Wrap selection with Open/Close tag\n- Url encode/decode selection\n- Autoclose embeded script tags for ruby and php (&lt;% | &lt;?)\n- Column ruler</description>
+		<author>jvdanilo</author>
+		<homepage>https://github.com/jvdanilo/NotepadSharp</homepage>
+		<sourceUrl>https://github.com/jvdanilo/NotepadSharp</sourceUrl>
+		<versions>
+			<version number="0.9.0" md5="864722fcfa906d66b6dd8b8c6c68f689" />
+		</versions>
+		<install>
+			<download>https://github.com/downloads/jvdanilo/NotepadSharp/NotepadSharp.zip</download>
+			<copy from="NotepadSharp" to="$PLUGINDIR$" validate="true" />
+		</install>
+	</plugin>
 	<plugin name="MIME Tools">
 		<unicodeVersion>1.5</unicodeVersion>
 		<ansiVersion>1.5</ansiVersion>
