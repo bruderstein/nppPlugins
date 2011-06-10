@@ -91,7 +91,7 @@ INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('bf
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('251302df44178f25e0844efe4f8ea3f0','NppLogPlugin.dll',NULL,'2009-08-02 00:00:00','ok');
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('5dad73b5261ea5cc2a75ad4455caefea','WebEdit.dll',NULL,'2009-08-02 00:00:00','ok');
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('47a1a0d12d2c866bc594e4f085d70a47','WebEditU.dll',NULL,'2009-08-02 00:00:00','ok');
-INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('864722fcfa906d66b6dd8b8c6c68f689','NotepadSharp.dll',NULL,'2011-06-05 00:00:00','ok');
+INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('0a592533428a4993f6971c6c4387dd88','NotepadSharp.dll',NULL,'2011-06-05 00:00:00','ok');
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('d05a429fac46302bfcfc7b6c90abf01c','mimeTools.ansi.dll',NULL,'2009-08-02 00:00:00','ok');
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('e88ad75409ea6e7d9122534360d5c3dc','mimeTools.unicode.dll',NULL,'2009-08-02 00:00:00','ok');
 INSERT INTO FileHash(md5sum, filename, pluginName, addedDate, status) VALUES('c2113cbe87c5d370a72ccb759ce8403c','NppTextFXA.dll',NULL,'2009-08-02 00:00:00','ok');
