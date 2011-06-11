@@ -627,7 +627,7 @@ Implemented so far:\n\n- Proper new line inside DocBock for C, C++, Javascript, 
 		<homepage>https://github.com/jvdanilo/NotepadSharp</homepage>
 		<sourceUrl>https://github.com/jvdanilo/NotepadSharp</sourceUrl>
 		<versions>
-			<version number="0.9.2" md5="9f4f70994c7ffac03f77770dbd37a718" />
+			<version number="0.9.4" md5="e6fbbc39a2001492ee890464f1a672e7" />
 		</versions>
 		<install>
 			<download>https://github.com/downloads/jvdanilo/NotepadSharp/NotepadSharp.zip</download>
