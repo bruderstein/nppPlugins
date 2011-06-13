@@ -318,4 +318,15 @@ insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('51f860813c93b646666109b06b96c373','RainLexer.dll','','2011-04-25','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4470434a3d0c9f3e2f4a18418d583c5d','NPPJSONViewer.dll','','2011-04-25','ok');
 insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('4a45dea6f15470b863d6b420c943a905','Translate.dll','','2011-04-25','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('8345ce4e5dfd225646ce6d4a44760f5a','JSLintNpp.dll','','2011-06-13','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('d84225ad36f5cc8d7246d55d0920215a','JSMinNPP.dll','','2011-06-13','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('7b58991120b7e366c6a040eddca9d7cb','JSMinNPP.dll','','2011-06-13','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('02c231e1e1fd554851200dacb24bbc2c','NppJumpList.dll','','2011-06-13','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('fced27642a7f0d0999fa694f668c21a3','NppDocIt.dll','','2011-06-13','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('a26a6a471bc64df06396592e5d34048e','XPathReader.dll','','2011-06-13','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('8068fc5904661f24d117821377d5dd57','XPatherizerNPP.dll','','2011-06-13','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('9f73787972f5542ad7b5c2a5599e5861','XBrackets.dll','','2011-06-13','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('14d5e0256ac7dc50cb36e38257cdb96c','XBrackets.dll','','2011-06-13','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('ad9caa1f8b096254a4f12cc753bb8c26','FingerText.dll','','2011-06-13','ok');
+insert into FileHash(md5sum, filename, pluginName, addedDate, status) values ('8cfc900866dbbab218685ed973287e76','CustomizeToolbar.dll','','2011-06-13','ok');
 commit;

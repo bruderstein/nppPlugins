@@ -220,6 +220,18 @@
 			</ansi>
 		</install>
 	</plugin>
+	<plugin name="Customize Toolbar">
+		<unicodeVersion>1.3</unicodeVersion>
+		<description>This plugin allows the Notepad++ toolbar to be fully customised by the user, and includes twelve additional buttons for frequently used menu commands.</description>
+		<author>Dave-user</author>
+		<versions>
+			<version number="1.3" md5="8cfc900866dbbab218685ed973287e76" />
+		</versions>
+		<install>
+			<download>http://downloads.sourceforge.net/project/npp-customize/Customize%20Toolbar%20v1.3/CustomizeToolbar_1_3_UNI_dll.zip</download>
+			<copy from="CustomizeToolbar.dll" to="$PLUGINDIR$" validate="true" />
+		</install>
+	</plugin>
 	<plugin name="DBGp">
 		<ansiVersion>0.0.11.20</ansiVersion>
 		<description>This is a php debugger (XDebug) which talks DBGP protocol. Use this plugin to transform your Notepad++ to a php IDE.</description>
@@ -231,6 +243,17 @@
 				<download>http://downloads.sourceforge.net/project/npp-plugins/DBGP%20Plugin/DBGP%20Plugin%20v0.11%20beta/DBGpPlugin_0_11b_dll.zip</download>
 				<copy from="*.dll" to="$PLUGINDIR$"/>
 			</ansi>
+		</install>
+	</plugin>
+	<plugin name="DocIt">
+		<unicodeVersion>0.5</unicodeVersion>
+		<description>DocIt aids in documentation. It generates documentation templates for functions. Currently it supports C/CPP and Java. In all it gives eclipse/netbeans/vs like functionality to produce the doc strings, that can be used to generate documentation using a documentation generator like doxygen. (Can't guarantee full compatibility...it is under development)\n1. open a C/CPP/JAVA file.\n2. Go to a function defination and press CTRL+ALT+SHIFT+D and go fill the rest of the stuff....</description>
+		<author>Kapil Ratnani</author>
+		<homepage>http://sourceforge.net/projects/nppdocit/</homepage>
+		<install>
+			<download>http://downloads.sourceforge.net/project/nppdocit/Unicode/NppDocIt.zip</download>
+			<copy from="NppDocIt\NppDocIt.dll" to="$PLUGINDIR$" validate="true" />
+			<copy from="NppDocIt\README" to="$PLUGINDIR$\doc\NppDocIt" />
 		</install>
 	</plugin>
 	<plugin name="Document Monitor">
@@ -281,6 +304,23 @@
 			<copy from="ExternalLexerKVS.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="Config\ExternalLexerKVS.xml" to="$CONFIGDIR$"/>
 		</install>
+	</plugin>
+	<plugin name="F# Interactive">
+		<unicodeVersion>0.1.1</unicodeVersion>
+		<sourceUrl>http://github.com/ppv/NPPFSIPlugin/tree/master/Source/Plugin</sourceUrl>
+		<description>This plugin hosts F# Interactive inside Notepad++ (Note: F# should be installed separately).</description>
+		<latestUpdate>Fix for about box error in Win7 systems.</latestUpdate>
+		<author>Prapin Peethambaran</author>
+		<install>
+			<unicode>
+				<download>http://github.com/downloads/ppv/NPPFSIPlugin/NPPFSIPlugin.zip</download>
+				<copy from="NPPFSIPlugin.dll" to="$PLUGINDIR$" validate="true"/>
+			</unicode>
+		</install>
+		<versions>
+			<version number="0.1.0.0" md5="4cb393534d36559bedcb50a0a0183e64" />
+			<version number="0.1.1.0" md5="60138dbfc6cfbf00550bb9b17728e61f" />
+		</versions>
 	</plugin>
 	<plugin name="FTP_synchronize">
 		<unicodeVersion>0.9.6.2</unicodeVersion>
@@ -334,19 +374,19 @@
 		</install>
 	</plugin>
 	<plugin name="FingerText">
-		<unicodeVersion>0.5.7</unicodeVersion>
+		<unicodeVersion>0.5.20</unicodeVersion>
 		<description>A Snippet plugin with support for multiple hotspots.  Set the shortcut to Tab and remove from the Scintilla tab command for best usage.</description>
 		<author>Tom Lam</author>
 		<homepage>http://sourceforge.net/projects/fingertext/</homepage>
 		<sourceUrl>http://github.com/erinata/FingerText</sourceUrl>
 		<versions>
 			<version number="0.3.2" md5="22fe35562cc4671f140748d1e1ec3001" />
+			<version number="0.5.20" md5="ad9caa1f8b096254a4f12cc753bb8c26" />
 		</versions>
 		<install>
 			<download>http://downloads.sourceforge.net/project/fingertext/Alpha%20Releases/FingerText%20-%200.5.7.zip</download>
 			<copy from="FingerText.dll" to="$PLUGINDIR$" validate="true" />
-			<copy from="FingerText0.5.7SampleSnippets.ftd" to="$CONFIGDIR$" />
-			<copy from="Changelog.txt" to="$PLUGINDIR$\doc\FingerText" />
+			<copy from="FingerText0.5.20SampleSnippets.ftd" to="$CONFIGDIR$\FingerText" />
 			<copy from="Readme.rdoc" to="$PLUGINDIR$\doc\FingerText" />
 		</install>
 	</plugin>
@@ -489,37 +529,38 @@
 		</install>
 	</plugin>
 	<plugin name="JSLint">
-		<unicodeVersion>0.4.0.108</unicodeVersion>
-		<ansiVersion>0.4.0.108</ansiVersion>
+		<unicodeVersion>0.5.0.109</unicodeVersion>
+		<ansiVersion>0.5.0.109</ansiVersion>
 		<sourceUrl>https://sourceforge.net/projects/jslintnpp/</sourceUrl>
 		<author>Martin Vladic</author>
 		<description>A Notepad++ plugin that allows users to run JSLint (The JavaScript Code Quality Tool) against their open JavaScript files (more about JSLint at http://www.jslint.com/lint.html).</description>
-		<latestUpdate> - JSLint script updated to version from 2011-01-28\n - Added context menu in list control\n - Easily add predefined globals (Ticket ID 3159082)\n - Bug Fixes</latestUpdate>
+		<latestUpdate>JSLint script updated to version from 2011-04-28</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/jslintnpp/0.4.0/JSLintNPP.0.4.0.zip</download>
+				<download>http://downloads.sourceforge.net/project/jslintnpp/0.5.0/JSLintNPP.0.5.0.zip</download>
 				<copy from="JSLintNpp.dll" to="$PLUGINDIR$" validate="true"/>
 			</unicode>
 			<ansi>
-				<download>http://downloads.sourceforge.net/project/jslintnpp/0.4.0/JSLintNPP_ANSI.0.4.0.zip</download>
+				<download>http://downloads.sourceforge.net/project/jslintnpp/0.5.0/JSLintNPP_ANSI.0.5.0.zip</download>
 				<copy from="JSLintNppA.dll" to="$PLUGINDIR$" validate="true"/>
 			</ansi>
 			<copy from="README.txt" to="$PLUGINDIR$\doc\JSLintNpp" />
 		</install>
 	</plugin>
 	<plugin name="JSMin">
-		<unicodeVersion>1.7</unicodeVersion>
-		<ansiVersion>1.7</ansiVersion>
+		<unicodeVersion>1.8</unicodeVersion>
+		<ansiVersion>1.8</ansiVersion>
 		<sourceUrl>http://sourceforge.net/projects/jsminnpp/</sourceUrl>
 		<author>Junwen Sun</author>
 		<description>A Javascript plugin. Use Douglas Crockford's JSMin to minimize javascript code and uses own algorithm to format javascript code. Really helpful to javascript coder on Notepad++ and really easy to use.</description>
 		<homepage>http://sunblog.72pines.com/development-center/jsminnpp/</homepage>
+		<latestUpdate>Leave empty {} alone.\nAdded a shortcut for formatting (Ctrl+Alt+M).\nAdded an option to keep comments at top of codes.\nFixed bugs.</latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.7.uni.zip</download>
+				<download>http://downloads.sourceforge.net/project/jsminnpp/Uni/JSMinNPP.1.8.uni.zip</download>
 			</unicode>
 			<ansi>
-				<download>http://downloads.sourceforge.net/project/jsminnpp/Asc/JSMinNPP.1.7.asc.zip</download>
+				<download>http://downloads.sourceforge.net/project/jsminnpp/Asc/JSMinNPP.1.8.asc.zip</download>
 			</ansi>
 			<copy from="JSMinNpp.dll" to="$PLUGINDIR$" validate="true"/>
 		</install>
@@ -618,22 +659,6 @@
 			</unicode>
 		</install>
 	</plugin>
-	<plugin name="Notepad#">
-		<unicodeVersion>0.9.4</unicodeVersion>
-		<description>General plugin (proper new line handling, comments, indenting etc)\n\n
-Implemented so far:\n\n- Proper new line inside DocBock for C, C++, Javascript, PHP\n- Proper new line for # comment in Ruby\n- Indent after opening curly brace for C-like languages\n  and proper indenting for closing curly brace\n- Delete current line keeping the column\n- Undo closed tab\n
-- Switching tabs with ALT + LEFT/RIGHT\n- Wrap selection with Open/Close tag\n- Url encode/decode selection\n- Autoclose embeded script tags for ruby and php (&lt;% | &lt;?)\n- Column ruler\n- Indent after opened tag - XML and HTML\n- End last opened tag</description>
-		<author>jvdanilo</author>
-		<homepage>https://github.com/jvdanilo/NotepadSharp</homepage>
-		<sourceUrl>https://github.com/jvdanilo/NotepadSharp</sourceUrl>
-		<versions>
-			<version number="0.9.4" md5="e6fbbc39a2001492ee890464f1a672e7" />
-		</versions>
-		<install>
-			<download>http://github.com/downloads/jvdanilo/NotepadSharp/NotepadSharp.zip</download>
-			<copy from="NotepadSharp.dll" to="$PLUGINDIR$" validate="true" />
-		</install>
-	</plugin>
 	<plugin name="MIME Tools">
 		<unicodeVersion>1.5</unicodeVersion>
 		<ansiVersion>1.5</ansiVersion>
@@ -709,6 +734,20 @@ Implemented so far:\n\n- Proper new line inside DocBock for C, C++, Javascript, 
 				<download>http://downloads.sourceforge.net/sourceforge/npp-plugins/NativeLang_1_1_dll.zip</download>
 			</ansi>
 			<copy from="NativeLang.dll" to="$PLUGINDIR$" validate="true"/>
+		</install>
+	</plugin>
+	<plugin name="Notepad#">
+		<unicodeVersion>0.9.4</unicodeVersion>
+		<description>General plugin (proper new line handling, comments, indenting etc)\n\n Implemented so far:\n\n- Proper new line inside DocBock for C, C++, Javascript, PHP\n- Proper new line for # comment in Ruby\n- Indent after opening curly brace for C-like languages\n  and proper indenting for closing curly brace\n- Delete current line keeping the column\n- Undo closed tab\n - Switching tabs with ALT + LEFT/RIGHT\n- Wrap selection with Open/Close tag\n- Url encode/decode selection\n- Autoclose embeded script tags for ruby and php (&lt;% | &lt;?)\n- Column ruler\n- Indent after opened tag - XML and HTML\n- End last opened tag</description>
+		<author>jvdanilo</author>
+		<homepage>https://github.com/jvdanilo/NotepadSharp</homepage>
+		<sourceUrl>https://github.com/jvdanilo/NotepadSharp</sourceUrl>
+		<versions>
+			<version number="0.9.4" md5="e6fbbc39a2001492ee890464f1a672e7" />
+		</versions>
+		<install>
+			<download>http://www.brotherstone.co.uk/npp/NotepadSharp/NotepadSharp.zip</download>
+			<copy from="NotepadSharp.dll" to="$PLUGINDIR$" validate="true" />
 		</install>
 	</plugin>
 	<plugin name="NppAutoIndent">
@@ -801,23 +840,6 @@ Implemented so far:\n\n- Proper new line inside DocBock for C, C++, Javascript, 
 			</ansi>
 		</install>
 	</plugin>
-	<plugin name="F# Interactive">
-		<unicodeVersion>0.1.1</unicodeVersion>
-		<sourceUrl>http://github.com/ppv/NPPFSIPlugin/tree/master/Source/Plugin</sourceUrl>
-		<description>This plugin hosts F# Interactive inside Notepad++ (Note: F# should be installed separately).</description>
-		<latestUpdate>Fix for about box error in Win7 systems.</latestUpdate>
-		<author>Prapin Peethambaran</author>
-		<install>
-			<unicode>
-				<download>http://github.com/downloads/ppv/NPPFSIPlugin/NPPFSIPlugin.zip</download>
-				<copy from="NPPFSIPlugin.dll" to="$PLUGINDIR$" validate="true"/>
-			</unicode>
-		</install>
-		<versions>
-			<version number="0.1.0.0" md5="4cb393534d36559bedcb50a0a0183e64" />
-			<version number="0.1.1.0" md5="60138dbfc6cfbf00550bb9b17728e61f" />
-		</versions>
-	</plugin>
 	<plugin name="NppFTP">
 		<unicodeVersion>0.23</unicodeVersion>
 		<ansiVersion>0.23</ansiVersion>
@@ -853,13 +875,12 @@ Implemented so far:\n\n- Proper new line inside DocBock for C, C++, Javascript, 
 		</install>
 	</plugin>
 	<plugin name="NppJumpList">
-		<unicodeVersion>1.2.1</unicodeVersion>
+		<unicodeVersion>1.2.2</unicodeVersion>
 		<homepage>http://sourceforge.net/projects/nppjumplist/</homepage>
 		<description>Adds windows 7 jump list support.</description>
-		<latestUpdate>Crash bug fixed</latestUpdate>
 		<author>ahvgeezer</author>
 		<install>
-			<download>http://downloads.sourceforge.net/project/nppjumplist/1.2.1/NppJumpList.1.2.1.bin.zip</download>
+			<download>http://downloads.sourceforge.net/project/nppjumplist/1.2.2/NppJumpList.1.2.2.bin.zip</download>
 			<copy from="NppJumpList.dll" to="$PLUGINDIR$" validate="true"/>
 			<copy from="readme.txt" to="$PLUGINDIR$\doc\NppJumpList" />
 		</install>
@@ -1708,13 +1729,14 @@ Implemented so far:\n\n- Proper new line inside DocBock for C, C++, Javascript, 
 		</install>
 	</plugin>
 	<plugin name="XBrackets Lite">
-		<unicodeVersion>1.1</unicodeVersion>
-		<ansiVersion>1.1</ansiVersion>
+		<unicodeVersion>1.2</unicodeVersion>
+		<ansiVersion>1.2</ansiVersion>
 		<description>XBrackets Lite allows to autocomplete brackets ([{""}]) i.e. it inserts corresponding right bracket when the left bracket is typed. The plugin uses "smart" autocompletion: * next character is analysed for ([{ brackets; * next &amp; previous characters are analysed for " quote. </description>
 		<author>Dovgan Vitaliy</author>
+		<latestUpdate>Changes in v1.2:\n* header files in "src/core/npp_stuff" updated to version 5.9 of Notepad++\n* now brackets autocompletion is disabled during multiple selection mode </latestUpdate>
 		<install>
 			<unicode>
-				<download>http://downloads.sourceforge.net/project/npp-plugins/XBrackets%20Lite/XBrackets%20Plugin%20v1.1/XBrackets_v11_dll_Unicode.zip</download>
+				<download>http://downloads.sourceforge.net/project/npp-plugins/XBrackets%20Lite/XBrackets%20Plugin%20v1.2/XBrackets_v12_dll_Unicode.zip</download>
 			</unicode>
 			<ansi>
 				<download>http://downloads.sourceforge.net/project/npp-plugins/XBrackets%20Lite/XBrackets%20Plugin%20v1.1/XBrackets_v11_dll_ANSI.zip</download>
@@ -1754,6 +1776,17 @@ Implemented so far:\n\n- Proper new line inside DocBock for C, C++, Javascript, 
 			<version number="2.3.1.764" md5="cb1556f0a9bcde3431e2b00ea8daac80" />
 			<version number="2.3.1.805" md5="2ead8da0e29c10d9d1e72942e4b11c8a" />
 		</versions>
+	</plugin>
+	<plugin name="XPatherizerNPP">
+		<unicodeVersion>2.0</unicodeVersion>
+		<description>Analyze multiple XPath queries with reverse lookup\nFeatures:\nAnalyze multiple XPath queries with one keypress.\nAbility to only search on selected text.\nReverse lookup from results.\nBeautify XML documents.\nSaved queries for files left open in NPP.\nCan save and load XML files with XPath queries into a single file.\nSelect multiple results nodes for exporting.\nExport results to new XML file.\nCan display information about Attributes on the Parent node results.</description>
+		<homepage>https://code.google.com/p/xpatherizernpp/</homepage>
+		<author>bguenthner</author>
+		<install>
+			<download>http://xpatherizernpp.googlecode.com/files/XPatherizerNPP-2.0.zip</download>
+			<copy from="XPathReader.dll" to="$NPPDIR$" validate="true" />
+			<copy from="plugins\XpatherizerNPP.dll" to="$PLUGINDIR$" validate="true" />
+		</install>
 	</plugin>
 	<plugin name="Zen Coding - Python">
 		<unicodeVersion>0.7.0.1</unicodeVersion>
